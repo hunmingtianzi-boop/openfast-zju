@@ -1,0 +1,160 @@
+{
+  "transition_id": "TR_E0A402BE49C91D5F",
+  "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+  "child_run_id": "RC_YAW_EQIC87_CL105_BL100_0704230212",
+  "parent_candidate_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+  "child_candidate_id": "YAW_EQIC87_CL105_BL100_0704230212",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "signed_ic_bquad",
+  "target_dof": "FD_ROLL",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "CLin",
+        "i": 5,
+        "j": 5,
+        "value": -420525000.0
+      },
+      {
+        "block": "BLin",
+        "i": 5,
+        "j": 5,
+        "value": 100000000.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {
+      "Yaw": -16.224287
+    },
+    "tmax": 900,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+        "FD_ROLL": "ROLL_BQ8715_07041049",
+        "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_YAW": "YAW_IC_Y15052_07040949"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 0.9683333333333334,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -16.2507835,
+        "FD_SWAY": -12.08792,
+        "FD_HEAVE": -4.474818,
+        "FD_ROLL": 16.89065606,
+        "FD_PITCH": -9.678683455,
+        "FD_YAW": -15.052
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ]
+    },
+    "changed_parameters": "HydroDyn.CLin[5,5];HydroDyn.BLin[5,5];IC.Yaw;FST.TMax"
+  },
+  "global_score_delta": 1.2492291619542428,
+  "metric_deltas": {
+    "FD_YAW": {
+      "score": {
+        "parent": 0.7706247017542985,
+        "child": 1.9084166505619546,
+        "delta": 1.137791948807656,
+        "signed_delta": 1.137791948807656,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.52281173,
+        "child": 1.8643176,
+        "delta": 1.3415058699999998,
+        "signed_delta": 1.3415058699999998,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.26130353,
+        "child": 0.2304299,
+        "delta": -0.030873630000000013,
+        "signed_delta": -0.030873630000000013,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.93314977,
+        "child": 3.5052749,
+        "delta": 2.57212513,
+        "signed_delta": 2.57212513,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.19275803,
+        "child": 0.11983084,
+        "delta": -0.07292719,
+        "signed_delta": -0.07292719,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.1242369400429858,
+        "child": 0.44925249728621197,
+        "delta": 0.32501555724322617,
+        "signed_delta": 0.32501555724322617,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SURGE",
+    "missing_dof:FD_SWAY"
+  ],
+  "resolved_failures": [
+    "strong_leak",
+    "strong_leak:FD_HEAVE->Roll:0.88>ref0.231"
+  ],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_SWAY"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "suite incomplete",
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "source_run_ids": [
+    "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+    "RC_YAW_EQIC87_CL105_BL100_0704230212"
+  ],
+  "created_at": "2026-07-07T14:15:15+00:00"
+}

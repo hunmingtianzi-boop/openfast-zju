@@ -1,0 +1,2285 @@
+{
+  "created_at": "2026-07-07T14:15:15+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "count": 253,
+  "transitions": [
+    {
+      "transition_id": "TR_A13BE1864FE50694",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_AMP_SH_06121500",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A13BE1864FE50694.json"
+    },
+    {
+      "transition_id": "TR_2679E78BF62F7E2A",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2679E78BF62F7E2A.json"
+    },
+    {
+      "transition_id": "TR_863DF69573DFB23E",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_863DF69573DFB23E.json"
+    },
+    {
+      "transition_id": "TR_AF635E763141E41A",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "child_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_AF635E763141E41A.json"
+    },
+    {
+      "transition_id": "TR_FE2961995BF7E180",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "child_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FE2961995BF7E180.json"
+    },
+    {
+      "transition_id": "TR_B4BEF26615B00619",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_AMP_SH_S_BASEYAW_06171610",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B4BEF26615B00619.json"
+    },
+    {
+      "transition_id": "TR_F8C7821E6FFC5CE5",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_AMP_SH_SY_06172058",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F8C7821E6FFC5CE5.json"
+    },
+    {
+      "transition_id": "TR_C178E77FC99E3C82",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_AMP_SH_SY_R965_06171637",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C178E77FC99E3C82.json"
+    },
+    {
+      "transition_id": "TR_726E73414F816BD6",
+      "parent_run_id": "RC_AMP_SH_SY_R965_06171637",
+      "child_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_726E73414F816BD6.json"
+    },
+    {
+      "transition_id": "TR_E12F05EDA25F77A8",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E12F05EDA25F77A8.json"
+    },
+    {
+      "transition_id": "TR_681377922ECFA366",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_681377922ECFA366.json"
+    },
+    {
+      "transition_id": "TR_6F35027EB8B744BD",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_AMP_SH_SY_ROLL090_06171518",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6F35027EB8B744BD.json"
+    },
+    {
+      "transition_id": "TR_FF35382D804C23C9",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+      "child_run_id": "RC_BQIC_HEAVE_0612055426_F100_I080",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FF35382D804C23C9.json"
+    },
+    {
+      "transition_id": "TR_83B1DCE550A4E148",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+      "child_run_id": "RC_BQIC_HEAVE_0612055426_F100_I090",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_83B1DCE550A4E148.json"
+    },
+    {
+      "transition_id": "TR_2D88E5F943A9EB82",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_HEAVE_0612134333_F200_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2D88E5F943A9EB82.json"
+    },
+    {
+      "transition_id": "TR_7E43F0D07A591865",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_HEAVE_0612134333_F400_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_7E43F0D07A591865.json"
+    },
+    {
+      "transition_id": "TR_97FB8371E2102DE8",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_HEAVE_0612134700_F100_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_97FB8371E2102DE8.json"
+    },
+    {
+      "transition_id": "TR_5FA356960DE9B2B1",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_HEAVE_0612135257_F100_I095",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5FA356960DE9B2B1.json"
+    },
+    {
+      "transition_id": "TR_125C2332E1DD91F6",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_HEAVE_0612143402_F100_I060",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_125C2332E1DD91F6.json"
+    },
+    {
+      "transition_id": "TR_3D6596824DAE5DDF",
+      "parent_run_id": "RC_AMP_SH_SY_R965_06171637",
+      "child_run_id": "RC_BQIC_HEAVE_0703130239_F100_I050",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3D6596824DAE5DDF.json"
+    },
+    {
+      "transition_id": "TR_3089E83046A54E7C",
+      "parent_run_id": "RC_AMP_SH_SY_R965_06171637",
+      "child_run_id": "RC_BQIC_HEAVE_0703130239_F100_I055",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3089E83046A54E7C.json"
+    },
+    {
+      "transition_id": "TR_F7F3675CBA37787F",
+      "parent_run_id": "RC_AMP_SH_SY_R965_06171637",
+      "child_run_id": "RC_BQIC_HEAVE_0703130239_F100_I058",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F7F3675CBA37787F.json"
+    },
+    {
+      "transition_id": "TR_7CDEB636C6DB7F28",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_BQIC_HEAVE_0704040637_F100_I054",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_7CDEB636C6DB7F28.json"
+    },
+    {
+      "transition_id": "TR_E8758F7323075BC3",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_BQIC_HEAVE_0704040637_F100_I055",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E8758F7323075BC3.json"
+    },
+    {
+      "transition_id": "TR_E04835642BC63412",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_BQIC_HEAVE_0704040637_F100_I056",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E04835642BC63412.json"
+    },
+    {
+      "transition_id": "TR_2800968D86F19D11",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_HEAVE_0704051950_F100_I048",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2800968D86F19D11.json"
+    },
+    {
+      "transition_id": "TR_4C4068D35317F9B0",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_HEAVE_0704051950_F100_I050",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4C4068D35317F9B0.json"
+    },
+    {
+      "transition_id": "TR_E9FDD53F38D0720D",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_HEAVE_0704051950_F100_I052",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E9FDD53F38D0720D.json"
+    },
+    {
+      "transition_id": "TR_87CA07358AA99686",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_ROLL_0612125455_F080_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_87CA07358AA99686.json"
+    },
+    {
+      "transition_id": "TR_DD6408AD8A4A8A36",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_ROLL_0612125455_F090_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_DD6408AD8A4A8A36.json"
+    },
+    {
+      "transition_id": "TR_B1E5A63733C01E9B",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_BQIC_ROLL_0617161013_F095_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B1E5A63733C01E9B.json"
+    },
+    {
+      "transition_id": "TR_BDA114571CBC4963",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_BQIC_ROLL_0617161538_F098_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_BDA114571CBC4963.json"
+    },
+    {
+      "transition_id": "TR_323AA6308A372658",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_BQIC_ROLL_0617162123_F096_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_323AA6308A372658.json"
+    },
+    {
+      "transition_id": "TR_4534AC7068823DEA",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_BQIC_ROLL_0617162123_F097_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4534AC7068823DEA.json"
+    },
+    {
+      "transition_id": "TR_8DFE265613D05F71",
+      "parent_run_id": "RC_AMP_SH_SY_06172058",
+      "child_run_id": "RC_BQIC_ROLL_0617162123_F098_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_8DFE265613D05F71.json"
+    },
+    {
+      "transition_id": "TR_664C9A919EACFFA4",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "child_run_id": "RC_BQIC_ROLL_0704103753_F090_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_664C9A919EACFFA4.json"
+    },
+    {
+      "transition_id": "TR_839305CC4CE4D077",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "child_run_id": "RC_BQIC_SURGE_0611135333_F100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_839305CC4CE4D077.json"
+    },
+    {
+      "transition_id": "TR_853DB52CB893F4DA",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "child_run_id": "RC_BQIC_SURGE_0611135333_F150",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_853DB52CB893F4DA.json"
+    },
+    {
+      "transition_id": "TR_26AD32D0176F21F9",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "child_run_id": "RC_BQIC_SURGE_0611142500_F100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_26AD32D0176F21F9.json"
+    },
+    {
+      "transition_id": "TR_B3DDDA8077321C42",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+      "child_run_id": "RC_BQIC_SURGE_0611154707_F100_I110",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B3DDDA8077321C42.json"
+    },
+    {
+      "transition_id": "TR_D1AB2C9D0F209597",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+      "child_run_id": "RC_BQIC_SURGE_0611155919_F100_I102",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D1AB2C9D0F209597.json"
+    },
+    {
+      "transition_id": "TR_405D1994CB48519B",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612120539_F100_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_405D1994CB48519B.json"
+    },
+    {
+      "transition_id": "TR_90FFAD4DBD5C55FB",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612120539_F150_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_90FFAD4DBD5C55FB.json"
+    },
+    {
+      "transition_id": "TR_FB918653966ABA35",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612120539_F200_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FB918653966ABA35.json"
+    },
+    {
+      "transition_id": "TR_08EB80D9A51606CA",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "child_run_id": "RC_BQIC_SURGE_0612122849_F075_I090",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_08EB80D9A51606CA.json"
+    },
+    {
+      "transition_id": "TR_26C5A2C30A3B5634",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "child_run_id": "RC_BQIC_SURGE_0612122849_F100_I090",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_26C5A2C30A3B5634.json"
+    },
+    {
+      "transition_id": "TR_D39F1866694142CD",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "child_run_id": "RC_BQIC_SURGE_0612122849_F125_I090",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D39F1866694142CD.json"
+    },
+    {
+      "transition_id": "TR_DF0F21E5EB44B487",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612123519_F100_I098",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_DF0F21E5EB44B487.json"
+    },
+    {
+      "transition_id": "TR_CA188D3C460B7A75",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612123519_F100_I102",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CA188D3C460B7A75.json"
+    },
+    {
+      "transition_id": "TR_37ABE111D806C08C",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612134700_F100_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_37ABE111D806C08C.json"
+    },
+    {
+      "transition_id": "TR_19DB542DB7D62EFB",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612141252_F100_I080",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_19DB542DB7D62EFB.json"
+    },
+    {
+      "transition_id": "TR_B6245DECC100693F",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612143905_F100_I065",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B6245DECC100693F.json"
+    },
+    {
+      "transition_id": "TR_700ECEE1C5859AC5",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SURGE_0612143905_F100_I070",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_700ECEE1C5859AC5.json"
+    },
+    {
+      "transition_id": "TR_ED7C9F1477D16914",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SURGE_0703144129_F110_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_ED7C9F1477D16914.json"
+    },
+    {
+      "transition_id": "TR_C22F457F0285BC95",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SURGE_0703144129_F120_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C22F457F0285BC95.json"
+    },
+    {
+      "transition_id": "TR_44C4F7C1DA4A83C1",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SURGE_0703150041_F080_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_44C4F7C1DA4A83C1.json"
+    },
+    {
+      "transition_id": "TR_AF777BC44706D80D",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SURGE_0703150041_F090_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_AF777BC44706D80D.json"
+    },
+    {
+      "transition_id": "TR_D22C168B6480B1E5",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704053144_F100_I072",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D22C168B6480B1E5.json"
+    },
+    {
+      "transition_id": "TR_ED148C90746BF768",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704053144_F100_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_ED148C90746BF768.json"
+    },
+    {
+      "transition_id": "TR_D915794AD9AC7993",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704053144_F100_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D915794AD9AC7993.json"
+    },
+    {
+      "transition_id": "TR_F10DFD0CA1268AAC",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704055611_F105_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F10DFD0CA1268AAC.json"
+    },
+    {
+      "transition_id": "TR_82A145261DE29FFA",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704055611_F110_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_82A145261DE29FFA.json"
+    },
+    {
+      "transition_id": "TR_E86FAC32A9770303",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704055611_F120_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E86FAC32A9770303.json"
+    },
+    {
+      "transition_id": "TR_A13D38F1CB17B9FB",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704062039_F101_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A13D38F1CB17B9FB.json"
+    },
+    {
+      "transition_id": "TR_2DEA28A33246FEF1",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704062039_F102_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2DEA28A33246FEF1.json"
+    },
+    {
+      "transition_id": "TR_37A536DDE03C2CD7",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704062039_F103_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_37A536DDE03C2CD7.json"
+    },
+    {
+      "transition_id": "TR_85509A87C7D02349",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704064505_F102_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_85509A87C7D02349.json"
+    },
+    {
+      "transition_id": "TR_E4090363DA10D872",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704065321_F102_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E4090363DA10D872.json"
+    },
+    {
+      "transition_id": "TR_396B1AFBEE5BB856",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704070142_F102_I074",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_396B1AFBEE5BB856.json"
+    },
+    {
+      "transition_id": "TR_B60CE028147950DF",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SURGE_0704074649_F102_I073",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B60CE028147950DF.json"
+    },
+    {
+      "transition_id": "TR_5DDE4129EBBDCE53",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_BQIC_SURGE_0704123214_F098_I072",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5DDE4129EBBDCE53.json"
+    },
+    {
+      "transition_id": "TR_5CDA00F154F4BB6C",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "child_run_id": "RC_BQIC_SWAY_0612090051_F100_I102",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5CDA00F154F4BB6C.json"
+    },
+    {
+      "transition_id": "TR_32ADC7A1DE1BEA62",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0612134700_F100_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_32ADC7A1DE1BEA62.json"
+    },
+    {
+      "transition_id": "TR_9BF9144C1A160928",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0612142322_F100_I080",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9BF9144C1A160928.json"
+    },
+    {
+      "transition_id": "TR_62054E4644BC5BC8",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617133851_F100_I070",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_62054E4644BC5BC8.json"
+    },
+    {
+      "transition_id": "TR_E8D4B4E37505B84E",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617133851_F100_I075",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E8D4B4E37505B84E.json"
+    },
+    {
+      "transition_id": "TR_DA7A569E23788704",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617133851_F100_I078",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_DA7A569E23788704.json"
+    },
+    {
+      "transition_id": "TR_35FDDD25C37F3170",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617133851_F100_I082",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_35FDDD25C37F3170.json"
+    },
+    {
+      "transition_id": "TR_106498565EA4BFFC",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617142124_F100_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_106498565EA4BFFC.json"
+    },
+    {
+      "transition_id": "TR_E983E230328B1B53",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617142124_F100_I078",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E983E230328B1B53.json"
+    },
+    {
+      "transition_id": "TR_4F5C89E2207CDC47",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617142124_F100_I080",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4F5C89E2207CDC47.json"
+    },
+    {
+      "transition_id": "TR_65B0E6CEF14D4FA0",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_BQIC_SWAY_0617142124_F100_I082",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_65B0E6CEF14D4FA0.json"
+    },
+    {
+      "transition_id": "TR_3C87F8D2F587083F",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0703140207_F110_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3C87F8D2F587083F.json"
+    },
+    {
+      "transition_id": "TR_CD8080E51E1846DB",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0703140207_F120_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CD8080E51E1846DB.json"
+    },
+    {
+      "transition_id": "TR_146DB23AEC0D43C5",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0703142147_F103_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_146DB23AEC0D43C5.json"
+    },
+    {
+      "transition_id": "TR_CD8056F990B50910",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0703142147_F105_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CD8056F990B50910.json"
+    },
+    {
+      "transition_id": "TR_1015E85C1E5335B1",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0704014701_F095_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_1015E85C1E5335B1.json"
+    },
+    {
+      "transition_id": "TR_F80F16C4FBF68F04",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0704014701_F100_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F80F16C4FBF68F04.json"
+    },
+    {
+      "transition_id": "TR_190464003B081409",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0704014701_F105_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_190464003B081409.json"
+    },
+    {
+      "transition_id": "TR_8973E983D8E79E22",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0704021626_F098_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_8973E983D8E79E22.json"
+    },
+    {
+      "transition_id": "TR_543E2EF08D141E2A",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_BQIC_SWAY_0704021626_F099_I076",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_543E2EF08D141E2A.json"
+    },
+    {
+      "transition_id": "TR_34278EC06B3E2FED",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_BQIC_SWAY_0704041752_F095_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_34278EC06B3E2FED.json"
+    },
+    {
+      "transition_id": "TR_C0C3E406BAA8E7E9",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "child_run_id": "RC_BQIC_SWAY_0704041752_F105_I100",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C0C3E406BAA8E7E9.json"
+    },
+    {
+      "transition_id": "TR_564578D30F8697AC",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SWAY_0704075513_F100_I082",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_564578D30F8697AC.json"
+    },
+    {
+      "transition_id": "TR_150E77A5283D0433",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_BQIC_SWAY_0704075513_F100_I084",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_150E77A5283D0433.json"
+    },
+    {
+      "transition_id": "TR_A774ED91D5BAE68C",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642",
+      "child_run_id": "RC_BQIC_YAW_0612070916_F100_I102",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A774ED91D5BAE68C.json"
+    },
+    {
+      "transition_id": "TR_8C93F62498910A69",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_BQIC_YAW_0612154529_F100_I084",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_8C93F62498910A69.json"
+    },
+    {
+      "transition_id": "TR_4B0770670B2D0F5C",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4B0770670B2D0F5C.json"
+    },
+    {
+      "transition_id": "TR_B42F29184713F465",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B42F29184713F465.json"
+    },
+    {
+      "transition_id": "TR_6AEACAC0EDC47BC4",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6AEACAC0EDC47BC4.json"
+    },
+    {
+      "transition_id": "TR_8F9764706CC5EC30",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_8F9764706CC5EC30.json"
+    },
+    {
+      "transition_id": "TR_5599236FCE16104B",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5599236FCE16104B.json"
+    },
+    {
+      "transition_id": "TR_36A3192DC069B6FD",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_36A3192DC069B6FD.json"
+    },
+    {
+      "transition_id": "TR_87FFD935BC159B8B",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "child_run_id": "RC_GLV3_HEAVE_AF0_N025M_EA1005_20260707T113721Z",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_87FFD935BC159B8B.json"
+    },
+    {
+      "transition_id": "TR_F96AA8D20A316484",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "child_run_id": "RC_GLV3_MOOR_EA1003_20260707T043810Z",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F96AA8D20A316484.json"
+    },
+    {
+      "transition_id": "TR_0F5E72EB091C38A7",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "child_run_id": "RC_GLV3_MOOR_EA10045R_20260707T090815Z",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0F5E72EB091C38A7.json"
+    },
+    {
+      "transition_id": "TR_20F4FE592BE9714D",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "child_run_id": "RC_GLV3_MOOR_EA10055_20260707T060656Z",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_20F4FE592BE9714D.json"
+    },
+    {
+      "transition_id": "TR_F438CF64A634D87A",
+      "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "child_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F438CF64A634D87A.json"
+    },
+    {
+      "transition_id": "TR_50312B6F7A4A0205",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_HEAVE060_ROLL090_CMP_06171530",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_50312B6F7A4A0205.json"
+    },
+    {
+      "transition_id": "TR_E8CBF8A8B902B297",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_HEAVE095_CMP_0612135839",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E8CBF8A8B902B297.json"
+    },
+    {
+      "transition_id": "TR_F5ED241FEAA048CF",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "child_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F5ED241FEAA048CF.json"
+    },
+    {
+      "transition_id": "TR_5EC9C77863A4130B",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "child_run_id": "RC_HEAVE_AF0_N15M_07041128",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5EC9C77863A4130B.json"
+    },
+    {
+      "transition_id": "TR_F6BFA9A7C8C955B4",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N16M_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F6BFA9A7C8C955B4.json"
+    },
+    {
+      "transition_id": "TR_C6ECBE8BA98CDC75",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N175M_0704221224",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C6ECBE8BA98CDC75.json"
+    },
+    {
+      "transition_id": "TR_42A89AF2C3F0DB46",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_42A89AF2C3F0DB46.json"
+    },
+    {
+      "transition_id": "TR_AF905FB5EA9E1D9C",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_AF905FB5EA9E1D9C.json"
+    },
+    {
+      "transition_id": "TR_B0E8544978F83F1C",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B0E8544978F83F1C.json"
+    },
+    {
+      "transition_id": "TR_0B20F487E8C64AA5",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0B20F487E8C64AA5.json"
+    },
+    {
+      "transition_id": "TR_25568F5AE09921AF",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_25568F5AE09921AF.json"
+    },
+    {
+      "transition_id": "TR_9BA23E88A8107290",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9BA23E88A8107290.json"
+    },
+    {
+      "transition_id": "TR_83D2E3BED69433AD",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_83D2E3BED69433AD.json"
+    },
+    {
+      "transition_id": "TR_6C9C5E53ED502635",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6C9C5E53ED502635.json"
+    },
+    {
+      "transition_id": "TR_39416E0AE70C50E9",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_39416E0AE70C50E9.json"
+    },
+    {
+      "transition_id": "TR_31D4F78EBF44C9D4",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_31D4F78EBF44C9D4.json"
+    },
+    {
+      "transition_id": "TR_444D2318F9364929",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_444D2318F9364929.json"
+    },
+    {
+      "transition_id": "TR_F4A47D9213DA5560",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F4A47D9213DA5560.json"
+    },
+    {
+      "transition_id": "TR_FEC65D20278A36DC",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_IC83_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FEC65D20278A36DC.json"
+    },
+    {
+      "transition_id": "TR_0C90B53B43A8CEA4",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N20M_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0C90B53B43A8CEA4.json"
+    },
+    {
+      "transition_id": "TR_E507D4E43607B93B",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "child_run_id": "RC_HEAVE_AF0_N2M_07041115",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E507D4E43607B93B.json"
+    },
+    {
+      "transition_id": "TR_D3A0278474F499E5",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N2M_REBASE_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D3A0278474F499E5.json"
+    },
+    {
+      "transition_id": "TR_C274556D242070B0",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_AF0_N40M_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C274556D242070B0.json"
+    },
+    {
+      "transition_id": "TR_0F9603B950BA988B",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "child_run_id": "RC_HEAVE_AF0_P2M_07041115",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0F9603B950BA988B.json"
+    },
+    {
+      "transition_id": "TR_D2C5850EA9340848",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_BL100_0704211242",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D2C5850EA9340848.json"
+    },
+    {
+      "transition_id": "TR_9CD80C4F957DBC70",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_BL50_0704212109",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9CD80C4F957DBC70.json"
+    },
+    {
+      "transition_id": "TR_285AA4B447112A14",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_BQ05X_0705241450",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_285AA4B447112A14.json"
+    },
+    {
+      "transition_id": "TR_FE516776BAF3CF16",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_HEAVE_BQ2X_0705235850",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FE516776BAF3CF16.json"
+    },
+    {
+      "transition_id": "TR_A5D9EBC0687C8D3A",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_HEAVE_02259Z0000_P1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A5D9EBC0687C8D3A.json"
+    },
+    {
+      "transition_id": "TR_66C3D9D07C3A0ECA",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_HEAVE_02259Z0000_S1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_66C3D9D07C3A0ECA.json"
+    },
+    {
+      "transition_id": "TR_9E9EEF2B1869C7CE",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_PITCH_04323Z0000_P1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_PITCH",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9E9EEF2B1869C7CE.json"
+    },
+    {
+      "transition_id": "TR_D1B0464DFCBF4048",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_PITCH_04323Z0000_S1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_PITCH",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D1B0464DFCBF4048.json"
+    },
+    {
+      "transition_id": "TR_83DBC500655E5ED2",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_00128Z0000_P1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_83DBC500655E5ED2.json"
+    },
+    {
+      "transition_id": "TR_B87DE2F43835A849",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_00128Z0000_S1",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B87DE2F43835A849.json"
+    },
+    {
+      "transition_id": "TR_4A77BBADCB83D964",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_00128Z0000_S3",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "hydrodyn_edit",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4A77BBADCB83D964.json"
+    },
+    {
+      "transition_id": "TR_0A4BE0656F7AE1A9",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_MEA0787_112112",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0A4BE0656F7AE1A9.json"
+    },
+    {
+      "transition_id": "TR_B020872001646916",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_MEA0834_114855",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B020872001646916.json"
+    },
+    {
+      "transition_id": "TR_C2EABFE51D612126",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_IMP_SURGE_MEA0865_113536",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C2EABFE51D612126.json"
+    },
+    {
+      "transition_id": "TR_12614B865880775F",
+      "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "child_run_id": "RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_12614B865880775F.json"
+    },
+    {
+      "transition_id": "TR_25730E9C2C12FF90",
+      "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "child_run_id": "RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_25730E9C2C12FF90.json"
+    },
+    {
+      "transition_id": "TR_39B17CEC37954756",
+      "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "child_run_id": "RC_LP_9E877C00D37E_YAW_20260707T020651Z0000",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_39B17CEC37954756.json"
+    },
+    {
+      "transition_id": "TR_AB225B04B6F19310",
+      "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+      "child_run_id": "RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_HEAVE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_AB225B04B6F19310.json"
+    },
+    {
+      "transition_id": "TR_BEB9C392E47EFB05",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_BEB9C392E47EFB05.json"
+    },
+    {
+      "transition_id": "TR_E28A2D4FB83E6259",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E28A2D4FB83E6259.json"
+    },
+    {
+      "transition_id": "TR_C6D51AB5997A40EF",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C6D51AB5997A40EF.json"
+    },
+    {
+      "transition_id": "TR_0A419FAEDB6B3FE1",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0A419FAEDB6B3FE1.json"
+    },
+    {
+      "transition_id": "TR_38CA4BAD03CA3E2B",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_38CA4BAD03CA3E2B.json"
+    },
+    {
+      "transition_id": "TR_9BD3A5AD4CD0C12B",
+      "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+      "child_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "GLOBAL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9BD3A5AD4CD0C12B.json"
+    },
+    {
+      "transition_id": "TR_A44A1B5EAB36C58B",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "child_run_id": "RC_ROLL_BQ8715_07041049",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A44A1B5EAB36C58B.json"
+    },
+    {
+      "transition_id": "TR_E98945A27723A043",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "child_run_id": "RC_ROLL_BQ873_07041043",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E98945A27723A043.json"
+    },
+    {
+      "transition_id": "TR_CF2C8234BCF840F0",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "child_run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CF2C8234BCF840F0.json"
+    },
+    {
+      "transition_id": "TR_EFDA19AF97FA734A",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N180K_IC177_CL5500_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_EFDA19AF97FA734A.json"
+    },
+    {
+      "transition_id": "TR_CCACE1AC17D2E25E",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N180K_IC177_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CCACE1AC17D2E25E.json"
+    },
+    {
+      "transition_id": "TR_654D24A9E578AD90",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N180K_IC177_UL1001_T600_0706",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_654D24A9E578AD90.json"
+    },
+    {
+      "transition_id": "TR_F8243D9544445368",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ075_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F8243D9544445368.json"
+    },
+    {
+      "transition_id": "TR_6930E8E52CA0AFB7",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ078_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6930E8E52CA0AFB7.json"
+    },
+    {
+      "transition_id": "TR_9ACA6F3FA0BF596E",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ0795_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9ACA6F3FA0BF596E.json"
+    },
+    {
+      "transition_id": "TR_D5BBB97CF3027909",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ079_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D5BBB97CF3027909.json"
+    },
+    {
+      "transition_id": "TR_30522CDC501CFB14",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ080_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_30522CDC501CFB14.json"
+    },
+    {
+      "transition_id": "TR_DED52E4F8EBA2E71",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ085_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_DED52E4F8EBA2E71.json"
+    },
+    {
+      "transition_id": "TR_868A6069B9D58315",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_BQ090_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_868A6069B9D58315.json"
+    },
+    {
+      "transition_id": "TR_8678399BC4B5621A",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M105B_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_8678399BC4B5621A.json"
+    },
+    {
+      "transition_id": "TR_E362D4BFD81B621F",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M1085_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E362D4BFD81B621F.json"
+    },
+    {
+      "transition_id": "TR_A055F51DD9E6BCEA",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_M1125_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A055F51DD9E6BCEA.json"
+    },
+    {
+      "transition_id": "TR_439FC5C750395898",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC178_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_439FC5C750395898.json"
+    },
+    {
+      "transition_id": "TR_AA89ADFA35B0C68E",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N190K_IC185_M105B_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_AA89ADFA35B0C68E.json"
+    },
+    {
+      "transition_id": "TR_CCA1FBBD2F0FCB8F",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N210K_IC180_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CCA1FBBD2F0FCB8F.json"
+    },
+    {
+      "transition_id": "TR_6138643E03E67577",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N250K_IC185_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6138643E03E67577.json"
+    },
+    {
+      "transition_id": "TR_94223C14961D3C9B",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N250K_IC2124_FULL_0705",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_94223C14961D3C9B.json"
+    },
+    {
+      "transition_id": "TR_2F2FBA96EE2C7130",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_CL2800_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2F2FBA96EE2C7130.json"
+    },
+    {
+      "transition_id": "TR_C46DD7BAA439F24B",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_CL5500_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C46DD7BAA439F24B.json"
+    },
+    {
+      "transition_id": "TR_7F53198217222407",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_CLN10K_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_7F53198217222407.json"
+    },
+    {
+      "transition_id": "TR_F240170D0E1606ED",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_FULL_0705",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F240170D0E1606ED.json"
+    },
+    {
+      "transition_id": "TR_54264B99A38499C0",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_UL10017_FULL_0706",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_54264B99A38499C0.json"
+    },
+    {
+      "transition_id": "TR_3D97EE4FE12A83E3",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_UL1002_FULL_0706",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3D97EE4FE12A83E3.json"
+    },
+    {
+      "transition_id": "TR_62FF76225C0AA4E6",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N50K_UL1005_FULL_0706",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_62FF76225C0AA4E6.json"
+    },
+    {
+      "transition_id": "TR_B39B3C0B6AFA3625",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N550K_IC215_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B39B3C0B6AFA3625.json"
+    },
+    {
+      "transition_id": "TR_C13A3AF1B5549FFF",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_IC195_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C13A3AF1B5549FFF.json"
+    },
+    {
+      "transition_id": "TR_316BFEA2A520AD4E",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_IC205_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_316BFEA2A520AD4E.json"
+    },
+    {
+      "transition_id": "TR_12CB3315CCA351CA",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_IC205_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_12CB3315CCA351CA.json"
+    },
+    {
+      "transition_id": "TR_FD69E402D967CB0D",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_IC205_T600_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FD69E402D967CB0D.json"
+    },
+    {
+      "transition_id": "TR_6EABE97A1F47995F",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_IC232_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6EABE97A1F47995F.json"
+    },
+    {
+      "transition_id": "TR_D05B51714B9E7391",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_AF0_N650K_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D05B51714B9E7391.json"
+    },
+    {
+      "transition_id": "TR_365563D1DF55AF02",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_CL0_0704212954",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_365563D1DF55AF02.json"
+    },
+    {
+      "transition_id": "TR_123242C701A82305",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_CL5K_0704213825",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_123242C701A82305.json"
+    },
+    {
+      "transition_id": "TR_31939A8EC91DCA24",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_EA098_FULL_0705211940",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_31939A8EC91DCA24.json"
+    },
+    {
+      "transition_id": "TR_D654BF27232842DA",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_EA102_FULL_0705220000",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_D654BF27232842DA.json"
+    },
+    {
+      "transition_id": "TR_583750E55B6BF5D8",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_EQIC90_0704231943",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_583750E55B6BF5D8.json"
+    },
+    {
+      "transition_id": "TR_4157C3EF65E6F3A7",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_IC16715_CL8K_0704214734",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4157C3EF65E6F3A7.json"
+    },
+    {
+      "transition_id": "TR_829FFA2216931201",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_IC2032_AF0_N50K_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_829FFA2216931201.json"
+    },
+    {
+      "transition_id": "TR_2831692C330CAD5C",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_IC2032_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2831692C330CAD5C.json"
+    },
+    {
+      "transition_id": "TR_4740D0A352B32347",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA110",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_4740D0A352B32347.json"
+    },
+    {
+      "transition_id": "TR_0DA9871F738931AA",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA118",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0DA9871F738931AA.json"
+    },
+    {
+      "transition_id": "TR_FA17727511EE8794",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA120",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FA17727511EE8794.json"
+    },
+    {
+      "transition_id": "TR_BFCE59350845D8CE",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA130",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_BFCE59350845D8CE.json"
+    },
+    {
+      "transition_id": "TR_69E333712B434AC7",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA15",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_69E333712B434AC7.json"
+    },
+    {
+      "transition_id": "TR_445B998BDF3D52B5",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA20",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_445B998BDF3D52B5.json"
+    },
+    {
+      "transition_id": "TR_5382B0ACC720915F",
+      "parent_run_id": "RC_AMP_SH_06121500",
+      "child_run_id": "RC_SURGE_IC70_EA30",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5382B0ACC720915F.json"
+    },
+    {
+      "transition_id": "TR_00D943FDFC6EF596",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_SURGE_IC72_CL0_07040912",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_00D943FDFC6EF596.json"
+    },
+    {
+      "transition_id": "TR_66B2E066F4D6B0E9",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_SURGE_IC72_CL4K_07040924",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_66B2E066F4D6B0E9.json"
+    },
+    {
+      "transition_id": "TR_E012B7F1CA74CECF",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_SURGE_IC72_EA0998_07040918",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E012B7F1CA74CECF.json"
+    },
+    {
+      "transition_id": "TR_5555CB4F1FBEE438",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "child_run_id": "RC_SURGE_SG1019_BL420_07040900",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5555CB4F1FBEE438.json"
+    },
+    {
+      "transition_id": "TR_9654ABE9C90FE80B",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "child_run_id": "RC_SURGE_SG1019_BL450_07040846",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9654ABE9C90FE80B.json"
+    },
+    {
+      "transition_id": "TR_A6F0F0FA9B93CD99",
+      "parent_run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "child_run_id": "RC_SURGE_SG1019_EA099_07040831",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_SURGE",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A6F0F0FA9B93CD99.json"
+    },
+    {
+      "transition_id": "TR_FEF0C78D0B49747D",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL0995_0705100839",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FEF0C78D0B49747D.json"
+    },
+    {
+      "transition_id": "TR_6824CC0D53605C60",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL0995_FULL_0705101534",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6824CC0D53605C60.json"
+    },
+    {
+      "transition_id": "TR_0DD2FBE9C056C0D4",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL1001_FULL_0705222420",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0DD2FBE9C056C0D4.json"
+    },
+    {
+      "transition_id": "TR_38E0BC480B716045",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL1002_BL600K_0705234300",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_38E0BC480B716045.json"
+    },
+    {
+      "transition_id": "TR_0829EF0AA82BBD95",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL1002_CLN10K_0705232100",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_0829EF0AA82BBD95.json"
+    },
+    {
+      "transition_id": "TR_85BABD74C1A1264A",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL1002_FULL_0705230510",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_85BABD74C1A1264A.json"
+    },
+    {
+      "transition_id": "TR_CB125A1286BCCAE5",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL1005_FULL_0705102530",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CB125A1286BCCAE5.json"
+    },
+    {
+      "transition_id": "TR_5C0D9536194BF98D",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL12_1005_FIX_0705210753",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_5C0D9536194BF98D.json"
+    },
+    {
+      "transition_id": "TR_6E0C00F254C997EA",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SURGE_UL12_1005_FULL_0705205646",
+      "parameter_group": "mooring",
+      "action_type": "mooring_probe",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_6E0C00F254C997EA.json"
+    },
+    {
+      "transition_id": "TR_3DE8B3907D1C1E28",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N15K_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3DE8B3907D1C1E28.json"
+    },
+    {
+      "transition_id": "TR_32A9759D37D44225",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N450K_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_32A9759D37D44225.json"
+    },
+    {
+      "transition_id": "TR_05AB6EDA50015C44",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_BQ103X_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_05AB6EDA50015C44.json"
+    },
+    {
+      "transition_id": "TR_52A41306982D3599",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_BQ110X_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_52A41306982D3599.json"
+    },
+    {
+      "transition_id": "TR_90565D9A281C5DA0",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_BQ118X_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_90565D9A281C5DA0.json"
+    },
+    {
+      "transition_id": "TR_3EFFA30B4C48EEA0",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_BQ125X_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3EFFA30B4C48EEA0.json"
+    },
+    {
+      "transition_id": "TR_11AD5AE2BAC24A95",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_BQ2X_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_11AD5AE2BAC24A95.json"
+    },
+    {
+      "transition_id": "TR_51738DAA0CB98CEC",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_51738DAA0CB98CEC.json"
+    },
+    {
+      "transition_id": "TR_FC502E21592588F8",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_IC1225_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FC502E21592588F8.json"
+    },
+    {
+      "transition_id": "TR_2F1B49312B78B890",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N50K_IC1260_FULL_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_2F1B49312B78B890.json"
+    },
+    {
+      "transition_id": "TR_B70AA7B5C2BB8907",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_AF0_N750K_T450_0706",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_B70AA7B5C2BB8907.json"
+    },
+    {
+      "transition_id": "TR_CB4ADDDE27E24B72",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_CL0_0704204604",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CB4ADDDE27E24B72.json"
+    },
+    {
+      "transition_id": "TR_9BE709DE3AD17C32",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_CL0_BL300_0704205458",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_9BE709DE3AD17C32.json"
+    },
+    {
+      "transition_id": "TR_C1A0499361F88FA6",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_CLN14K_0705243600",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_C1A0499361F88FA6.json"
+    },
+    {
+      "transition_id": "TR_1905CC4ED1533D14",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_CLN8K_0704210327",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_1905CC4ED1533D14.json"
+    },
+    {
+      "transition_id": "TR_CC508D8805CDD2E2",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_SWAY_IC1230_0704215651",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_CC508D8805CDD2E2.json"
+    },
+    {
+      "transition_id": "TR_509150D5AE8CA2E3",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_SWAY_TTDSS_N18_07040812",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_509150D5AE8CA2E3.json"
+    },
+    {
+      "transition_id": "TR_3C6EA637584953FE",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_SWAY_TTDSS_N1_07040323",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3C6EA637584953FE.json"
+    },
+    {
+      "transition_id": "TR_3E67E1EF45E18A96",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_SWAY_TTDSS_N22_07040812",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3E67E1EF45E18A96.json"
+    },
+    {
+      "transition_id": "TR_E7851EE3FA118625",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_SWAY_TTDSS_N2_07040305",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E7851EE3FA118625.json"
+    },
+    {
+      "transition_id": "TR_423B733B37E91444",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_SWAY_TTDSS_N3_07040323",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_423B733B37E91444.json"
+    },
+    {
+      "transition_id": "TR_A550A0F2C6F1B467",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "child_run_id": "RC_SWAY_TTDSS_P2_07040305",
+      "parameter_group": "baseline",
+      "action_type": "unknown",
+      "target_dof": "FD_SWAY",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A550A0F2C6F1B467.json"
+    },
+    {
+      "transition_id": "TR_144DD267F705BAF6",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC83_0704231051",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_144DD267F705BAF6.json"
+    },
+    {
+      "transition_id": "TR_DBD88A866531C9F8",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC87_0704223546",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_DBD88A866531C9F8.json"
+    },
+    {
+      "transition_id": "TR_20E65500BF184C35",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC87_CL105_0704224441",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_20E65500BF184C35.json"
+    },
+    {
+      "transition_id": "TR_E0A402BE49C91D5F",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC87_CL105_BL100_0704230212",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E0A402BE49C91D5F.json"
+    },
+    {
+      "transition_id": "TR_261CAC077F895826",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC87_CL105_BQ2X_0704225331",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_261CAC077F895826.json"
+    },
+    {
+      "transition_id": "TR_F000145ED0D3DAE7",
+      "parent_run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "child_run_id": "RC_YAW_EQIC_0704222630",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_ROLL",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_F000145ED0D3DAE7.json"
+    },
+    {
+      "transition_id": "TR_FF25205CC6C8248D",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_YAW_IC_Y15052_07040949",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_FF25205CC6C8248D.json"
+    },
+    {
+      "transition_id": "TR_A95D32C5865270D3",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_YAW_IC_Y15056_07040941",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_A95D32C5865270D3.json"
+    },
+    {
+      "transition_id": "TR_E4AB3DA3BE314C4F",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_YAW_IC_Y1505_07040931",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_E4AB3DA3BE314C4F.json"
+    },
+    {
+      "transition_id": "TR_3274A3589AA00013",
+      "parent_run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "child_run_id": "RC_YAW_IC_Y1508_07040931",
+      "parameter_group": "diagonal_hydro",
+      "action_type": "signed_ic_bquad",
+      "target_dof": "FD_YAW",
+      "path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/TR_3274A3589AA00013.json"
+    }
+  ]
+}

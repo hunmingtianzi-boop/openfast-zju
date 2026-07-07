@@ -1,0 +1,651 @@
+{
+  "run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+  "parent_id": "QUALITY_GATE_PAPER36",
+  "stage": "offline_import",
+  "parameter_group": "baseline",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ]
+    },
+    "changed_parameters": ""
+  },
+  "input_hash": "RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_SURGE": {
+        "run_id": "RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 73.447738,
+        "reference_period": 82.763612,
+        "period_error_pct": 11.256003,
+        "zeta": 0.0086445116,
+        "reference_zeta": 0.020242479,
+        "nrmse": 0.19100307,
+        "j_dof": 0.19100307,
+        "j_shape": 1.736505,
+        "envelope_error": 0.38023557,
+        "ler_error": 1.6722015,
+        "fp_error": 0.058797878,
+        "start_amplitude_error": null,
+        "leak": {
+          "Sway": 0.09958462396391045,
+          "Heave": 0.1506206567791624,
+          "Roll": 0.19623457193236082,
+          "Pitch": 0.19252577883011227,
+          "Yaw": 0.24557169318746438
+        },
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        },
+        "morph": {
+          "J_wave": 0.19100306645174162,
+          "J_shape": 1.73650501860652,
+          "env_err": 0.38023556688713633,
+          "fp_err": 0.05879787776816798,
+          "LERD": 0.003995852928715648,
+          "LERM": 0.010677724066267841,
+          "LER_err": 1.6722014690615474,
+          "Tend": 740.9499999999999
+        }
+      },
+      "FD_SWAY": {
+        "run_id": "RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 79.6975,
+        "reference_period": 79.430459,
+        "period_error_pct": 0.33619512,
+        "zeta": 0.014835088,
+        "reference_zeta": 0.023182848,
+        "nrmse": 0.18680809,
+        "j_dof": 0.18680809,
+        "j_shape": 1.6111874,
+        "envelope_error": 0.36455892,
+        "ler_error": 0.43219327,
+        "fp_error": 0.10040307,
+        "start_amplitude_error": null,
+        "leak": {
+          "Surge": 0.24253690890641216,
+          "Heave": 0.2180346334450015,
+          "Roll": 0.22683506273478127,
+          "Pitch": 0.1507262440704654,
+          "Yaw": 0.39752680476834956
+        },
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        },
+        "morph": {
+          "J_wave": 0.18680809321955733,
+          "J_shape": 1.6111873580216733,
+          "env_err": 0.3645589234601821,
+          "fp_err": 0.10040307107122881,
+          "LERD": 0.008732298675839493,
+          "LERM": 0.012506339373558942,
+          "LER_err": 0.432193267525475,
+          "Tend": 899.8
+        }
+      },
+      "FD_HEAVE": {
+        "run_id": "RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 21.7,
+        "reference_period": 20.719426,
+        "period_error_pct": 4.7326329,
+        "zeta": 0.0026388732,
+        "reference_zeta": 0.0063011469,
+        "nrmse": 0.11350777,
+        "j_dof": 0.11350777,
+        "j_shape": 1.6911478,
+        "envelope_error": 0.47966807,
+        "ler_error": 3.3085281,
+        "fp_error": 0.38829902,
+        "start_amplitude_error": null,
+        "leak": {
+          "Surge": 1.3257990051623485,
+          "Sway": 0.34413134887989577,
+          "Roll": 1.3862644917740636,
+          "Pitch": 0.6966793866418415,
+          "Yaw": 0.7812968249131615
+        },
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        },
+        "morph": {
+          "J_wave": 0.11350777062902036,
+          "J_shape": 1.6911478283680104,
+          "env_err": 0.4796680729260148,
+          "fp_err": 0.38829902454899284,
+          "LERD": 0.002003839225521178,
+          "LERM": 0.00863359768875529,
+          "LER_err": 3.30852813878308,
+          "Tend": 481.07000000000005
+        }
+      },
+      "FD_ROLL": {
+        "run_id": "RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 31.635965,
+        "reference_period": 31.040392,
+        "period_error_pct": 1.9187014,
+        "zeta": 0.011375854,
+        "reference_zeta": 0.02049542,
+        "nrmse": 0.03904948,
+        "j_dof": 0.03904948,
+        "j_shape": 1.0350109,
+        "envelope_error": 0.19039196,
+        "ler_error": 1.3015898,
+        "fp_error": 0.23737479,
+        "start_amplitude_error": null,
+        "leak": {
+          "Surge": 0.28982106395987406,
+          "Sway": 0.4865682556120836,
+          "Heave": 0.24709133147040696,
+          "Pitch": 0.1552011263099447,
+          "Yaw": 0.21822524725097425
+        },
+        "reference_leak": {
+          "Surge": 0.13004178340036146,
+          "Sway": 0.2811231135878405,
+          "Heave": 0.032594922860306255,
+          "Pitch": 0.24847735333665472,
+          "Yaw": 0.10705157585119539
+        },
+        "morph": {
+          "J_wave": 0.03904947970872835,
+          "J_shape": 1.0350109388523352,
+          "env_err": 0.19039195571492942,
+          "fp_err": 0.2373747947129255,
+          "LERD": 0.0014126079797959585,
+          "LERM": 0.0032512440929364293,
+          "LER_err": 1.3015897824717435,
+          "Tend": 773.8700000000001
+        }
+      },
+      "FD_PITCH": {
+        "run_id": "RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 31.807527,
+        "reference_period": 30.598882,
+        "period_error_pct": 3.9499629,
+        "zeta": 0.014882013,
+        "reference_zeta": 0.025569995,
+        "nrmse": 0.22047679,
+        "j_dof": 0.22047679,
+        "j_shape": 1.4517646,
+        "envelope_error": 0.16199491,
+        "ler_error": 0.46411207,
+        "fp_error": 0.023297397,
+        "start_amplitude_error": null,
+        "leak": {
+          "Surge": 0.4436692394446724,
+          "Sway": 0.1828424282797745,
+          "Heave": 0.32413580080628784,
+          "Roll": 0.44250051168918947,
+          "Yaw": 0.3678844958153312
+        },
+        "reference_leak": {
+          "Surge": 0.3652553627158409,
+          "Sway": 0.11511580438120428,
+          "Heave": 0.09709203619753709,
+          "Roll": 0.24451383619627762,
+          "Yaw": 0.12733165013806358
+        },
+        "morph": {
+          "J_wave": 0.22047678966734566,
+          "J_shape": 1.451764560966166,
+          "env_err": 0.16199491100525462,
+          "fp_err": 0.023297397123887512,
+          "LERD": 0.013125939777430977,
+          "LERM": 0.007034032710075312,
+          "LER_err": 0.4641120689758322,
+          "Tend": 484.68
+        }
+      },
+      "FD_YAW": {
+        "run_id": "RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE",
+        "metric_status": "PASS",
+        "period": 51.584377,
+        "reference_period": 50.687273,
+        "period_error_pct": 1.7698804,
+        "zeta": 0.014419733,
+        "reference_zeta": 0.024700713,
+        "nrmse": 0.19062326,
+        "j_dof": 0.19062326,
+        "j_shape": 1.9622106,
+        "envelope_error": 0.22971802,
+        "ler_error": 1.6170478,
+        "fp_error": 0.11083667,
+        "start_amplitude_error": null,
+        "leak": {
+          "Surge": 0.44959856933767023,
+          "Sway": 0.273795316230218,
+          "Heave": 0.19339325691750453,
+          "Roll": 0.24577407989259015,
+          "Pitch": 0.19679297885705857
+        },
+        "reference_leak": {
+          "Surge": 0.1667131756781034,
+          "Sway": 0.06151291011602063,
+          "Heave": 0.00833951391833249,
+          "Roll": 0.08748756161027149,
+          "Pitch": 0.06650130575791667
+        },
+        "morph": {
+          "J_wave": 0.19062325880341568,
+          "J_shape": 1.962210581448738,
+          "env_err": 0.2297180211894801,
+          "fp_err": 0.11083667491549014,
+          "LERD": 0.010254479339074602,
+          "LERM": 0.026836462100685667,
+          "LER_err": 1.6170477518468995,
+          "Tend": 628.0
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.09958462396391045,
+        "Heave": 0.1506206567791624,
+        "Roll": 0.19623457193236082,
+        "Pitch": 0.19252577883011227,
+        "Yaw": 0.24557169318746438
+      },
+      "FD_SWAY": {
+        "Surge": 0.24253690890641216,
+        "Heave": 0.2180346334450015,
+        "Roll": 0.22683506273478127,
+        "Pitch": 0.1507262440704654,
+        "Yaw": 0.39752680476834956
+      },
+      "FD_HEAVE": {
+        "Surge": 1.3257990051623485,
+        "Sway": 0.34413134887989577,
+        "Roll": 1.3862644917740636,
+        "Pitch": 0.6966793866418415,
+        "Yaw": 0.7812968249131615
+      },
+      "FD_ROLL": {
+        "Surge": 0.28982106395987406,
+        "Sway": 0.4865682556120836,
+        "Heave": 0.24709133147040696,
+        "Pitch": 0.1552011263099447,
+        "Yaw": 0.21822524725097425
+      },
+      "FD_PITCH": {
+        "Surge": 0.4436692394446724,
+        "Sway": 0.1828424282797745,
+        "Heave": 0.32413580080628784,
+        "Roll": 0.44250051168918947,
+        "Yaw": 0.3678844958153312
+      },
+      "FD_YAW": {
+        "Surge": 0.44959856933767023,
+        "Sway": 0.273795316230218,
+        "Heave": 0.19339325691750453,
+        "Roll": 0.24577407989259015,
+        "Pitch": 0.19679297885705857
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.15896017090110728,
+        "Heave": 0.01968059507325694,
+        "Roll": 0.03291602612100948,
+        "Pitch": 0.10723769417504003,
+        "Yaw": 0.03816688415976064
+      },
+      "FD_SWAY": {
+        "Surge": 0.09911156186697814,
+        "Heave": 0.018040555839837675,
+        "Roll": 0.11940848210435888,
+        "Pitch": 0.0384504331662194,
+        "Yaw": 0.1166189583607766
+      },
+      "FD_HEAVE": {
+        "Surge": 0.694133163574395,
+        "Sway": 0.3830351608671329,
+        "Roll": 0.23088104002761986,
+        "Pitch": 0.08142292151490593,
+        "Yaw": 0.09687871817782223
+      },
+      "FD_ROLL": {
+        "Surge": 0.13004178340036146,
+        "Sway": 0.2811231135878405,
+        "Heave": 0.032594922860306255,
+        "Pitch": 0.24847735333665472,
+        "Yaw": 0.10705157585119539
+      },
+      "FD_PITCH": {
+        "Surge": 0.3652553627158409,
+        "Sway": 0.11511580438120428,
+        "Heave": 0.09709203619753709,
+        "Roll": 0.24451383619627762,
+        "Yaw": 0.12733165013806358
+      },
+      "FD_YAW": {
+        "Surge": 0.1667131756781034,
+        "Sway": 0.06151291011602063,
+        "Heave": 0.00833951391833249,
+        "Roll": 0.08748756161027149,
+        "Pitch": 0.06650130575791667
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_SURGE": {
+          "run_id": "RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_surge_9d3daf69.fst",
+          "input_dir": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_surge_9d3daf69.out",
+          "stdout_path": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_surge_9d3daf69.out"
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_sway_ac064de6.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_sway_ac064de6.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_sway_ac064de6.out"
+        },
+        "FD_HEAVE": {
+          "run_id": "RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_heave_adcda246.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_heave_adcda246.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_heave_adcda246.out"
+        },
+        "FD_ROLL": {
+          "run_id": "RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_roll_38d48f80.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_roll_38d48f80.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_roll_38d48f80.out"
+        },
+        "FD_PITCH": {
+          "run_id": "RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_pitch_e18abe27.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_pitch_e18abe27.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_pitch_e18abe27.out"
+        },
+        "FD_YAW": {
+          "run_id": "RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_yaw_fe6ed2b1.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_yaw_fe6ed2b1.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_yaw_fe6ed2b1.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 1.4147137604008149,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_SURGE": {
+        "score": 2.326021605862155,
+        "period_error_pct": 11.256003,
+        "period_error_abs_pct": 11.256003,
+        "envelope_error": 0.38023557,
+        "ler_error": 1.6722015,
+        "fp_error": 0.058797878,
+        "zeta_error_ratio": 0.5729519294548855,
+        "closed": false
+      },
+      "FD_SWAY": {
+        "score": 0.5596269674802448,
+        "period_error_pct": 0.33619512,
+        "period_error_abs_pct": 0.33619512,
+        "envelope_error": 0.36455892,
+        "ler_error": 0.43219327,
+        "fp_error": 0.10040307,
+        "zeta_error_ratio": 0.360083454802447,
+        "closed": true
+      },
+      "FD_HEAVE": {
+        "score": 2.557047553244336,
+        "period_error_pct": 4.7326329,
+        "period_error_abs_pct": 4.7326329,
+        "envelope_error": 0.47966807,
+        "ler_error": 3.3085281,
+        "fp_error": 0.38829902,
+        "zeta_error_ratio": 0.5812074782766928,
+        "closed": false
+      },
+      "FD_ROLL": {
+        "score": 1.1057873454461695,
+        "period_error_pct": 1.9187014,
+        "period_error_abs_pct": 1.9187014,
+        "envelope_error": 0.19039196,
+        "ler_error": 1.3015898,
+        "fp_error": 0.23737479,
+        "zeta_error_ratio": 0.4449562877950294,
+        "closed": false
+      },
+      "FD_PITCH": {
+        "score": 0.8089340702118539,
+        "period_error_pct": 3.9499629,
+        "period_error_abs_pct": 3.9499629,
+        "envelope_error": 0.16199491,
+        "ler_error": 0.46411207,
+        "fp_error": 0.023297397,
+        "zeta_error_ratio": 0.4179892096185393,
+        "closed": false
+      },
+      "FD_YAW": {
+        "score": 1.13086502016013,
+        "period_error_pct": 1.7698804,
+        "period_error_abs_pct": 1.7698804,
+        "envelope_error": 0.22971802,
+        "ler_error": 1.6170478,
+        "fp_error": 0.11083667,
+        "zeta_error_ratio": 0.41622199326796755,
+        "closed": false
+      }
+    },
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+      "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969"
+    ],
+    "predicate_results": [
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+      "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "artifact_policy": "retain_full",
+  "created_at": "2026-07-07T13:59:00+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_heave_adcda246.fst",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_pitch_e18abe27.fst",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_roll_38d48f80.fst",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_sway_ac064de6.fst",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+    "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_yaw_fe6ed2b1.fst",
+    "04_current_runs/runs/RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE/output",
+    "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input",
+    "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/input/qg_r001_center_surge_9d3daf69.fst",
+    "04_current_runs/runs/RUN_0002_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+      "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}

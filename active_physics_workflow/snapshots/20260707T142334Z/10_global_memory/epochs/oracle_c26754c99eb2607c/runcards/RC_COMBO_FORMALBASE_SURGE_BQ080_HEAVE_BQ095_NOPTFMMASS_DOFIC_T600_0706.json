@@ -1,0 +1,686 @@
+{
+  "run_id": "RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+  "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+  "stage": "offline_import",
+  "parameter_group": "diagonal_hydro",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "AddF0",
+        "i": 0,
+        "value": -190000.0
+      },
+      {
+        "block": "BQuad",
+        "i": 0,
+        "j": 0,
+        "value": 800000.0
+      },
+      {
+        "block": "AddF0",
+        "i": 2,
+        "value": -20000000.0
+      },
+      {
+        "block": "BLin",
+        "i": 2,
+        "j": 2,
+        "value": 100000.0
+      },
+      {
+        "block": "BQuad",
+        "i": 2,
+        "j": 2,
+        "value": 6270000.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": 600,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+        "FD_ROLL": "ROLL_BQ8715_07041049",
+        "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+        "FD_YAW": "YAW_IC_Y15052_07040949"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 0.9683333333333334,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -16.2507835,
+        "FD_SWAY": -12.08792,
+        "FD_HEAVE": -4.474818,
+        "FD_ROLL": 16.89065606,
+        "FD_PITCH": -9.678683455,
+        "FD_YAW": -15.052
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "dof_initial_conditions": {
+        "FD_SURGE": {
+          "Surge": -17.8
+        },
+        "FD_HEAVE": {
+          "Heave": -8.3
+        }
+      }
+    },
+    "changed_parameters": "HydroDyn.AddF0[0];HydroDyn.BQuad[0,0];HydroDyn.AddF0[2];HydroDyn.BLin[2,2];HydroDyn.BQuad[2,2];IC.FD_HEAVE.Heave;IC.FD_SURGE.Surge;FST.TMax"
+  },
+  "input_hash": "RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_SURGE": {
+        "run_id": "RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 81.552459,
+        "reference_period": 82.763612,
+        "period_error_pct": 1.463389,
+        "zeta": 0.026997939,
+        "reference_zeta": 0.020242479,
+        "nrmse": 0.026892476,
+        "j_dof": 0.026892476,
+        "j_shape": 0.46247875,
+        "envelope_error": 0.27711431,
+        "ler_error": 0.056242269,
+        "fp_error": 0.073150903,
+        "start_amplitude_error": 0.10542159,
+        "leak": {
+          "Sway": 0.1363667970645442,
+          "Heave": 0.009200463826342245,
+          "Roll": 0.18041790744487496,
+          "Pitch": 0.06813128660127896,
+          "Yaw": 0.09634413002171947
+        },
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        },
+        "morph": {
+          "J_wave": 0.026892476303557334,
+          "J_shape": 0.46247874768814934,
+          "env_err": 0.2771143063308711,
+          "fp_err": 0.0731509030296145,
+          "LERD": 0.005620400769700252,
+          "LERM": 0.005936504859255579,
+          "LER_err": 0.056242268569076694,
+          "Tend": 599.8
+        }
+      },
+      "FD_SWAY": {
+        "run_id": "RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 81.368184,
+        "reference_period": 79.430459,
+        "period_error_pct": 2.4395244,
+        "zeta": 0.034790332,
+        "reference_zeta": 0.023182848,
+        "nrmse": 0.056371739,
+        "j_dof": 0.056371739,
+        "j_shape": 0.99406063,
+        "envelope_error": 0.25770475,
+        "ler_error": 0.68301283,
+        "fp_error": 0.033112493,
+        "start_amplitude_error": 0.023090821,
+        "leak": {
+          "Surge": 0.2089718378788623,
+          "Heave": 0.011028459142477381,
+          "Roll": 0.2499773478658424,
+          "Pitch": 0.15855472658252537,
+          "Yaw": 0.38024951638795357
+        },
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        },
+        "morph": {
+          "J_wave": 0.05637173917584612,
+          "J_shape": 0.9940606283915853,
+          "env_err": 0.25770474918218994,
+          "fp_err": 0.03311249278070217,
+          "LERD": 0.018176532497842346,
+          "LERM": 0.005761727527979549,
+          "LER_err": 0.6830128337919513,
+          "Tend": 599.8
+        }
+      },
+      "FD_HEAVE": {
+        "run_id": "RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 20.89255,
+        "reference_period": 20.719426,
+        "period_error_pct": 0.83556537,
+        "zeta": 0.0016737175,
+        "reference_zeta": 0.0063011469,
+        "nrmse": 0.021026889,
+        "j_dof": 0.021026889,
+        "j_shape": 0.24988253,
+        "envelope_error": 0.33072316,
+        "ler_error": 0.11174908,
+        "fp_error": 0.037481122,
+        "start_amplitude_error": 0.0041934666,
+        "leak": {
+          "Surge": 0.7658786185530961,
+          "Sway": 0.49667899642710184,
+          "Roll": 0.9392306312795109,
+          "Pitch": 0.6130663588395466,
+          "Yaw": 0.28621784527886734
+        },
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        },
+        "morph": {
+          "J_wave": 0.021026888557395734,
+          "J_shape": 0.2498825339619033,
+          "env_err": 0.33072316206209895,
+          "fp_err": 0.03748112220895861,
+          "LERD": 0.002003839225521178,
+          "LERM": 0.0022277664193689453,
+          "LER_err": 0.11174908196016882,
+          "Tend": 481.07000000000005
+        }
+      },
+      "FD_ROLL": {
+        "run_id": "RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 31.61,
+        "reference_period": 31.040392,
+        "period_error_pct": 1.8350526,
+        "zeta": 0.019329688,
+        "reference_zeta": 0.02049542,
+        "nrmse": 0.041135548,
+        "j_dof": 0.041135548,
+        "j_shape": 0.94156146,
+        "envelope_error": 0.21505423,
+        "ler_error": 0.2258348,
+        "fp_error": 0.22627623,
+        "start_amplitude_error": 0.19359381,
+        "leak": {
+          "Surge": 0.16951241051061466,
+          "Sway": 0.41494446118279626,
+          "Heave": 0.006202646085986776,
+          "Pitch": 0.1722299885386404,
+          "Yaw": 0.13773451224704408
+        },
+        "reference_leak": {
+          "Surge": 0.13004178340036146,
+          "Sway": 0.2811231135878405,
+          "Heave": 0.032594922860306255,
+          "Pitch": 0.24847735333665472,
+          "Yaw": 0.10705157585119539
+        },
+        "morph": {
+          "J_wave": 0.04113554779551747,
+          "J_shape": 0.9415614585935785,
+          "env_err": 0.21505423467926063,
+          "fp_err": 0.22627623230749117,
+          "LERD": 0.003845088241676106,
+          "LERM": 0.004713442982001313,
+          "LER_err": 0.22583480163427497,
+          "Tend": 599.8
+        }
+      },
+      "FD_PITCH": {
+        "run_id": "RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 30.657441,
+        "reference_period": 30.598882,
+        "period_error_pct": 0.19137596,
+        "zeta": 0.020701346,
+        "reference_zeta": 0.025569995,
+        "nrmse": 0.013301788,
+        "j_dof": 0.013301788,
+        "j_shape": 0.18028402,
+        "envelope_error": 0.1312298,
+        "ler_error": 0.53925882,
+        "fp_error": 0.21039616,
+        "start_amplitude_error": 0.17029393,
+        "leak": {
+          "Surge": 0.595851723148743,
+          "Sway": 0.13728159339532392,
+          "Heave": 0.029565210969041612,
+          "Roll": 0.3499523548424739,
+          "Yaw": 0.36982849837107934
+        },
+        "reference_leak": {
+          "Surge": 0.3652553627158409,
+          "Sway": 0.11511580438120428,
+          "Heave": 0.09709203619753709,
+          "Roll": 0.24451383619627762,
+          "Yaw": 0.12733165013806358
+        },
+        "morph": {
+          "J_wave": 0.013301788197127067,
+          "J_shape": 0.18028401745272932,
+          "env_err": 0.13122980248923682,
+          "fp_err": 0.21039616199815306,
+          "LERD": 0.013125939777430977,
+          "LERM": 0.020204218553902135,
+          "LER_err": 0.5392588185298323,
+          "Tend": 484.68
+        }
+      },
+      "FD_YAW": {
+        "run_id": "RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+        "metric_status": "PASS",
+        "period": 51.045675,
+        "reference_period": 50.687273,
+        "period_error_pct": 0.70708443,
+        "zeta": 0.0213001,
+        "reference_zeta": 0.024700713,
+        "nrmse": 0.026098279,
+        "j_dof": 0.026098279,
+        "j_shape": 0.40552496,
+        "envelope_error": 0.24289752,
+        "ler_error": 3.508498,
+        "fp_error": 0.166952,
+        "start_amplitude_error": 0.20492117,
+        "leak": {
+          "Surge": 0.4665131422896465,
+          "Sway": 0.24553504989655484,
+          "Heave": 0.023065396847528372,
+          "Roll": 0.2664276763536802,
+          "Pitch": 0.1542494676811537
+        },
+        "reference_leak": {
+          "Surge": 0.1667131756781034,
+          "Sway": 0.06151291011602063,
+          "Heave": 0.00833951391833249,
+          "Roll": 0.08748756161027149,
+          "Pitch": 0.06650130575791667
+        },
+        "morph": {
+          "J_wave": 0.026098278794876976,
+          "J_shape": 0.40552496039880964,
+          "env_err": 0.2428975222835887,
+          "fp_err": 0.16695200068069846,
+          "LERD": 0.011551298356478529,
+          "LERM": 0.052079005575178555,
+          "LER_err": 3.508498003254337,
+          "Tend": 599.8
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.1363667970645442,
+        "Heave": 0.009200463826342245,
+        "Roll": 0.18041790744487496,
+        "Pitch": 0.06813128660127896,
+        "Yaw": 0.09634413002171947
+      },
+      "FD_SWAY": {
+        "Surge": 0.2089718378788623,
+        "Heave": 0.011028459142477381,
+        "Roll": 0.2499773478658424,
+        "Pitch": 0.15855472658252537,
+        "Yaw": 0.38024951638795357
+      },
+      "FD_HEAVE": {
+        "Surge": 0.7658786185530961,
+        "Sway": 0.49667899642710184,
+        "Roll": 0.9392306312795109,
+        "Pitch": 0.6130663588395466,
+        "Yaw": 0.28621784527886734
+      },
+      "FD_ROLL": {
+        "Surge": 0.16951241051061466,
+        "Sway": 0.41494446118279626,
+        "Heave": 0.006202646085986776,
+        "Pitch": 0.1722299885386404,
+        "Yaw": 0.13773451224704408
+      },
+      "FD_PITCH": {
+        "Surge": 0.595851723148743,
+        "Sway": 0.13728159339532392,
+        "Heave": 0.029565210969041612,
+        "Roll": 0.3499523548424739,
+        "Yaw": 0.36982849837107934
+      },
+      "FD_YAW": {
+        "Surge": 0.4665131422896465,
+        "Sway": 0.24553504989655484,
+        "Heave": 0.023065396847528372,
+        "Roll": 0.2664276763536802,
+        "Pitch": 0.1542494676811537
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.15896017090110728,
+        "Heave": 0.01968059507325694,
+        "Roll": 0.03291602612100948,
+        "Pitch": 0.10723769417504003,
+        "Yaw": 0.03816688415976064
+      },
+      "FD_SWAY": {
+        "Surge": 0.09911156186697814,
+        "Heave": 0.018040555839837675,
+        "Roll": 0.11940848210435888,
+        "Pitch": 0.0384504331662194,
+        "Yaw": 0.1166189583607766
+      },
+      "FD_HEAVE": {
+        "Surge": 0.694133163574395,
+        "Sway": 0.3830351608671329,
+        "Roll": 0.23088104002761986,
+        "Pitch": 0.08142292151490593,
+        "Yaw": 0.09687871817782223
+      },
+      "FD_ROLL": {
+        "Surge": 0.13004178340036146,
+        "Sway": 0.2811231135878405,
+        "Heave": 0.032594922860306255,
+        "Pitch": 0.24847735333665472,
+        "Yaw": 0.10705157585119539
+      },
+      "FD_PITCH": {
+        "Surge": 0.3652553627158409,
+        "Sway": 0.11511580438120428,
+        "Heave": 0.09709203619753709,
+        "Roll": 0.24451383619627762,
+        "Yaw": 0.12733165013806358
+      },
+      "FD_YAW": {
+        "Surge": 0.1667131756781034,
+        "Sway": 0.06151291011602063,
+        "Heave": 0.00833951391833249,
+        "Roll": 0.08748756161027149,
+        "Pitch": 0.06650130575791667
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_surge_9d3daf69.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_surge_9d3daf69.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_surge_9d3daf69.out"
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_sway_ac064de6.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_sway_ac064de6.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_sway_ac064de6.out"
+        },
+        "FD_HEAVE": {
+          "run_id": "RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_heave_adcda246.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_heave_adcda246.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_heave_adcda246.out"
+        },
+        "FD_ROLL": {
+          "run_id": "RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_roll_38d48f80.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_roll_38d48f80.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_roll_38d48f80.out"
+        },
+        "FD_PITCH": {
+          "run_id": "RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_pitch_e18abe27.fst",
+          "input_dir": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_pitch_e18abe27.out",
+          "stdout_path": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_pitch_e18abe27.out"
+        },
+        "FD_YAW": {
+          "run_id": "RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "run_dir": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+          "logs_dir": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_yaw_fe6ed2b1.fst",
+          "input_dir": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+          "output_dir": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+          "main_output_path": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_yaw_fe6ed2b1.out",
+          "stdout_path": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_yaw_fe6ed2b1.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 0.7748259734340603,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_SURGE": {
+        "score": 0.4607538450109986,
+        "period_error_pct": 1.463389,
+        "period_error_abs_pct": 1.463389,
+        "envelope_error": 0.27711431,
+        "ler_error": 0.056242269,
+        "fp_error": 0.073150903,
+        "zeta_error_ratio": 0.33372691160998597,
+        "closed": true
+      },
+      "FD_SWAY": {
+        "score": 0.7965448002705834,
+        "period_error_pct": 2.4395244,
+        "period_error_abs_pct": 2.4395244,
+        "envelope_error": 0.25770475,
+        "ler_error": 0.68301283,
+        "fp_error": 0.033112493,
+        "zeta_error_ratio": 0.5006927535391683,
+        "closed": false
+      },
+      "FD_HEAVE": {
+        "score": 0.45355639295756656,
+        "period_error_pct": 0.83556537,
+        "period_error_abs_pct": 0.83556537,
+        "envelope_error": 0.33072316,
+        "ler_error": 0.11174908,
+        "fp_error": 0.037481122,
+        "zeta_error_ratio": 0.7343789112423328,
+        "closed": true
+      },
+      "FD_ROLL": {
+        "score": 0.6330835770416476,
+        "period_error_pct": 1.8350526,
+        "period_error_abs_pct": 1.8350526,
+        "envelope_error": 0.21505423,
+        "ler_error": 0.2258348,
+        "fp_error": 0.22627623,
+        "zeta_error_ratio": 0.056877682916475936,
+        "closed": false
+      },
+      "FD_PITCH": {
+        "score": 0.5144199586006669,
+        "period_error_pct": 0.19137596,
+        "period_error_abs_pct": 0.19137596,
+        "envelope_error": 0.1312298,
+        "ler_error": 0.53925882,
+        "fp_error": 0.21039616,
+        "zeta_error_ratio": 0.19040476934000192,
+        "closed": false
+      },
+      "FD_YAW": {
+        "score": 1.790597266722899,
+        "period_error_pct": 0.70708443,
+        "period_error_abs_pct": 0.70708443,
+        "envelope_error": 0.24289752,
+        "ler_error": 3.508498,
+        "fp_error": 0.166952,
+        "zeta_error_ratio": 0.1376726655623261,
+        "closed": false
+      }
+    },
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:0.939>ref0.231"
+    ],
+    "predicate_results": [
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Roll:0.939>ref0.231",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:0.939>ref0.231"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "artifact_policy": "retain_full_baseline",
+  "created_at": "2026-07-07T13:59:00+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_heave_adcda246.fst",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_roll_38d48f80.fst",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_surge_9d3daf69.fst",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_sway_ac064de6.fst",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+    "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_pitch_e18abe27.fst",
+    "04_current_runs/runs/RUN_0002_FD_PITCH_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output",
+    "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input",
+    "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/input/qg_r001_center_yaw_fe6ed2b1.fst",
+    "04_current_runs/runs/RUN_0002_FD_YAW_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Roll:0.939>ref0.231",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:0.939>ref0.231"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}
