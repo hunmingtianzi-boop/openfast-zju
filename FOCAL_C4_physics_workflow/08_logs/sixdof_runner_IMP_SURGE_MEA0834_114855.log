@@ -1,0 +1,12 @@
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate IMP_SURGE_MEA0834_114855 --dof FD_SURGE
+Run Executor: SUCCESS RUN_0001_FD_SURGE_IMP_SURGE_MEA0834_114855
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate IMP_SURGE_MEA0834_114855 --dof FD_SURGE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\06_select_candidates.py
+Selector: complete
+[exit 0]

@@ -1,0 +1,621 @@
+[
+  {
+    "case_id": "FD_SURGE",
+    "dof": "Surge",
+    "unit": "m",
+    "raw": "focal.campaign4.m02d01t00.fd01.e00w00.r01.z1.a1.csv",
+    "source": "original_cut",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd01.e00w00.r01.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd01.e00w00.r01.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\processed\\FD_SURGE_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_SURGE_curated_processed.csv",
+    "processing": [
+      "select post-release segment by max absolute main-DOF displacement relative to tail median",
+      "shift release time to 0 s",
+      "subtract per-channel tail median"
+    ],
+    "quality_status": "original_cut_accepted",
+    "metrics": {
+      "sample_count": 17719,
+      "duration_s": 741.1999999999999,
+      "sampling_interval_s": 0.040000000000020464,
+      "sampling_frequency_hz": 24.99999999998721,
+      "initial_value": -23.35351,
+      "min_value": -23.35351,
+      "max_value": 11.07549,
+      "peak_to_peak": 34.429,
+      "detected_extrema_count": 17,
+      "median_period_s": 80.41000000000003,
+      "first_extrema": [
+        {
+          "kind": "max",
+          "time_s": 40.370000000000005,
+          "value": 11.07549
+        },
+        {
+          "kind": "min",
+          "time_s": 82.23999999999995,
+          "value": -5.98251
+        },
+        {
+          "kind": "max",
+          "time_s": 122.57,
+          "value": 4.61619
+        },
+        {
+          "kind": "min",
+          "time_s": 163.06,
+          "value": -3.45871
+        },
+        {
+          "kind": "max",
+          "time_s": 203.89,
+          "value": 2.81009
+        },
+        {
+          "kind": "min",
+          "time_s": 243.47000000000003,
+          "value": -2.27001
+        },
+        {
+          "kind": "max",
+          "time_s": 283.29,
+          "value": 1.93079
+        },
+        {
+          "kind": "min",
+          "time_s": 323.87,
+          "value": -1.63181
+        },
+        {
+          "kind": "max",
+          "time_s": 363.69,
+          "value": 1.43519
+        },
+        {
+          "kind": "min",
+          "time_s": 404.86,
+          "value": -1.22175
+        },
+        {
+          "kind": "max",
+          "time_s": 445.1,
+          "value": 1.09379
+        },
+        {
+          "kind": "min",
+          "time_s": 485.09,
+          "value": -0.93888
+        }
+      ],
+      "first_abs_amplitudes": [
+        11.07549,
+        5.98251,
+        4.61619,
+        3.45871,
+        2.81009,
+        2.27001,
+        1.93079,
+        1.63181,
+        1.43519,
+        1.22175
+      ]
+    }
+  },
+  {
+    "case_id": "FD_SWAY",
+    "dof": "Sway",
+    "unit": "m",
+    "raw": "focal.campaign4.m02d01t00.fd05.e00w00.r01.z1.a1.csv",
+    "source": "original_cut",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd05.e00w00.r01.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd05.e00w00.r01.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\processed\\FD_SWAY_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_SWAY_curated_processed.csv",
+    "processing": [
+      "select post-release segment by max absolute main-DOF displacement relative to tail median",
+      "shift release time to 0 s",
+      "subtract per-channel tail median"
+    ],
+    "quality_status": "original_cut_accepted",
+    "metrics": {
+      "sample_count": 22966,
+      "duration_s": 960.67,
+      "sampling_interval_s": 0.040000000000020464,
+      "sampling_frequency_hz": 24.99999999998721,
+      "initial_value": -15.02749,
+      "min_value": -15.02749,
+      "max_value": 9.05141,
+      "peak_to_peak": 24.0789,
+      "detected_extrema_count": 23,
+      "median_period_s": 79.31,
+      "first_extrema": [
+        {
+          "kind": "max",
+          "time_s": 39.660000000000025,
+          "value": 9.05141
+        },
+        {
+          "kind": "min",
+          "time_s": 80.39999999999998,
+          "value": -5.71589
+        },
+        {
+          "kind": "max",
+          "time_s": 120.56,
+          "value": 4.62291
+        },
+        {
+          "kind": "min",
+          "time_s": 160.39,
+          "value": -3.47789
+        },
+        {
+          "kind": "max",
+          "time_s": 200.46,
+          "value": 3.08371
+        },
+        {
+          "kind": "min",
+          "time_s": 240.37,
+          "value": -2.45549
+        },
+        {
+          "kind": "max",
+          "time_s": 279.95000000000005,
+          "value": 2.28541
+        },
+        {
+          "kind": "min",
+          "time_s": 319.02,
+          "value": -1.83519
+        },
+        {
+          "kind": "max",
+          "time_s": 358.76,
+          "value": 1.82251
+        },
+        {
+          "kind": "min",
+          "time_s": 398.33,
+          "value": -1.436
+        },
+        {
+          "kind": "max",
+          "time_s": 438.08,
+          "value": 1.48711
+        },
+        {
+          "kind": "min",
+          "time_s": 478.15,
+          "value": -1.1435
+        }
+      ],
+      "first_abs_amplitudes": [
+        9.05141,
+        5.71589,
+        4.62291,
+        3.47789,
+        3.08371,
+        2.45549,
+        2.28541,
+        1.83519,
+        1.82251,
+        1.436
+      ]
+    }
+  },
+  {
+    "case_id": "FD_HEAVE",
+    "dof": "Heave",
+    "unit": "m",
+    "raw": "focal.campaign4.m02d01t00.fd04.e00w00.r01.z1.a1.csv",
+    "source": "recut_late_decay",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd04.e00w00.r01.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd04.e00w00.r01.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\heave_recut_audit\\FD_HEAVE_recut_late_decay_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_HEAVE_curated_processed.csv",
+    "processing": [
+      "raw tail-median centering",
+      "manual/audited recut to late coherent Heave decay at raw t=775.880 s",
+      "shift recut release time to 0 s",
+      "subtract recut per-channel tail median"
+    ],
+    "quality_status": "recut_required_and_applied",
+    "metrics": {
+      "sample_count": 11507,
+      "duration_s": 481.3200000000001,
+      "sampling_interval_s": 0.03999999999996362,
+      "sampling_frequency_hz": 25.000000000022737,
+      "initial_value": -8.2962,
+      "min_value": -8.2962,
+      "max_value": 5.0455,
+      "peak_to_peak": 13.3417,
+      "detected_extrema_count": 27,
+      "median_period_s": 20.829999999999927,
+      "first_extrema": [
+        {
+          "kind": "max",
+          "time_s": 11.25,
+          "value": 5.0455
+        },
+        {
+          "kind": "min",
+          "time_s": 22.799999999999955,
+          "value": -2.9423000000000004
+        },
+        {
+          "kind": "max",
+          "time_s": 33.59000000000003,
+          "value": 1.96352
+        },
+        {
+          "kind": "min",
+          "time_s": 44.04999999999996,
+          "value": -1.4861000000000002
+        },
+        {
+          "kind": "max",
+          "time_s": 54.50999999999999,
+          "value": 1.15
+        },
+        {
+          "kind": "min",
+          "time_s": 65.00999999999999,
+          "value": -0.9827
+        },
+        {
+          "kind": "max",
+          "time_s": 75.34000000000003,
+          "value": 0.8748699999999999
+        },
+        {
+          "kind": "min",
+          "time_s": 85.66999999999996,
+          "value": -0.7663
+        },
+        {
+          "kind": "max",
+          "time_s": 96.21000000000004,
+          "value": 0.6803999999999999
+        },
+        {
+          "kind": "min",
+          "time_s": 106.54999999999995,
+          "value": -0.6079999999999999
+        },
+        {
+          "kind": "max",
+          "time_s": 117.0,
+          "value": 0.5685
+        },
+        {
+          "kind": "min",
+          "time_s": 127.21000000000004,
+          "value": -0.5216000000000001
+        }
+      ],
+      "first_abs_amplitudes": [
+        5.0455,
+        2.9423000000000004,
+        1.96352,
+        1.4861000000000002,
+        1.15,
+        0.9827,
+        0.8748699999999999,
+        0.7663,
+        0.6803999999999999,
+        0.6079999999999999
+      ]
+    }
+  },
+  {
+    "case_id": "FD_ROLL",
+    "dof": "Roll",
+    "unit": "deg",
+    "raw": "focal.campaign4.m02d01t00.fd06.e00w00.r03.z1.a1.csv",
+    "source": "original_cut",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd06.e00w00.r03.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd06.e00w00.r03.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\processed\\FD_ROLL_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_ROLL_curated_processed.csv",
+    "processing": [
+      "select post-release segment by max absolute main-DOF displacement relative to tail median",
+      "shift release time to 0 s",
+      "subtract per-channel tail median"
+    ],
+    "quality_status": "original_cut_accepted",
+    "metrics": {
+      "sample_count": 18507,
+      "duration_s": 774.1200000000001,
+      "sampling_interval_s": 0.040000000000020464,
+      "sampling_frequency_hz": 24.99999999998721,
+      "initial_value": 11.97218,
+      "min_value": -10.17232,
+      "max_value": 11.97218,
+      "peak_to_peak": 22.1445,
+      "detected_extrema_count": 34,
+      "median_period_s": 31.000000000000014,
+      "first_extrema": [
+        {
+          "kind": "min",
+          "time_s": 15.060000000000002,
+          "value": -10.17232
+        },
+        {
+          "kind": "max",
+          "time_s": 30.69999999999999,
+          "value": 7.99918
+        },
+        {
+          "kind": "min",
+          "time_s": 46.50999999999999,
+          "value": -6.48222
+        },
+        {
+          "kind": "max",
+          "time_s": 61.99000000000001,
+          "value": 5.51508
+        },
+        {
+          "kind": "min",
+          "time_s": 77.55000000000001,
+          "value": -4.55452
+        },
+        {
+          "kind": "max",
+          "time_s": 93.07,
+          "value": 4.00268
+        },
+        {
+          "kind": "min",
+          "time_s": 108.76,
+          "value": -3.52142
+        },
+        {
+          "kind": "max",
+          "time_s": 124.32,
+          "value": 3.1262800000000004
+        },
+        {
+          "kind": "min",
+          "time_s": 139.63,
+          "value": -2.73722
+        },
+        {
+          "kind": "max",
+          "time_s": 155.28000000000003,
+          "value": 2.57618
+        },
+        {
+          "kind": "min",
+          "time_s": 170.59000000000003,
+          "value": -2.26552
+        },
+        {
+          "kind": "max",
+          "time_s": 186.24,
+          "value": 2.04748
+        }
+      ],
+      "first_abs_amplitudes": [
+        10.17232,
+        7.99918,
+        6.48222,
+        5.51508,
+        4.55452,
+        4.00268,
+        3.52142,
+        3.1262800000000004,
+        2.73722,
+        2.57618
+      ]
+    }
+  },
+  {
+    "case_id": "FD_PITCH",
+    "dof": "Pitch",
+    "unit": "deg",
+    "raw": "focal.campaign4.m02d01t00.fd02.e00w00.r01.z1.a1.csv",
+    "source": "original_cut",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd02.e00w00.r01.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd02.e00w00.r01.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\processed\\FD_PITCH_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_PITCH_curated_processed.csv",
+    "processing": [
+      "select post-release segment by max absolute main-DOF displacement relative to tail median",
+      "shift release time to 0 s",
+      "subtract per-channel tail median"
+    ],
+    "quality_status": "original_cut_accepted",
+    "metrics": {
+      "sample_count": 11593,
+      "duration_s": 484.93,
+      "sampling_interval_s": 0.040000000000020464,
+      "sampling_frequency_hz": 24.99999999998721,
+      "initial_value": -9.028615,
+      "min_value": -9.028615,
+      "max_value": 7.524885,
+      "peak_to_peak": 16.5535,
+      "detected_extrema_count": 31,
+      "median_period_s": 30.45999999999998,
+      "first_extrema": [
+        {
+          "kind": "max",
+          "time_s": 15.900000000000034,
+          "value": 7.524885
+        },
+        {
+          "kind": "min",
+          "time_s": 30.79000000000002,
+          "value": -6.201215
+        },
+        {
+          "kind": "max",
+          "time_s": 46.35000000000002,
+          "value": 5.075885
+        },
+        {
+          "kind": "min",
+          "time_s": 61.75,
+          "value": -4.362415
+        },
+        {
+          "kind": "max",
+          "time_s": 77.31,
+          "value": 3.756485
+        },
+        {
+          "kind": "min",
+          "time_s": 92.62,
+          "value": -3.262515
+        },
+        {
+          "kind": "max",
+          "time_s": 108.35000000000002,
+          "value": 3.004585
+        },
+        {
+          "kind": "min",
+          "time_s": 123.41000000000004,
+          "value": -2.705215
+        },
+        {
+          "kind": "max",
+          "time_s": 138.8,
+          "value": 2.350985
+        },
+        {
+          "kind": "min",
+          "time_s": 153.7,
+          "value": -2.179115
+        },
+        {
+          "kind": "max",
+          "time_s": 169.26,
+          "value": 1.987985
+        },
+        {
+          "kind": "min",
+          "time_s": 184.23,
+          "value": -1.793815
+        }
+      ],
+      "first_abs_amplitudes": [
+        7.524885,
+        6.201215,
+        5.075885,
+        4.362415,
+        3.756485,
+        3.262515,
+        3.004585,
+        2.705215,
+        2.350985,
+        2.179115
+      ]
+    }
+  },
+  {
+    "case_id": "FD_YAW",
+    "dof": "Yaw",
+    "unit": "deg",
+    "raw": "focal.campaign4.m02d01t00.fd03.e00w00.r01.z1.a1.csv",
+    "source": "original_cut",
+    "raw_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\raw\\focal.campaign4.m02d01t00.fd03.e00w00.r01.z1.a1.csv",
+    "curated_raw_copy": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\raw\\focal.campaign4.m02d01t00.fd03.e00w00.r01.z1.a1.csv",
+    "processed_source": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\processed\\FD_YAW_processed.csv",
+    "curated_processed": "D:\\OpenFast\\6个一起调\\phase2_15mw_free_decay_diagnosis\\00_reference_data\\curated_six_dof_reference\\processed\\FD_YAW_curated_processed.csv",
+    "processing": [
+      "select post-release segment by max absolute main-DOF displacement relative to tail median",
+      "shift release time to 0 s",
+      "subtract per-channel tail median"
+    ],
+    "quality_status": "original_cut_accepted",
+    "metrics": {
+      "sample_count": 15019,
+      "duration_s": 628.25,
+      "sampling_interval_s": 0.040000000000020464,
+      "sampling_frequency_hz": 24.99999999998721,
+      "initial_value": -17.8903,
+      "min_value": -17.8903,
+      "max_value": 10.5892,
+      "peak_to_peak": 28.4795,
+      "detected_extrema_count": 24,
+      "median_period_s": 50.69999999999996,
+      "first_extrema": [
+        {
+          "kind": "max",
+          "time_s": 24.640000000000043,
+          "value": 10.5892
+        },
+        {
+          "kind": "min",
+          "time_s": 50.49000000000001,
+          "value": -6.4139
+        },
+        {
+          "kind": "max",
+          "time_s": 76.00999999999999,
+          "value": 5.0541
+        },
+        {
+          "kind": "min",
+          "time_s": 101.53000000000004,
+          "value": -3.9821
+        },
+        {
+          "kind": "max",
+          "time_s": 126.97000000000004,
+          "value": 3.5301
+        },
+        {
+          "kind": "min",
+          "time_s": 152.57,
+          "value": -2.8382
+        },
+        {
+          "kind": "max",
+          "time_s": 178.34000000000003,
+          "value": 2.62195
+        },
+        {
+          "kind": "min",
+          "time_s": 203.52000000000004,
+          "value": -2.1713
+        },
+        {
+          "kind": "max",
+          "time_s": 228.87,
+          "value": 2.11185
+        },
+        {
+          "kind": "min",
+          "time_s": 254.3100000000001,
+          "value": -1.7733
+        },
+        {
+          "kind": "max",
+          "time_s": 279.57000000000005,
+          "value": 1.77935
+        },
+        {
+          "kind": "min",
+          "time_s": 305.05000000000007,
+          "value": -1.452
+        }
+      ],
+      "first_abs_amplitudes": [
+        10.5892,
+        6.4139,
+        5.0541,
+        3.9821,
+        3.5301,
+        2.8382,
+        2.62195,
+        2.1713,
+        2.11185,
+        1.7733
+      ]
+    }
+  }
+]

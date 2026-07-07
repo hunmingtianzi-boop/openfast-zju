@@ -1,0 +1,26 @@
+# Heavy local OpenFAST products are intentionally excluded from this GitHub snapshot.
+FOCAL_C4_physics_workflow/01_baseline/
+FOCAL_C4_physics_workflow/02_starting_model/
+FOCAL_C4_physics_workflow/04_current_runs/
+FOCAL_C4_physics_workflow/99_loop_packages/
+
+# Runtime/cache files
+__pycache__/
+.pytest_cache/
+.codegraph/
+
+# OpenFAST large/binary products
+*.out
+*.outb
+*.ech
+*.sum
+*.dbg
+*.exe
+*.dll
+*.lib
+*.pdb
+*.zip
+*.7z
+*.tar
+*.gz
+

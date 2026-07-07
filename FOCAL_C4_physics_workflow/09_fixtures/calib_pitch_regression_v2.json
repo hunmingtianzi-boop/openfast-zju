@@ -1,0 +1,288 @@
+{
+  "dof": "pitch",
+  "status": "CONVERGED",
+  "ic": 9.84,
+  "T_target": 30.863175683814575,
+  "runs": [
+    {
+      "label": "baseline",
+      "fst": "agent_pitch_base.fst",
+      "T": 28.8860431969688,
+      "zeta": 0.014891649526078441,
+      "edits": [],
+      "moor": null,
+      "morph": {
+        "env_err": 0.4946453795849805,
+        "LER_err": 4.614030747514303,
+        "fp_err": 0.1495458930060301,
+        "J_shape": 1.4546419359922327,
+        "J_wave": 0.29124769101299053
+      },
+      "leak": {
+        "Surge": 0.18134921686418828,
+        "Sway": 3.598175279538596e-08,
+        "Heave": 0.033831962279143216,
+        "Roll": 1.4814400624223043e-07,
+        "Yaw": 2.0539146341212674e-08
+      }
+    },
+    {
+      "label": "A-probe",
+      "fst": "agent_pitch_Aprobe.fst",
+      "T": 29.830018236546778,
+      "zeta": 0.015660637902885223,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -170164281.40327063
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.5147075064472361,
+        "LER_err": 4.645761618369022,
+        "fp_err": 0.05147229288531006,
+        "J_shape": 1.840606197360754,
+        "J_wave": 0.3049342416666705
+      },
+      "leak": {
+        "Surge": 0.17881187901521362,
+        "Sway": 1.113572471328424e-06,
+        "Heave": 0.033671408992788324,
+        "Roll": 9.141054626057281e-06,
+        "Yaw": 1.8256764475523952e-06
+      }
+    },
+    {
+      "label": "A-solve",
+      "fst": "agent_pitch_Asolve.fst",
+      "T": 30.85005898615933,
+      "zeta": 0.01570638738613986,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -338801088.42179453
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.5379970211594872,
+        "LER_err": 4.81134407620258,
+        "fp_err": 0.08282669850926558,
+        "J_shape": 1.8794451750639842,
+        "J_wave": 0.29574846697116935
+      },
+      "leak": {
+        "Surge": 0.1826702091425103,
+        "Sway": 1.0513324727553108e-07,
+        "Heave": 0.03327650721492885,
+        "Roll": 9.821031211675326e-07,
+        "Yaw": 2.5840705119532473e-07
+      }
+    },
+    {
+      "label": "B-4x",
+      "fst": "agent_pitch_B4x.fst",
+      "T": 30.864930339976134,
+      "zeta": 0.019392891895881195,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -338801088.42179453
+        ],
+        [
+          "BQuad",
+          4,
+          4,
+          67200000000.0
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.25350454807938133,
+        "LER_err": 1.2667798235772787,
+        "fp_err": 0.06501316560432042,
+        "J_shape": 1.8487209852266349,
+        "J_wave": 0.23487651351481034
+      },
+      "leak": {
+        "Surge": 0.3032068411751723,
+        "Sway": 9.211511140966904e-09,
+        "Heave": 0.05257897358221974,
+        "Roll": 3.560859078518354e-08,
+        "Yaw": 1.768115656700048e-08
+      }
+    },
+    {
+      "label": "B-8x",
+      "fst": "agent_pitch_B8x.fst",
+      "T": 30.916926372072346,
+      "zeta": 0.020078958012437264,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -338801088.42179453
+        ],
+        [
+          "BQuad",
+          4,
+          4,
+          134400000000.0
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.34787886898404247,
+        "LER_err": 0.1607064547360843,
+        "fp_err": 0.049435788236117176,
+        "J_shape": 1.7462933053426217,
+        "J_wave": 0.20170693740826642
+      },
+      "leak": {
+        "Surge": 0.4255742112181567,
+        "Sway": 1.541692111983669e-08,
+        "Heave": 0.07140365961007088,
+        "Roll": 1.3987233297749064e-08,
+        "Yaw": 1.4120752099242221e-08
+      }
+    },
+    {
+      "label": "B-12x",
+      "fst": "agent_pitch_B12x.fst",
+      "T": 30.908928769049655,
+      "zeta": 0.012585283807403475,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -338801088.42179453
+        ],
+        [
+          "BQuad",
+          4,
+          4,
+          201600000000.0
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.44230189599403025,
+        "LER_err": 0.2676406196230844,
+        "fp_err": 0.037732277216929795,
+        "J_shape": 1.6052795952247718,
+        "J_wave": 0.18368285581711488
+      },
+      "leak": {
+        "Surge": 0.5085132791226716,
+        "Sway": 2.990037730750974e-08,
+        "Heave": 0.0854370305216117,
+        "Roll": 1.3084700597368287e-08,
+        "Yaw": 2.368355437971902e-08
+      }
+    },
+    {
+      "label": "B-opt",
+      "fst": "agent_pitch_Bopt.fst",
+      "T": 30.90654246862158,
+      "zeta": 0.014646007850472952,
+      "edits": [
+        [
+          "CLin",
+          4,
+          4,
+          -338801088.42179453
+        ],
+        [
+          "BQuad",
+          4,
+          4,
+          175554942841.5087
+        ]
+      ],
+      "moor": null,
+      "morph": {
+        "env_err": 0.4098300865922873,
+        "LER_err": 0.13735826973961365,
+        "fp_err": 0.041943606623648995,
+        "J_shape": 1.6581863750018815,
+        "J_wave": 0.18966881802925492
+      },
+      "leak": {
+        "Surge": 0.4801708565581668,
+        "Sway": 1.811462147056035e-08,
+        "Heave": 0.08046152660122656,
+        "Roll": 2.0777864811573318e-08,
+        "Yaw": 1.562581208966169e-08
+      }
+    }
+  ],
+  "log": [
+    "==============================================================================",
+    "  CALIB-AGENT  DOF=PITCH  [REGRESSION]  IC=9.84 (trusted)",
+    "  data target: T=30.86s  zeta=2.76%  file=focal.campaign4.m02d00t00.fd02.e00w00.r02.z1.a1.csv",
+    "==============================================================================",
+    "\n[baseline] edits=[]  -> measuring T_base, env_base, leak",
+    "  T_base=28.89s (target 30.86, err +6.4%)  zeta=1.49%",
+    "  morph baseline: env_err=0.495 LER_err=4.61 fp_err=0.150 J_shape=1.45",
+    "  leak (sec/prim): Surge=0.18  Sway=0.00  Heave=0.03  Roll=0.00  Yaw=0.00",
+    "\n[mechanism-gate] required stiffness ratio R = (T_base/T_target)^2 = 0.88  (ok, band [0.5,1.5])",
+    "[energy-leak-gate] ok (no secondary DOF exceeds the data reference)",
+    "\n[A-layer] AddCLin(4,4): omega^2 = omega_base^2 + C/M_eff  (exact-affine)",
+    "  probe C=-1.702e+08 (prior M_eff=5.80e+10; size only)",
+    "  probe T=29.83s -> measured slope 1/M_eff=1.732e-11 (M_eff=5.774e+10)",
+    "  solve C*=-3.388e+08 -> confirm run",
+    "  confirm T=30.85s (target 30.86, err +0.04%)",
+    "\n[B-layer] AddBQuad(4,4): minimize cost=max(env_err/0.4, LER_err/0.5) (convex 1D)",
+    "  B=1.680e+10 (1x baseline): env_err=0.538 LER_err=4.81 cost=9.62",
+    "  B=6.720e+10 (4x): env_err=0.254 LER_err=1.27 zeta=1.94% cost=2.53",
+    "  B=1.344e+11 (8x): env_err=0.348 LER_err=0.16 zeta=2.01% cost=0.87",
+    "  B=2.016e+11 (12x): env_err=0.442 LER_err=0.27 zeta=1.26% cost=1.11",
+    "  parabola argmin B*=1.756e+11 -> confirm",
+    "  B*=1.756e+11: env_err=0.410 LER_err=0.14 cost=1.02",
+    "  -> B_best=1.344e+11 (8.0x)  env_err=0.348 LER_err=0.16 cost=0.87",
+    "\n[verdict]",
+    "  period_err=+0.17% (ok)  env_err=0.348 (base 0.495, ok)  LER_err=0.16 (ok)  fp_err=0.049 (ok)",
+    "  params: AddCLin(4,4)=-3.388e+08  AddBQuad(4,4)=1.344e+11 (8.0x baseline)",
+    "  CONVERGED (clean): metrics hit AND knobs physically legitimate (AddCLin within +/-50%, AddBQuad in-category). Parameter-tunable, like Pitch.",
+    "\n==============================================================================",
+    "  PITCH REGRESSION ASSERTION (trust gate)",
+    "==============================================================================",
+    "  A-layer AddCLin: agent=-3.388e+08 known=-3.460e+08  rel.err=2.1% (tol 15%)  PASS",
+    "  B-layer AddBQuad: agent=1.344e+11 known=1.300e+11  rel.err=3.4% (tol 40%)  PASS",
+    "  morphology in calibrated band: period +0.17%, env_err 0.348<=0.40, LER_err 0.16<=0.30, fp_err 0.049<=0.10  PASS",
+    "\n  REGRESSION: PASS",
+    "  -> agent decision loop is VERIFIED TRUSTWORTHY. Cleared to run new DOFs."
+  ],
+  "clin": -338801088.42179453,
+  "bquad": 134400000000.0,
+  "bmult": 8.0,
+  "conv": {
+    "period_err": 0.001741579959510124,
+    "env_err": 0.34787886898404247,
+    "env_base": 0.4946453795849805,
+    "LER_err": 0.1607064547360843,
+    "fp_err": 0.049435788236117176,
+    "period_ok": true,
+    "env_ok": true,
+    "ler_ok": true,
+    "fp_ok": true
+  },
+  "R": 0.8759814120704271,
+  "regression": {
+    "passed": true,
+    "clin_err": 0.02080610282718343,
+    "bquad_err": 0.033846153846153845,
+    "morph_ok": true,
+    "a_ok": true,
+    "b_ok": true
+  }
+}

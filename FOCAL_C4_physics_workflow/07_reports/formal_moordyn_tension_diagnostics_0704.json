@@ -1,0 +1,308 @@
+[
+  {
+    "dof": "FD_SURGE",
+    "md_out": "04_current_runs\\runs\\RUN_0001_FD_SURGE_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_surge_9d3daf69.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 3338390.2,
+        "first60_mean": 4464291.157151833,
+        "first60_std": 2324915.256015021,
+        "first60_min": 190.4623,
+        "first60_max": 12180076.0,
+        "tail_mean": 4439219.628979525,
+        "tail_std": 2132357.438935637,
+        "tail_min": 190.4623,
+        "tail_max": 13756887.0,
+        "full_min": 190.4623,
+        "full_max": 13756887.0
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 3269747.5,
+        "first60_mean": 4360876.336219108,
+        "first60_std": 2332595.8429488526,
+        "first60_min": 188.70473,
+        "first60_max": 11439727.0,
+        "tail_mean": 4303387.737531179,
+        "tail_std": 2339944.3875083732,
+        "tail_min": 188.70473,
+        "tail_max": 12727085.0,
+        "full_min": 188.70473,
+        "full_max": 13465120.0
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 646074.69,
+        "first60_mean": 4138805.0832997193,
+        "first60_std": 1782005.0619871763,
+        "first60_min": 70.784653,
+        "first60_max": 10040773.0,
+        "tail_mean": 4359379.227785671,
+        "tail_std": 1615133.5166274742,
+        "tail_min": 70.784653,
+        "tail_max": 10022753.0,
+        "full_min": 70.784653,
+        "full_max": 10348210.0
+      }
+    ],
+    "tail_spread": 135831.89144834597,
+    "first60_spread": 325486.0738521139,
+    "tail_cv": 0.012762336324474922
+  },
+  {
+    "dof": "FD_SWAY",
+    "md_out": "04_current_runs\\runs\\RUN_0001_FD_SWAY_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_sway_ac064de6.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 1999873.1,
+        "first60_mean": 3921687.620195084,
+        "first60_std": 1370642.2704505858,
+        "first60_min": 190.4623,
+        "first60_max": 8187193.5,
+        "tail_mean": 3989402.6870998666,
+        "tail_std": 1156648.2373798972,
+        "tail_min": 190.4623,
+        "tail_max": 8177936.5,
+        "full_min": 190.4623,
+        "full_max": 8418969.0
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 6312089.0,
+        "first60_mean": 4056592.9585720333,
+        "first60_std": 2159481.915474662,
+        "first60_min": 188.70473,
+        "first60_max": 11464477.0,
+        "tail_mean": 4064270.055556321,
+        "tail_std": 2180693.388079086,
+        "tail_min": 188.70473,
+        "tail_max": 11511227.0,
+        "full_min": 188.70473,
+        "full_max": 12920467.0
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 3111575.2,
+        "first60_mean": 4102464.6203880263,
+        "first60_std": 1450794.3803506792,
+        "first60_min": 70.784653,
+        "first60_max": 9602011.0,
+        "tail_mean": 4202013.134960986,
+        "tail_std": 1855899.2706295461,
+        "tail_min": 70.784653,
+        "tail_max": 11077274.0,
+        "full_min": 70.784653,
+        "full_max": 11077274.0
+      }
+    ],
+    "tail_spread": 212610.44786111917,
+    "first60_spread": 180777.00019294256,
+    "tail_cv": 0.021554227929198068
+  },
+  {
+    "dof": "FD_HEAVE",
+    "md_out": "04_current_runs\\runs\\RUN_0002_FD_HEAVE_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_heave_adcda246.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 3237351.5,
+        "first60_mean": 3398641.9595,
+        "first60_std": 218088.11275240543,
+        "first60_min": 2770835.8,
+        "first60_max": 4194619.5,
+        "tail_mean": 3397759.458135466,
+        "tail_std": 193315.3156038398,
+        "tail_min": 2846312.2,
+        "tail_max": 4027738.2,
+        "full_min": 2693725.5,
+        "full_max": 4194619.5
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 3325610.8,
+        "first60_mean": 3329849.0077083334,
+        "first60_std": 211560.49079898058,
+        "first60_min": 2678926.0,
+        "first60_max": 4047903.5,
+        "tail_mean": 3317377.319695076,
+        "tail_std": 197523.66571050565,
+        "tail_min": 2725596.0,
+        "tail_max": 3923617.8,
+        "full_min": 2594954.8,
+        "full_max": 4055804.5
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 3891514.0,
+        "first60_mean": 3421703.88925,
+        "first60_std": 401631.8387175744,
+        "first60_min": 2022515.5,
+        "first60_max": 4642414.5,
+        "tail_mean": 3429318.043714072,
+        "tail_std": 338146.2736033732,
+        "tail_min": 2388716.5,
+        "tail_max": 4494166.5,
+        "full_min": 2022515.5,
+        "full_max": 4718714.5
+      }
+    ],
+    "tail_spread": 111940.72401899612,
+    "first60_spread": 91854.88154166657,
+    "tail_cv": 0.013936557273341497
+  },
+  {
+    "dof": "FD_ROLL",
+    "md_out": "04_current_runs\\runs\\RUN_0001_FD_ROLL_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_roll_38d48f80.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 5602032.0,
+        "first60_mean": 4000955.575697667,
+        "first60_std": 1900958.9294909248,
+        "first60_min": 190.4623,
+        "first60_max": 11951205.0,
+        "tail_mean": 3951485.755882235,
+        "tail_std": 1970494.1639054362,
+        "tail_min": 190.4623,
+        "tail_max": 10636021.0,
+        "full_min": 190.4623,
+        "full_max": 11951205.0
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 4583345.0,
+        "first60_mean": 3689609.9040316627,
+        "first60_std": 1301876.675533646,
+        "first60_min": 188.70473,
+        "first60_max": 8263307.5,
+        "tail_mean": 3763992.785284317,
+        "tail_std": 1221340.7957688405,
+        "tail_min": 188.70473,
+        "tail_max": 7767294.5,
+        "full_min": 188.70473,
+        "full_max": 8263307.5
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 3389252.8,
+        "first60_mean": 3811514.616625,
+        "first60_std": 407055.58544919966,
+        "first60_min": 2250545.0,
+        "first60_max": 4902524.5,
+        "tail_mean": 3793298.506018074,
+        "tail_std": 414692.8244651619,
+        "tail_min": 2494921.8,
+        "tail_max": 5398814.5,
+        "full_min": 2250545.0,
+        "full_max": 5398814.5
+      }
+    ],
+    "tail_spread": 187492.97059791768,
+    "first60_spread": 311345.67166600423,
+    "tail_cv": 0.021466566862450836
+  },
+  {
+    "dof": "FD_PITCH",
+    "md_out": "04_current_runs\\runs\\RUN_0001_FD_PITCH_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_pitch_e18abe27.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 3562710.5,
+        "first60_mean": 3516852.886,
+        "first60_std": 278433.90987726935,
+        "first60_min": 2724897.8,
+        "first60_max": 4355065.0,
+        "tail_mean": 3555387.4176312243,
+        "tail_std": 225158.71705361793,
+        "tail_min": 2889014.2,
+        "tail_max": 4273366.5,
+        "full_min": 2724897.8,
+        "full_max": 4386230.0
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 3192488.0,
+        "first60_mean": 3457260.9121250003,
+        "first60_std": 286517.575146344,
+        "first60_min": 2635861.5,
+        "first60_max": 4443218.0,
+        "tail_mean": 3471234.9052682184,
+        "tail_std": 238381.91587005183,
+        "tail_min": 2722275.8,
+        "tail_max": 4285889.5,
+        "full_min": 2635861.5,
+        "full_max": 4443218.0
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 6074775.5,
+        "first60_mean": 3780583.9375002384,
+        "first60_std": 1348198.0073787062,
+        "first60_min": 70.784653,
+        "first60_max": 8439031.0,
+        "tail_mean": 3762511.4774765763,
+        "tail_std": 1638960.9783466738,
+        "tail_min": 70.784653,
+        "tail_max": 9913906.0,
+        "full_min": 70.784653,
+        "full_max": 9913906.0
+      }
+    ],
+    "tail_spread": 291276.572208358,
+    "first60_spread": 323323.02537523815,
+    "tail_cv": 0.03403275649857585
+  },
+  {
+    "dof": "FD_YAW",
+    "md_out": "04_current_runs\\runs\\RUN_0001_FD_YAW_AMP_SH_HAF15_Y15052_R8715_07041136\\input\\qg_r001_center_yaw_fe6ed2b1.MD.out",
+    "tensions": [
+      {
+        "line": "FAIRTEN1",
+        "initial": 2759903.2,
+        "first60_mean": 4206789.01801,
+        "first60_std": 1599933.8743745126,
+        "first60_min": 190.4623,
+        "first60_max": 9395825.0,
+        "tail_mean": 4196165.007181517,
+        "tail_std": 1785667.4130386002,
+        "tail_min": 190.4623,
+        "tail_max": 10545787.0,
+        "full_min": 190.4623,
+        "full_max": 10545787.0
+      },
+      {
+        "line": "FAIRTEN2",
+        "initial": 1492152.4,
+        "first60_mean": 4087343.0170494956,
+        "first60_std": 1661243.6950705785,
+        "first60_min": 188.70473,
+        "first60_max": 9168412.0,
+        "tail_mean": 4096072.7572271433,
+        "tail_std": 1632658.1875439733,
+        "tail_min": 188.70473,
+        "tail_max": 9714195.0,
+        "full_min": 188.70473,
+        "full_max": 10116816.0
+      },
+      {
+        "line": "FAIRTEN3",
+        "initial": 8705656.0,
+        "first60_mean": 4498296.530524114,
+        "first60_std": 2109466.3916445053,
+        "first60_min": 70.784653,
+        "first60_max": 11288159.0,
+        "tail_mean": 4574824.568159596,
+        "tail_std": 2491784.3866626024,
+        "tail_min": 70.784653,
+        "tail_max": 13834705.0,
+        "full_min": 70.784653,
+        "full_max": 13834705.0
+      }
+    ],
+    "tail_spread": 478751.8109324528,
+    "first60_spread": 410953.51347461855,
+    "tail_cv": 0.04807240086786122
+  }
+]

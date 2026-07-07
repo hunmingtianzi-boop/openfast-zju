@@ -1,0 +1,54 @@
+{
+  "candidate_id": "SURGE_AF0_N190K_IC178_T600_0706",
+  "baseline_candidate_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+  "candidate_parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+  "lineage_status": "same_parent",
+  "target_dofs": [
+    "FD_SURGE"
+  ],
+  "decision": "HOLD_OBJECTIVE_NOT_IMPROVED",
+  "reason": "regressed/mixed: FD_SURGE",
+  "improved_targets": [],
+  "regressed_targets": [
+    "FD_SURGE"
+  ],
+  "unchanged_targets": [],
+  "comparisons": {
+    "FD_SURGE": {
+      "decision": "REGRESSED",
+      "candidate": {
+        "period_error_pct": 5.7179264,
+        "envelope_error": 0.32111639,
+        "ler_error": 0.004736511,
+        "fp_error": 0.076445965,
+        "zeta_abs_error": 0.0034089939999999985
+      },
+      "baseline": {
+        "period_error_pct": 1.8489757,
+        "envelope_error": 0.32766471,
+        "ler_error": 0.63369893,
+        "fp_error": 0.13034279,
+        "zeta_abs_error": 0.005165912
+      },
+      "deltas": {
+        "zeta_abs_error": -0.0017569180000000014,
+        "ler_error": -0.6289624189999999,
+        "fp_error": -0.05389682499999998,
+        "envelope_error": -0.006548320000000052,
+        "period_error_pct": 3.8689506999999996
+      },
+      "improved_metrics": [
+        "zeta_abs_error",
+        "ler_error",
+        "fp_error",
+        "envelope_error"
+      ],
+      "regressed_metrics": [
+        "period_error_pct"
+      ],
+      "major_regressions": [
+        "period_error_pct"
+      ]
+    }
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "generated_at": "2026-06-17T16:24:28+00:00",
+  "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+  "overall_status": "blocked",
+  "gates": [
+    {
+      "name": "Data gate",
+      "pass": true,
+      "summary": "Project curated reference data gate.",
+      "command": {
+        "args": [
+          "C:\\Users\\hunmi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+          "03_scripts/01_data_gate.py"
+        ],
+        "returncode": 0,
+        "ok": true,
+        "walltime_s": 0.10688376426696777,
+        "stdout_tail": "Data Gate: PASS",
+        "stderr_tail": ""
+      }
+    },
+    {
+      "name": "Model gate",
+      "pass": true,
+      "summary": "Project model/path audit gate.",
+      "command": {
+        "args": [
+          "C:\\Users\\hunmi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+          "03_scripts/02_model_gate.py"
+        ],
+        "returncode": 0,
+        "ok": true,
+        "walltime_s": 0.5396382808685303,
+        "stdout_tail": "Model Gate: PASS",
+        "stderr_tail": ""
+      }
+    },
+    {
+      "name": "Mainline free-decay runner",
+      "pass": true,
+      "summary": "Skipped; using existing run registry.",
+      "command": null
+    },
+    {
+      "name": "Run registry gate",
+      "pass": true,
+      "summary": "At least one project run exists for the requested scope."
+    },
+    {
+      "name": "Shadow scout gate",
+      "pass": true,
+      "summary": "Non-authoritative project shadow scouting completed."
+    },
+    {
+      "name": "Objective review gate",
+      "pass": false,
+      "summary": "unchanged: FD_YAW",
+      "command": {
+        "args": [
+          "C:\\Users\\hunmi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+          "03_scripts/19_objective_review_agent.py",
+          "--candidate",
+          "AMP_SH_S_BASEYAW_06171610",
+          "--target-dofs",
+          "FD_YAW"
+        ],
+        "returncode": 2,
+        "ok": false,
+        "walltime_s": 0.09170341491699219,
+        "stdout_tail": "{\n  \"decision\": \"HOLD_OBJECTIVE_NOT_IMPROVED\",\n  \"reason\": \"unchanged: FD_YAW\",\n  \"report\": \"D:\\\\OpenFast\\\\FOCAL_C4_physics_workflow\\\\07_reports\\\\objective_review_report.md\"\n}",
+        "stderr_tail": ""
+      }
+    }
+  ],
+  "run_summary": {
+    "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+    "dofs": {
+      "FD_HEAVE": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_HEAVE_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "288.328",
+        "return_code": "0"
+      },
+      "FD_PITCH": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_PITCH_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "340.139",
+        "return_code": "0"
+      },
+      "FD_ROLL": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_ROLL_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "339.140",
+        "return_code": "0"
+      },
+      "FD_SURGE": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_SURGE_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "618.260",
+        "return_code": "0"
+      },
+      "FD_SWAY": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_SWAY_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "534.216",
+        "return_code": "0"
+      },
+      "FD_YAW": {
+        "status": "SUCCESS",
+        "run_id": "RUN_0001_FD_YAW_AMP_SH_S_BASEYAW_06171610",
+        "elapsed_sec": "521.999",
+        "return_code": "0"
+      }
+    }
+  },
+  "metric_summary": {
+    "dofs": {
+      "FD_HEAVE": {
+        "metric_status": "PASS",
+        "period_error_pct": "0.71734571",
+        "envelope_error": "0.37515601",
+        "ler_error": "0.068429342",
+        "fp_error": "0.22845927"
+      },
+      "FD_PITCH": {
+        "metric_status": "PASS",
+        "period_error_pct": "0.44945173",
+        "envelope_error": "0.13842681",
+        "ler_error": "0.85497007",
+        "fp_error": "0.15431191"
+      },
+      "FD_ROLL": {
+        "metric_status": "PASS",
+        "period_error_pct": "1.9168948",
+        "envelope_error": "0.21352375",
+        "ler_error": "0.051901352",
+        "fp_error": "0.24435064"
+      },
+      "FD_SURGE": {
+        "metric_status": "PASS",
+        "period_error_pct": "1.8489757",
+        "envelope_error": "0.32766471",
+        "ler_error": "0.63369893",
+        "fp_error": "0.13034279"
+      },
+      "FD_SWAY": {
+        "metric_status": "PASS",
+        "period_error_pct": "2.632181",
+        "envelope_error": "0.34505342",
+        "ler_error": "0.12131912",
+        "fp_error": "0.033236198"
+      },
+      "FD_YAW": {
+        "metric_status": "PASS",
+        "period_error_pct": "0.73824889",
+        "envelope_error": "0.27050089",
+        "ler_error": "0.75605018",
+        "fp_error": "0.20162353"
+      }
+    }
+  },
+  "shadow": {
+    "command": {
+      "args": [
+        "C:\\Users\\hunmi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+        "03_scripts/16_shadow_scout_agent.py",
+        "--candidate",
+        "AMP_SH_S_BASEYAW_06171610",
+        "--no-record"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "walltime_s": 0.8488733768463135,
+      "stdout_tail": "{\n  \"runs_analyzed\": 6,\n  \"report\": \"D:\\\\OpenFast\\\\FOCAL_C4_physics_workflow\\\\07_reports\\\\shadow_scout\\\\latest_shadow_scout_report.md\",\n  \"registry\": \"D:\\\\OpenFast\\\\FOCAL_C4_physics_workflow\\\\05_registry\\\\shadow_experiment_registry.jsonl\"\n}",
+      "stderr_tail": ""
+    },
+    "state": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\08_logs\\shadow_scout\\latest_shadow_scout_state.json",
+    "report": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\07_reports\\shadow_scout\\latest_shadow_scout_report.md",
+    "alarms": [
+      {
+        "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+        "dof": "FD_SURGE",
+        "observation": "PtfmSurge is low-frequency/drift dominated (low_freq_fraction=0.8054328248489152, peak_period_s=75.00416666667304, drift_ratio=0.161).",
+        "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+      },
+      {
+        "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+        "dof": "FD_YAW",
+        "observation": "PtfmYaw is low-frequency/drift dominated (low_freq_fraction=0.6636121075041076, peak_period_s=50.003571428582795, drift_ratio=0.053).",
+        "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+      }
+    ]
+  },
+  "objective_review": {
+    "command": {
+      "args": [
+        "C:\\Users\\hunmi\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe",
+        "03_scripts/19_objective_review_agent.py",
+        "--candidate",
+        "AMP_SH_S_BASEYAW_06171610",
+        "--target-dofs",
+        "FD_YAW"
+      ],
+      "returncode": 2,
+      "ok": false,
+      "walltime_s": 0.09170341491699219,
+      "stdout_tail": "{\n  \"decision\": \"HOLD_OBJECTIVE_NOT_IMPROVED\",\n  \"reason\": \"unchanged: FD_YAW\",\n  \"report\": \"D:\\\\OpenFast\\\\FOCAL_C4_physics_workflow\\\\07_reports\\\\objective_review_report.md\"\n}",
+      "stderr_tail": ""
+    },
+    "state": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\08_logs\\objective_review\\latest_objective_review_state.json",
+    "report": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\07_reports\\objective_review_report.md",
+    "decision": "HOLD_OBJECTIVE_NOT_IMPROVED",
+    "reason": "unchanged: FD_YAW",
+    "target_dofs": [
+      "FD_YAW"
+    ]
+  },
+  "followup_actions": [
+    {
+      "id": "FOLLOWUP-FD_SURGE-MOORING",
+      "trigger": {
+        "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+        "dof": "FD_SURGE",
+        "observation": "PtfmSurge is low-frequency/drift dominated (low_freq_fraction=0.8054328248489152, peak_period_s=75.00416666667304, drift_ratio=0.161).",
+        "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+      },
+      "evidence_level": "requires_free_decay_or_causal_falsification",
+      "recommended_action": "Use physics-agent MoorDyn EA/UnstrLen path and inspect equilibrium drift/tension before any AddCLin path."
+    },
+    {
+      "id": "FOLLOWUP-FD_YAW-MOORING",
+      "trigger": {
+        "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+        "dof": "FD_YAW",
+        "observation": "PtfmYaw is low-frequency/drift dominated (low_freq_fraction=0.6636121075041076, peak_period_s=50.003571428582795, drift_ratio=0.053).",
+        "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+      },
+      "evidence_level": "requires_free_decay_or_causal_falsification",
+      "recommended_action": "Use physics-agent MoorDyn EA/UnstrLen path and inspect equilibrium drift/tension before any AddCLin path."
+    }
+  ]
+}

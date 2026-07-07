@@ -1,0 +1,2 @@
+model_id,model_dir,source,parent_model_id,sha256_manifest,path_status,status,notes
+STARTING_MODEL,02_starting_model/best_reproducible_model,clean_workspace_starting_model,,6e6e3c57611266bca86debc714119df19a5a2351740d76dad44ae65611862c7d,PASS,PASS,2 fst file(s) found

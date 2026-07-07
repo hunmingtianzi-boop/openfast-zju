@@ -1,0 +1,10 @@
+{
+  "run_id": "RUN_0001_FD_YAW_LP_1091C22C41B7_HEAVE_20260706T135310Z0000",
+  "candidate_id": "LP_1091C22C41B7_HEAVE_20260706T135310Z0000",
+  "dof": "FD_YAW",
+  "status": "SUCCESS",
+  "updated": "2026-07-06T14:37:09+00:00",
+  "elapsed_sec": "436.211",
+  "notes": "HydroDyn edits=1",
+  "artifact_map_path": "04_current_runs/runs/RUN_0001_FD_YAW_LP_1091C22C41B7_HEAVE_20260706T135310Z0000/artifact_map.json"
+}

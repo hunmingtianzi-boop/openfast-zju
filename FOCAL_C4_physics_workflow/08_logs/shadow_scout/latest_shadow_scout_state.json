@@ -1,0 +1,530 @@
+{
+  "generated_at": "2026-07-04T08:29:04+00:00",
+  "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+  "analyses": [
+    {
+      "run_id": "RUN_0001_FD_HEAVE_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_HEAVE",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_HEAVE_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_heave_adcda246.out",
+      "primary_channel": "PtfmHeave",
+      "platform": {
+        "PtfmSurge": {
+          "mean": -0.3901386847206599,
+          "rms_detrended": 0.14360408864127,
+          "peak_abs_detrended": 0.4171786847206599,
+          "psd_peak_period_s": 80.0100000000182,
+          "low_freq_energy_fraction": 0.8785938421039551
+        },
+        "PtfmSway": {
+          "mean": -0.6305452453793275,
+          "rms_detrended": 0.3955749371761313,
+          "peak_abs_detrended": 0.9254547546206725,
+          "psd_peak_period_s": 80.0100000000182,
+          "low_freq_energy_fraction": 0.9912563688703088
+        },
+        "PtfmHeave": {
+          "mean": 4.840935885514311,
+          "rms_detrended": 0.9579149993419293,
+          "peak_abs_detrended": 9.31593588551431,
+          "psd_peak_period_s": 21.055263157899525,
+          "low_freq_energy_fraction": 0.06796933151261603
+        },
+        "PtfmRoll": {
+          "mean": 2.628783513223347,
+          "rms_detrended": 0.800116036893375,
+          "peak_abs_detrended": 2.628783513223347,
+          "psd_peak_period_s": 30.77307692308392,
+          "low_freq_energy_fraction": 0.009222376004402504
+        },
+        "PtfmPitch": {
+          "mean": 1.0064514088863892,
+          "rms_detrended": 0.41748987954026295,
+          "peak_abs_detrended": 1.0064514088863892,
+          "psd_peak_period_s": 30.77307692308392,
+          "low_freq_energy_fraction": 0.009733724588015311
+        },
+        "PtfmYaw": {
+          "mean": -0.8146062402687164,
+          "rms_detrended": 0.2543467588282086,
+          "peak_abs_detrended": 0.8146062402687164,
+          "psd_peak_period_s": 57.150000000012994,
+          "low_freq_energy_fraction": 0.8775390847135569
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 0.5217866662956269,
+          "band_coupling": 1.0000000000000002,
+          "phase_deg": -16.532937419143227
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 1.0554002296519962,
+          "band_coupling": 1.0,
+          "phase_deg": -21.67240667355381
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 1.7711665540636465,
+          "band_coupling": 1.0,
+          "phase_deg": 74.92664364018115
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:03+00:00",
+          "run_id": "RUN_0001_FD_HEAVE_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_HEAVE",
+          "observation": "No shadow alarm triggered by project v1 rules.",
+          "hypothesis": "No scouting-only evidence against this candidate/DOF run.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "No shadow alarm triggered by project v1 rules.",
+          "verdict": "no_shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_HEAVE_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_heave_adcda246.out"
+          ],
+          "next_action": "Keep candidate selection and free-decay gates authoritative."
+        }
+      ]
+    },
+    {
+      "run_id": "RUN_0001_FD_PITCH_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_PITCH",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_PITCH_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_pitch_e18abe27.out",
+      "primary_channel": "PtfmPitch",
+      "platform": {
+        "PtfmSurge": {
+          "mean": -2.492829941111432,
+          "rms_detrended": 0.9008708063121441,
+          "peak_abs_detrended": 2.801729941111432,
+          "psd_peak_period_s": 86.6750000000197,
+          "low_freq_energy_fraction": 0.9429066821778505
+        },
+        "PtfmSway": {
+          "mean": -0.6253483298596288,
+          "rms_detrended": 0.2795422085885262,
+          "peak_abs_detrended": 0.8176516701403712,
+          "psd_peak_period_s": 74.29285714287403,
+          "low_freq_energy_fraction": 0.9593166343171325
+        },
+        "PtfmHeave": {
+          "mean": 5.234772277627151,
+          "rms_detrended": 0.5700317479068092,
+          "peak_abs_detrended": 5.234772277627151,
+          "psd_peak_period_s": 21.668750000004923,
+          "low_freq_energy_fraction": 0.02329848278121337
+        },
+        "PtfmRoll": {
+          "mean": 2.604926426910874,
+          "rms_detrended": 0.6735250063267023,
+          "peak_abs_detrended": 2.604926426910874,
+          "psd_peak_period_s": 32.50312500000739,
+          "low_freq_energy_fraction": 0.005793390910920357
+        },
+        "PtfmPitch": {
+          "mean": 0.8959080374483224,
+          "rms_detrended": 1.978972748740764,
+          "peak_abs_detrended": 10.574908037448322,
+          "psd_peak_period_s": 30.591176470595187,
+          "low_freq_energy_fraction": 0.011364471213826846
+        },
+        "PtfmYaw": {
+          "mean": -0.7595172021613306,
+          "rms_detrended": 0.4351821677546377,
+          "peak_abs_detrended": 1.2321172021613305,
+          "psd_peak_period_s": 57.78333333334646,
+          "low_freq_energy_fraction": 0.8238081627968915
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 2.9382320331857685,
+          "band_coupling": 1.0000000000000004,
+          "phase_deg": 5.509752331898041
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 7.079334311383812,
+          "band_coupling": 1.0000000000000002,
+          "phase_deg": 45.74066639422405
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 0.4830683431025189,
+          "band_coupling": 1.0000000000000002,
+          "phase_deg": -44.17430092343893
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:03+00:00",
+          "run_id": "RUN_0001_FD_PITCH_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_PITCH",
+          "observation": "No shadow alarm triggered by project v1 rules.",
+          "hypothesis": "No scouting-only evidence against this candidate/DOF run.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "No shadow alarm triggered by project v1 rules.",
+          "verdict": "no_shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_PITCH_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_pitch_e18abe27.out"
+          ],
+          "next_action": "Keep candidate selection and free-decay gates authoritative."
+        }
+      ]
+    },
+    {
+      "run_id": "RUN_0001_FD_ROLL_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_ROLL",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_ROLL_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_roll_38d48f80.out",
+      "primary_channel": "PtfmRoll",
+      "platform": {
+        "PtfmSurge": {
+          "mean": 2.5849520007980002,
+          "rms_detrended": 0.5904080355649757,
+          "peak_abs_detrended": 2.5849520007980002,
+          "psd_peak_period_s": 74.29285714287403,
+          "low_freq_energy_fraction": 0.8728741439140545
+        },
+        "PtfmSway": {
+          "mean": -2.796848770281704,
+          "rms_detrended": 1.0477888623318432,
+          "peak_abs_detrended": 3.544848770281704,
+          "psd_peak_period_s": 86.6750000000197,
+          "low_freq_energy_fraction": 0.965247420636623
+        },
+        "PtfmHeave": {
+          "mean": 5.233174715210075,
+          "rms_detrended": 0.5702660945565953,
+          "peak_abs_detrended": 5.233174715210075,
+          "psd_peak_period_s": 21.668750000004923,
+          "low_freq_energy_fraction": 0.02141021611460595
+        },
+        "PtfmRoll": {
+          "mean": 2.6236548775117776,
+          "rms_detrended": 2.3116556528525365,
+          "peak_abs_detrended": 14.266345122488223,
+          "psd_peak_period_s": 32.50312500000739,
+          "low_freq_energy_fraction": 0.024253192127906394
+        },
+        "PtfmPitch": {
+          "mean": 0.9500891639361599,
+          "rms_detrended": 0.33867631339436205,
+          "peak_abs_detrended": 0.9500891639361599,
+          "psd_peak_period_s": 32.50312500000739,
+          "low_freq_energy_fraction": 0.02524165581437876
+        },
+        "PtfmYaw": {
+          "mean": -0.9885246446524372,
+          "rms_detrended": 0.4900143982519965,
+          "peak_abs_detrended": 1.1279246446524371,
+          "psd_peak_period_s": 52.00500000001182,
+          "low_freq_energy_fraction": 0.8701692699190047
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 0.14650811550433226,
+          "band_coupling": 0.9999999999999999,
+          "phase_deg": -168.4644264497148
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 0.32322954134160337,
+          "band_coupling": 0.9999999999999996,
+          "phase_deg": 131.87149779583694
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 0.8299588906900461,
+          "band_coupling": 1.0000000000000002,
+          "phase_deg": -71.69034271039442
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:03+00:00",
+          "run_id": "RUN_0001_FD_ROLL_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_ROLL",
+          "observation": "No shadow alarm triggered by project v1 rules.",
+          "hypothesis": "No scouting-only evidence against this candidate/DOF run.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "No shadow alarm triggered by project v1 rules.",
+          "verdict": "no_shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_ROLL_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_roll_38d48f80.out"
+          ],
+          "next_action": "Keep candidate selection and free-decay gates authoritative."
+        }
+      ]
+    },
+    {
+      "run_id": "RUN_0001_FD_SURGE_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_SURGE",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_SURGE_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_surge_9d3daf69.out",
+      "primary_channel": "PtfmSurge",
+      "platform": {
+        "PtfmSurge": {
+          "mean": 3.544301490750514,
+          "rms_detrended": 2.9012357742563446,
+          "peak_abs_detrended": 20.724301490750513,
+          "psd_peak_period_s": 81.82272727273423,
+          "low_freq_energy_fraction": 0.8020386216886417
+        },
+        "PtfmSway": {
+          "mean": -0.3188739048791734,
+          "rms_detrended": 0.3648915155240669,
+          "peak_abs_detrended": 0.9470739048791734,
+          "psd_peak_period_s": 90.00500000000766,
+          "low_freq_energy_fraction": 0.9781595909460034
+        },
+        "PtfmHeave": {
+          "mean": 5.230014347047386,
+          "rms_detrended": 0.4320448043179389,
+          "peak_abs_detrended": 5.230014347047386,
+          "psd_peak_period_s": 21.42976190476373,
+          "low_freq_energy_fraction": 0.024928410657630275
+        },
+        "PtfmRoll": {
+          "mean": 2.513463887266263,
+          "rms_detrended": 0.5247700485801398,
+          "peak_abs_detrended": 2.513463887266263,
+          "psd_peak_period_s": 31.036206896554365,
+          "low_freq_energy_fraction": 0.005890395370600821
+        },
+        "PtfmPitch": {
+          "mean": 0.9119156700794401,
+          "rms_detrended": 0.16627537546506008,
+          "peak_abs_detrended": 0.9119156700794401,
+          "psd_peak_period_s": 31.036206896554365,
+          "low_freq_energy_fraction": 0.5141946656981425
+        },
+        "PtfmYaw": {
+          "mean": -0.6273516829120603,
+          "rms_detrended": 0.408823347917513,
+          "peak_abs_detrended": 0.8766483170879397,
+          "psd_peak_period_s": 50.002777777782036,
+          "low_freq_energy_fraction": 0.7589353477872095
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 0.31685378370001904,
+          "band_coupling": 0.9999999999999996,
+          "phase_deg": -32.12284885466987
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 0.45568441136881727,
+          "band_coupling": 1.0,
+          "phase_deg": -77.53291130045749
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 0.14091352090207288,
+          "band_coupling": 1.0,
+          "phase_deg": -20.83052557183561
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:04+00:00",
+          "run_id": "RUN_0001_FD_SURGE_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_SURGE",
+          "observation": "PtfmSurge is low-frequency/drift dominated (low_freq_fraction=0.8020386216886417, peak_period_s=81.82272727273423, drift_ratio=0.171).",
+          "hypothesis": "Prioritize MoorDyn stiffness/pretension/equilibrium checks over AddCLin force-fitting.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "PtfmSurge is low-frequency/drift dominated (low_freq_fraction=0.8020386216886417, peak_period_s=81.82272727273423, drift_ratio=0.171).",
+          "verdict": "shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_SURGE_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_surge_9d3daf69.out"
+          ],
+          "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+        }
+      ]
+    },
+    {
+      "run_id": "RUN_0001_FD_SWAY_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_SWAY",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_SWAY_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_sway_ac064de6.out",
+      "primary_channel": "PtfmSway",
+      "platform": {
+        "PtfmSurge": {
+          "mean": 0.19109787586967392,
+          "rms_detrended": 0.6215529104396285,
+          "peak_abs_detrended": 1.480097875869674,
+          "psd_peak_period_s": 69.23461538462128,
+          "low_freq_energy_fraction": 0.9851603758391931
+        },
+        "PtfmSway": {
+          "mean": 2.5435368309816124,
+          "rms_detrended": 2.310791699357788,
+          "peak_abs_detrended": 14.833536830981611,
+          "psd_peak_period_s": 81.82272727273423,
+          "low_freq_energy_fraction": 0.8543109043647431
+        },
+        "PtfmHeave": {
+          "mean": 5.235479500644408,
+          "rms_detrended": 0.42716444148192634,
+          "peak_abs_detrended": 5.235479500644408,
+          "psd_peak_period_s": 21.42976190476373,
+          "low_freq_energy_fraction": 0.025708296067020145
+        },
+        "PtfmRoll": {
+          "mean": 2.5460921545469697,
+          "rms_detrended": 0.5531552296600775,
+          "peak_abs_detrended": 2.8689078454530303,
+          "psd_peak_period_s": 31.036206896554365,
+          "low_freq_energy_fraction": 0.06430604185475883
+        },
+        "PtfmPitch": {
+          "mean": 0.9508173835009166,
+          "rms_detrended": 0.3032356301336372,
+          "peak_abs_detrended": 1.0771826164990834,
+          "psd_peak_period_s": 31.036206896554365,
+          "low_freq_energy_fraction": 0.017065499987841213
+        },
+        "PtfmYaw": {
+          "mean": -0.3234338020421088,
+          "rms_detrended": 0.9425442806966672,
+          "peak_abs_detrended": 3.818433802042109,
+          "psd_peak_period_s": 52.94411764706333,
+          "low_freq_energy_fraction": 0.954156110387517
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 0.5481926480564601,
+          "band_coupling": 0.9999999999999994,
+          "phase_deg": -26.184212181098122
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 0.13122586091074848,
+          "band_coupling": 0.9999999999999998,
+          "phase_deg": 140.51297360631347
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 1.5164345060020705,
+          "band_coupling": 0.9999999999999999,
+          "phase_deg": -44.88231937242475
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:04+00:00",
+          "run_id": "RUN_0001_FD_SWAY_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_SWAY",
+          "observation": "No shadow alarm triggered by project v1 rules.",
+          "hypothesis": "No scouting-only evidence against this candidate/DOF run.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "No shadow alarm triggered by project v1 rules.",
+          "verdict": "no_shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_SWAY_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_sway_ac064de6.out"
+          ],
+          "next_action": "Keep candidate selection and free-decay gates authoritative."
+        }
+      ]
+    },
+    {
+      "run_id": "RUN_0001_FD_YAW_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "dof": "FD_YAW",
+      "source_out": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_YAW_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_yaw_fe6ed2b1.out",
+      "primary_channel": "PtfmYaw",
+      "platform": {
+        "PtfmSurge": {
+          "mean": -2.3758509287350904,
+          "rms_detrended": 1.050809905192451,
+          "peak_abs_detrended": 2.3879609287350902,
+          "psd_peak_period_s": 77.78333333335101,
+          "low_freq_energy_fraction": 0.9693397405833473
+        },
+        "PtfmSway": {
+          "mean": -0.5853963332730784,
+          "rms_detrended": 0.41217941549215115,
+          "peak_abs_detrended": 1.0276036667269217,
+          "psd_peak_period_s": 87.50625000001989,
+          "low_freq_energy_fraction": 0.8829883039662841
+        },
+        "PtfmHeave": {
+          "mean": 5.226816394014714,
+          "rms_detrended": 0.48989259393024337,
+          "peak_abs_detrended": 5.226816394014714,
+          "psd_peak_period_s": 21.876562500004972,
+          "low_freq_energy_fraction": 0.027420255958989486
+        },
+        "PtfmRoll": {
+          "mean": 2.5499428502678376,
+          "rms_detrended": 0.6171693640562076,
+          "peak_abs_detrended": 2.5499428502678376,
+          "psd_peak_period_s": 31.82045454546178,
+          "low_freq_energy_fraction": 0.011621781784071302
+        },
+        "PtfmPitch": {
+          "mean": 0.9180748674880366,
+          "rms_detrended": 0.23683965303101953,
+          "peak_abs_detrended": 0.9180748674880366,
+          "psd_peak_period_s": 31.82045454546178,
+          "low_freq_energy_fraction": 0.1114481888480851
+        },
+        "PtfmYaw": {
+          "mean": -0.7774608863945432,
+          "rms_detrended": 2.4555272644855193,
+          "peak_abs_detrended": 14.362539113605457,
+          "psd_peak_period_s": 50.003571428582795,
+          "low_freq_energy_fraction": 0.6648527705965619
+        }
+      },
+      "pairs": {
+        "roll_pitch": {
+          "secondary_primary_rms": 0.38375147378418767,
+          "band_coupling": 0.9999999999999999,
+          "phase_deg": -144.34457448448313
+        },
+        "sway_pitch": {
+          "secondary_primary_rms": 0.5746033016913954,
+          "band_coupling": 1.0000000000000002,
+          "phase_deg": 40.83371654993408
+        },
+        "surge_yaw": {
+          "secondary_primary_rms": 2.336794935365403,
+          "band_coupling": 1.0,
+          "phase_deg": 116.75435024268191
+        }
+      },
+      "findings": [
+        {
+          "created_at": "2026-07-04T08:29:04+00:00",
+          "run_id": "RUN_0001_FD_YAW_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "dof": "FD_YAW",
+          "observation": "PtfmYaw is low-frequency/drift dominated (low_freq_fraction=0.6648527705965619, peak_period_s=50.003571428582795, drift_ratio=0.054).",
+          "hypothesis": "Prioritize MoorDyn stiffness/pretension/equilibrium checks over AddCLin force-fitting.",
+          "changed_knob": "none",
+          "expected": "scouting only; promote only through free-decay or causal falsification",
+          "actual": "PtfmYaw is low-frequency/drift dominated (low_freq_fraction=0.6648527705965619, peak_period_s=50.003571428582795, drift_ratio=0.054).",
+          "verdict": "shadow_alarm",
+          "evidence_level": "scouting_only",
+          "artifacts": [
+            "D:\\OpenFast\\FOCAL_C4_physics_workflow\\04_current_runs\\runs\\RUN_0001_FD_YAW_AMP_SH_H054_SWTTD_SG1019_07040711\\input\\qg_r001_center_yaw_fe6ed2b1.out"
+          ],
+          "next_action": "Use the physics-agent mooring path and inspect equilibrium drift plus tension channels if available."
+        }
+      ]
+    }
+  ],
+  "registry": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\05_registry\\shadow_experiment_registry.jsonl",
+  "report": "D:\\OpenFast\\FOCAL_C4_physics_workflow\\07_reports\\shadow_scout\\latest_shadow_scout_report.md"
+}

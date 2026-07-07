@@ -1,0 +1,12 @@
+{
+  "suite_id": "VERIFY_SUITE_LOCK_20260706T153450",
+  "candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+  "dofs": [
+    "FD_SURGE"
+  ],
+  "status": "SUCCESS",
+  "updated": "2026-07-06T07:48:43+00:00",
+  "failures": [],
+  "log_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_VERIFY_SUITE_LOCK_20260706T153450.log",
+  "suite_status_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_VERIFY_SUITE_LOCK_20260706T153450.status.json"
+}

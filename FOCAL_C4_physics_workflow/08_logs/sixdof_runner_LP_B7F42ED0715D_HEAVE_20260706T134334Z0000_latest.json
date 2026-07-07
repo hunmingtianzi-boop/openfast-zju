@@ -1,0 +1,22 @@
+{
+  "suite_id": "LP_B7F42ED0715D_HEAVE_20260706T134334Z0000_20260706T134354Z0000",
+  "candidate_id": "LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+  "dof": "FD_SWAY",
+  "phase": "executor",
+  "status": "RUNNING",
+  "updated": "2026-07-06T13:51:26+00:00",
+  "elapsed_sec": "179.2",
+  "child_live_status": {
+    "run_id": "RUN_0001_FD_SWAY_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+    "candidate_id": "LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+    "dof": "FD_SWAY",
+    "status": "RUNNING",
+    "pid": "51980",
+    "updated": "2026-07-06T13:50:56+00:00",
+    "elapsed_sec": "149.1",
+    "notes": "openfast process active",
+    "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+    "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000/manifest.json"
+  },
+  "log_path": "08_logs/sixdof_runner_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000_20260706T134354Z0000.log"
+}

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\OpenFast\FOCAL_C4_physics_workflow\03_scripts\04_run_executor.py", line 368, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "D:\OpenFast\FOCAL_C4_physics_workflow\03_scripts\04_run_executor.py", line 268, in main
+    materialize_notes = _materialize_vector(fst_file, vector)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OpenFast\FOCAL_C4_physics_workflow\03_scripts\04_run_executor.py", line 193, in _materialize_vector
+    lines = _apply_hydrodyn_edits(lines, vector["hydrodyn_edits"])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OpenFast\FOCAL_C4_physics_workflow\03_scripts\04_run_executor.py", line 114, in _apply_hydrodyn_edits
+    start = _block_start(out, tag)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OpenFast\FOCAL_C4_physics_workflow\03_scripts\04_run_executor.py", line 92, in _block_start
+    raise ValueError(f"block not found: {tag}")
+ValueError: block not found: AddBLin

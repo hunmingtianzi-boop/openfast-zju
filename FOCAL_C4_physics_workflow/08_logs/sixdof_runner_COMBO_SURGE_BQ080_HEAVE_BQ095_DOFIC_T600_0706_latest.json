@@ -1,0 +1,17 @@
+{
+  "suite_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_20260706T1710",
+  "candidate_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+  "dofs": [
+    "FD_SURGE",
+    "FD_SWAY",
+    "FD_HEAVE",
+    "FD_ROLL",
+    "FD_PITCH",
+    "FD_YAW"
+  ],
+  "status": "SUCCESS",
+  "updated": "2026-07-06T11:53:06+00:00",
+  "failures": [],
+  "log_path": "08_logs/sixdof_runner_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_20260706T1710.log",
+  "suite_status_path": "08_logs/sixdof_runner_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_20260706T1710.status.json"
+}

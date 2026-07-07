@@ -1,0 +1,7 @@
+﻿case_id,dof,unit,quality_status,processed_file,initial_value,duration_s,sampling_frequency_hz,median_period_s,detected_extrema_count,peak_to_peak
+FD_SURGE,Surge,m,original_cut_accepted,FD_SURGE_curated_processed.csv,-23.35351,741.1999999999999,24.99999999998721,80.41000000000003,17,34.429
+FD_SWAY,Sway,m,original_cut_accepted,FD_SWAY_curated_processed.csv,-15.02749,960.67,24.99999999998721,79.31,23,24.0789
+FD_HEAVE,Heave,m,recut_required_and_applied,FD_HEAVE_curated_processed.csv,-8.2962,481.3200000000001,25.000000000022737,20.829999999999927,27,13.3417
+FD_ROLL,Roll,deg,original_cut_accepted,FD_ROLL_curated_processed.csv,11.97218,774.1200000000001,24.99999999998721,31.000000000000014,34,22.1445
+FD_PITCH,Pitch,deg,original_cut_accepted,FD_PITCH_curated_processed.csv,-9.028615,484.93,24.99999999998721,30.45999999999998,31,16.5535
+FD_YAW,Yaw,deg,original_cut_accepted,FD_YAW_curated_processed.csv,-17.8903,628.25,24.99999999998721,50.69999999999996,24,28.4795

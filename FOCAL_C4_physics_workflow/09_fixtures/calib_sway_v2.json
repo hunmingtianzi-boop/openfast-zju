@@ -1,0 +1,51 @@
+{
+  "dof": "sway",
+  "status": "DIAGNOSTIC-FORK",
+  "ic": 11.82,
+  "T_target": 79.3637001399831,
+  "runs": [
+    {
+      "label": "baseline",
+      "fst": "agent_sway_base.fst",
+      "T": 137.51926096796728,
+      "zeta": 0.04073785011675058,
+      "edits": [],
+      "moor": null,
+      "morph": {
+        "env_err": 0.468240052524329,
+        "LER_err": 2.998189010436525,
+        "fp_err": 0.321319971608704,
+        "J_shape": 1.4887647848147667,
+        "J_wave": 0.17167459794198361
+      },
+      "leak": {
+        "Surge": 0.23715446254512387,
+        "Heave": 0.039976786753243024,
+        "Roll": 0.3828857584786921,
+        "Pitch": 0.5982241796228938,
+        "Yaw": 0.04337440875731938
+      }
+    }
+  ],
+  "log": [
+    "==============================================================================",
+    "  CALIB-AGENT  DOF=SWAY  [AUTO]  IC=11.82 (data release amp)",
+    "  data target: T=79.36s  zeta=3.88%  file=focal.campaign4.m02d01t00.fd05.e00w00.r01.z1.a1.csv",
+    "==============================================================================",
+    "\n[baseline] edits=[]  -> measuring T_base, env_base, leak",
+    "  T_base=137.52s (target 79.36, err +73.3%)  zeta=4.07%",
+    "  morph baseline: env_err=0.468 LER_err=3.00 fp_err=0.321 J_shape=1.49",
+    "  leak (sec/prim): Surge=0.24  Heave=0.04  Roll=0.38  Pitch=0.60  Yaw=0.04",
+    "\n[mechanism-gate] required stiffness ratio R = (T_base/T_target)^2 = 3.00  (TRIP, band [0.5,1.5])",
+    "[energy-leak-gate] TRIP: model dumps 0.60x primary energy into Pitch (data 0.05x)",
+    "\n[STOP] energy-leak gate tripped (energy-leak,mechanism); mooring repair cannot fix Roll-type coupling.",
+    "\n  --- DIAGNOSTIC FORK (search stopped, awaiting human) ---\n  DOF=sway  triggers=energy-leak, mechanism\n  observed: T_base=137.52s vs T_target=79.36s\n  why the loop will not close cleanly with diagonal params:\n    [energy-leak] model transfers 0.60x primary energy into Pitch; data only 0.05x. Conservative-coupling / near-degenerate structural difference (cf. Roll), NOT a calibratable diagonal-damping deficit.\n    [mechanism] required stiffness ratio R=3.00 (too soft (needs stiffening)). For Surge/Sway/Yaw this is the known mooring-modeling difference (FOCAL mooring ~2.8-3.1x stiffer than the standard model). AddCLin can force the period number but the mechanism is wrong -- the correct fix is re-setting the mooring stiffness, not adding linear hydrostatic stiffness.\n  This is a structural / mechanism question -- the agent does not enter falsification diagnosis on its own. Awaiting human decision on the falsification direction (e.g. re-set mooring stiffness vs accept a caveat AddCLin result)."
+  ],
+  "fork": "energy-leak,mechanism",
+  "R": 3.0025015789546172,
+  "leak": {
+    "dof": "Pitch",
+    "model": 0.5982241796228938,
+    "data": 0.047916473036193015
+  }
+}

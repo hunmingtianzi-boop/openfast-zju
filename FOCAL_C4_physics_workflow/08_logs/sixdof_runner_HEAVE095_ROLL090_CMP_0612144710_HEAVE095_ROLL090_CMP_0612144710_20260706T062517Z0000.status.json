@@ -1,0 +1,17 @@
+{
+  "suite_id": "HEAVE095_ROLL090_CMP_0612144710_20260706T062517Z0000",
+  "candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+  "dofs": [
+    "FD_SURGE",
+    "FD_SWAY",
+    "FD_HEAVE",
+    "FD_ROLL",
+    "FD_PITCH",
+    "FD_YAW"
+  ],
+  "status": "SUCCESS",
+  "updated": "2026-07-06T07:20:32+00:00",
+  "failures": [],
+  "log_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_HEAVE095_ROLL090_CMP_0612144710_20260706T062517Z0000.log",
+  "suite_status_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_HEAVE095_ROLL090_CMP_0612144710_20260706T062517Z0000.status.json"
+}

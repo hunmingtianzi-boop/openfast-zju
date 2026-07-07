@@ -1,0 +1,52 @@
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_SURGE
+Run Executor: SUCCESS RUN_0001_FD_SURGE_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_SURGE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_SWAY
+Run Executor: SUCCESS RUN_0001_FD_SWAY_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_SWAY
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_HEAVE
+Run Executor: SUCCESS RUN_0001_FD_HEAVE_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_HEAVE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_ROLL
+Run Executor: SUCCESS RUN_0001_FD_ROLL_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_ROLL
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_PITCH
+Run Executor: SUCCESS RUN_0001_FD_PITCH_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_PITCH
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_YAW
+Run Executor: SUCCESS RUN_0001_FD_YAW_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733 --dof FD_YAW
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\06_select_candidates.py
+Selector: complete
+[exit 0]

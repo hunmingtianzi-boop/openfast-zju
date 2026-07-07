@@ -1,0 +1,14 @@
+# Six-DOF Normalized Overlay Report
+
+Candidate: `HEAVE095_CMP_0612135839`
+Figure: `D:\OpenFast\FOCAL_C4_physics_workflow\06_figures\evidence_workflow\HEAVE095_CMP_0612135839_sixdof_release_normalized_overlay.png`
+Overlay mode: `normalized by each curve release amplitude`
+
+## Metric And Release Summary
+
+- `FD_SURGE`: run=`RUN_0002_FD_SURGE_HEAVE095_CMP_0612135839` period=0.65078407 env=0.41243468 LER=0.12985051 fp=0.30223682 zeta=0.010871949 ref_amp=23.215405 model_amp=15.598
+- `FD_SWAY`: run=`RUN_0001_FD_SWAY_HEAVE095_CMP_0612135839` period=2.6066805 env=0.32304132 LER=0.35183958 fp=0.17945897 zeta=0.024371127 ref_amp=15.1099 model_amp=11.767
+- `FD_HEAVE`: run=`RUN_0001_FD_HEAVE_HEAVE095_CMP_0612135839` period=0.72520623 env=0.49810556 LER=0.2324664 fp=0.59547417 zeta=0.0014965252 ref_amp=8.2867 model_amp=12.657
+- `FD_ROLL`: run=`RUN_0001_FD_ROLL_HEAVE095_CMP_0612135839` period=2.0019472 env=0.21021256 LER=0.011243908 fp=0.24202453 zeta=0.025729381 ref_amp=11.95968 model_amp=14.251
+- `FD_PITCH`: run=`RUN_0001_FD_PITCH_HEAVE095_CMP_0612135839` period=0.29701453 env=0.1346887 LER=0.5981415 fp=0.15387015 zeta=0.020856658 ref_amp=9.03115 model_amp=10.5085
+- `FD_YAW`: run=`RUN_0001_FD_YAW_HEAVE095_CMP_0612135839` period=0.73824889 env=0.27050089 LER=0.75605018 fp=0.20162353 zeta=0.022467835 ref_amp=18.0201 model_amp=14.4187

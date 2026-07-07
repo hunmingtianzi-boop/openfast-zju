@@ -1,0 +1,32 @@
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate HEAVE095_ROLL090_CMP_0612144710 --dof FD_SURGE --suite-id VERIFY_SUITE_LOCK_20260706T153450
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=59.1s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=149.2s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=209.3s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=239.3s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=299.4s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=329.4s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=359.5s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=389.5s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=419.5s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=449.6s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=479.6s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=509.6s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[suite-heartbeat] suite=VERIFY_SUITE_LOCK_20260706T153450 dof=FD_SURGE phase=executor elapsed=539.7s child_status=RUNNING child_run=RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+Run Executor: SUCCESS RUN_0007_FD_SURGE_HEAVE095_ROLL090_CMP_0612144710
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate HEAVE095_ROLL090_CMP_0612144710 --dof FD_SURGE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\06_select_candidates.py
+Selector: complete
+[exit 0]
+
+[suite-complete] {"suite_id": "VERIFY_SUITE_LOCK_20260706T153450", "candidate_id": "HEAVE095_ROLL090_CMP_0612144710", "dofs": ["FD_SURGE"], "status": "SUCCESS", "updated": "2026-07-06T07:48:43+00:00", "failures": [], "log_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_VERIFY_SUITE_LOCK_20260706T153450.log", "suite_status_path": "08_logs/sixdof_runner_HEAVE095_ROLL090_CMP_0612144710_VERIFY_SUITE_LOCK_20260706T153450.status.json"}

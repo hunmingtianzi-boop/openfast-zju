@@ -1,0 +1,52 @@
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_SURGE
+Run Executor: SUCCESS RUN_0001_FD_SURGE_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_SURGE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_SWAY
+Run Executor: SUCCESS RUN_0001_FD_SWAY_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_SWAY
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_HEAVE
+Run Executor: SUCCESS RUN_0001_FD_HEAVE_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_HEAVE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_ROLL
+Run Executor: SUCCESS RUN_0001_FD_ROLL_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_ROLL
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_PITCH
+Run Executor: SUCCESS RUN_0001_FD_PITCH_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_PITCH
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_YAW
+Run Executor: SUCCESS RUN_0001_FD_YAW_AMP_SH_H054_SWTTD_Y15052_R8715_07041055
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate AMP_SH_H054_SWTTD_Y15052_R8715_07041055 --dof FD_YAW
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\06_select_candidates.py
+Selector: complete
+[exit 0]

@@ -1,0 +1,121 @@
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_SURGE --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=239.3s child_status= child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=299.3s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=329.4s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SURGE phase=executor elapsed=359.4s child_status=RUNNING child_run=RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_SURGE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_SURGE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_SWAY --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=239.3s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=299.3s child_status= child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=329.4s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_SWAY phase=executor elapsed=359.4s child_status=RUNNING child_run=RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_SWAY_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_SWAY
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_HEAVE --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=239.2s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=299.3s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_HEAVE phase=executor elapsed=329.3s child_status=RUNNING child_run=RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_HEAVE_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_HEAVE
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_ROLL --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=239.2s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=299.3s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_ROLL phase=executor elapsed=329.3s child_status=RUNNING child_run=RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_ROLL_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_ROLL
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_PITCH --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=239.2s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_PITCH phase=executor elapsed=299.3s child_status= child_run=RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_PITCH_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_PITCH
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\04_run_executor.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_YAW --suite-id COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=29.0s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=59.0s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=89.1s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=119.1s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=149.1s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=179.2s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=209.2s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=239.2s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=269.3s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=299.3s child_status= child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[suite-heartbeat] suite=COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630 dof=FD_YAW phase=executor elapsed=329.3s child_status=RUNNING child_run=RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+Run Executor: SUCCESS RUN_0001_FD_YAW_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\05_evaluate_metrics.py --candidate COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706 --dof FD_YAW
+Metric Evaluator: PASS
+[exit 0]
+
+$ C:\Users\hunmi\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe 03_scripts\06_select_candidates.py
+Selector: complete
+[exit 0]
+
+[suite-complete] {"suite_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630", "candidate_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706", "dofs": ["FD_SURGE", "FD_SWAY", "FD_HEAVE", "FD_ROLL", "FD_PITCH", "FD_YAW"], "status": "SUCCESS", "updated": "2026-07-06T09:06:33+00:00", "failures": [], "log_path": "08_logs/sixdof_runner_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706_COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630.log", "suite_status_path": "08_logs/sixdof_runner_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706_COMBO_SURGE_BQ080_HEAVE_BQ095_20260706T1630.status.json"}

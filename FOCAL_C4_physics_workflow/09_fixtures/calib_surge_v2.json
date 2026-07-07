@@ -1,0 +1,301 @@
+{
+  "dof": "surge",
+  "status": "DIAGNOSTIC-FORK",
+  "ic": 7.21,
+  "T_target": 82.2121589577433,
+  "runs": [
+    {
+      "label": "baseline",
+      "fst": "agent_surge_base.fst",
+      "T": 136.53930228752372,
+      "zeta": 0.03799566830629271,
+      "edits": [],
+      "moor": null,
+      "morph": {
+        "env_err": 0.4032168007694558,
+        "LER_err": 3.4883358683349432,
+        "fp_err": 0.0051922123040118616,
+        "J_shape": 1.4293945905219967,
+        "J_wave": 0.17507600619392344
+      },
+      "leak": {
+        "Sway": 3.1764445330026278e-06,
+        "Heave": 0.05686686109212999,
+        "Roll": 9.160225632276643e-06,
+        "Pitch": 0.3490118904469041,
+        "Yaw": 2.761303378467122e-07
+      }
+    },
+    {
+      "label": "moor-EA-probe",
+      "fst": "agent_surge_mEAprobe.fst",
+      "T": 137.73247532071844,
+      "zeta": 0.038101982549808205,
+      "edits": [],
+      "moor": {
+        "EA_scale": 2.7583111311185764
+      },
+      "morph": {
+        "env_err": 0.4002150081580306,
+        "LER_err": 3.405235336905698,
+        "fp_err": 0.017383991827268647,
+        "J_shape": 1.4310404760290072,
+        "J_wave": 0.1748900509973294
+      },
+      "leak": {
+        "Sway": 2.3749880481575464e-06,
+        "Heave": 0.05753554689502123,
+        "Roll": 7.893181287204018e-06,
+        "Pitch": 0.34945958360585544,
+        "Yaw": 1.908742327775872e-07
+      }
+    },
+    {
+      "label": "moor-UL-probe",
+      "fst": "agent_surge_mULprobe.fst",
+      "T": 12.687226665331934,
+      "zeta": 0.0035795796244237547,
+      "edits": [],
+      "moor": {
+        "UnstrLen_scale": 0.9
+      },
+      "morph": {
+        "env_err": 0.73752197651554,
+        "LER_err": 0.9725006563712604,
+        "fp_err": 0.32195857313136184,
+        "J_shape": 1.1081239253437807,
+        "J_wave": 0.1390999555673757
+      },
+      "leak": {
+        "Sway": 9.333722272601081e-07,
+        "Heave": 1.9901099746150297,
+        "Roll": 1.0501259993448686e-05,
+        "Pitch": 0.564478418407882,
+        "Yaw": 6.583512895824785e-07
+      }
+    },
+    {
+      "label": "moor-solve1",
+      "fst": "agent_surge_msolve1.fst",
+      "T": 91.98387535725368,
+      "zeta": 0.031742684924764585,
+      "edits": [],
+      "moor": {
+        "UnstrLen_scale": 0.9777553560658722
+      },
+      "morph": {
+        "env_err": 0.3653148008744093,
+        "LER_err": 0.7090880060780879,
+        "fp_err": 0.1661071158852372,
+        "J_shape": 1.0602854544730407,
+        "J_wave": 0.1809590016168903
+      },
+      "leak": {
+        "Sway": 1.7541831907475287e-06,
+        "Heave": 0.11531994900338798,
+        "Roll": 9.535693551501017e-06,
+        "Pitch": 0.38796590982688745,
+        "Yaw": 1.971426398500339e-07
+      }
+    },
+    {
+      "label": "moor-solve2",
+      "fst": "agent_surge_msolve2.fst",
+      "T": 81.87451720423516,
+      "zeta": 0.02987682531042327,
+      "edits": [],
+      "moor": {
+        "UnstrLen_scale": 0.9731727702514279
+      },
+      "morph": {
+        "env_err": 0.3795116627174683,
+        "LER_err": 0.5064417802609221,
+        "fp_err": 0.13717392634584916,
+        "J_shape": 1.843232019101882,
+        "J_wave": 0.2178073333862723
+      },
+      "leak": {
+        "Sway": 1.0396694030284625e-06,
+        "Heave": 0.13115593164499645,
+        "Roll": 6.636557991314475e-06,
+        "Pitch": 0.3963417267285922,
+        "Yaw": 1.8238321890384064e-07
+      }
+    },
+    {
+      "label": "moor-B-4x",
+      "fst": "agent_surge_mB4x.fst",
+      "T": 81.3161183245582,
+      "zeta": 0.016770372797356627,
+      "edits": [
+        [
+          "BQuad",
+          0,
+          0,
+          3692000.0
+        ]
+      ],
+      "moor": {
+        "UnstrLen_scale": 0.9731727702514279
+      },
+      "morph": {
+        "env_err": 0.5846598434211108,
+        "LER_err": 0.71617944532477,
+        "fp_err": 0.11491543833241989,
+        "J_shape": 1.5685668858980528,
+        "J_wave": 0.17702931122451518
+      },
+      "leak": {
+        "Sway": 3.407752080780159e-06,
+        "Heave": 0.20746162470549293,
+        "Roll": 2.1620307555642978e-05,
+        "Pitch": 0.6257389945017873,
+        "Yaw": 4.3087202787158196e-07
+      }
+    },
+    {
+      "label": "moor-B-8x",
+      "fst": "agent_surge_mB8x.fst",
+      "T": 79.4658785028912,
+      "zeta": 0.007244478899239106,
+      "edits": [
+        [
+          "BQuad",
+          0,
+          0,
+          7384000.0
+        ]
+      ],
+      "moor": {
+        "UnstrLen_scale": 0.9731727702514279
+      },
+      "morph": {
+        "env_err": 0.6820034212709873,
+        "LER_err": 0.9253331753612484,
+        "fp_err": 0.09468967373602166,
+        "J_shape": 1.3558017872034853,
+        "J_wave": 0.15915062366658358
+      },
+      "leak": {
+        "Sway": 2.977623462192911e-06,
+        "Heave": 0.24606304350846137,
+        "Roll": 1.8358662640994443e-05,
+        "Pitch": 0.730122255605846,
+        "Yaw": 3.4870325335020327e-07
+      }
+    },
+    {
+      "label": "moor-B-12x",
+      "fst": "agent_surge_mB12x.fst",
+      "T": 34.607651686936094,
+      "zeta": 0.0019364839258554157,
+      "edits": [
+        [
+          "BQuad",
+          0,
+          0,
+          11076000.0
+        ]
+      ],
+      "moor": {
+        "UnstrLen_scale": 0.9731727702514279
+      },
+      "morph": {
+        "env_err": 0.7245469987676492,
+        "LER_err": 0.9643154241196497,
+        "fp_err": 0.0791640150108469,
+        "J_shape": 1.2204557671274754,
+        "J_wave": 0.14996407495336606
+      },
+      "leak": {
+        "Sway": 3.970454188917502e-06,
+        "Heave": 0.2581292902481982,
+        "Roll": 2.493740591438234e-05,
+        "Pitch": 0.7543372658917532,
+        "Yaw": 4.0022999182113687e-07
+      }
+    }
+  ],
+  "log": [
+    "==============================================================================",
+    "  CALIB-AGENT  DOF=SURGE  [AUTO]  IC=7.21 (data release amp)",
+    "  data target: T=82.21s  zeta=3.70%  file=focal.campaign4.m02d00t00.fd01.e00w00.r01.z1.a1.csv",
+    "==============================================================================",
+    "\n[baseline] edits=[]  -> measuring T_base, env_base, leak",
+    "  T_base=136.54s (target 82.21, err +66.1%)  zeta=3.80%",
+    "  morph baseline: env_err=0.403 LER_err=3.49 fp_err=0.005 J_shape=1.43",
+    "  leak (sec/prim): Sway=0.00  Heave=0.06  Roll=0.00  Pitch=0.35  Yaw=0.00",
+    "\n[mechanism-gate] required stiffness ratio R = (T_base/T_target)^2 = 2.76  (TRIP, band [0.5,1.5])",
+    "[energy-leak-gate] ok (no secondary DOF exceeds the data reference)",
+    "\n[route] mechanism gate tripped (R=2.76) with NO energy leak -> the discrepancy is a pure mooring-stiffness difference. Taking the autonomous MOORING-REPAIR path (re-set the mooring stiffness, not an AddCLin force).",
+    "  (Re-run with --force-addclin to instead force the period with AddCLin under a caveat.)",
+    "\n[mooring-path] structural mooring-stiffness repair  (R=(T_base/T_target)^2=2.76, no leak)",
+    "  mooring stiffness is an emergent catenary quantity (EA, MassDen, UnstrLen, layout) -- no",
+    "  closed form. The agent probes a single physical knob and secant-iterates on the period.",
+    "  MoorDyn baseline: EA=3.270e+09 N, UnstrLen=850.0 m (3 catenary lines).",
+    "\n[mooring EA-probe] EA x2.76 (sized toward R; one run measures axial authority)",
+    "  T_base=136.54s  ->  EA x2.76  T=137.73s",
+    "  measured EA sensitivity k_EA=-0.017  (omega^2 ~ EA^k_EA);  EA x>1e6 needed to reach R",
+    "  [EA-diagnostic] k_EA=-0.017 ~ 0: EA x2.76 moved the period < noise -- EA is a NON-LEVER. The horizontal restoring is GEOMETRY/TENSION-dominated, not axial; this empirically confirms the slack-catenary picture. Stiffness comes from pretension -> switch to UnstrLen.",
+    "  -> EA SATURATES (needs x>1e6 > 8x or k_EA~0): switching to UnstrLen, the high-authority pretension lever (shorter line -> more pretension -> stiffer).",
+    "\n[mooring UnstrLen-probe] UnstrLen x0.90 (measures the pretension sensitivity)",
+    "  UnstrLen x0.90  T=12.69s  ->  sensitivity k_U=-45.103",
+    "  UnstrLen x0.978 would reach R (baseline UnstrLen 850m -> 831m); secant will refine -- the law is steeply nonlinear near the slack->taut knee.",
+    "  [UnstrLen] secant solve toward T=82.21s",
+    "  solve#1 UnstrLen x0.9778",
+    "    T=91.98s (target 82.21, err +11.89%)",
+    "  solve#2 UnstrLen x0.9732",
+    "    T=81.87s (target 82.21, err +0.41%)",
+    "\n[B-layer] AddBQuad(0,0) with tuned mooring: minimize cost=max(env_err/0.4, LER_err/0.5)",
+    "  B=9.230e+05 (1x): env_err=0.380 LER_err=0.51 cost=1.01",
+    "  B=3.692e+06 (4x): env_err=0.585 LER_err=0.72 zeta=1.68% cost=1.46",
+    "  B=7.384e+06 (8x): env_err=0.682 LER_err=0.93 zeta=0.72% cost=1.85",
+    "  B=1.108e+07 (12x): env_err=0.725 LER_err=0.96 zeta=0.19% cost=1.93",
+    "  -> B_best=9.230e+05 (1.0x)  env_err=0.380 LER_err=0.51 cost=1.01",
+    "\n[equilibrium-shift] settled static position, baseline mooring -> tuned mooring:",
+    "    Surge  base=+0.323 tuned=+0.230  d=-0.094 m",
+    "    Sway   base=+0.000 tuned=-0.000  d=-0.000 m",
+    "    Heave  base=-0.349 tuned=-0.898  d=-0.549 m",
+    "    Roll   base=+0.000 tuned=-0.000  d=-0.000 deg",
+    "    Pitch  base=-1.512 tuned=-1.400  d=+0.112 deg",
+    "    Yaw    base=-0.000 tuned=+0.000  d=+0.000 deg",
+    "\n[stiffness-validation]",
+    "  required R=(T_base/T_target)^2=2.76; achieved K_ratio=(T_base/T_final)^2=2.78 (consistent)",
+    "  knob: UnstrLen x0.9732  (UnstrLen 850 -> 827 m; slack reduced)",
+    "\n[verdict]",
+    "  period_err=+0.41% (ok)  env_err=0.380 (base 0.403, ok)  LER_err=0.51 (MISS)  fp_err=0.137 (MISS)",
+    "  did not reach the calibrated band (LER_err, fp_err MISS) -> DIAGNOSTIC-FORK.",
+    "\n  --- DIAGNOSTIC FORK (search stopped, awaiting human) ---\n  DOF=surge  triggers=unclosed\n  observed: T_base=81.87s vs T_target=82.21s\n  why the loop will not close cleanly with diagonal params:\n    [unclosed] mooring re-set + diagonal damping did not bring LER_err, fp_err into the calibrated band; suspect a difference beyond the mooring-stiffness + diagonal-damping subspace.\n  This is a structural / mechanism question -- the agent does not enter falsification diagnosis on its own. Awaiting human decision on the falsification direction (e.g. re-set mooring stiffness vs accept a caveat AddCLin result)."
+  ],
+  "fix_path": "mooring",
+  "knob": "UnstrLen",
+  "knob_rel": 0.9731727702514279,
+  "k_EA": -0.017150714863524506,
+  "ea_diag": "k_EA=-0.017 ~ 0: EA x2.76 moved the period < noise -- EA is a NON-LEVER. The horizontal restoring is GEOMETRY/TENSION-dominated, not axial; this empirically confirms the slack-catenary picture. Stiffness comes from pretension -> switch to UnstrLen.",
+  "R": 2.7583111311185764,
+  "K_ratio": 2.781108000596877,
+  "bquad": 923000.0,
+  "bmult": 1.0,
+  "conv": {
+    "period_err": 0.004106956413608889,
+    "env_err": 0.3795116627174683,
+    "env_base": 0.4032168007694558,
+    "LER_err": 0.5064417802609221,
+    "fp_err": 0.13717392634584916,
+    "period_ok": true,
+    "env_ok": true,
+    "ler_ok": false,
+    "fp_ok": false
+  },
+  "eq_shift": {
+    "Surge": -0.09350340000000001,
+    "Sway": -1.0514729e-05,
+    "Heave": -0.5489434,
+    "Roll": -3.751942e-05,
+    "Pitch": 0.11193000000000008,
+    "Yaw": 7.52216e-07
+  },
+  "moor": {
+    "UnstrLen_scale": 0.9731727702514279
+  }
+}

@@ -1,0 +1,2 @@
+dof,candidate_id,bquad_base,bquad,bmult,ic_scale,signed_ic,score,period_error_pct,nrmse,zeta,reference_zeta,envelope_error,ler_error,fp_error
+FD_SURGE,BQIC_SURGE_0612141252_F100_I080,1000000.0,1000000.0,1.0,0.8,-18.572324000000002,1.235666691053102,7.5955935,0.057172839,0.008862592,0.020242479,0.29043853,0.056709541,0.029214568
