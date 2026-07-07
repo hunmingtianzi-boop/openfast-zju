@@ -1,0 +1,28 @@
+﻿{
+    "created_at":  "2026-07-07T01:09:29Z",
+    "repo_url":  "https://github.com/hunmingtianzi-boop/openfast-zju.git",
+    "source_root":  "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow",
+    "snapshot":  "20260707T010929Z",
+    "package_zip":  "active_physics_workflow/packages/global_6dof_loop_workflow_latest_20260706T224614.zip",
+    "copied_paths":  [
+                         "config.yaml",
+                         "03_scripts\\20_global_calibration_loop.py",
+                         "03_scripts\\25_plot_composite_sixdof.py",
+                         "03_scripts\\global_loop",
+                         "05_registry",
+                         "10_global_memory\\global_state.json",
+                         "10_global_memory\\diagnostic_queue.json",
+                         "10_global_memory\\epochs\\oracle_da77e9aa1d9c593c\\global_state.json",
+                         "10_global_memory\\epochs\\oracle_da77e9aa1d9c593c\\coupling_memory.json",
+                         "10_global_memory\\epochs\\oracle_da77e9aa1d9c593c\\diagnostic_queue.json",
+                         "10_global_memory\\epochs\\oracle_da77e9aa1d9c593c\\proposal_pool.json",
+                         "10_global_memory\\epochs\\oracle_da77e9aa1d9c593c\\reports",
+                         "runcards\\current_best_runcard.json"
+                     ],
+    "excludes":  [
+                     "04_current_runs/runs full OpenFAST outputs",
+                     ".codegraph cache",
+                     "API keys",
+                     "legacy work-zx files"
+                 ]
+}

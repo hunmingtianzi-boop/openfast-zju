@@ -1,0 +1,551 @@
+{
+  "created_at": "2026-07-06T13:52:54+00:00",
+  "oracle_id": "oracle_da77e9aa1d9c593c",
+  "epoch_id": "oracle_da77e9aa1d9c593c",
+  "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+  "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+  "guard_context": {
+    "oracle_id": "oracle_da77e9aa1d9c593c",
+    "epoch_id": "oracle_da77e9aa1d9c593c",
+    "current_best_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+    "current_best_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+    "open_dofs": [
+      "FD_SURGE",
+      "FD_SWAY",
+      "FD_HEAVE",
+      "FD_ROLL",
+      "FD_PITCH",
+      "FD_YAW"
+    ],
+    "protected_dofs": [],
+    "fragile_dofs": [
+      "FD_HEAVE",
+      "FD_PITCH",
+      "FD_ROLL",
+      "FD_SURGE",
+      "FD_SWAY",
+      "FD_YAW"
+    ],
+    "dof_states": {
+      "FD_SURGE": {
+        "dof": "FD_SURGE",
+        "score": 0.683792119030059,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.21692802333333336,
+          "envelope": 1.0310867,
+          "ler": 0.25970102,
+          "fp": 2.518640166666667,
+          "zeta": 0.46291415196725655,
+          "zeta_signed_ratio": -0.46291415196725655,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      },
+      "FD_SWAY": {
+        "dof": "FD_SWAY",
+        "score": 0.8014242053775592,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.8688935,
+          "envelope": 0.8076033,
+          "ler": 0.70367916,
+          "fp": 1.4954914166666666,
+          "zeta": 0.051256817108924685,
+          "zeta_signed_ratio": 0.051256817108924685,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      },
+      "FD_HEAVE": {
+        "dof": "FD_HEAVE",
+        "score": 1.0613883588851063,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.24173540999999998,
+          "envelope": 1.2452638999999999,
+          "ler": 0.4649328,
+          "fp": 4.96228475,
+          "zeta": 0.7624995538510617,
+          "zeta_signed_ratio": -0.7624995538510617,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      },
+      "FD_ROLL": {
+        "dof": "FD_ROLL",
+        "score": 0.5501113915579603,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.5401912666666667,
+          "envelope": 0.4547153,
+          "ler": 0.061487974,
+          "fp": 2.0459873333333336,
+          "zeta": 0.3046929509129357,
+          "zeta_signed_ratio": 0.3046929509129357,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      },
+      "FD_PITCH": {
+        "dof": "FD_PITCH",
+        "score": 0.5047469351858449,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.09900484333333333,
+          "envelope": 0.33672175,
+          "ler": 1.196283,
+          "fp": 1.28225125,
+          "zeta": 0.18433077519178245,
+          "zeta_signed_ratio": -0.18433077519178245,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      },
+      "FD_YAW": {
+        "dof": "FD_YAW",
+        "score": 0.7346715047083735,
+        "closed": false,
+        "dominant_error_mode": "fp",
+        "component_scores": {
+          "period": 0.24608296333333335,
+          "envelope": 0.6762522249999999,
+          "ler": 1.51210036,
+          "fp": 1.6801960833333334,
+          "zeta": 0.09039730958373553,
+          "zeta_signed_ratio": -0.09039730958373553,
+          "leak": 0.0
+        },
+        "coupling_risk": 0.35,
+        "allowed_regression": {
+          "score": 0.25,
+          "relative_score": 0.25
+        },
+        "notes": []
+      }
+    },
+    "thresholds": {
+      "targets": {
+        "period_error_limit_pct": 3.0,
+        "start_amplitude_error_limit": 0.2,
+        "start_amplitude_penalty_weight": 0.25,
+        "env_ok": 0.4,
+        "env_improve": 0.75,
+        "ler_ok": 0.5,
+        "fp_ok": 0.12
+      },
+      "physics": {
+        "R_lo": 0.5,
+        "R_hi": 1.5,
+        "leak_abs": 0.5,
+        "leak_factor": 3.0,
+        "mooring_repair_dofs": [
+          "FD_SURGE",
+          "FD_YAW"
+        ],
+        "moor_ea_max": 8.0,
+        "moor_unstrlen_taut": 0.943,
+        "moor_ea_probe_frac": 1.0,
+        "moor_unstrlen_probe": 0.9,
+        "moor_k_min": 0.05,
+        "moor_k_mono": -0.1,
+        "moor_max_secant": 4
+      }
+    },
+    "source_roles": {
+      "target_truth": "oracle",
+      "current_best": "observation",
+      "coupling_memory": "memory_inference",
+      "local_guard_context": "derived_constraint"
+    }
+  },
+  "proposals": [
+    {
+      "proposal_id": "LP_1091C22C41B7",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_HEAVE",
+      "hypothesis": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 2,
+              "j": 2,
+              "value": 6764999.999999999
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_HEAVE",
+            "bquad_base": 6600000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_HEAVE": {
+                "Heave": -8.286700000000002
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_HEAVE diagonal BQuad x 1.02",
+        "expected_side_effects": [
+          "FD_PITCH",
+          "FD_SURGE"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 1.0613883588851063,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 1.1113883588851063,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    },
+    {
+      "proposal_id": "LP_2BFEA3960C79",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_SWAY",
+      "hypothesis": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 1,
+              "j": 1,
+              "value": 1153125.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_SWAY",
+            "bquad_base": 1125000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_SWAY": {
+                "Sway": -15.1099
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_SWAY diagonal BQuad x 1.02",
+        "expected_side_effects": [
+          "FD_ROLL",
+          "FD_YAW",
+          "FD_PITCH"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 0.8014242053775592,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 0.8514242053775594,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    },
+    {
+      "proposal_id": "LP_9E877C00D37E",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_YAW",
+      "hypothesis": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 5,
+              "j": 5,
+              "value": 73800000000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_YAW",
+            "bquad_base": 72000000000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_YAW": {
+                "Yaw": -18.0201
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_YAW diagonal BQuad x 1.02",
+        "expected_side_effects": [
+          "FD_SURGE",
+          "FD_SWAY"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 0.7346715047083735,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 0.7846715047083734,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    },
+    {
+      "proposal_id": "LP_A299E8730E68",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_SURGE",
+      "hypothesis": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 0,
+              "j": 0,
+              "value": 1024999.9999999999
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_SURGE",
+            "bquad_base": 1000000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_SURGE": {
+                "Surge": -23.215405
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_SURGE diagonal BQuad x 1.02",
+        "expected_side_effects": [
+          "FD_PITCH",
+          "FD_YAW"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 0.683792119030059,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 0.7337921190300591,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    },
+    {
+      "proposal_id": "LP_445E3BB8A219",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_ROLL",
+      "hypothesis": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 3,
+              "j": 3,
+              "value": 78975000000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_ROLL",
+            "bquad_base": 81000000000.0,
+            "bquad_multiplier": 0.975,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_ROLL": {
+                "Roll": 11.95968
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_ROLL diagonal BQuad x 0.975",
+        "expected_side_effects": [
+          "FD_PITCH",
+          "FD_SWAY"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 0.5501113915579603,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 0.6001113915579606,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    },
+    {
+      "proposal_id": "LP_F18C487648C7",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_PITCH",
+      "hypothesis": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+      "action": {
+        "action_type": "fp_bquad_probe",
+        "parameter_group": "diagonal_hydro",
+        "vector": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 4,
+              "j": 4,
+              "value": 84050000000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_PITCH",
+            "bquad_base": 82000000000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_PITCH": {
+                "Pitch": -9.031149999999998
+              }
+            }
+          }
+        },
+        "registration_ready": true,
+        "reason_not_ready": "",
+        "expected_primary_effect": "FD_PITCH diagonal BQuad x 1.02",
+        "expected_side_effects": [
+          "FD_SURGE",
+          "FD_HEAVE",
+          "FD_ROLL"
+        ],
+        "risk_tags": [
+          "full_6dof_required",
+          "limited_probe",
+          "fp_probe"
+        ]
+      },
+      "expected_gain": 0.5047469351858449,
+      "protected_risk": 0.45,
+      "information_gain": 0.4,
+      "memory_support": 0.1,
+      "mechanism_clarity": 1.0,
+      "run_cost": 1.0,
+      "priority": 0.5547469351858452,
+      "validation_mode": "full_6dof_required",
+      "status": "proposed",
+      "created_at": "2026-07-06T13:52:53+00:00"
+    }
+  ],
+  "top_k": 6
+}
