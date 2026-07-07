@@ -1,0 +1,2 @@
+dof,candidate_id,bquad_base,bquad,bmult,ic_scale,signed_ic,score,period_error_pct,nrmse,zeta,reference_zeta,envelope_error,ler_error,fp_error
+FD_ROLL,BQIC_ROLL_0617161538_F098_I100,90000000000.0,88200000000.0,0.98,1.0,16.89065606,0.26893352516751007,2.3134045,0.044248382,0.026274006,0.02049542,0.2082367,0.032325199,0.24481801

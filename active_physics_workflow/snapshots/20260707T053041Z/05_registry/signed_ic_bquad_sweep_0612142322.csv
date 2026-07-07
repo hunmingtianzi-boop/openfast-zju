@@ -1,0 +1,2 @@
+dof,candidate_id,bquad_base,bquad,bmult,ic_scale,signed_ic,score,period_error_pct,nrmse,zeta,reference_zeta,envelope_error,ler_error,fp_error
+FD_SWAY,BQIC_SWAY_0612142322_F100_I080,1125000.0,1125000.0,1.0,0.8,-12.08792,0.13115762684496124,2.632181,0.047218733,0.012446109,0.023182848,0.34505342,0.12131912,0.033236198
