@@ -1,0 +1,352 @@
+{
+  "updated_at": "2026-07-07T14:15:18+00:00",
+  "mode": "memory_rebuild",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "oracle_manifest": {
+    "oracle_id": "oracle_c26754c99eb2607c",
+    "created_at": "2026-07-07T13:58:42+00:00",
+    "version": 2,
+    "active_paths": {
+      "workspace_root": "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow",
+      "canonical_workspace_root": "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow",
+      "resolved_workspace_root": "D:\\OpenFast\\FOCAL_C4_physics_workflow",
+      "is_junction_alias": true,
+      "reference_processed_dir": "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow\\00_reference\\curated_six_dof_reference\\processed",
+      "starting_model_openfast_dir": "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow\\02_starting_model\\best_reproducible_model\\OpenFAST_input_files",
+      "openfast_exe": "D:\\OpenFast\\FOCAL_C4_workflow_hub\\01_active_physics_workflow\\02_starting_model\\best_reproducible_model\\OpenFAST_input_files\\OpenFAST_Release.exe"
+    },
+    "config_hash": "af9f32470ac0d431065ae59df3a47fbf3e31d3587b27a84ff9558ae89bce93c1",
+    "config_sections_hash": "deb314a4b065be4059ea81b8277fc934fef3d89ac51f5de277485f608988abef",
+    "config_sections": {
+      "reference": {
+        "kind": "curated",
+        "processed_dir": "00_reference/curated_six_dof_reference/processed",
+        "old_heave_reference_allowed": false
+      },
+      "model": {
+        "baseline_dir": "01_baseline/original_baseline_model",
+        "starting_model_dir": "02_starting_model/best_reproducible_model",
+        "openfast_subdir": "OpenFAST_input_files",
+        "fst_file": "IEA-15-240-RWT-UMaineSemi.fst"
+      },
+      "targets": {
+        "period_error_limit_pct": 3.0,
+        "start_amplitude_error_limit": 0.2,
+        "start_amplitude_penalty_weight": 0.25,
+        "env_ok": 0.4,
+        "env_improve": 0.75,
+        "ler_ok": 0.5,
+        "fp_ok": 0.12
+      },
+      "physics": {
+        "R_lo": 0.5,
+        "R_hi": 1.5,
+        "leak_abs": 0.5,
+        "leak_factor": 3.0,
+        "mooring_repair_dofs": [
+          "FD_SURGE",
+          "FD_YAW"
+        ],
+        "moor_ea_max": 8.0,
+        "moor_unstrlen_taut": 0.943,
+        "moor_ea_probe_frac": 1.0,
+        "moor_unstrlen_probe": 0.9,
+        "moor_k_min": 0.05,
+        "moor_k_mono": -0.1,
+        "moor_max_secant": 4
+      }
+    },
+    "reference_files": {
+      "FD_SURGE": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_SURGE_curated_processed.csv",
+        "size_bytes": 2040751,
+        "sha256": "56d5860804a54434e06b1e988052bfc7ad41d46e33a0ce49cc2cacbcb0d4c614"
+      },
+      "FD_SWAY": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_SWAY_curated_processed.csv",
+        "size_bytes": 2712485,
+        "sha256": "9253a88b5dae6112764a37c529cb93303102d7c52361f90fb5669cf28e1cc106"
+      },
+      "FD_HEAVE": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_HEAVE_curated_processed.csv",
+        "size_bytes": 1363816,
+        "sha256": "05490dddfc9fc6e88b8b56489d377889efe8035aeb14ae48cc9f3759a3e47b3e"
+      },
+      "FD_ROLL": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_ROLL_curated_processed.csv",
+        "size_bytes": 2158910,
+        "sha256": "565e925bfff0f2ff24d9dd6358984ae04125f8aaf07ce7c7694a5bad9926c0c9"
+      },
+      "FD_PITCH": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_PITCH_curated_processed.csv",
+        "size_bytes": 1327476,
+        "sha256": "218012fc9b526d4a05f1a8dc0d210cd20631b90fa2a5fb506ad3bd6c3de67708"
+      },
+      "FD_YAW": {
+        "relative_path": "00_reference/curated_six_dof_reference/processed/FD_YAW_curated_processed.csv",
+        "size_bytes": 1696341,
+        "sha256": "4e78c3acbb41f41aebd8187e25f5155fd65683e558dcf305fcc881d86eadd997"
+      }
+    },
+    "starting_model_tree_hash": "3c9ceba8ebde90cca149580b1c92dd5f7fc523be4488ce0baa89b117acb407f8",
+    "target_source": "active_curated_processed_reference"
+  },
+  "target_truth": {
+    "created_at": "2026-07-07T13:58:59+00:00",
+    "source": "active_curated_processed_reference",
+    "dofs": {
+      "FD_SURGE": {
+        "dof": "FD_SURGE",
+        "channel": "Surge",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_SURGE_curated_processed.csv",
+        "period": 82.7636124021536,
+        "zeta": 0.02024247875660551,
+        "decay_start": -23.215405,
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        }
+      },
+      "FD_SWAY": {
+        "dof": "FD_SWAY",
+        "channel": "Sway",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_SWAY_curated_processed.csv",
+        "period": 79.43045867338219,
+        "zeta": 0.023182847902710083,
+        "decay_start": -15.1099,
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        }
+      },
+      "FD_HEAVE": {
+        "dof": "FD_HEAVE",
+        "channel": "Heave",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_HEAVE_curated_processed.csv",
+        "period": 20.7194256447778,
+        "zeta": 0.006301146907420386,
+        "decay_start": -8.286700000000002,
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        }
+      },
+      "FD_ROLL": {
+        "dof": "FD_ROLL",
+        "channel": "Roll",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_ROLL_curated_processed.csv",
+        "period": 31.040392455894676,
+        "zeta": 0.020495420190384903,
+        "decay_start": 11.95968,
+        "reference_leak": {
+          "Surge": 0.13004178340036146,
+          "Sway": 0.2811231135878405,
+          "Heave": 0.032594922860306255,
+          "Pitch": 0.24847735333665472,
+          "Yaw": 0.10705157585119539
+        }
+      },
+      "FD_PITCH": {
+        "dof": "FD_PITCH",
+        "channel": "Pitch",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_PITCH_curated_processed.csv",
+        "period": 30.598882368645604,
+        "zeta": 0.025569994875407676,
+        "decay_start": -9.031149999999998,
+        "reference_leak": {
+          "Surge": 0.3652553627158409,
+          "Sway": 0.11511580438120428,
+          "Heave": 0.09709203619753709,
+          "Roll": 0.24451383619627762,
+          "Yaw": 0.12733165013806358
+        }
+      },
+      "FD_YAW": {
+        "dof": "FD_YAW",
+        "channel": "Yaw",
+        "reference_file": "00_reference/curated_six_dof_reference/processed/FD_YAW_curated_processed.csv",
+        "period": 50.68727336773339,
+        "zeta": 0.02470071345535785,
+        "decay_start": -18.0201,
+        "reference_leak": {
+          "Surge": 0.1667131756781034,
+          "Sway": 0.06151291011602063,
+          "Heave": 0.00833951391833249,
+          "Roll": 0.08748756161027149,
+          "Pitch": 0.06650130575791667
+        }
+      }
+    },
+    "thresholds": {
+      "targets": {
+        "period_error_limit_pct": 3.0,
+        "start_amplitude_error_limit": 0.2,
+        "start_amplitude_penalty_weight": 0.25,
+        "env_ok": 0.4,
+        "env_improve": 0.75,
+        "ler_ok": 0.5,
+        "fp_ok": 0.12
+      },
+      "physics": {
+        "R_lo": 0.5,
+        "R_hi": 1.5,
+        "leak_abs": 0.5,
+        "leak_factor": 3.0,
+        "mooring_repair_dofs": [
+          "FD_SURGE",
+          "FD_YAW"
+        ],
+        "moor_ea_max": 8.0,
+        "moor_unstrlen_taut": 0.943,
+        "moor_ea_probe_frac": 1.0,
+        "moor_unstrlen_probe": 0.9,
+        "moor_k_min": 0.05,
+        "moor_k_mono": -0.1,
+        "moor_max_secant": 4
+      }
+    }
+  },
+  "candidate_filter": [],
+  "legacy_run_cards_migrated": 0,
+  "run_cards_written": 259,
+  "run_cards_total": 260,
+  "current_best_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "current_best_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "current_best_score": 0.6792725733966515,
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "period_reverse_worse"
+    ]
+  },
+  "last_run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+  "last_candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+  "last_step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "last_verdict": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "last_score": 1.1973037933381994,
+  "last_stage": "global_step",
+  "recommended_dof": "FD_HEAVE",
+  "recommended_parameter_group": "diagonal_hydro",
+  "proposal_pool_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/proposal_pool.json",
+  "top_proposal_ids": [
+    "LP_330171BDD5AE",
+    "LP_1A727791036F",
+    "LP_D460BA0F215D",
+    "LP_71D22C5024DD",
+    "LP_134489D9588E",
+    "LP_156E5BFB263B"
+  ],
+  "materializable_proposal_ids": [
+    "LP_330171BDD5AE",
+    "LP_1A727791036F",
+    "LP_D460BA0F215D",
+    "LP_71D22C5024DD",
+    "LP_134489D9588E"
+  ],
+  "proposal_count": 6,
+  "harness_status_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/harness_status.json",
+  "harness_status": "INSUFFICIENT_ACTIVE_DATA",
+  "harness_recommendation": "RUN_BASELINE_EVIDENCE",
+  "mean_information_gain": 0.0,
+  "active_attempt_count": 0,
+  "valid_active_attempt_count": 0,
+  "dominant_campaign_id": "",
+  "stop_auto_materialize": false,
+  "harness_reason": "valid active attempts 0/3; offline_import is historical evidence and is not scored as active search efficiency",
+  "harness_active_summary": {
+    "status": "INSUFFICIENT_ACTIVE_DATA",
+    "score": null,
+    "confidence": 0.0,
+    "active_attempt_count": 0,
+    "valid_attempt_count": 0,
+    "active_decision_count": 0,
+    "window_limit": 20,
+    "accepted_count": 0,
+    "rejected_count": 0,
+    "evidence_only_count": 0,
+    "diagnostic_count": 0,
+    "acceptance_rate": 0.0,
+    "rejection_rate": 0.0,
+    "diagnostic_rate": 0.0,
+    "plateau_count": 0,
+    "mean_information_gain": 0.0,
+    "best_score_improvement_ratio": 0.0,
+    "proposal_status": "MATERIALIZABLE",
+    "reason": "valid active attempts 0/3; offline_import is historical evidence and is not scored as active search efficiency"
+  },
+  "harness_proposal_summary": {
+    "status": "MATERIALIZABLE",
+    "score": 15.0,
+    "proposal_count": 6,
+    "top_proposal_id": "LP_330171BDD5AE",
+    "top_target_dof": "FD_HEAVE",
+    "top_parameter_group": "diagonal_hydro",
+    "top_registration_ready": true,
+    "materializable_proposal_ids": [
+      "LP_330171BDD5AE",
+      "LP_1A727791036F",
+      "LP_D460BA0F215D",
+      "LP_71D22C5024DD",
+      "LP_134489D9588E"
+    ],
+    "diagnostic_only": false,
+    "reason": "top proposal can be materialized but must still pass global-step full 6DOF validation"
+  },
+  "local_polish_verdict": {
+    "status": "RUNNING",
+    "reason": "local polish recommendation issued",
+    "tags": [
+      "local_polish"
+    ]
+  },
+  "artifact_manifest_count": 260,
+  "transition_count": 253,
+  "relation_count": 486,
+  "proposal_history_count": 10,
+  "truth_snapshot_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/truth_snapshot.json",
+  "artifact_manifest_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/artifacts/artifact_manifest.json",
+  "transition_index_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/transitions/transition_index.json",
+  "relation_memory_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/relation_memory.json",
+  "proposal_history_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/proposal_history.json",
+  "memory_rebuild_report_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/reports/memory_rebuild_report.md"
+}

@@ -1,0 +1,313 @@
+{
+  "run_id": "RC_HEAVE_AF0_N2M_07041115",
+  "parent_id": "AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+  "stage": "offline_import",
+  "parameter_group": "baseline",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": 400,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": []
+    },
+    "changed_parameters": "FST.TMax"
+  },
+  "input_hash": "RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "HEAVE_AF0_N2M_07041115",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_HEAVE": {
+        "run_id": "RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115",
+        "metric_status": "PASS",
+        "period": 20.894265,
+        "reference_period": 20.719426,
+        "period_error_pct": 0.8438438,
+        "zeta": 0.003162662,
+        "reference_zeta": 0.0063011469,
+        "nrmse": 0.023053821,
+        "j_dof": 0.023053821,
+        "j_shape": 0.23065566,
+        "envelope_error": 0.35869093,
+        "ler_error": 0.28167513,
+        "fp_error": 0.10052044,
+        "start_amplitude_error": 0.07147598,
+        "leak": {
+          "Surge": 0.1543064041895427,
+          "Sway": 0.432248188414962,
+          "Roll": 0.8892693540404072,
+          "Pitch": 0.46735599159949925,
+          "Yaw": 0.27388878287339224
+        },
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        },
+        "morph": {
+          "J_wave": 0.023053821462376885,
+          "J_shape": 0.23065566193101558,
+          "env_err": 0.35869092953619636,
+          "fp_err": 0.10052044126533254,
+          "LERD": 0.0029834655567953176,
+          "LERM": 0.0038238336200955144,
+          "LER_err": 0.2816751349403464,
+          "Tend": 399.8
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_HEAVE": {
+        "Surge": 0.1543064041895427,
+        "Sway": 0.432248188414962,
+        "Roll": 0.8892693540404072,
+        "Pitch": 0.46735599159949925,
+        "Yaw": 0.27388878287339224
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_HEAVE": {
+        "Surge": 0.694133163574395,
+        "Sway": 0.3830351608671329,
+        "Roll": 0.23088104002761986,
+        "Pitch": 0.08142292151490593,
+        "Yaw": 0.09687871817782223
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_HEAVE": {
+          "run_id": "RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input/qg_r001_center_heave_adcda246.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input/qg_r001_center_heave_adcda246.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input/qg_r001_center_heave_adcda246.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 0.5688755130958918,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_HEAVE": {
+        "score": 0.5688755130958918,
+        "period_error_pct": 0.8438438,
+        "period_error_abs_pct": 0.8438438,
+        "envelope_error": 0.35869093,
+        "ler_error": 0.28167513,
+        "fp_error": 0.10052044,
+        "zeta_error_ratio": 0.498081531792252,
+        "closed": true
+      }
+    },
+    "hard_constraint_violations": [
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "strong_leak:FD_HEAVE->Roll:0.889>ref0.231"
+    ],
+    "predicate_results": [
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_PITCH",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_ROLL",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_SURGE",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_SWAY",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_YAW",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Roll:0.889>ref0.231",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "strong_leak:FD_HEAVE->Roll:0.889>ref0.231"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "artifact_policy": "retain_full",
+  "created_at": "2026-07-07T13:59:00+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/input/qg_r001_center_heave_adcda246.fst",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_HEAVE_AF0_N2M_07041115/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_PITCH",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_ROLL",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_SURGE",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_SWAY",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_YAW",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Roll:0.889>ref0.231",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "strong_leak:FD_HEAVE->Roll:0.889>ref0.231"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}
