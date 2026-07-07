@@ -1,0 +1,155 @@
+{
+  "transition_id": "TR_3C87F8D2F587083F",
+  "parent_run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+  "child_run_id": "RC_BQIC_SWAY_0703140207_F110_I100",
+  "parent_candidate_id": "AMP_SH_SY_R965_H058_07031325",
+  "child_candidate_id": "BQIC_SWAY_0703140207_F110_I100",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "signed_ic_bquad",
+  "target_dof": "FD_ROLL",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 1,
+        "j": 1,
+        "value": 1237500.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {
+      "Sway": -12.08792
+    },
+    "tmax": 900,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "AMP_SH_SY_R965_06171637",
+        "FD_SWAY": "AMP_SH_SY_R965_06171637",
+        "FD_HEAVE": "BQIC_HEAVE_0703130239_F100_I058",
+        "FD_ROLL": "AMP_SH_SY_R965_06171637",
+        "FD_PITCH": "AMP_SH_SY_R965_06171637",
+        "FD_YAW": "AMP_SH_SY_R965_06171637"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 0.965,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -16.2507835,
+        "FD_SWAY": -12.08792,
+        "FD_HEAVE": -4.806286000000001,
+        "FD_ROLL": 16.890656064,
+        "FD_PITCH": -9.678683455,
+        "FD_YAW": -15.136883999999998
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "bquad_multiplier": 1.1
+    },
+    "changed_parameters": "HydroDyn.BQuad[1,1];IC.Sway;FST.TMax"
+  },
+  "global_score_delta": 0.3205044393902551,
+  "metric_deltas": {
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.6452839378062016,
+        "child": 1.039577695907722,
+        "delta": 0.39429375810152045,
+        "signed_delta": 0.39429375810152045,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 2.632181,
+        "child": 4.2507113,
+        "delta": 1.6185302999999998,
+        "signed_delta": 1.6185302999999998,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.34505342,
+        "child": 0.31685679,
+        "delta": -0.02819663,
+        "signed_delta": -0.02819663,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.12131912,
+        "child": 0.72940337,
+        "delta": 0.60808425,
+        "signed_delta": 0.60808425,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.033236198,
+        "child": 0.018844034,
+        "delta": -0.014392164000000002,
+        "signed_delta": -0.014392164000000002,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.46313287306201545,
+        "child": 0.3816117415772212,
+        "delta": -0.08152113148479423,
+        "signed_delta": -0.08152113148479423,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SURGE",
+    "missing_dof:FD_YAW"
+  ],
+  "resolved_failures": [
+    "strong_leak",
+    "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+  ],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_YAW"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "suite incomplete",
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "source_run_ids": [
+    "RC_AMP_SH_SY_R965_H058_07031325",
+    "RC_BQIC_SWAY_0703140207_F110_I100"
+  ],
+  "created_at": "2026-07-07T14:40:14+00:00"
+}

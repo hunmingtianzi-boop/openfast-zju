@@ -1,0 +1,2 @@
+dof,candidate_id,bquad_base,bquad,bmult,ic_scale,signed_ic,score,period_error_pct,nrmse,zeta,reference_zeta,envelope_error,ler_error,fp_error
+FD_HEAVE,BQIC_HEAVE_0612135257_F100_I095,6600000.0,6600000.0,1.0,0.95,-7.7746429688,0.740770809008085,0.72520623,0.035911044,0.0014965252,0.0063011469,0.49810556,0.2324664,0.59547417

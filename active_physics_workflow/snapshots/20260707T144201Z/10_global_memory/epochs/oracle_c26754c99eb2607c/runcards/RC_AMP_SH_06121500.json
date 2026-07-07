@@ -1,0 +1,649 @@
+{
+  "run_id": "RC_AMP_SH_06121500",
+  "parent_id": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+  "stage": "offline_import",
+  "parameter_group": "diagonal_hydro",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+        "FD_SWAY": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+        "FD_HEAVE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+        "FD_ROLL": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+        "FD_PITCH": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+        "FD_YAW": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 1.0,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -13.61699580275,
+        "FD_SWAY": -12.08792,
+        "FD_HEAVE": -4.9720200000000006,
+        "FD_ROLL": 16.890656064,
+        "FD_PITCH": -9.678683455,
+        "FD_YAW": -14.98010913
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ]
+    },
+    "changed_parameters": ""
+  },
+  "input_hash": "RUN_0001_FD_SURGE_AMP_SH_06121500",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "AMP_SH_06121500",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_SURGE": {
+        "run_id": "RUN_0001_FD_SURGE_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 83.833333,
+        "reference_period": 82.763612,
+        "period_error_pct": 1.2925015,
+        "zeta": 0.015569877,
+        "reference_zeta": 0.020242479,
+        "nrmse": 0.050735985,
+        "j_dof": 0.050735985,
+        "j_shape": 1.0916513,
+        "envelope_error": 0.4143383,
+        "ler_error": 0.28996584,
+        "fp_error": 0.31874783,
+        "start_amplitude_error": 0.3348813,
+        "leak": {
+          "Sway": 0.2718854317477552,
+          "Heave": 0.1885627796560318,
+          "Roll": 0.24298699950636557,
+          "Pitch": 0.07106791881466182,
+          "Yaw": 0.1859328815463762
+        },
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        },
+        "morph": {
+          "J_wave": 0.05073598524601136,
+          "J_shape": 1.0916512999121288,
+          "env_err": 0.41433830029092805,
+          "fp_err": 0.31874782571027604,
+          "LERD": 0.003995852928715648,
+          "LERM": 0.005154513766623043,
+          "LER_err": 0.28996583672558074,
+          "Tend": 740.9499999999999
+        }
+      },
+      "FD_SWAY": {
+        "run_id": "RUN_0001_FD_SWAY_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 81.521212,
+        "reference_period": 79.430459,
+        "period_error_pct": 2.632181,
+        "zeta": 0.012446109,
+        "reference_zeta": 0.023182848,
+        "nrmse": 0.047218733,
+        "j_dof": 0.047218733,
+        "j_shape": 0.93776528,
+        "envelope_error": 0.34505342,
+        "ler_error": 0.12131912,
+        "fp_error": 0.033236198,
+        "start_amplitude_error": 0.008464649,
+        "leak": {
+          "Surge": 0.32833120147316724,
+          "Heave": 0.18875196495660068,
+          "Roll": 0.31186938844403067,
+          "Pitch": 0.13997287375283538,
+          "Yaw": 0.4443705543893547
+        },
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        },
+        "morph": {
+          "J_wave": 0.04721873267157613,
+          "J_shape": 0.9377652795929577,
+          "env_err": 0.3450534205279577,
+          "fp_err": 0.03323619827066937,
+          "LERD": 0.008732298675839493,
+          "LERM": 0.009791693503850223,
+          "LER_err": 0.12131912424638669,
+          "Tend": 899.8
+        }
+      },
+      "FD_HEAVE": {
+        "run_id": "RUN_0001_FD_HEAVE_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 20.868056,
+        "reference_period": 20.719426,
+        "period_error_pct": 0.71734571,
+        "zeta": 0.0024122298,
+        "reference_zeta": 0.0063011469,
+        "nrmse": 0.023805829,
+        "j_dof": 0.023805829,
+        "j_shape": 0.22404785,
+        "envelope_error": 0.37515601,
+        "ler_error": 0.068429342,
+        "fp_error": 0.22845927,
+        "start_amplitude_error": 0.1900998,
+        "leak": {
+          "Surge": 0.16084596295277653,
+          "Sway": 0.41316150699410265,
+          "Roll": 0.8173921171570713,
+          "Pitch": 0.42779379022097996,
+          "Yaw": 0.26973557246428004
+        },
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        },
+        "morph": {
+          "J_wave": 0.023805828717712633,
+          "J_shape": 0.22404784501206104,
+          "env_err": 0.3751560082425362,
+          "fp_err": 0.22845927190028967,
+          "LERD": 0.0029834655567953176,
+          "LERM": 0.0031876221404749812,
+          "LER_err": 0.06842934158052019,
+          "Tend": 399.8
+        }
+      },
+      "FD_ROLL": {
+        "run_id": "RUN_0001_FD_ROLL_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 31.635404,
+        "reference_period": 31.040392,
+        "period_error_pct": 1.9168948,
+        "zeta": 0.026124492,
+        "reference_zeta": 0.02049542,
+        "nrmse": 0.045789938,
+        "j_dof": 0.045789938,
+        "j_shape": 0.94578738,
+        "envelope_error": 0.21352375,
+        "ler_error": 0.051901352,
+        "fp_error": 0.24435064,
+        "start_amplitude_error": 0.19242321,
+        "leak": {
+          "Surge": 0.28615519292114716,
+          "Sway": 0.455524555716769,
+          "Heave": 0.24813677171231147,
+          "Pitch": 0.1494626020959902,
+          "Yaw": 0.2349291106007281
+        },
+        "reference_leak": {
+          "Surge": 0.13004178340036146,
+          "Sway": 0.2811231135878405,
+          "Heave": 0.032594922860306255,
+          "Pitch": 0.24847735333665472,
+          "Yaw": 0.10705157585119539
+        },
+        "morph": {
+          "J_wave": 0.04578993793416175,
+          "J_shape": 0.9457873831332791,
+          "env_err": 0.21352375480610233,
+          "fp_err": 0.24435063717538952,
+          "LERD": 0.006503664007973453,
+          "LERM": 0.006166115053145111,
+          "LER_err": 0.05190135197859367,
+          "Tend": 519.8
+        }
+      },
+      "FD_PITCH": {
+        "run_id": "RUN_0001_FD_PITCH_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 30.73641,
+        "reference_period": 30.598882,
+        "period_error_pct": 0.44945173,
+        "zeta": 0.020101855,
+        "reference_zeta": 0.025569995,
+        "nrmse": 0.014083946,
+        "j_dof": 0.014083946,
+        "j_shape": 0.16482007,
+        "envelope_error": 0.13842681,
+        "ler_error": 0.85497007,
+        "fp_error": 0.15431191,
+        "start_amplitude_error": 0.16161286,
+        "leak": {
+          "Surge": 0.46349418380491014,
+          "Sway": 0.1427956476570348,
+          "Heave": 0.2849441453767441,
+          "Roll": 0.34124582835613526,
+          "Yaw": 0.22108797343740516
+        },
+        "reference_leak": {
+          "Surge": 0.3652553627158409,
+          "Sway": 0.11511580438120428,
+          "Heave": 0.09709203619753709,
+          "Roll": 0.24451383619627762,
+          "Yaw": 0.12733165013806358
+        },
+        "morph": {
+          "J_wave": 0.014083945710940987,
+          "J_shape": 0.16482007279838723,
+          "env_err": 0.13842681169967985,
+          "fp_err": 0.1543119086633251,
+          "LERD": 0.013125939777430977,
+          "LERM": 0.024348225402297658,
+          "LER_err": 0.8549700680603853,
+          "Tend": 484.68
+        }
+      },
+      "FD_YAW": {
+        "run_id": "RUN_0001_FD_YAW_AMP_SH_06121500",
+        "metric_status": "PASS",
+        "period": 50.61569,
+        "reference_period": 50.687273,
+        "period_error_pct": 0.14122605,
+        "zeta": 0.022255492,
+        "reference_zeta": 0.024700713,
+        "nrmse": 0.022453911,
+        "j_dof": 0.022453911,
+        "j_shape": 0.26005202,
+        "envelope_error": 0.27660583,
+        "ler_error": 0.48694059,
+        "fp_error": 0.21327143,
+        "start_amplitude_error": 0.20745168,
+        "leak": {
+          "Surge": 0.5002748072497905,
+          "Sway": 0.2447262012450266,
+          "Heave": 0.2071157505082797,
+          "Roll": 0.2695248577916848,
+          "Pitch": 0.06440954778236992
+        },
+        "reference_leak": {
+          "Surge": 0.1667131756781034,
+          "Sway": 0.06151291011602063,
+          "Heave": 0.00833951391833249,
+          "Roll": 0.08748756161027149,
+          "Pitch": 0.06650130575791667
+        },
+        "morph": {
+          "J_wave": 0.022453910756932045,
+          "J_shape": 0.26005201730414423,
+          "env_err": 0.276605829898103,
+          "fp_err": 0.2132714256005086,
+          "LERD": 0.010254479339074602,
+          "LERM": 0.005261157126020715,
+          "LER_err": 0.4869405893702352,
+          "Tend": 628.0
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.2718854317477552,
+        "Heave": 0.1885627796560318,
+        "Roll": 0.24298699950636557,
+        "Pitch": 0.07106791881466182,
+        "Yaw": 0.1859328815463762
+      },
+      "FD_SWAY": {
+        "Surge": 0.32833120147316724,
+        "Heave": 0.18875196495660068,
+        "Roll": 0.31186938844403067,
+        "Pitch": 0.13997287375283538,
+        "Yaw": 0.4443705543893547
+      },
+      "FD_HEAVE": {
+        "Surge": 0.16084596295277653,
+        "Sway": 0.41316150699410265,
+        "Roll": 0.8173921171570713,
+        "Pitch": 0.42779379022097996,
+        "Yaw": 0.26973557246428004
+      },
+      "FD_ROLL": {
+        "Surge": 0.28615519292114716,
+        "Sway": 0.455524555716769,
+        "Heave": 0.24813677171231147,
+        "Pitch": 0.1494626020959902,
+        "Yaw": 0.2349291106007281
+      },
+      "FD_PITCH": {
+        "Surge": 0.46349418380491014,
+        "Sway": 0.1427956476570348,
+        "Heave": 0.2849441453767441,
+        "Roll": 0.34124582835613526,
+        "Yaw": 0.22108797343740516
+      },
+      "FD_YAW": {
+        "Surge": 0.5002748072497905,
+        "Sway": 0.2447262012450266,
+        "Heave": 0.2071157505082797,
+        "Roll": 0.2695248577916848,
+        "Pitch": 0.06440954778236992
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.15896017090110728,
+        "Heave": 0.01968059507325694,
+        "Roll": 0.03291602612100948,
+        "Pitch": 0.10723769417504003,
+        "Yaw": 0.03816688415976064
+      },
+      "FD_SWAY": {
+        "Surge": 0.09911156186697814,
+        "Heave": 0.018040555839837675,
+        "Roll": 0.11940848210435888,
+        "Pitch": 0.0384504331662194,
+        "Yaw": 0.1166189583607766
+      },
+      "FD_HEAVE": {
+        "Surge": 0.694133163574395,
+        "Sway": 0.3830351608671329,
+        "Roll": 0.23088104002761986,
+        "Pitch": 0.08142292151490593,
+        "Yaw": 0.09687871817782223
+      },
+      "FD_ROLL": {
+        "Surge": 0.13004178340036146,
+        "Sway": 0.2811231135878405,
+        "Heave": 0.032594922860306255,
+        "Pitch": 0.24847735333665472,
+        "Yaw": 0.10705157585119539
+      },
+      "FD_PITCH": {
+        "Surge": 0.3652553627158409,
+        "Sway": 0.11511580438120428,
+        "Heave": 0.09709203619753709,
+        "Roll": 0.24451383619627762,
+        "Yaw": 0.12733165013806358
+      },
+      "FD_YAW": {
+        "Surge": 0.1667131756781034,
+        "Sway": 0.06151291011602063,
+        "Heave": 0.00833951391833249,
+        "Roll": 0.08748756161027149,
+        "Pitch": 0.06650130575791667
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input/qg_r001_center_surge_9d3daf69.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input/qg_r001_center_surge_9d3daf69.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input/qg_r001_center_surge_9d3daf69.out"
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input/qg_r001_center_sway_ac064de6.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input/qg_r001_center_sway_ac064de6.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input/qg_r001_center_sway_ac064de6.out"
+        },
+        "FD_HEAVE": {
+          "run_id": "RUN_0001_FD_HEAVE_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input/qg_r001_center_heave_adcda246.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input/qg_r001_center_heave_adcda246.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input/qg_r001_center_heave_adcda246.out"
+        },
+        "FD_ROLL": {
+          "run_id": "RUN_0001_FD_ROLL_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input/qg_r001_center_roll_38d48f80.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input/qg_r001_center_roll_38d48f80.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input/qg_r001_center_roll_38d48f80.out"
+        },
+        "FD_PITCH": {
+          "run_id": "RUN_0001_FD_PITCH_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input/qg_r001_center_pitch_e18abe27.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input/qg_r001_center_pitch_e18abe27.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input/qg_r001_center_pitch_e18abe27.out"
+        },
+        "FD_YAW": {
+          "run_id": "RUN_0001_FD_YAW_AMP_SH_06121500",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input/qg_r001_center_yaw_fe6ed2b1.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input/qg_r001_center_yaw_fe6ed2b1.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input/qg_r001_center_yaw_fe6ed2b1.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 0.6448303124937361,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_SURGE": {
+        "score": 0.8144459578643904,
+        "period_error_pct": 1.2925015,
+        "period_error_abs_pct": 1.2925015,
+        "envelope_error": 0.4143383,
+        "ler_error": 0.28996584,
+        "fp_error": 0.31874783,
+        "zeta_error_ratio": 0.23083151031057023,
+        "closed": false
+      },
+      "FD_SWAY": {
+        "score": 0.6452839378062016,
+        "period_error_pct": 2.632181,
+        "period_error_abs_pct": 2.632181,
+        "envelope_error": 0.34505342,
+        "ler_error": 0.12131912,
+        "fp_error": 0.033236198,
+        "zeta_error_ratio": 0.46313287306201545,
+        "closed": true
+      },
+      "FD_HEAVE": {
+        "score": 0.5976349081970114,
+        "period_error_pct": 0.71734571,
+        "period_error_abs_pct": 0.71734571,
+        "envelope_error": 0.37515601,
+        "ler_error": 0.068429342,
+        "fp_error": 0.22845927,
+        "zeta_error_ratio": 0.6171760731367809,
+        "closed": false
+      },
+      "FD_ROLL": {
+        "score": 0.6089411684431429,
+        "period_error_pct": 1.9168948,
+        "period_error_abs_pct": 1.9168948,
+        "envelope_error": 0.21352375,
+        "ler_error": 0.051901352,
+        "fp_error": 0.24435064,
+        "zeta_error_ratio": 0.2746502389314295,
+        "closed": false
+      },
+      "FD_PITCH": {
+        "score": 0.630919064332907,
+        "period_error_pct": 0.44945173,
+        "period_error_abs_pct": 0.44945173,
+        "envelope_error": 0.13842681,
+        "ler_error": 0.85497007,
+        "fp_error": 0.15431191,
+        "zeta_error_ratio": 0.21384986582907048,
+        "closed": false
+      },
+      "FD_YAW": {
+        "score": 0.5717568383187634,
+        "period_error_pct": 0.14122605,
+        "period_error_abs_pct": 0.14122605,
+        "envelope_error": 0.27660583,
+        "ler_error": 0.48694059,
+        "fp_error": 0.21327143,
+        "zeta_error_ratio": 0.09899394402096803,
+        "closed": false
+      }
+    },
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+      "strong_leak:FD_YAW->Surge:0.5>ref0.167"
+    ],
+    "predicate_results": [
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_YAW->Surge:0.5>ref0.167",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+      "strong_leak:FD_YAW->Surge:0.5>ref0.167"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "artifact_policy": "retain_full",
+  "created_at": "2026-07-07T13:59:00+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/input/qg_r001_center_heave_adcda246.fst",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_AMP_SH_06121500/output",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/input/qg_r001_center_pitch_e18abe27.fst",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_AMP_SH_06121500/output",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/input/qg_r001_center_roll_38d48f80.fst",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_AMP_SH_06121500/output",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/input/qg_r001_center_surge_9d3daf69.fst",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_AMP_SH_06121500/output",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/input/qg_r001_center_sway_ac064de6.fst",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_AMP_SH_06121500/output",
+    "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input",
+    "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/input/qg_r001_center_yaw_fe6ed2b1.fst",
+    "04_current_runs/runs/RUN_0001_FD_YAW_AMP_SH_06121500/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_YAW->Surge:0.5>ref0.167",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+      "strong_leak:FD_YAW->Surge:0.5>ref0.167"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}

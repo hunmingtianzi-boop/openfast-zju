@@ -1,0 +1,361 @@
+{
+  "transition_id": "TR_F96AA8D20A316484",
+  "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_run_id": "RC_GLV3_MOOR_EA1003_20260707T043810Z",
+  "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_candidate_id": "GLV3_MOOR_EA1003_20260707T043810Z",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "mooring",
+  "action_type": "mooring_probe",
+  "target_dof": "GLOBAL",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {
+      "EA_scale": 1.003
+    },
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "global_loop_v2_group": "mooring",
+      "action_type": "mooring_ea_probe",
+      "target_dof": "GLOBAL",
+      "requires_full_sixdof": true,
+      "proposal_hypothesis": "Smaller MoorDyn EA increase may keep Sway/Yaw gains from EA1005 while reducing Yaw period boundary risk."
+    },
+    "changed_parameters": "MoorDyn.EA_scale"
+  },
+  "global_score_delta": 0.03604696167848076,
+  "metric_deltas": {
+    "FD_SURGE": {
+      "score": {
+        "parent": 0.7218023619479961,
+        "child": 0.9199662142003853,
+        "delta": 0.1981638522523892,
+        "signed_delta": 0.1981638522523892,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.2038957,
+        "child": 2.1713303,
+        "delta": 0.9674346000000003,
+        "signed_delta": 0.9674346000000003,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.40549319,
+        "child": 0.40334756,
+        "delta": -0.0021456300000000095,
+        "signed_delta": -0.0021456300000000095,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.055053081,
+        "child": 0.28815363,
+        "delta": 0.233100549,
+        "signed_delta": 0.233100549,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.32430044,
+        "child": 0.3221393,
+        "delta": -0.002161140000000006,
+        "signed_delta": -0.002161140000000006,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.35643020797996133,
+        "child": 0.30841252200385144,
+        "delta": -0.04801768597610989,
+        "signed_delta": -0.04801768597610989,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.5599573896125355,
+        "child": 0.6978199401066001,
+        "delta": 0.1378625504940646,
+        "signed_delta": 0.1378625504940646,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.25896259,
+        "child": 1.2877274,
+        "delta": 1.0287648100000002,
+        "signed_delta": 1.0287648100000002,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.32503858,
+        "child": 0.35756043,
+        "delta": 0.03252184999999996,
+        "signed_delta": 0.03252184999999996,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.40340764,
+        "child": 0.44359628,
+        "delta": 0.04018864,
+        "signed_delta": 0.04018864,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.19632571,
+        "child": 0.17226201,
+        "delta": -0.024063699999999993,
+        "signed_delta": -0.024063699999999993,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.016281606125356094,
+        "child": 0.03119621023266849,
+        "delta": 0.014914604107312397,
+        "signed_delta": 0.014914604107312397,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    },
+    "FD_HEAVE": {
+      "score": {
+        "parent": 1.0977007628268065,
+        "child": 1.0982678622124602,
+        "delta": 0.000567099385653691,
+        "signed_delta": 0.000567099385653691,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.74654395,
+        "child": 0.58803519,
+        "delta": -0.15850875999999992,
+        "signed_delta": -0.15850875999999992,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.49780803,
+        "child": 0.49753006,
+        "delta": -0.00027797000000001626,
+        "signed_delta": -0.00027797000000001626,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.31754657,
+        "child": 0.36455256,
+        "delta": 0.04700599000000005,
+        "signed_delta": 0.04700599000000005,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.59563384,
+        "child": 0.59646435,
+        "delta": 0.0008305100000000065,
+        "signed_delta": 0.0008305100000000065,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.7609378857680655,
+        "child": 0.7583282021246006,
+        "delta": -0.0026096836434649218,
+        "signed_delta": -0.0026096836434649218,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_ROLL": {
+      "score": {
+        "parent": 0.6041547225291849,
+        "child": 0.6695124812147542,
+        "delta": 0.06535775868556926,
+        "signed_delta": 0.06535775868556926,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.7784783,
+        "child": 1.7259318,
+        "delta": -0.05254650000000005,
+        "signed_delta": -0.05254650000000005,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.18409624,
+        "child": 0.18298471,
+        "delta": -0.0011115299999999995,
+        "signed_delta": -0.0011115299999999995,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.12123318,
+        "child": 0.29732888,
+        "delta": 0.17609570000000002,
+        "signed_delta": 0.17609570000000002,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.24554311,
+        "child": 0.24429725,
+        "delta": -0.0012458600000000153,
+        "signed_delta": -0.0012458600000000153,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.2849290719585156,
+        "child": 0.3127573379808757,
+        "delta": 0.027828266022360104,
+        "signed_delta": 0.027828266022360104,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    },
+    "FD_PITCH": {
+      "score": {
+        "parent": 0.4504343978253352,
+        "child": 0.4196000646846733,
+        "delta": -0.030834333140661863,
+        "signed_delta": -0.030834333140661863,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 0.3071347,
+        "child": 0.043597017,
+        "delta": -0.26353768299999997,
+        "signed_delta": -0.26353768299999997,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.1309359,
+        "child": 0.13154596,
+        "delta": 0.0006100599999999956,
+        "signed_delta": 0.0006100599999999956,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.47041312,
+        "child": 0.45584838,
+        "delta": -0.01456474000000002,
+        "signed_delta": -0.01456474000000002,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.15625608,
+        "child": 0.16369782,
+        "delta": 0.007441740000000002,
+        "signed_delta": 0.007441740000000002,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.1438843065866849,
+        "child": 0.1354331903467326,
+        "delta": -0.008451116239952317,
+        "signed_delta": -0.008451116239952317,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_YAW": {
+      "score": {
+        "parent": 0.6415858056380502,
+        "child": 0.4867506480319204,
+        "delta": -0.15483515760612981,
+        "signed_delta": -0.15483515760612981,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 2.2915289,
+        "child": 0.54113602,
+        "delta": -1.7503928799999997,
+        "signed_delta": -1.7503928799999997,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.25651932,
+        "child": 0.25870785,
+        "delta": 0.002188530000000022,
+        "signed_delta": 0.002188530000000022,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.12580448,
+        "child": 0.13619263,
+        "delta": 0.010388150000000013,
+        "signed_delta": 0.010388150000000013,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.18517167,
+        "child": 0.21999866,
+        "delta": 0.03482699,
+        "signed_delta": 0.03482699,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.09284675304716915,
+        "child": 0.24116437448587003,
+        "delta": 0.14831762143870086,
+        "signed_delta": 0.14831762143870086,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "scored without parent arbitration",
+    "hard_constraint_violations": [],
+    "tags": []
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "step decision: evidence_only",
+    "tags": []
+  },
+  "source_run_ids": [
+    "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+    "RC_GLV3_MOOR_EA1003_20260707T043810Z"
+  ],
+  "created_at": "2026-07-07T14:40:14+00:00"
+}
