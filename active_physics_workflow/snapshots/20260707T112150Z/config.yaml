@@ -1,0 +1,75 @@
+workspace_root: "FOCAL_C4_physics_workflow"
+openfast_exe: "02_starting_model/best_reproducible_model/OpenFAST_input_files/OpenFAST_Release.exe"
+
+reference:
+  kind: "curated"
+  processed_dir: "00_reference/curated_six_dof_reference/processed"
+  old_heave_reference_allowed: false
+
+model:
+  baseline_dir: "01_baseline/original_baseline_model"
+  starting_model_dir: "02_starting_model/best_reproducible_model"
+  openfast_subdir: "OpenFAST_input_files"
+  fst_file: "IEA-15-240-RWT-UMaineSemi.fst"
+
+dofs:
+  - FD_SURGE
+  - FD_SWAY
+  - FD_HEAVE
+  - FD_ROLL
+  - FD_PITCH
+  - FD_YAW
+
+run:
+  timeout_sec: 900
+  heartbeat_sec: 30
+  max_parallel_openfast: 2
+  incremental_save: true
+
+llm_analyst:
+  enabled: false
+  provider: "openai_compatible"
+  model: ""
+  api_key_env: "OPENAI_API_KEY"
+  base_url: "https://api.openai.com/v1/chat/completions"
+  max_input_chars: 24000
+
+targets:
+  period_error_limit_pct: 3.0
+  start_amplitude_error_limit: 0.20
+  start_amplitude_penalty_weight: 0.25
+  env_ok: 0.40
+  env_improve: 0.75
+  ler_ok: 0.50
+  fp_ok: 0.12
+
+physics:
+  R_lo: 0.5
+  R_hi: 1.5
+  leak_abs: 0.50
+  leak_factor: 3.0
+  mooring_repair_dofs:
+    - FD_SURGE
+    - FD_YAW
+  moor_ea_max: 8.0
+  moor_unstrlen_taut: 0.943
+  moor_ea_probe_frac: 1.0
+  moor_unstrlen_probe: 0.90
+  moor_k_min: 0.05
+  moor_k_mono: -0.10
+  moor_max_secant: 4
+
+forbidden_paths:
+  - "C:/Users/12729"
+  - "C:\\Users\\12729"
+  - "D:/OpenFast/work-zx"
+  - "D:\\OpenFast\\work-zx"
+  - "D:/OpenFast/6个一起调"
+  - "D:/OpenFast/6涓竴璧疯皟"
+  - "FD_HEAVE_processed.csv"
+  - "old FD_HEAVE_processed.csv"
+  - "old_reference"
+  - "reference_v1"
+  - "stale_reuse"
+  - "period2"
+  - "high_fidelity"

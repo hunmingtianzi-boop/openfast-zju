@@ -1,0 +1,2 @@
+dof,candidate_id,bquad_base,bquad,bmult,ic_scale,signed_ic,score,period_error_pct,nrmse,zeta,reference_zeta,envelope_error,ler_error,fp_error
+FD_YAW,BQIC_YAW_0612070916_F100_I102,72000000000.0,72000000000.0,1.0,1.02,-14.975232,0.21468219326669885,0.73824889,0.027204702,0.022467835,0.024700713,0.27050089,0.75605018,0.20162353
