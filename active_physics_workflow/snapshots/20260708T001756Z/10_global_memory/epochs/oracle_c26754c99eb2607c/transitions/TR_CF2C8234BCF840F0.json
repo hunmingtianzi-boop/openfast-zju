@@ -1,0 +1,147 @@
+{
+  "transition_id": "TR_CF2C8234BCF840F0",
+  "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+  "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "mooring_probe",
+  "target_dof": "FD_YAW",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 5,
+        "j": 5,
+        "value": 72360000000.0,
+        "basis": "global_loop_v3_yaw_micro_probe"
+      }
+    ],
+    "moordyn": {
+      "EA_scale": 1.005
+    },
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "global_loop_v2_group": "diagonal_hydro",
+      "action_type": "yaw_bquad_micro_probe",
+      "target_dof": "FD_YAW",
+      "bquad_base": 72000000000.0,
+      "bquad_multiplier": 1.005,
+      "requires_full_sixdof": true,
+      "dof_initial_conditions": {
+        "FD_YAW": {
+          "Yaw": -18.0201
+        }
+      },
+      "proposal_hypothesis": "Yaw diagonal BQuad +0.5% on accepted EA1005 may reduce FD_YAW fp/LER without crossing Surge/Sway/Yaw hard guards; early-stop will stop at first hard diagnostic."
+    },
+    "changed_parameters": "HydroDyn.BQuad[5,5];MoorDyn.EA_scale;IC.FD_YAW.Yaw"
+  },
+  "global_score_delta": 0.5180312199415479,
+  "metric_deltas": {
+    "FD_SURGE": {
+      "score": {
+        "parent": 0.7218023619479961,
+        "child": 1.1973037933381994,
+        "delta": 0.4755014313902033,
+        "signed_delta": 0.4755014313902033,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.2038957,
+        "child": 4.5296326,
+        "delta": 3.3257369000000003,
+        "signed_delta": 3.3257369000000003,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.40549319,
+        "child": 0.40378443,
+        "delta": -0.0017087599999999759,
+        "signed_delta": -0.0017087599999999759,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.055053081,
+        "child": 0.34505755,
+        "delta": 0.290004469,
+        "signed_delta": 0.290004469,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.32430044,
+        "child": 0.29109852,
+        "delta": -0.033201919999999996,
+        "signed_delta": -0.033201919999999996,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.35643020797996133,
+        "child": 0.35876267921532734,
+        "delta": 0.002332471235366007,
+        "signed_delta": 0.002332471235366007,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SWAY",
+    "missing_dof:FD_YAW",
+    "period_reverse_worse",
+    "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+  ],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "period_reverse_worse"
+    ]
+  },
+  "source_run_ids": [
+    "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+    "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000"
+  ],
+  "created_at": "2026-07-07T15:11:43+00:00"
+}

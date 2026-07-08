@@ -1,0 +1,197 @@
+{
+  "transition_id": "TR_AE660CE0CFCA1E4D",
+  "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_run_id": "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+  "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "child_candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "fp_bquad_probe",
+  "target_dof": "FD_HEAVE",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 2,
+        "j": 2,
+        "value": 6764999.999999999
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "local_loop_v1": true,
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_HEAVE",
+      "bquad_base": 6600000.0,
+      "bquad_multiplier": 1.025,
+      "requires_full_sixdof": true,
+      "dof_initial_conditions": {
+        "FD_HEAVE": {
+          "Heave": -8.286700000000002
+        }
+      },
+      "proposal_id": "LP_330171BDD5AE",
+      "proposal_parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "proposal_target_dof": "FD_HEAVE",
+      "proposal_action_type": "fp_bquad_probe",
+      "proposal_priority": 1.1477007628268066,
+      "proposal_hypothesis": "FD_HEAVE dominant fp error may improve via fp_bquad_probe"
+    },
+    "changed_parameters": "HydroDyn.BQuad[2,2];IC.FD_HEAVE.Heave"
+  },
+  "global_score_delta": 1.403051942075694,
+  "metric_deltas": {
+    "FD_SURGE": {
+      "score": {
+        "parent": 0.7218023619479961,
+        "child": 2.8878236100388794,
+        "delta": 2.1660212480908836,
+        "signed_delta": 2.1660212480908836,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.2038957,
+        "child": 1.5360715,
+        "delta": 0.33217580000000013,
+        "signed_delta": 0.33217580000000013,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.40549319,
+        "child": 0.39146384,
+        "delta": -0.014029349999999996,
+        "signed_delta": -0.014029349999999996,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.055053081,
+        "child": 5.520743,
+        "delta": 5.465689919000001,
+        "signed_delta": 5.465689919000001,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.32430044,
+        "child": 0.29622883,
+        "delta": -0.028071610000000025,
+        "signed_delta": -0.028071610000000025,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.35643020797996133,
+        "child": 0.08795810038879127,
+        "delta": -0.2684721075911701,
+        "signed_delta": -0.2684721075911701,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.5599573896125355,
+        "child": 1.2768254209058116,
+        "delta": 0.7168680312932761,
+        "signed_delta": 0.7168680312932761,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.25896259,
+        "child": 6.6044315,
+        "delta": 6.345468909999999,
+        "signed_delta": 6.345468909999999,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.32503858,
+        "child": 0.31983451,
+        "delta": -0.005204070000000005,
+        "signed_delta": -0.005204070000000005,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.40340764,
+        "child": 0.28126293,
+        "delta": -0.12214470999999999,
+        "signed_delta": -0.12214470999999999,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.19632571,
+        "child": 0.20113766,
+        "delta": 0.004811950000000009,
+        "signed_delta": 0.004811950000000009,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.016281606125356094,
+        "child": 0.26291955155811747,
+        "delta": 0.24663794543276138,
+        "signed_delta": 0.24663794543276138,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_YAW",
+    "period_reverse_worse",
+    "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+  ],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 2/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "period_reverse_worse"
+    ]
+  },
+  "source_run_ids": [
+    "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+    "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000"
+  ],
+  "created_at": "2026-07-07T15:11:43+00:00"
+}

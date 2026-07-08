@@ -1,0 +1,635 @@
+{
+  "run_id": "RC_GLV3_MOOR_EA10055_20260707T060656Z",
+  "parent_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "stage": "offline_import",
+  "parameter_group": "mooring",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {
+      "EA_scale": 1.0055
+    },
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "global_loop_v2_group": "mooring",
+      "action_type": "mooring_ea_probe",
+      "target_dof": "GLOBAL",
+      "requires_full_sixdof": true,
+      "proposal_hypothesis": "A very small EA increase beyond accepted EA1005 may improve global LER/period while staying below the Yaw 3 percent guard."
+    },
+    "changed_parameters": "MoorDyn.EA_scale"
+  },
+  "input_hash": "RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "GLV3_MOOR_EA10055_20260707T060656Z",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_SURGE": {
+        "run_id": "RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 90.247436,
+        "reference_period": 82.763612,
+        "period_error_pct": 9.042408,
+        "zeta": 0.014714258,
+        "reference_zeta": 0.020242479,
+        "nrmse": 0.052944284,
+        "j_dof": 0.052944284,
+        "j_shape": 1.0784913,
+        "envelope_error": 0.39205797,
+        "ler_error": 0.14302071,
+        "fp_error": 0.28866907,
+        "start_amplitude_error": 0.32932464,
+        "leak": {
+          "Sway": 0.22343603479993163,
+          "Heave": 0.18202048225232612,
+          "Roll": 0.23535466323964532,
+          "Pitch": 0.06314595407650711,
+          "Yaw": 0.20280541850572376
+        },
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        },
+        "morph": {
+          "J_wave": 0.052944283591176915,
+          "J_shape": 1.0784912756442533,
+          "env_err": 0.3920579681146863,
+          "fp_err": 0.28866907318159923,
+          "LERD": 0.003995852928715648,
+          "LERM": 0.003424363189909527,
+          "LER_err": 0.1430207139755291,
+          "Tend": 740.9499999999999
+        }
+      },
+      "FD_SWAY": {
+        "run_id": "RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 76.391667,
+        "reference_period": 79.430459,
+        "period_error_pct": 3.8257264,
+        "zeta": 0.020219845,
+        "reference_zeta": 0.023182848,
+        "nrmse": 0.045744107,
+        "j_dof": 0.045744107,
+        "j_shape": 0.98257177,
+        "envelope_error": 0.34114109,
+        "ler_error": 0.45657918,
+        "fp_error": 0.18643271,
+        "start_amplitude_error": 0.21117943,
+        "leak": {
+          "Surge": 0.22693493312349933,
+          "Heave": 0.22262470548357102,
+          "Roll": 0.35529249056515794,
+          "Pitch": 0.16609198256272992,
+          "Yaw": 0.5064897572842066
+        },
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        },
+        "morph": {
+          "J_wave": 0.045744107196713055,
+          "J_shape": 0.9825717659117766,
+          "env_err": 0.34114109172265394,
+          "fp_err": 0.18643270845102192,
+          "LERD": 0.008732298675839493,
+          "LERM": 0.00474531289588294,
+          "LER_err": 0.4565791812627456,
+          "Tend": 899.8
+        }
+      },
+      "FD_HEAVE": {
+        "run_id": "RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 20.841296,
+        "reference_period": 20.719426,
+        "period_error_pct": 0.58819151,
+        "zeta": 0.0015318672,
+        "reference_zeta": 0.0063011469,
+        "nrmse": 0.035852832,
+        "j_dof": 0.035852832,
+        "j_shape": 0.24562722,
+        "envelope_error": 0.4976469,
+        "ler_error": 0.35580626,
+        "fp_error": 0.59600377,
+        "start_amplitude_error": 0.52738726,
+        "leak": {
+          "Surge": 0.42034616905238437,
+          "Sway": 0.3823037249771561,
+          "Roll": 0.6567054682582595,
+          "Pitch": 0.377844369412526,
+          "Yaw": 0.2892990417739169
+        },
+        "reference_leak": {
+          "Surge": 0.694133163574395,
+          "Sway": 0.3830351608671329,
+          "Roll": 0.23088104002761986,
+          "Pitch": 0.08142292151490593,
+          "Yaw": 0.09687871817782223
+        },
+        "morph": {
+          "J_wave": 0.035852831878904076,
+          "J_shape": 0.24562722171766685,
+          "env_err": 0.4976469004505882,
+          "fp_err": 0.5960037662859666,
+          "LERD": 0.0029834655567953176,
+          "LERM": 0.0019219298423116067,
+          "LER_err": 0.35580625761403356,
+          "Tend": 399.8
+        }
+      },
+      "FD_ROLL": {
+        "run_id": "RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 31.596738,
+        "reference_period": 31.040392,
+        "period_error_pct": 1.7923265,
+        "zeta": 0.026806645,
+        "reference_zeta": 0.02049542,
+        "nrmse": 0.043479453,
+        "j_dof": 0.043479453,
+        "j_shape": 0.94497662,
+        "envelope_error": 0.18184042,
+        "ler_error": 0.29427226,
+        "fp_error": 0.24576139,
+        "start_amplitude_error": 0.19275767,
+        "leak": {
+          "Surge": 0.27806756842424185,
+          "Sway": 0.44118671624893463,
+          "Heave": 0.23699280451591173,
+          "Pitch": 0.14195988775125826,
+          "Yaw": 0.19394667522112144
+        },
+        "reference_leak": {
+          "Surge": 0.13004178340036146,
+          "Sway": 0.2811231135878405,
+          "Heave": 0.032594922860306255,
+          "Pitch": 0.24847735333665472,
+          "Yaw": 0.10705157585119539
+        },
+        "morph": {
+          "J_wave": 0.043479453345071514,
+          "J_shape": 0.9449766155099472,
+          "env_err": 0.18184042205320777,
+          "fp_err": 0.24576139281929416,
+          "LERD": 0.006503664007973453,
+          "LERM": 0.008417511883200276,
+          "LER_err": 0.294272255282631,
+          "Tend": 519.8
+        }
+      },
+      "FD_PITCH": {
+        "run_id": "RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 30.677425,
+        "reference_period": 30.598882,
+        "period_error_pct": 0.25668595,
+        "zeta": 0.021195414,
+        "reference_zeta": 0.025569995,
+        "nrmse": 0.014143542,
+        "j_dof": 0.014143542,
+        "j_shape": 0.19740312,
+        "envelope_error": 0.12710219,
+        "ler_error": 0.64986315,
+        "fp_error": 0.1615267,
+        "start_amplitude_error": 0.16412638,
+        "leak": {
+          "Surge": 0.4663915361559441,
+          "Sway": 0.1516494263061256,
+          "Heave": 0.28455297007666236,
+          "Roll": 0.34045633687671445,
+          "Yaw": 0.31331635198042035
+        },
+        "reference_leak": {
+          "Surge": 0.3652553627158409,
+          "Sway": 0.11511580438120428,
+          "Heave": 0.09709203619753709,
+          "Roll": 0.24451383619627762,
+          "Yaw": 0.12733165013806358
+        },
+        "morph": {
+          "J_wave": 0.014143541698996983,
+          "J_shape": 0.19740311875176886,
+          "env_err": 0.12710218508972548,
+          "fp_err": 0.16152669542874837,
+          "LERD": 0.013125939777430977,
+          "LERM": 0.021656004393051115,
+          "LER_err": 0.6498631534396428,
+          "Tend": 484.68
+        }
+      },
+      "FD_YAW": {
+        "run_id": "RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z",
+        "metric_status": "PASS",
+        "period": 50.038603,
+        "reference_period": 50.687273,
+        "period_error_pct": 1.2797496,
+        "zeta": 0.020482664,
+        "reference_zeta": 0.024700713,
+        "nrmse": 0.020145095,
+        "j_dof": 0.020145095,
+        "j_shape": 0.3205375,
+        "envelope_error": 0.26235247,
+        "ler_error": 0.17631273,
+        "fp_error": 0.19874603,
+        "start_amplitude_error": 0.20418866,
+        "leak": {
+          "Surge": 0.5868640338603432,
+          "Sway": 0.25431755435527426,
+          "Heave": 0.20854238620983562,
+          "Roll": 0.2616766839716296,
+          "Pitch": 0.14441427771055737
+        },
+        "reference_leak": {
+          "Surge": 0.1667131756781034,
+          "Sway": 0.06151291011602063,
+          "Heave": 0.00833951391833249,
+          "Roll": 0.08748756161027149,
+          "Pitch": 0.06650130575791667
+        },
+        "morph": {
+          "J_wave": 0.02014509480899881,
+          "J_shape": 0.32053749659076064,
+          "env_err": 0.2623524715262374,
+          "fp_err": 0.19874603248469364,
+          "LERD": 0.010254479339074602,
+          "LERM": 0.008446484052520737,
+          "LER_err": 0.17631273385714627,
+          "Tend": 628.0
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.22343603479993163,
+        "Heave": 0.18202048225232612,
+        "Roll": 0.23535466323964532,
+        "Pitch": 0.06314595407650711,
+        "Yaw": 0.20280541850572376
+      },
+      "FD_SWAY": {
+        "Surge": 0.22693493312349933,
+        "Heave": 0.22262470548357102,
+        "Roll": 0.35529249056515794,
+        "Pitch": 0.16609198256272992,
+        "Yaw": 0.5064897572842066
+      },
+      "FD_HEAVE": {
+        "Surge": 0.42034616905238437,
+        "Sway": 0.3823037249771561,
+        "Roll": 0.6567054682582595,
+        "Pitch": 0.377844369412526,
+        "Yaw": 0.2892990417739169
+      },
+      "FD_ROLL": {
+        "Surge": 0.27806756842424185,
+        "Sway": 0.44118671624893463,
+        "Heave": 0.23699280451591173,
+        "Pitch": 0.14195988775125826,
+        "Yaw": 0.19394667522112144
+      },
+      "FD_PITCH": {
+        "Surge": 0.4663915361559441,
+        "Sway": 0.1516494263061256,
+        "Heave": 0.28455297007666236,
+        "Roll": 0.34045633687671445,
+        "Yaw": 0.31331635198042035
+      },
+      "FD_YAW": {
+        "Surge": 0.5868640338603432,
+        "Sway": 0.25431755435527426,
+        "Heave": 0.20854238620983562,
+        "Roll": 0.2616766839716296,
+        "Pitch": 0.14441427771055737
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.15896017090110728,
+        "Heave": 0.01968059507325694,
+        "Roll": 0.03291602612100948,
+        "Pitch": 0.10723769417504003,
+        "Yaw": 0.03816688415976064
+      },
+      "FD_SWAY": {
+        "Surge": 0.09911156186697814,
+        "Heave": 0.018040555839837675,
+        "Roll": 0.11940848210435888,
+        "Pitch": 0.0384504331662194,
+        "Yaw": 0.1166189583607766
+      },
+      "FD_HEAVE": {
+        "Surge": 0.694133163574395,
+        "Sway": 0.3830351608671329,
+        "Roll": 0.23088104002761986,
+        "Pitch": 0.08142292151490593,
+        "Yaw": 0.09687871817782223
+      },
+      "FD_ROLL": {
+        "Surge": 0.13004178340036146,
+        "Sway": 0.2811231135878405,
+        "Heave": 0.032594922860306255,
+        "Pitch": 0.24847735333665472,
+        "Yaw": 0.10705157585119539
+      },
+      "FD_PITCH": {
+        "Surge": 0.3652553627158409,
+        "Sway": 0.11511580438120428,
+        "Heave": 0.09709203619753709,
+        "Roll": 0.24451383619627762,
+        "Yaw": 0.12733165013806358
+      },
+      "FD_YAW": {
+        "Surge": 0.1667131756781034,
+        "Sway": 0.06151291011602063,
+        "Heave": 0.00833951391833249,
+        "Roll": 0.08748756161027149,
+        "Pitch": 0.06650130575791667
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_surge_9d3daf69.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_surge_9d3daf69.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_surge_9d3daf69.out"
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_sway_ac064de6.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_sway_ac064de6.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_sway_ac064de6.out"
+        },
+        "FD_HEAVE": {
+          "run_id": "RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_heave_adcda246.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_heave_adcda246.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_heave_adcda246.out"
+        },
+        "FD_ROLL": {
+          "run_id": "RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_roll_38d48f80.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_roll_38d48f80.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_roll_38d48f80.out"
+        },
+        "FD_PITCH": {
+          "run_id": "RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_pitch_e18abe27.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_pitch_e18abe27.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_pitch_e18abe27.out"
+        },
+        "FD_YAW": {
+          "run_id": "RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_yaw_fe6ed2b1.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_yaw_fe6ed2b1.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_yaw_fe6ed2b1.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 0.9155524729130052,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_SURGE": {
+        "score": 1.6250596735097258,
+        "period_error_pct": 9.042408,
+        "period_error_abs_pct": 9.042408,
+        "envelope_error": 0.39205797,
+        "ler_error": 0.14302071,
+        "fp_error": 0.28866907,
+        "zeta_error_ratio": 0.2730999992639242,
+        "closed": false
+      },
+      "FD_SWAY": {
+        "score": 1.0103212053742188,
+        "period_error_pct": 3.8257264,
+        "period_error_abs_pct": 3.8257264,
+        "envelope_error": 0.34114109,
+        "ler_error": 0.45657918,
+        "fp_error": 0.18643271,
+        "zeta_error_ratio": 0.12781013790885395,
+        "closed": false
+      },
+      "FD_HEAVE": {
+        "score": 1.0943330410320251,
+        "period_error_pct": 0.58819151,
+        "period_error_abs_pct": 0.58819151,
+        "envelope_error": 0.4976469,
+        "ler_error": 0.35580626,
+        "fp_error": 0.59600377,
+        "zeta_error_ratio": 0.756890733653583,
+        "closed": false
+      },
+      "FD_ROLL": {
+        "score": 0.6760584262647832,
+        "period_error_pct": 1.7923265,
+        "period_error_abs_pct": 1.7923265,
+        "envelope_error": 0.18184042,
+        "ler_error": 0.29427226,
+        "fp_error": 0.24576139,
+        "zeta_error_ratio": 0.30793343098116555,
+        "closed": false
+      },
+      "FD_PITCH": {
+        "score": 0.521044665363856,
+        "period_error_pct": 0.25668595,
+        "period_error_abs_pct": 0.25668595,
+        "envelope_error": 0.12710219,
+        "ler_error": 0.64986315,
+        "fp_error": 0.1615267,
+        "zeta_error_ratio": 0.17108259113855917,
+        "closed": false
+      },
+      "FD_YAW": {
+        "score": 0.5664978259334225,
+        "period_error_pct": 1.2797496,
+        "period_error_abs_pct": 1.2797496,
+        "envelope_error": 0.26235247,
+        "ler_error": 0.17631273,
+        "fp_error": 0.19874603,
+        "zeta_error_ratio": 0.17076628516755765,
+        "closed": false
+      }
+    },
+    "hard_constraint_violations": [
+      "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+      "strong_leak:FD_YAW->Surge:0.587>ref0.167"
+    ],
+    "predicate_results": [
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      },
+      {
+        "name": "strong_leak",
+        "passed": false,
+        "severity": "hard",
+        "reason": "strong_leak:FD_YAW->Surge:0.587>ref0.167",
+        "source_role": "derived_metric",
+        "tags": [
+          "strong_leak"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+      "strong_leak:FD_YAW->Surge:0.587>ref0.167"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "artifact_policy": "retain_full",
+  "created_at": "2026-07-07T13:59:00+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_heave_adcda246.fst",
+    "04_current_runs/runs/RUN_0001_FD_HEAVE_GLV3_MOOR_EA10055_20260707T060656Z/output",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_pitch_e18abe27.fst",
+    "04_current_runs/runs/RUN_0001_FD_PITCH_GLV3_MOOR_EA10055_20260707T060656Z/output",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_roll_38d48f80.fst",
+    "04_current_runs/runs/RUN_0001_FD_ROLL_GLV3_MOOR_EA10055_20260707T060656Z/output",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_surge_9d3daf69.fst",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_GLV3_MOOR_EA10055_20260707T060656Z/output",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_sway_ac064de6.fst",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_GLV3_MOOR_EA10055_20260707T060656Z/output",
+    "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input",
+    "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/input/qg_r001_center_yaw_fe6ed2b1.fst",
+    "04_current_runs/runs/RUN_0001_FD_YAW_GLV3_MOOR_EA10055_20260707T060656Z/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    },
+    {
+      "name": "strong_leak",
+      "passed": false,
+      "severity": "hard",
+      "reason": "strong_leak:FD_YAW->Surge:0.587>ref0.167",
+      "source_role": "derived_metric",
+      "tags": [
+        "strong_leak"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "REJECTED",
+    "reason": "hard constraints failed",
+    "hard_constraint_violations": [
+      "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+      "strong_leak:FD_YAW->Surge:0.587>ref0.167"
+    ],
+    "tags": [
+      "hard_constraint"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}

@@ -1,0 +1,401 @@
+{
+  "run_id": "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+  "parent_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "stage": "global_step",
+  "parameter_group": "diagonal_hydro",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 2,
+        "j": 2,
+        "value": 6764999.999999999
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "local_loop_v1": true,
+      "action_type": "fp_bquad_probe",
+      "target_dof": "FD_HEAVE",
+      "bquad_base": 6600000.0,
+      "bquad_multiplier": 1.025,
+      "requires_full_sixdof": true,
+      "dof_initial_conditions": {
+        "FD_HEAVE": {
+          "Heave": -8.286700000000002
+        }
+      },
+      "proposal_id": "LP_330171BDD5AE",
+      "proposal_parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "proposal_target_dof": "FD_HEAVE",
+      "proposal_action_type": "fp_bquad_probe",
+      "proposal_priority": 1.1477007628268066,
+      "proposal_hypothesis": "FD_HEAVE dominant fp error may improve via fp_bquad_probe"
+    },
+    "changed_parameters": "HydroDyn.BQuad[2,2];IC.FD_HEAVE.Heave"
+  },
+  "input_hash": "RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+  "target_source": "active_curated_processed_reference",
+  "observation": {
+    "candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+    "source": "active_registry_results",
+    "per_dof_metrics": {
+      "FD_SURGE": {
+        "run_id": "RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+        "metric_status": "PASS",
+        "period": 84.034921,
+        "reference_period": 82.763612,
+        "period_error_pct": 1.5360715,
+        "zeta": 0.018461989,
+        "reference_zeta": 0.020242479,
+        "nrmse": 0.057835519,
+        "j_dof": 0.057835519,
+        "j_shape": 1.2340072,
+        "envelope_error": 0.39146384,
+        "ler_error": 5.520743,
+        "fp_error": 0.29622883,
+        "start_amplitude_error": 0.3360874,
+        "leak": {
+          "Sway": 0.21999124628057012,
+          "Heave": 0.17919002060486292,
+          "Roll": 0.23266668734613674,
+          "Pitch": 0.06961749614935683,
+          "Yaw": 0.21037903612212153
+        },
+        "reference_leak": {
+          "Sway": 0.15896017090110728,
+          "Heave": 0.01968059507325694,
+          "Roll": 0.03291602612100948,
+          "Pitch": 0.10723769417504003,
+          "Yaw": 0.03816688415976064
+        },
+        "morph": {
+          "J_wave": 0.0578355187316448,
+          "J_shape": 1.2340072231276893,
+          "env_err": 0.39146383890572356,
+          "fp_err": 0.29622883203114725,
+          "LERD": 0.003995852928715648,
+          "LERM": 0.026055929944310476,
+          "LER_err": 5.520742982571535,
+          "Tend": 740.9499999999999
+        }
+      },
+      "FD_SWAY": {
+        "run_id": "RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+        "metric_status": "PASS",
+        "period": 84.676389,
+        "reference_period": 79.430459,
+        "period_error_pct": 6.6044315,
+        "zeta": 0.029278072,
+        "reference_zeta": 0.023182848,
+        "nrmse": 0.045430035,
+        "j_dof": 0.045430035,
+        "j_shape": 0.9598789,
+        "envelope_error": 0.31983451,
+        "ler_error": 0.28126293,
+        "fp_error": 0.20113766,
+        "start_amplitude_error": 0.23526959,
+        "leak": {
+          "Surge": 0.2770654499810415,
+          "Heave": 0.21706264455073138,
+          "Roll": 0.35141377108902894,
+          "Pitch": 0.16353513705976266,
+          "Yaw": 0.4910066502247873
+        },
+        "reference_leak": {
+          "Surge": 0.09911156186697814,
+          "Heave": 0.018040555839837675,
+          "Roll": 0.11940848210435888,
+          "Pitch": 0.0384504331662194,
+          "Yaw": 0.1166189583607766
+        },
+        "morph": {
+          "J_wave": 0.04543003482731525,
+          "J_shape": 0.9598788956294325,
+          "env_err": 0.3198345057957357,
+          "fp_err": 0.20113766433049562,
+          "LERD": 0.008732298675839493,
+          "LERM": 0.011188370604092678,
+          "LER_err": 0.2812629319526873,
+          "Tend": 899.8
+        }
+      }
+    },
+    "cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.21999124628057012,
+        "Heave": 0.17919002060486292,
+        "Roll": 0.23266668734613674,
+        "Pitch": 0.06961749614935683,
+        "Yaw": 0.21037903612212153
+      },
+      "FD_SWAY": {
+        "Surge": 0.2770654499810415,
+        "Heave": 0.21706264455073138,
+        "Roll": 0.35141377108902894,
+        "Pitch": 0.16353513705976266,
+        "Yaw": 0.4910066502247873
+      }
+    },
+    "reference_cross_energy_matrix": {
+      "FD_SURGE": {
+        "Sway": 0.15896017090110728,
+        "Heave": 0.01968059507325694,
+        "Roll": 0.03291602612100948,
+        "Pitch": 0.10723769417504003,
+        "Yaw": 0.03816688415976064
+      },
+      "FD_SWAY": {
+        "Surge": 0.09911156186697814,
+        "Heave": 0.018040555839837675,
+        "Roll": 0.11940848210435888,
+        "Pitch": 0.0384504331662194,
+        "Yaw": 0.1166189583607766
+      }
+    },
+    "equilibrium": {},
+    "artifacts": {
+      "runs": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_surge_9d3daf69.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_surge_9d3daf69.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_surge_9d3daf69.out"
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+          "run_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+          "logs_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs",
+          "manifest_path": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/manifest.json",
+          "fst_file": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_sway_ac064de6.fst",
+          "input_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input",
+          "output_dir": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/output",
+          "main_output_path": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_sway_ac064de6.out",
+          "stdout_path": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs/stdout.txt",
+          "stderr_path": "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/logs/stderr.txt",
+          "notes": "metrics computed from 04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_sway_ac064de6.out"
+        }
+      },
+      "ignored_results": []
+    }
+  },
+  "objective": {
+    "global_score": 2.0823245154723455,
+    "weights": {
+      "period": 0.35,
+      "env": 0.25,
+      "ler": 0.2,
+      "fp": 0.1,
+      "zeta": 0.1
+    },
+    "per_dof": {
+      "FD_SURGE": {
+        "score": 2.8878236100388794,
+        "period_error_pct": 1.5360715,
+        "period_error_abs_pct": 1.5360715,
+        "envelope_error": 0.39146384,
+        "ler_error": 5.520743,
+        "fp_error": 0.29622883,
+        "zeta_error_ratio": 0.08795810038879127,
+        "closed": false
+      },
+      "FD_SWAY": {
+        "score": 1.2768254209058116,
+        "period_error_pct": 6.6044315,
+        "period_error_abs_pct": 6.6044315,
+        "envelope_error": 0.31983451,
+        "ler_error": 0.28126293,
+        "fp_error": 0.20113766,
+        "zeta_error_ratio": 0.26291955155811747,
+        "closed": false
+      }
+    },
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+    ],
+    "predicate_results": [
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_HEAVE",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_PITCH",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_ROLL",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "missing_dof",
+        "passed": false,
+        "severity": "hard",
+        "reason": "missing_dof:FD_YAW",
+        "source_role": "derived_metric",
+        "tags": [
+          "missing_dof"
+        ]
+      },
+      {
+        "name": "period_reverse_worse",
+        "passed": false,
+        "severity": "hard",
+        "reason": "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6",
+        "source_role": "derived_metric",
+        "tags": [
+          "period_reverse_worse"
+        ]
+      }
+    ]
+  },
+  "verdict": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 2/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "artifact_policy": "retain_full",
+  "created_at": "2026-07-07T15:10:10+00:00",
+  "evidence_sources": [
+    "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_surge_9d3daf69.fst",
+    "04_current_runs/runs/RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/output",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/input/qg_r001_center_sway_ac064de6.fst",
+    "04_current_runs/runs/RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000/output"
+  ],
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "predicate_results": [
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_HEAVE",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_PITCH",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_ROLL",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "missing_dof",
+      "passed": false,
+      "severity": "hard",
+      "reason": "missing_dof:FD_YAW",
+      "source_role": "derived_metric",
+      "tags": [
+        "missing_dof"
+      ]
+    },
+    {
+      "name": "period_reverse_worse",
+      "passed": false,
+      "severity": "hard",
+      "reason": "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6",
+      "source_role": "derived_metric",
+      "tags": [
+        "period_reverse_worse"
+      ]
+    }
+  ],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 2/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_YAW",
+      "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "period_reverse_worse"
+    ]
+  },
+  "source_roles": {
+    "target_truth": "oracle",
+    "observation": "observation",
+    "objective": "derived_metric",
+    "coupling_memory": "memory_inference"
+  },
+  "review_status": "pending"
+}

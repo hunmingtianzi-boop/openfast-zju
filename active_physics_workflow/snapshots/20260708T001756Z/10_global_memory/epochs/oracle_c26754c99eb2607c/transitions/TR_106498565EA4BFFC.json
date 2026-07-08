@@ -1,0 +1,152 @@
+{
+  "transition_id": "TR_106498565EA4BFFC",
+  "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+  "child_run_id": "RC_BQIC_SWAY_0617142124_F100_I076",
+  "parent_candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+  "child_candidate_id": "BQIC_SWAY_0617142124_F100_I076",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "signed_ic_bquad",
+  "target_dof": "FD_SWAY",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 1,
+        "j": 1,
+        "value": 1125000.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {
+      "Sway": -11.483524
+    },
+    "tmax": 900,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_SWAY": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_HEAVE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_ROLL": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_PITCH": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_YAW": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 1.0,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -13.617,
+        "FD_SWAY": -10.169400000000001,
+        "FD_HEAVE": -8.183834704,
+        "FD_ROLL": 16.88639943,
+        "FD_PITCH": -9.679198059,
+        "FD_YAW": -14.975232
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "bquad_multiplier": 1.0
+    },
+    "changed_parameters": "HydroDyn.BQuad[1,1];IC.Sway;FST.TMax"
+  },
+  "global_score_delta": 0.052925097520069686,
+  "metric_deltas": {
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.8014242053775592,
+        "child": 0.8005859208186299,
+        "delta": -0.0008382845589293142,
+        "signed_delta": -0.0008382845589293142,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 2.6066805,
+        "child": 2.2958713,
+        "delta": -0.3108092,
+        "signed_delta": -0.3108092,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.32304132,
+        "child": 0.28441605,
+        "delta": -0.038625270000000045,
+        "signed_delta": -0.038625270000000045,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.35183958,
+        "child": 0.73593273,
+        "delta": 0.38409315000000005,
+        "signed_delta": 0.38409315000000005,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.17945897,
+        "child": 0.066126301,
+        "delta": -0.113332669,
+        "signed_delta": -0.113332669,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.051256817108924685,
+        "child": 0.05495895068630039,
+        "delta": 0.003702133577375706,
+        "signed_delta": 0.003702133577375706,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SURGE",
+    "missing_dof:FD_YAW"
+  ],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_YAW"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "suite incomplete",
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "source_run_ids": [
+    "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+    "RC_BQIC_SWAY_0617142124_F100_I076"
+  ],
+  "created_at": "2026-07-07T15:11:43+00:00"
+}

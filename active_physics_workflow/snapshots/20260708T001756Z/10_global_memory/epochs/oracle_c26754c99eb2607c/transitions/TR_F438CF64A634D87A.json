@@ -1,0 +1,361 @@
+{
+  "transition_id": "TR_F438CF64A634D87A",
+  "parent_run_id": "RC_HEAVE095_ROLL090_CMP_0612144710",
+  "child_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+  "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+  "child_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "mooring",
+  "action_type": "mooring_probe",
+  "target_dof": "GLOBAL",
+  "parameter_delta": {
+    "hydrodyn_edits": [],
+    "moordyn": {
+      "EA_scale": 1.005
+    },
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "global_loop_v2_group": "mooring",
+      "action_type": "mooring_ea_probe",
+      "target_dof": "GLOBAL",
+      "requires_full_sixdof": true,
+      "proposal_hypothesis": "Small MoorDyn EA increase may reduce long FD_SWAY period without exceeding Surge/Yaw period guards."
+    },
+    "changed_parameters": "MoorDyn.EA_scale"
+  },
+  "global_score_delta": -0.04341651239416566,
+  "metric_deltas": {
+    "FD_SURGE": {
+      "score": {
+        "parent": 0.683792119030059,
+        "child": 0.7218023619479961,
+        "delta": 0.03801024291793709,
+        "signed_delta": 0.03801024291793709,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.65078407,
+        "child": 1.2038957,
+        "delta": 0.5531116299999999,
+        "signed_delta": 0.5531116299999999,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.41243468,
+        "child": 0.40549319,
+        "delta": -0.006941489999999995,
+        "signed_delta": -0.006941489999999995,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.12985051,
+        "child": 0.055053081,
+        "delta": -0.074797429,
+        "signed_delta": -0.074797429,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.30223682,
+        "child": 0.32430044,
+        "delta": 0.022063620000000006,
+        "signed_delta": 0.022063620000000006,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.46291415196725655,
+        "child": 0.35643020797996133,
+        "delta": -0.10648394398729522,
+        "signed_delta": -0.10648394398729522,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.8014242053775592,
+        "child": 0.5599573896125355,
+        "delta": -0.2414668157650237,
+        "signed_delta": -0.2414668157650237,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 2.6066805,
+        "child": 0.25896259,
+        "delta": -2.34771791,
+        "signed_delta": -2.34771791,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.32304132,
+        "child": 0.32503858,
+        "delta": 0.0019972600000000007,
+        "signed_delta": 0.0019972600000000007,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.35183958,
+        "child": 0.40340764,
+        "delta": 0.05156806000000003,
+        "signed_delta": 0.05156806000000003,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.17945897,
+        "child": 0.19632571,
+        "delta": 0.01686673999999999,
+        "signed_delta": 0.01686673999999999,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.051256817108924685,
+        "child": 0.016281606125356094,
+        "delta": -0.034975210983568594,
+        "signed_delta": -0.034975210983568594,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_HEAVE": {
+      "score": {
+        "parent": 1.0613883588851063,
+        "child": 1.0977007628268065,
+        "delta": 0.03631240394170021,
+        "signed_delta": 0.03631240394170021,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 0.72520623,
+        "child": 0.74654395,
+        "delta": 0.021337720000000004,
+        "signed_delta": 0.021337720000000004,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.49810556,
+        "child": 0.49780803,
+        "delta": -0.0002975299999999903,
+        "signed_delta": -0.0002975299999999903,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.2324664,
+        "child": 0.31754657,
+        "delta": 0.08508016999999998,
+        "signed_delta": 0.08508016999999998,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.59547417,
+        "child": 0.59563384,
+        "delta": 0.00015966999999994513,
+        "signed_delta": 0.00015966999999994513,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.7624995538510617,
+        "child": 0.7609378857680655,
+        "delta": -0.0015616680829961815,
+        "signed_delta": -0.0015616680829961815,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_ROLL": {
+      "score": {
+        "parent": 0.5501113915579603,
+        "child": 0.6041547225291849,
+        "delta": 0.0540433309712246,
+        "signed_delta": 0.0540433309712246,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.6205738,
+        "child": 1.7784783,
+        "delta": 0.1579044999999999,
+        "signed_delta": 0.1579044999999999,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.18188612,
+        "child": 0.18409624,
+        "delta": 0.002210119999999982,
+        "signed_delta": 0.002210119999999982,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.030743987,
+        "child": 0.12123318,
+        "delta": 0.090489193,
+        "signed_delta": 0.090489193,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.24551848,
+        "child": 0.24554311,
+        "delta": 2.462999999999771e-05,
+        "signed_delta": 2.462999999999771e-05,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.3046929509129357,
+        "child": 0.2849290719585156,
+        "delta": -0.01976387895442011,
+        "signed_delta": -0.01976387895442011,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_PITCH": {
+      "score": {
+        "parent": 0.5047469351858449,
+        "child": 0.4504343978253352,
+        "delta": -0.05431253736050973,
+        "signed_delta": -0.05431253736050973,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 0.29701453,
+        "child": 0.3071347,
+        "delta": 0.010120169999999984,
+        "signed_delta": 0.010120169999999984,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.1346887,
+        "child": 0.1309359,
+        "delta": -0.0037528000000000006,
+        "signed_delta": -0.0037528000000000006,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.5981415,
+        "child": 0.47041312,
+        "delta": -0.12772837999999997,
+        "signed_delta": -0.12772837999999997,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.15387015,
+        "child": 0.15625608,
+        "delta": 0.0023859299999999806,
+        "signed_delta": 0.0023859299999999806,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.18433077519178245,
+        "child": 0.1438843065866849,
+        "delta": -0.04044646860509754,
+        "signed_delta": -0.04044646860509754,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    },
+    "FD_YAW": {
+      "score": {
+        "parent": 0.7346715047083735,
+        "child": 0.6415858056380502,
+        "delta": -0.09308569907032327,
+        "signed_delta": -0.09308569907032327,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 0.73824889,
+        "child": 2.2915289,
+        "delta": 1.55328001,
+        "signed_delta": 1.55328001,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.27050089,
+        "child": 0.25651932,
+        "delta": -0.013981569999999999,
+        "signed_delta": -0.013981569999999999,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 0.75605018,
+        "child": 0.12580448,
+        "delta": -0.6302457,
+        "signed_delta": -0.6302457,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.20162353,
+        "child": 0.18517167,
+        "delta": -0.016451859999999985,
+        "signed_delta": -0.016451859999999985,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.09039730958373553,
+        "child": 0.09284675304716915,
+        "delta": 0.0024494434634336204,
+        "signed_delta": 0.0024494434634336204,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "scored without parent arbitration",
+    "hard_constraint_violations": [],
+    "tags": []
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "step decision: evidence_only",
+    "tags": []
+  },
+  "source_run_ids": [
+    "RC_HEAVE095_ROLL090_CMP_0612144710",
+    "RC_GLV3_MOOR_EA1005_20260707T033530Z"
+  ],
+  "created_at": "2026-07-07T15:11:43+00:00"
+}
