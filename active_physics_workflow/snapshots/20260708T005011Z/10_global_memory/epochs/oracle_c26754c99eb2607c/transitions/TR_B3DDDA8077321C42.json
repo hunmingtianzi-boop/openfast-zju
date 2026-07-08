@@ -1,0 +1,152 @@
+{
+  "transition_id": "TR_B3DDDA8077321C42",
+  "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+  "child_run_id": "RC_BQIC_SURGE_0611154707_F100_I110",
+  "parent_candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+  "child_candidate_id": "BQIC_SURGE_0611154707_F100_I110",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "signed_ic_bquad",
+  "target_dof": "FD_SURGE",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 0,
+        "j": 0,
+        "value": 1000000.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {
+      "Surge": -14.685
+    },
+    "tmax": 900,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+        "FD_SWAY": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+        "FD_HEAVE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+        "FD_ROLL": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+        "FD_PITCH": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+        "FD_YAW": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 1.0,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -13.35,
+        "FD_SWAY": -9.97,
+        "FD_HEAVE": -10.22979337610092,
+        "FD_ROLL": 16.886399433120225,
+        "FD_PITCH": -9.679198059485117,
+        "FD_YAW": -14.6816
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "bquad_multiplier": 1.0
+    },
+    "changed_parameters": "HydroDyn.BQuad[0,0];IC.Surge;FST.TMax"
+  },
+  "global_score_delta": 1.6856916532684216,
+  "metric_deltas": {
+    "FD_SURGE": {
+      "score": {
+        "parent": 1.3481555975091069,
+        "child": 2.8304277898666514,
+        "delta": 1.4822721923575446,
+        "signed_delta": 1.4822721923575446,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 1.2045701,
+        "child": 5.6925833,
+        "delta": 4.4880132,
+        "signed_delta": 4.4880132,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.39712388,
+        "child": 0.37359915,
+        "delta": -0.023524729999999994,
+        "signed_delta": -0.023524729999999994,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 1.6135749,
+        "child": 4.2676523,
+        "delta": 2.6540774000000003,
+        "signed_delta": 2.6540774000000003,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.34291715,
+        "child": 0.24644043,
+        "delta": -0.09647672000000002,
+        "signed_delta": -0.09647672000000002,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.2822574250910672,
+        "child": 0.20365657783317945,
+        "delta": -0.07860084725788777,
+        "signed_delta": -0.07860084725788777,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SWAY",
+    "missing_dof:FD_YAW"
+  ],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "RUNNING",
+    "reason": "suite incomplete",
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "source_run_ids": [
+    "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+    "RC_BQIC_SURGE_0611154707_F100_I110"
+  ],
+  "created_at": "2026-07-08T00:47:30+00:00"
+}

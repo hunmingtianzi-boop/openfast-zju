@@ -1,0 +1,11 @@
+# Global Loop Memory Rebuild
+
+Generated: 2026-07-08T00:47:32+00:00
+
+- RunCards scanned: 262
+- Artifact manifests: 262
+- TransitionCards built: 255
+- RelationMemory entries: 486
+- ProposalHistory entries: 10
+- No OpenFAST run was executed.
+- RelationMemory is inference only; global-step remains the only current_best writer.

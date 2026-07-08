@@ -1,0 +1,128 @@
+{
+  "transition_id": "TR_A5D9EBC0687C8D3A",
+  "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+  "child_run_id": "RC_IMP_HEAVE_02259Z0000_P1",
+  "parent_candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE",
+  "child_candidate_id": "IMP_HEAVE_02259Z0000_P1",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "hydrodyn_edit",
+  "target_dof": "FD_HEAVE",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "CLin",
+        "i": 2,
+        "j": 2,
+        "value": -468767.46792185947
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {},
+    "tmax": null,
+    "decision_meta": {
+      "signed_ic_bquad_tune": null,
+      "selected_dof_candidates": {},
+      "bquad_multipliers": {},
+      "signed_initial_conditions": {},
+      "dof_packages": []
+    },
+    "changed_parameters": "HydroDyn.CLin[2,2]"
+  },
+  "global_score_delta": 0.38329804235873044,
+  "metric_deltas": {
+    "FD_HEAVE": {
+      "score": {
+        "parent": 2.557047553244336,
+        "child": 1.7980118027595453,
+        "delta": -0.7590357504847907,
+        "signed_delta": -0.7590357504847907,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "period_error_pct": {
+        "parent": 4.7326329,
+        "child": 3.2847163,
+        "delta": -1.4479165999999997,
+        "signed_delta": -1.4479165999999997,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "envelope_error": {
+        "parent": 0.47966807,
+        "child": 0.47636714,
+        "delta": -0.0033009299999999797,
+        "signed_delta": -0.0033009299999999797,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "ler_error": {
+        "parent": 3.3085281,
+        "child": 1.8355183,
+        "delta": -1.4730098000000003,
+        "signed_delta": -1.4730098000000003,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "fp_error": {
+        "parent": 0.38829902,
+        "child": 0.3792698,
+        "delta": -0.009029220000000004,
+        "signed_delta": -0.009029220000000004,
+        "comparison": "absolute_error",
+        "direction": "improved"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.5812074782766928,
+        "child": 0.6679995192621204,
+        "delta": 0.08679204098542759,
+        "signed_delta": 0.08679204098542759,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SURGE",
+    "missing_dof:FD_SWAY",
+    "missing_dof:FD_YAW",
+    "strong_leak:FD_HEAVE->Pitch:0.886>ref0.0814"
+  ],
+  "resolved_failures": [
+    "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+    "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969"
+  ],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_SWAY",
+      "missing_dof:FD_YAW",
+      "strong_leak:FD_HEAVE->Pitch:0.886>ref0.0814",
+      "strong_leak:FD_HEAVE->Roll:1.39>ref0.231"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_run_ids": [
+    "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+    "RC_IMP_HEAVE_02259Z0000_P1"
+  ],
+  "created_at": "2026-07-08T00:47:30+00:00"
+}

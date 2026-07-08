@@ -1,0 +1,2019 @@
+{
+  "created_at": "2026-07-08T00:47:26+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "items": [
+    {
+      "item_id": "DQ_212D149C3FDC",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_06121500",
+      "candidate_id": "AMP_SH_06121500",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+        "strong_leak:FD_YAW->Surge:0.5>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_7DAC7172E735",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+      "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_CEC84C38F72F",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+      "candidate_id": "AMP_SH_H054_SWTTD_Y15052_07041000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_83BA6C6B168C",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "candidate_id": "AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_4050462639A4",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+      "candidate_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.88>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_B3E8E533CFD6",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_06172058",
+      "candidate_id": "AMP_SH_SY_06172058",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_95A04E9F6B76",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_R965_06171637",
+      "candidate_id": "AMP_SH_SY_R965_06171637",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_7B0AE807F41E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+      "candidate_id": "AMP_SH_SY_R965_H058_07031325",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_1FCD29907367",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "candidate_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_69BCCFC1B254",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "candidate_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_1A44AFF573B8",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_SY_ROLL090_06171518",
+      "candidate_id": "AMP_SH_SY_ROLL090_06171518",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_BD0252207F63",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_AMP_SH_S_BASEYAW_06171610",
+      "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_7FA16AB26D14",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0612134333_F400_I100",
+      "candidate_id": "BQIC_HEAVE_0612134333_F400_I100",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Yaw:0.526>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_5DBB7234117D",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0612143402_F100_I060",
+      "candidate_id": "BQIC_HEAVE_0612143402_F100_I060",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_64E949DB7E7A",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0703130239_F100_I050",
+      "candidate_id": "BQIC_HEAVE_0703130239_F100_I050",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.878>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_112E660A6593",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0703130239_F100_I055",
+      "candidate_id": "BQIC_HEAVE_0703130239_F100_I055",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.847>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_42C808A0E287",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0703130239_F100_I058",
+      "candidate_id": "BQIC_HEAVE_0703130239_F100_I058",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_EC39ECB4518F",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704040637_F100_I054",
+      "candidate_id": "BQIC_HEAVE_0704040637_F100_I054",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_C9630D2B6B00",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704040637_F100_I055",
+      "candidate_id": "BQIC_HEAVE_0704040637_F100_I055",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.847>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_91213ABFB006",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704040637_F100_I056",
+      "candidate_id": "BQIC_HEAVE_0704040637_F100_I056",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.84>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_0DD0D664E4F6",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704051950_F100_I048",
+      "candidate_id": "BQIC_HEAVE_0704051950_F100_I048",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.89>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_342610C8B5F6",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704051950_F100_I050",
+      "candidate_id": "BQIC_HEAVE_0704051950_F100_I050",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.878>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_01F640B0005C",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_HEAVE_0704051950_F100_I052",
+      "candidate_id": "BQIC_HEAVE_0704051950_F100_I052",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.865>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_A67B11F22393",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_SWAY_0617133851_F100_I070",
+      "candidate_id": "BQIC_SWAY_0617133851_F100_I070",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Roll:0.506>ref0.119",
+        "strong_leak:FD_SWAY->Yaw:0.683>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_ROLL",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_C630AEDBD659",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_SWAY_0617133851_F100_I075",
+      "candidate_id": "BQIC_SWAY_0617133851_F100_I075",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.588>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_D5FBEBBF7528",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_SWAY_0617133851_F100_I078",
+      "candidate_id": "BQIC_SWAY_0617133851_F100_I078",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.647>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_D1B749D7933E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_SWAY_0617133851_F100_I082",
+      "candidate_id": "BQIC_SWAY_0617133851_F100_I082",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.617>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_13A2E632196F",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_BQIC_SWAY_0704014701_F105_I076",
+      "candidate_id": "BQIC_SWAY_0704014701_F105_I076",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.5>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_440AA44333C9",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_CAND_TEST",
+      "candidate_id": "CAND_TEST",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_ROLL->Heave:2.3>ref0.0326",
+        "strong_leak:FD_ROLL->Pitch:14.7>ref0.248",
+        "strong_leak:FD_ROLL->Surge:22.5>ref0.13",
+        "strong_leak:FD_ROLL->Sway:6.39>ref0.281",
+        "strong_leak:FD_ROLL->Yaw:1.6>ref0.107"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 46.0
+    },
+    {
+      "item_id": "DQ_51CFB32EE566",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+      "candidate_id": "COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.613>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.939>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_D004C8D695C2",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+      "candidate_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.671>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.14>ref0.231",
+        "strong_leak:FD_YAW->Surge:0.528>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_F3D6BC74FF27",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706",
+      "candidate_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:3.5>ref0.0814",
+        "strong_leak:FD_HEAVE->Surge:8.01>ref0.694",
+        "strong_leak:FD_PITCH->Surge:2.27>ref0.365",
+        "strong_leak:FD_ROLL->Heave:3.37>ref0.0326",
+        "strong_leak:FD_ROLL->Pitch:15.9>ref0.248",
+        "strong_leak:FD_ROLL->Surge:24.8>ref0.13",
+        "strong_leak:FD_ROLL->Sway:6.05>ref0.281",
+        "strong_leak:FD_ROLL->Yaw:1.66>ref0.107",
+        "strong_leak:FD_SWAY->Pitch:1.72>ref0.0385",
+        "strong_leak:FD_SWAY->Surge:3.38>ref0.0991",
+        "strong_leak:FD_YAW->Heave:2.9>ref0.00834",
+        "strong_leak:FD_YAW->Pitch:8.29>ref0.0665",
+        "strong_leak:FD_YAW->Surge:18.8>ref0.167",
+        "strong_leak:FD_YAW->Sway:1.81>ref0.0615"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 50.0
+    },
+    {
+      "item_id": "DQ_18194ECEE531",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706",
+      "candidate_id": "COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:1.06>ref0.231",
+        "strong_leak:FD_HEAVE->Surge:6.4>ref0.694",
+        "strong_leak:FD_HEAVE->Yaw:1.14>ref0.0969",
+        "strong_leak:FD_PITCH->Heave:2.79>ref0.0971",
+        "strong_leak:FD_PITCH->Roll:3.07>ref0.245",
+        "strong_leak:FD_PITCH->Surge:17.8>ref0.365",
+        "strong_leak:FD_PITCH->Sway:1.78>ref0.115",
+        "strong_leak:FD_PITCH->Yaw:2.27>ref0.127",
+        "strong_leak:FD_ROLL->Heave:0.934>ref0.0326",
+        "strong_leak:FD_ROLL->Surge:6>ref0.13",
+        "strong_leak:FD_ROLL->Yaw:0.625>ref0.107",
+        "strong_leak:FD_SWAY->Surge:1.25>ref0.0991",
+        "strong_leak:FD_SWAY->Yaw:1.17>ref0.117",
+        "strong_leak:FD_YAW->Heave:0.517>ref0.00834",
+        "strong_leak:FD_YAW->Pitch:0.535>ref0.0665",
+        "strong_leak:FD_YAW->Roll:1.4>ref0.0875",
+        "strong_leak:FD_YAW->Surge:4.49>ref0.167",
+        "strong_leak:FD_YAW->Sway:1.71>ref0.0615"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 50.0
+    },
+    {
+      "item_id": "DQ_DFC9AE4C4219",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706",
+      "candidate_id": "FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.562>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.945>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_8921109D441B",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706",
+      "candidate_id": "FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.894>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_717CE74E7133",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_GLV3_MOOR_EA10045R_20260707T090815Z",
+      "candidate_id": "GLV3_MOOR_EA10045R_20260707T090815Z",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.524>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_7B6D24E20C07",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_GLV3_MOOR_EA10055_20260707T060656Z",
+      "candidate_id": "GLV3_MOOR_EA10055_20260707T060656Z",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.506>ref0.117",
+        "strong_leak:FD_YAW->Surge:0.587>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_56E0200AD516",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE060_ROLL090_CMP_06171530",
+      "candidate_id": "HEAVE060_ROLL090_CMP_06171530",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.821>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_2C1111DEECEA",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N15M_07041128",
+      "candidate_id": "HEAVE_AF0_N15M_07041128",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.88>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_014E1980B28F",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N16M_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N16M_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.898>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_4D24420F3820",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N175M_0704221224",
+      "candidate_id": "HEAVE_AF0_N175M_0704221224",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.896>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_1B09E3A94E75",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.751>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_F840755DFB09",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.868>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_DF9AA7D48141",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.572>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.933>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.51>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_1AD3AD936184",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.558>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.923>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_5F1B56E48C54",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.595>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.949>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_CBA674715F36",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.531>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.939>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_C49CC12418BD",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.562>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.945>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_8AD350B6DC7A",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.546>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.976>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_973D676EA6A2",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.62>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.998>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.514>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_84E80CE43C77",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.579>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.956>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.518>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_B15755B5D025",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_BL100_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.526>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.946>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_F51E784E24B2",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.71>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.948>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.505>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_C4FB47DF0495",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_IC83_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_IC83_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.62>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.94>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_D0BDDC5D8288",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N20M_T450_0706",
+      "candidate_id": "HEAVE_AF0_N20M_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.797>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.43>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_DBB3D0BEBD39",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N2M_07041115",
+      "candidate_id": "HEAVE_AF0_N2M_07041115",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.889>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_B50DFC6D6FAA",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N2M_REBASE_FULL_0706",
+      "candidate_id": "HEAVE_AF0_N2M_REBASE_FULL_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.505>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.905>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_DD9FF5438D69",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_N40M_T450_0706",
+      "candidate_id": "HEAVE_AF0_N40M_T450_0706",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:4>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:6.55>ref0.231",
+        "strong_leak:FD_HEAVE->Sway:2.49>ref0.383",
+        "strong_leak:FD_HEAVE->Yaw:2.06>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 45.0
+    },
+    {
+      "item_id": "DQ_86320422C92D",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_AF0_P2M_07041115",
+      "candidate_id": "HEAVE_AF0_P2M_07041115",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.818>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_B898569EDB04",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_BL100_0704211242",
+      "candidate_id": "HEAVE_BL100_0704211242",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.5>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.904>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_E5454BD4C29E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_BL50_0704212109",
+      "candidate_id": "HEAVE_BL50_0704212109",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.9>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_53F141F0FE44",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_BQ05X_0705241450",
+      "candidate_id": "HEAVE_BQ05X_0705241450",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Roll:0.709>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_984D8EECB7AB",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_HEAVE_BQ2X_0705235850",
+      "candidate_id": "HEAVE_BQ2X_0705235850",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.575>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:0.988>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_60A6BE832B6E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_IMP_HEAVE_02259Z0000_P1",
+      "candidate_id": "IMP_HEAVE_02259Z0000_P1",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.886>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.39>ref0.231"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 43.0
+    },
+    {
+      "item_id": "DQ_61712C7B31B9",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_IMP_HEAVE_02259Z0000_S1",
+      "candidate_id": "IMP_HEAVE_02259Z0000_S1",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.842>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.36>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.813>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_B198F5CCFA18",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_IMP_PITCH_04323Z0000_P1",
+      "candidate_id": "IMP_PITCH_04323Z0000_P1",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_PITCH->Yaw:0.509>ref0.127"
+      ],
+      "related_dofs": [
+        "FD_PITCH",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_2B3FFFA9A71B",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_LP_9E877C00D37E_YAW_20260707T020651Z0000",
+      "candidate_id": "LP_9E877C00D37E_YAW_20260707T020651Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SWAY->Yaw:0.505>ref0.117"
+      ],
+      "related_dofs": [
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_64E00D69E17A",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+      "candidate_id": "LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SURGE->Heave:4.46>ref0.0197",
+        "strong_leak:FD_SURGE->Pitch:1.6>ref0.107",
+        "strong_leak:FD_SURGE->Roll:2.78>ref0.0329",
+        "strong_leak:FD_SURGE->Sway:2.04>ref0.159",
+        "strong_leak:FD_SURGE->Yaw:1.84>ref0.0382"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 46.0
+    },
+    {
+      "item_id": "DQ_ADB013533185",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_PHYS_PITCH_BASE_64324Z0000",
+      "candidate_id": "PHYS_PITCH_BASE_64324Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_PITCH->Surge:2.42>ref0.365"
+      ],
+      "related_dofs": [
+        "FD_PITCH",
+        "FD_SURGE"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_40A3B167D34E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_PHYS_SURGE_BASE_22152Z0000",
+      "candidate_id": "PHYS_SURGE_BASE_22152Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SURGE->Pitch:0.575>ref0.107"
+      ],
+      "related_dofs": [
+        "FD_PITCH",
+        "FD_SURGE"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_F17E1C15B676",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_PHYS_SURGE_BASE_40534Z0000",
+      "candidate_id": "PHYS_SURGE_BASE_40534Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SURGE->Pitch:0.575>ref0.107"
+      ],
+      "related_dofs": [
+        "FD_PITCH",
+        "FD_SURGE"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_D5A39A58C9EC",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_PHYS_SURGE_BASE_70258Z0000",
+      "candidate_id": "PHYS_SURGE_BASE_70258Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_SURGE->Pitch:0.575>ref0.107"
+      ],
+      "related_dofs": [
+        "FD_PITCH",
+        "FD_SURGE"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_3C8AE749B32D",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE",
+      "candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.697>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.39>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.781>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_FD2BE0D51E78",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_HEAVE->Pitch:0.842>ref0.0814",
+        "strong_leak:FD_HEAVE->Roll:1.36>ref0.231",
+        "strong_leak:FD_HEAVE->Yaw:0.813>ref0.0969"
+      ],
+      "related_dofs": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 44.0
+    },
+    {
+      "item_id": "DQ_5BDB7F797D35",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_YAW_EQIC87_0704223546",
+      "candidate_id": "YAW_EQIC87_0704223546",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_YAW->Surge:0.598>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_39EFF84A01A3",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_YAW_EQIC87_CL105_0704224441",
+      "candidate_id": "YAW_EQIC87_CL105_0704224441",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_YAW->Surge:0.69>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_F58458364967",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_YAW_EQIC87_CL105_BQ2X_0704225331",
+      "candidate_id": "YAW_EQIC87_CL105_BQ2X_0704225331",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_YAW->Surge:0.757>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_783859EE5508",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_YAW_EQIC_0704222630",
+      "candidate_id": "YAW_EQIC_0704222630",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_YAW->Surge:0.871>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_D1BFD646A79E",
+      "created_at": "2026-07-07T13:59:00+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_YAW_IC_Y1505_07040931",
+      "candidate_id": "YAW_IC_Y1505_07040931",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "strong_leak:FD_YAW->Surge:0.519>ref0.167"
+      ],
+      "related_dofs": [
+        "FD_SURGE",
+        "FD_YAW"
+      ],
+      "review_type": "leak_diagnostic",
+      "severity": "diagnostic",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "offline_import",
+      "source_category": "historical_import",
+      "priority": 42.0
+    },
+    {
+      "item_id": "DQ_5A39BE5B2B3D",
+      "created_at": "2026-07-07T14:13:38+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+      "candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+      ],
+      "related_dofs": [
+        "FD_SURGE"
+      ],
+      "review_type": "period_reverse_diagnostic",
+      "severity": "warning",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "global_step",
+      "source_category": "active",
+      "priority": 72.0
+    },
+    {
+      "item_id": "DQ_9B9B42DB59EB",
+      "created_at": "2026-07-07T15:10:10+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+      "candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+      ],
+      "related_dofs": [
+        "FD_SWAY"
+      ],
+      "review_type": "period_reverse_diagnostic",
+      "severity": "warning",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "global_step",
+      "source_category": "active",
+      "priority": 72.0
+    },
+    {
+      "item_id": "DQ_62FE575B528A",
+      "created_at": "2026-07-08T00:46:41+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000",
+      "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "period_reverse_worse:FD_SWAY:abs 0.259->7.02 signed 0.259->7.02"
+      ],
+      "related_dofs": [
+        "FD_SWAY"
+      ],
+      "review_type": "period_reverse_diagnostic",
+      "severity": "warning",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "global_step",
+      "source_category": "active",
+      "priority": 72.0
+    }
+  ],
+  "source_role": "diagnostic_evidence"
+}

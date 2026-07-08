@@ -1,0 +1,21 @@
+{
+  "job_id": "LLMJ_during_run_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T144448Z0000",
+  "analysis_type": "during_run",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "status": "packet_only",
+  "candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+  "run_id": "",
+  "item_id": "",
+  "proposal_id": "",
+  "packet_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/llm_packets/LLMP_during_run_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_997C55B86EDD.json",
+  "report_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/reports/llm_during_run_LP_330171BDD5AE_HEAVE_20260707T144315Z0000.md",
+  "input_snapshot_hash": "997c55b86edd2b1c802018450e3deacecb9361969ba0c3bba2e82bbb557dc0bb",
+  "call_model": false,
+  "provider": "openai_compatible",
+  "model": "",
+  "error": "",
+  "created_at": "2026-07-07T14:44:48+00:00",
+  "updated_at": "2026-07-07T14:44:48+00:00",
+  "source_role": "advisory"
+}

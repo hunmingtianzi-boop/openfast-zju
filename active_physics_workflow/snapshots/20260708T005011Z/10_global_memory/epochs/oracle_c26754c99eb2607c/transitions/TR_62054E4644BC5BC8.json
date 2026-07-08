@@ -1,0 +1,158 @@
+{
+  "transition_id": "TR_62054E4644BC5BC8",
+  "parent_run_id": "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+  "child_run_id": "RC_BQIC_SWAY_0617133851_F100_I070",
+  "parent_candidate_id": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+  "child_candidate_id": "BQIC_SWAY_0617133851_F100_I070",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "parameter_group": "diagonal_hydro",
+  "action_type": "signed_ic_bquad",
+  "target_dof": "FD_SWAY",
+  "parameter_delta": {
+    "hydrodyn_edits": [
+      {
+        "block": "BQuad",
+        "i": 1,
+        "j": 1,
+        "value": 1125000.0
+      }
+    ],
+    "moordyn": {},
+    "initial_conditions": {
+      "Sway": -7.118579999999999
+    },
+    "tmax": 900,
+    "decision_meta": {
+      "signed_ic_bquad_tune": true,
+      "selected_dof_candidates": {
+        "FD_SURGE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_SWAY": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_HEAVE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_ROLL": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_PITCH": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+        "FD_YAW": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125"
+      },
+      "bquad_multipliers": {
+        "FD_SURGE": 1.0,
+        "FD_SWAY": 1.0,
+        "FD_HEAVE": 1.0,
+        "FD_ROLL": 1.0,
+        "FD_PITCH": 1.0,
+        "FD_YAW": 1.0
+      },
+      "signed_initial_conditions": {
+        "FD_SURGE": -13.617,
+        "FD_SWAY": -10.169400000000001,
+        "FD_HEAVE": -8.183834704,
+        "FD_ROLL": 16.88639943,
+        "FD_PITCH": -9.679198059,
+        "FD_YAW": -14.975232
+      },
+      "dof_packages": [
+        "FD_HEAVE",
+        "FD_PITCH",
+        "FD_ROLL",
+        "FD_SURGE",
+        "FD_SWAY",
+        "FD_YAW"
+      ],
+      "bquad_multiplier": 1.0
+    },
+    "changed_parameters": "HydroDyn.BQuad[1,1];IC.Sway;FST.TMax"
+  },
+  "global_score_delta": 0.6565555654077717,
+  "metric_deltas": {
+    "FD_SWAY": {
+      "score": {
+        "parent": 0.8014242053775592,
+        "child": 1.404216388706332,
+        "delta": 0.6027921833287727,
+        "signed_delta": 0.6027921833287727,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "period_error_pct": {
+        "parent": 2.6066805,
+        "child": 2.7586383,
+        "delta": 0.15195779999999992,
+        "signed_delta": 0.15195779999999992,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "envelope_error": {
+        "parent": 0.32304132,
+        "child": 0.5418984,
+        "delta": 0.21885707999999998,
+        "signed_delta": 0.21885707999999998,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "ler_error": {
+        "parent": 0.35183958,
+        "child": 0.78869259,
+        "delta": 0.43685301000000004,
+        "signed_delta": 0.43685301000000004,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "fp_error": {
+        "parent": 0.17945897,
+        "child": 0.49079687,
+        "delta": 0.3113379,
+        "signed_delta": 0.3113379,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      },
+      "zeta_error_ratio": {
+        "parent": 0.051256817108924685,
+        "child": 0.19214326039665186,
+        "delta": 0.14088644328772718,
+        "signed_delta": 0.14088644328772718,
+        "comparison": "absolute_error",
+        "direction": "worsened"
+      }
+    }
+  },
+  "new_failures": [
+    "missing_dof",
+    "missing_dof:FD_HEAVE",
+    "missing_dof:FD_PITCH",
+    "missing_dof:FD_ROLL",
+    "missing_dof:FD_SURGE",
+    "missing_dof:FD_YAW",
+    "strong_leak",
+    "strong_leak:FD_SWAY->Roll:0.506>ref0.119",
+    "strong_leak:FD_SWAY->Yaw:0.683>ref0.117"
+  ],
+  "resolved_failures": [],
+  "step_decision": {
+    "status": "EVIDENCE_ONLY",
+    "reason": "incomplete suite: 1/6 DOFs have metrics",
+    "hard_constraint_violations": [
+      "missing_dof:FD_HEAVE",
+      "missing_dof:FD_PITCH",
+      "missing_dof:FD_ROLL",
+      "missing_dof:FD_SURGE",
+      "missing_dof:FD_YAW",
+      "strong_leak:FD_SWAY->Roll:0.506>ref0.119",
+      "strong_leak:FD_SWAY->Yaw:0.683>ref0.117"
+    ],
+    "tags": [
+      "incomplete_suite"
+    ]
+  },
+  "loop_verdict": {
+    "status": "DIAGNOSTIC_FORK",
+    "reason": "diagnostic hard constraint requires review",
+    "tags": [
+      "diagnostic",
+      "strong_leak"
+    ]
+  },
+  "source_run_ids": [
+    "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+    "RC_BQIC_SWAY_0617133851_F100_I070"
+  ],
+  "created_at": "2026-07-08T00:47:30+00:00"
+}

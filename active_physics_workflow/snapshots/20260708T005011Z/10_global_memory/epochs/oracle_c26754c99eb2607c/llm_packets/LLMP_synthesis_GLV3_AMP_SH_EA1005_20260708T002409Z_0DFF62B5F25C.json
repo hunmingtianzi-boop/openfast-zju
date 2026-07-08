@@ -1,0 +1,2202 @@
+{
+  "packet_id": "LLMP_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z_0DFF62B5F25C",
+  "job_id": "LLMJ_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004727Z0000",
+  "analysis_type": "synthesis",
+  "created_at": "2026-07-08T00:47:27+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "input_snapshot_hash": "0dff62b5f25c03910ead0e4f0d1f2297a8d72f8301a1bfd0dcc9e901be394e5b",
+  "prompt": "You are an advisory engineering analyst for a six-DOF OpenFAST calibration loop. You may explain, diagnose, summarize, and recommend next probes. You must not modify TargetTruth, override hard predicates, compute official score, promote current_best, or loosen thresholds. Treat all outputs as advisory only.\n\nAnalysis type: synthesis\nReturn a concise Markdown report with: Evidence, Interpretation, Risks, Recommended next action.\nDo not change deterministic verdicts or present advisory suggestions as official acceptance.\n\nContext JSON:\n{\n  \"advisory_only\": true,\n  \"analysis_focus\": [\n    \"Synthesize pre-run, during-run, and post-run evidence.\",\n    \"Recommend exactly one next-action category: global_search, diagnostic_fork, local_proposal, or human_review.\",\n    \"Keep the recommendation advisory and reference deterministic verdicts.\"\n  ],\n  \"coupling_memory\": {\n    \"created_at\": \"2026-07-08T00:46:42+00:00\",\n    \"entries\": {\n      \"coupling_disabled\": {\n        \"affected_dofs\": [],\n        \"confidence\": 0.0,\n        \"damages\": [],\n        \"evidence_run_ids\": [],\n        \"improves\": [],\n        \"parameter_group\": \"coupling_disabled\",\n        \"response_strength\": 0.0\n      },\n      \"diagonal_hydro\": {\n        \"affected_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"confidence\": 0.5,\n        \"damages\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"evidence_run_ids\": [\n          \"RC_AMP_SH_06121500\",\n          \"RC_AMP_SH_H054_SWTTD_SG1019_07040711\",\n          \"RC_AMP_SH_H054_SWTTD_Y15052_07041000\",\n          \"RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055\",\n          \"RC_AMP_SH_HAF15_Y15052_R8715_07041136\",\n          \"RC_AMP_SH_S_BASEYAW_06171610\",\n          \"RC_AMP_SH_SY_06172058\",\n          \"RC_AMP_SH_SY_R965_06171637\",\n          \"RC_AMP_SH_SY_R965_H058_07031325\",\n          \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n          \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815\",\n          \"RC_AMP_SH_SY_ROLL090_06171518\",\n          \"RC_BQIC_HEAVE_0612055426_F100_I080\",\n          \"RC_BQIC_HEAVE_0612055426_F100_I090\",\n          \"RC_BQIC_HEAVE_0612134333_F200_I100\",\n          \"RC_BQIC_HEAVE_0612134333_F400_I100\",\n          \"RC_BQIC_HEAVE_0612134700_F100_I100\",\n          \"RC_BQIC_HEAVE_0612135257_F100_I095\",\n          \"RC_BQIC_HEAVE_0612143402_F100_I060\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I050\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I055\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I058\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I054\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I055\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I056\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I048\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I050\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I052\",\n          \"RC_BQIC_ROLL_0612125455_F080_I100\",\n          \"RC_BQIC_ROLL_0612125455_F090_I100\",\n          \"RC_BQIC_ROLL_0617161013_F095_I100\",\n          \"RC_BQIC_ROLL_0617161538_F098_I100\",\n          \"RC_BQIC_ROLL_0617162123_F096_I100\",\n          \"RC_BQIC_ROLL_0617162123_F097_I100\",\n          \"RC_BQIC_ROLL_0617162123_F098_I100\",\n          \"RC_BQIC_ROLL_0704103753_F090_I100\",\n          \"RC_BQIC_SURGE_0611135333_F100\",\n          \"RC_BQIC_SURGE_0611135333_F150\",\n          \"RC_BQIC_SURGE_0611142500_F100\",\n          \"RC_BQIC_SURGE_0611154707_F100_I110\",\n          \"RC_BQIC_SURGE_0611155919_F100_I102\",\n          \"RC_BQIC_SURGE_0612120539_F100_I100\",\n          \"RC_BQIC_SURGE_0612120539_F150_I100\",\n          \"RC_BQIC_SURGE_0612120539_F200_I100\",\n          \"RC_BQIC_SURGE_0612122849_F075_I090\",\n          \"RC_BQIC_SURGE_0612122849_F100_I090\",\n          \"RC_BQIC_SURGE_0612122849_F125_I090\",\n          \"RC_BQIC_SURGE_0612123519_F100_I098\",\n          \"RC_BQIC_SURGE_0612123519_F100_I102\",\n          \"RC_BQIC_SURGE_0612134700_F100_I100\",\n          \"RC_BQIC_SURGE_0612141252_F100_I080\",\n          \"RC_BQIC_SURGE_0612143905_F100_I065\",\n          \"RC_BQIC_SURGE_0612143905_F100_I070\",\n          \"RC_BQIC_SURGE_0703144129_F110_I100\",\n          \"RC_BQIC_SURGE_0703144129_F120_I100\",\n          \"RC_BQIC_SURGE_0703150041_F080_I100\",\n          \"RC_BQIC_SURGE_0703150041_F090_I100\",\n          \"RC_BQIC_SURGE_0704053144_F100_I072\",\n          \"RC_BQIC_SURGE_0704053144_F100_I074\",\n          \"RC_BQIC_SURGE_0704053144_F100_I076\",\n          \"RC_BQIC_SURGE_0704055611_F105_I074\",\n          \"RC_BQIC_SURGE_0704055611_F110_I074\",\n          \"RC_BQIC_SURGE_0704055611_F120_I074\",\n          \"RC_BQIC_SURGE_0704062039_F101_I074\",\n          \"RC_BQIC_SURGE_0704062039_F102_I074\",\n          \"RC_BQIC_SURGE_0704062039_F103_I074\",\n          \"RC_BQIC_SURGE_0704064505_F102_I074\",\n          \"RC_BQIC_SURGE_0704065321_F102_I074\",\n          \"RC_BQIC_SURGE_0704070142_F102_I074\",\n          \"RC_BQIC_SURGE_0704074649_F102_I073\",\n          \"RC_BQIC_SURGE_0704123214_F098_I072\",\n          \"RC_BQIC_SWAY_0612090051_F100_I102\",\n          \"RC_BQIC_SWAY_0612134700_F100_I100\",\n          \"RC_BQIC_SWAY_0612142322_F100_I080\",\n          \"RC_BQIC_SWAY_0617133851_F100_I070\",\n          \"RC_BQIC_SWAY_0617133851_F100_I075\",\n          \"RC_BQIC_SWAY_0617133851_F100_I078\",\n          \"RC_BQIC_SWAY_0617133851_F100_I082\",\n          \"RC_BQIC_SWAY_0617142124_F100_I076\",\n          \"RC_BQIC_SWAY_0617142124_F100_I078\",\n          \"RC_BQIC_SWAY_0617142124_F100_I080\",\n          \"RC_BQIC_SWAY_0617142124_F100_I082\",\n          \"RC_BQIC_SWAY_0703140207_F110_I100\",\n          \"RC_BQIC_SWAY_0703140207_F120_I100\",\n          \"RC_BQIC_SWAY_0703142147_F103_I100\",\n          \"RC_BQIC_SWAY_0703142147_F105_I100\",\n          \"RC_BQIC_SWAY_0704014701_F095_I076\",\n          \"RC_BQIC_SWAY_0704014701_F100_I076\",\n          \"RC_BQIC_SWAY_0704014701_F105_I076\",\n          \"RC_BQIC_SWAY_0704021626_F098_I076\",\n          \"RC_BQIC_SWAY_0704021626_F099_I076\",\n          \"RC_BQIC_SWAY_0704041752_F095_I100\",\n          \"RC_BQIC_SWAY_0704041752_F105_I100\",\n          \"RC_BQIC_SWAY_0704075513_F100_I082\",\n          \"RC_BQIC_SWAY_0704075513_F100_I084\",\n          \"RC_BQIC_YAW_0612070916_F100_I102\",\n          \"RC_BQIC_YAW_0612154529_F100_I084\",\n          \"RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706\",\n          \"RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706\",\n          \"RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706\",\n          \"RC_HEAVE060_ROLL090_CMP_06171530\",\n          \"RC_HEAVE095_CMP_0612135839\",\n          \"RC_HEAVE095_ROLL090_CMP_0612144710\",\n          \"RC_HEAVE_AF0_N16M_FULL_0706\",\n          \"RC_HEAVE_AF0_N175M_0704221224\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_T450_0706\",\n          \"RC_HEAVE_AF0_N2M_REBASE_FULL_0706\",\n          \"RC_HEAVE_AF0_N40M_T450_0706\",\n          \"RC_HEAVE_BL100_0704211242\",\n          \"RC_HEAVE_BL50_0704212109\",\n          \"RC_HEAVE_BQ05X_0705241450\",\n          \"RC_HEAVE_BQ2X_0705235850\",\n          \"RC_IMP_HEAVE_02259Z0000_P1\",\n          \"RC_IMP_HEAVE_02259Z0000_S1\",\n          \"RC_IMP_PITCH_04323Z0000_P1\",\n          \"RC_IMP_PITCH_04323Z0000_S1\",\n          \"RC_IMP_SURGE_00128Z0000_P1\",\n          \"RC_IMP_SURGE_00128Z0000_S1\",\n          \"RC_IMP_SURGE_00128Z0000_S3\",\n          \"RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000\",\n          \"RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000\",\n          \"RC_LP_9E877C00D37E_YAW_20260707T020651Z0000\",\n          \"RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400\",\n          \"RC_ROLL_BQ8715_07041049\",\n          \"RC_ROLL_BQ873_07041043\",\n          \"RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000\",\n          \"RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000\",\n          \"RC_SURGE_AF0_N180K_IC177_CL5500_T600_0706\",\n          \"RC_SURGE_AF0_N180K_IC177_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ075_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ078_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ0795_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ079_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ080_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ085_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ090_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M1085_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M1125_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC185_M105B_T600_0706\",\n          \"RC_SURGE_AF0_N210K_IC180_T600_0706\",\n          \"RC_SURGE_AF0_N250K_IC185_T600_0706\",\n          \"RC_SURGE_AF0_N250K_IC2124_FULL_0705\",\n          \"RC_SURGE_AF0_N50K_CL2800_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_CL5500_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_CLN10K_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_FULL_0705\",\n          \"RC_SURGE_AF0_N550K_IC215_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC195_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_FULL_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_T600_0706\",\n          \"RC_SURGE_AF0_N650K_IC232_T450_0706\",\n          \"RC_SURGE_AF0_N650K_T450_0706\",\n          \"RC_SURGE_CL0_0704212954\",\n          \"RC_SURGE_CL5K_0704213825\",\n          \"RC_SURGE_EQIC90_0704231943\",\n          \"RC_SURGE_IC16715_CL8K_0704214734\",\n          \"RC_SURGE_IC2032_AF0_N50K_FULL_0706\",\n          \"RC_SURGE_IC2032_FULL_0706\",\n          \"RC_SURGE_IC72_CL0_07040912\",\n          \"RC_SURGE_IC72_CL4K_07040924\",\n          \"RC_SURGE_SG1019_BL420_07040900\",\n          \"RC_SURGE_SG1019_BL450_07040846\",\n          \"RC_SWAY_AF0_N15K_FULL_0706\",\n          \"RC_SWAY_AF0_N450K_T450_0706\",\n          \"RC_SWAY_AF0_N50K_BQ103X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ110X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ118X_T450_0706\",\n          \"RC_SWAY_AF0_N50K_BQ125X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ2X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_IC1225_T450_0706\",\n          \"RC_SWAY_AF0_N50K_IC1260_FULL_0706\",\n          \"RC_SWAY_AF0_N750K_T450_0706\",\n          \"RC_SWAY_CL0_0704204604\",\n          \"RC_SWAY_CL0_BL300_0704205458\",\n          \"RC_SWAY_CLN14K_0705243600\",\n          \"RC_SWAY_CLN8K_0704210327\",\n          \"RC_SWAY_IC1230_0704215651\",\n          \"RC_SWAY_TTDSS_N18_07040812\",\n          \"RC_SWAY_TTDSS_N22_07040812\",\n          \"RC_YAW_EQIC83_0704231051\",\n          \"RC_YAW_EQIC87_0704223546\",\n          \"RC_YAW_EQIC87_CL105_0704224441\",\n          \"RC_YAW_EQIC87_CL105_BL100_0704230212\",\n          \"RC_YAW_EQIC87_CL105_BQ2X_0704225331\",\n          \"RC_YAW_EQIC_0704222630\",\n          \"RC_YAW_IC_Y15052_07040949\",\n          \"RC_YAW_IC_Y15056_07040941\",\n          \"RC_YAW_IC_Y1505_07040931\",\n          \"RC_YAW_IC_Y1508_07040931\"\n        ],\n        \"improves\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"parameter_group\": \"diagonal_hydro\",\n        \"response_strength\": 0.6214683835869572\n      },\n      \"mooring\": {\n        \"affected_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"confidence\": 0.5,\n        \"damages\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"evidence_run_ids\": [\n          \"RC_GLV3_HEAVE_AF0_N025M_EA1005_20260707T113721Z\",\n          \"RC_GLV3_MOOR_EA1003_20260707T043810Z\",\n          \"RC_GLV3_MOOR_EA10045R_20260707T090815Z\",\n          \"RC_GLV3_MOOR_EA10055_20260707T060656Z\",\n          \"RC_GLV3_MOOR_EA1005_20260707T033530Z\",\n          \"RC_IMP_SURGE_MEA0787_112112\",\n          \"RC_IMP_SURGE_MEA0834_114855\",\n          \"RC_IMP_SURGE_MEA0865_113536\",\n          \"RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000\",\n          \"RC_SURGE_AF0_N180K_IC177_UL1001_T600_0706\",\n          \"RC_SURGE_AF0_N50K_UL10017_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_UL1002_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_UL1005_FULL_0706\",\n          \"RC_SURGE_EA098_FULL_0705211940\",\n          \"RC_SURGE_EA102_FULL_0705220000\",\n          \"RC_SURGE_IC70_EA110\",\n          \"RC_SURGE_IC70_EA118\",\n          \"RC_SURGE_IC70_EA120\",\n          \"RC_SURGE_IC70_EA130\",\n          \"RC_SURGE_IC70_EA15\",\n          \"RC_SURGE_IC70_EA20\",\n          \"RC_SURGE_IC70_EA30\",\n          \"RC_SURGE_IC72_EA0998_07040918\",\n          \"RC_SURGE_SG1019_EA099_07040831\",\n          \"RC_SURGE_UL0995_0705100839\",\n          \"RC_SURGE_UL0995_FULL_0705101534\",\n          \"RC_SURGE_UL1001_FULL_0705222420\",\n          \"RC_SURGE_UL1002_BL600K_0705234300\",\n          \"RC_SURGE_UL1002_CLN10K_0705232100\",\n          \"RC_SURGE_UL1002_FULL_0705230510\",\n          \"RC_SURGE_UL1005_FULL_0705102530\",\n          \"RC_SURGE_UL12_1005_FIX_0705210753\",\n          \"RC_SURGE_UL12_1005_FULL_0705205646\"\n        ],\n        \"improves\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"parameter_group\": \"mooring\",\n        \"response_strength\": 0.8262573469163136\n      },\n      \"rna_balance\": {\n        \"affected_dofs\": [],\n        \"confidence\": 0.0,\n        \"damages\": [],\n        \"evidence_run_ids\": [],\n        \"improves\": [],\n        \"parameter_group\": \"rna_balance\",\n        \"response_strength\": 0.0\n      }\n    }\n  },\n  \"diagnostic_queue\": {\n    \"created_at\": \"2026-07-08T00:47:26+00:00\",\n    \"item_count\": 82,\n    \"items\": [\n      {\n        \"candidate_id\": \"AMP_SH_06121500\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_212D149C3FDC\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 43.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_YAW\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_06121500\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.817>ref0.231\",\n          \"strong_leak:FD_YAW->Surge:0.5>ref0.167\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_H054_SWTTD_SG1019_07040711\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_7DAC7172E735\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_H054_SWTTD_SG1019_07040711\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.852>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_H054_SWTTD_Y15052_07041000\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_CEC84C38F72F\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_H054_SWTTD_Y15052_07041000\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.852>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_H054_SWTTD_Y15052_R8715_07041055\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_83BA6C6B168C\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.852>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_HAF15_Y15052_R8715_07041136\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_4050462639A4\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_HAF15_Y15052_R8715_07041136\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.88>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_06172058\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_B3E8E533CFD6\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_06172058\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.817>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_R965_06171637\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_95A04E9F6B76\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_R965_06171637\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.817>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_R965_H058_07031325\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_7B0AE807F41E\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_R965_H058_07031325\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.829>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_1FCD29907367\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.829>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_69BCCFC1B254\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.852>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_SY_ROLL090_06171518\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_1A44AFF573B8\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n        \"related_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_ROLL\"\n        ],\n        \"review_type\": \"leak_diagnostic\",\n        \"run_id\": \"RC_AMP_SH_SY_ROLL090_06171518\",\n        \"severity\": \"diagnostic\",\n        \"source_category\": \"historical_import\",\n        \"source_role\": \"diagnostic_evidence\",\n        \"source_stage\": \"offline_import\",\n        \"status\": \"pending\",\n        \"trigger_reasons\": [\n          \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n          \"strong_leak:FD_HEAVE->Roll:0.817>ref0.231\"\n        ]\n      },\n      {\n        \"candidate_id\": \"AMP_SH_S_BASEYAW_06171610\",\n        \"created_at\": \"2026-07-07T13:59:00+00:00\",\n        \"epoch_id\": \"oracle_c26754c99eb2607c\",\n        \"item_id\": \"DQ_BD0252207F63\",\n        \"oracle_id\": \"oracle_c26754c99eb2607c\",\n        \"priority\": 42.0,\n      \n...<truncated>",
+  "context": {
+    "oracle_id": "oracle_c26754c99eb2607c",
+    "epoch_id": "oracle_c26754c99eb2607c",
+    "advisory_only": true,
+    "source_roles": {
+      "target_truth": "oracle",
+      "observation": "evidence",
+      "score": "deterministic_metric",
+      "llm_analysis": "advisory"
+    },
+    "global_state": {
+      "updated_at": "2026-07-08T00:46:50+00:00",
+      "mode": "global_step",
+      "current_best_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "current_best_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "current_best_score": 0.6792725733966515,
+      "last_candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+      "last_step_decision": {
+        "status": "EVIDENCE_ONLY",
+        "reason": "incomplete suite: 2/6 DOFs have metrics",
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SWAY:abs 0.259->7.02 signed 0.259->7.02"
+        ],
+        "tags": [
+          "incomplete_suite"
+        ]
+      },
+      "loop_verdict": {
+        "status": "DIAGNOSTIC_FORK",
+        "reason": "diagnostic hard constraint requires review",
+        "tags": [
+          "diagnostic",
+          "period_reverse_worse"
+        ]
+      },
+      "last_score": 1.2153306555227417,
+      "top_proposal_ids": [
+        "LP_330171BDD5AE",
+        "LP_1A727791036F",
+        "LP_D460BA0F215D",
+        "LP_71D22C5024DD",
+        "LP_134489D9588E",
+        "LP_156E5BFB263B"
+      ],
+      "materializable_proposal_ids": [],
+      "harness_status": "INSUFFICIENT_ACTIVE_DATA",
+      "harness_recommendation": "STOP_AUTO_MATERIALIZE"
+    },
+    "coupling_memory": {
+      "created_at": "2026-07-08T00:46:42+00:00",
+      "entries": {
+        "mooring": {
+          "parameter_group": "mooring",
+          "affected_dofs": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "improves": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "damages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "response_strength": 0.8262573469163136,
+          "confidence": 0.5,
+          "evidence_run_ids": [
+            "RC_GLV3_HEAVE_AF0_N025M_EA1005_20260707T113721Z",
+            "RC_GLV3_MOOR_EA1003_20260707T043810Z",
+            "RC_GLV3_MOOR_EA10045R_20260707T090815Z",
+            "RC_GLV3_MOOR_EA10055_20260707T060656Z",
+            "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+            "RC_IMP_SURGE_MEA0787_112112",
+            "RC_IMP_SURGE_MEA0834_114855",
+            "RC_IMP_SURGE_MEA0865_113536",
+            "RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000",
+            "RC_SURGE_AF0_N180K_IC177_UL1001_T600_0706",
+            "RC_SURGE_AF0_N50K_UL10017_FULL_0706",
+            "RC_SURGE_AF0_N50K_UL1002_FULL_0706",
+            "RC_SURGE_AF0_N50K_UL1005_FULL_0706",
+            "RC_SURGE_EA098_FULL_0705211940",
+            "RC_SURGE_EA102_FULL_0705220000",
+            "RC_SURGE_IC70_EA110",
+            "RC_SURGE_IC70_EA118",
+            "RC_SURGE_IC70_EA120",
+            "RC_SURGE_IC70_EA130",
+            "RC_SURGE_IC70_EA15",
+            "RC_SURGE_IC70_EA20",
+            "RC_SURGE_IC70_EA30",
+            "RC_SURGE_IC72_EA0998_07040918",
+            "RC_SURGE_SG1019_EA099_07040831",
+            "RC_SURGE_UL0995_0705100839",
+            "RC_SURGE_UL0995_FULL_0705101534",
+            "RC_SURGE_UL1001_FULL_0705222420",
+            "RC_SURGE_UL1002_BL600K_0705234300",
+            "RC_SURGE_UL1002_CLN10K_0705232100",
+            "RC_SURGE_UL1002_FULL_0705230510",
+            "RC_SURGE_UL1005_FULL_0705102530",
+            "RC_SURGE_UL12_1005_FIX_0705210753",
+            "RC_SURGE_UL12_1005_FULL_0705205646"
+          ]
+        },
+        "rna_balance": {
+          "parameter_group": "rna_balance",
+          "affected_dofs": [],
+          "improves": [],
+          "damages": [],
+          "response_strength": 0.0,
+          "confidence": 0.0,
+          "evidence_run_ids": []
+        },
+        "diagonal_hydro": {
+          "parameter_group": "diagonal_hydro",
+          "affected_dofs": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "improves": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "damages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "response_strength": 0.6214683835869572,
+          "confidence": 0.5,
+          "evidence_run_ids": [
+            "RC_AMP_SH_06121500",
+            "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+            "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+            "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+            "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+            "RC_AMP_SH_S_BASEYAW_06171610",
+            "RC_AMP_SH_SY_06172058",
+            "RC_AMP_SH_SY_R965_06171637",
+            "RC_AMP_SH_SY_R965_H058_07031325",
+            "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+            "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+            "RC_AMP_SH_SY_ROLL090_06171518",
+            "RC_BQIC_HEAVE_0612055426_F100_I080",
+            "RC_BQIC_HEAVE_0612055426_F100_I090",
+            "RC_BQIC_HEAVE_0612134333_F200_I100",
+            "RC_BQIC_HEAVE_0612134333_F400_I100",
+            "RC_BQIC_HEAVE_0612134700_F100_I100",
+            "RC_BQIC_HEAVE_0612135257_F100_I095",
+            "RC_BQIC_HEAVE_0612143402_F100_I060",
+            "RC_BQIC_HEAVE_0703130239_F100_I050",
+            "RC_BQIC_HEAVE_0703130239_F100_I055",
+            "RC_BQIC_HEAVE_0703130239_F100_I058",
+            "RC_BQIC_HEAVE_0704040637_F100_I054",
+            "RC_BQIC_HEAVE_0704040637_F100_I055",
+            "RC_BQIC_HEAVE_0704040637_F100_I056",
+            "RC_BQIC_HEAVE_0704051950_F100_I048",
+            "RC_BQIC_HEAVE_0704051950_F100_I050",
+            "RC_BQIC_HEAVE_0704051950_F100_I052",
+            "RC_BQIC_ROLL_0612125455_F080_I100",
+            "RC_BQIC_ROLL_0612125455_F090_I100",
+            "RC_BQIC_ROLL_0617161013_F095_I100",
+            "RC_BQIC_ROLL_0617161538_F098_I100",
+            "RC_BQIC_ROLL_0617162123_F096_I100",
+            "RC_BQIC_ROLL_0617162123_F097_I100",
+            "RC_BQIC_ROLL_0617162123_F098_I100",
+            "RC_BQIC_ROLL_0704103753_F090_I100",
+            "RC_BQIC_SURGE_0611135333_F100",
+            "RC_BQIC_SURGE_0611135333_F150",
+            "RC_BQIC_SURGE_0611142500_F100",
+            "RC_BQIC_SURGE_0611154707_F100_I110",
+            "RC_BQIC_SURGE_0611155919_F100_I102",
+            "RC_BQIC_SURGE_0612120539_F100_I100",
+            "RC_BQIC_SURGE_0612120539_F150_I100",
+            "RC_BQIC_SURGE_0612120539_F200_I100",
+            "RC_BQIC_SURGE_0612122849_F075_I090",
+            "RC_BQIC_SURGE_0612122849_F100_I090",
+            "RC_BQIC_SURGE_0612122849_F125_I090",
+            "RC_BQIC_SURGE_0612123519_F100_I098",
+            "RC_BQIC_SURGE_0612123519_F100_I102",
+            "RC_BQIC_SURGE_0612134700_F100_I100",
+            "RC_BQIC_SURGE_0612141252_F100_I080",
+            "RC_BQIC_SURGE_0612143905_F100_I065",
+            "RC_BQIC_SURGE_0612143905_F100_I070",
+            "RC_BQIC_SURGE_0703144129_F110_I100",
+            "RC_BQIC_SURGE_0703144129_F120_I100",
+            "RC_BQIC_SURGE_0703150041_F080_I100",
+            "RC_BQIC_SURGE_0703150041_F090_I100",
+            "RC_BQIC_SURGE_0704053144_F100_I072",
+            "RC_BQIC_SURGE_0704053144_F100_I074",
+            "RC_BQIC_SURGE_0704053144_F100_I076",
+            "RC_BQIC_SURGE_0704055611_F105_I074",
+            "RC_BQIC_SURGE_0704055611_F110_I074",
+            "RC_BQIC_SURGE_0704055611_F120_I074",
+            "RC_BQIC_SURGE_0704062039_F101_I074",
+            "RC_BQIC_SURGE_0704062039_F102_I074",
+            "RC_BQIC_SURGE_0704062039_F103_I074",
+            "RC_BQIC_SURGE_0704064505_F102_I074",
+            "RC_BQIC_SURGE_0704065321_F102_I074",
+            "RC_BQIC_SURGE_0704070142_F102_I074",
+            "RC_BQIC_SURGE_0704074649_F102_I073",
+            "RC_BQIC_SURGE_0704123214_F098_I072",
+            "RC_BQIC_SWAY_0612090051_F100_I102",
+            "RC_BQIC_SWAY_0612134700_F100_I100",
+            "RC_BQIC_SWAY_0612142322_F100_I080",
+            "RC_BQIC_SWAY_0617133851_F100_I070",
+            "RC_BQIC_SWAY_0617133851_F100_I075",
+            "RC_BQIC_SWAY_0617133851_F100_I078",
+            "RC_BQIC_SWAY_0617133851_F100_I082",
+            "RC_BQIC_SWAY_0617142124_F100_I076",
+            "RC_BQIC_SWAY_0617142124_F100_I078",
+            "RC_BQIC_SWAY_0617142124_F100_I080",
+            "RC_BQIC_SWAY_0617142124_F100_I082",
+            "RC_BQIC_SWAY_0703140207_F110_I100",
+            "RC_BQIC_SWAY_0703140207_F120_I100",
+            "RC_BQIC_SWAY_0703142147_F103_I100",
+            "RC_BQIC_SWAY_0703142147_F105_I100",
+            "RC_BQIC_SWAY_0704014701_F095_I076",
+            "RC_BQIC_SWAY_0704014701_F100_I076",
+            "RC_BQIC_SWAY_0704014701_F105_I076",
+            "RC_BQIC_SWAY_0704021626_F098_I076",
+            "RC_BQIC_SWAY_0704021626_F099_I076",
+            "RC_BQIC_SWAY_0704041752_F095_I100",
+            "RC_BQIC_SWAY_0704041752_F105_I100",
+            "RC_BQIC_SWAY_0704075513_F100_I082",
+            "RC_BQIC_SWAY_0704075513_F100_I084",
+            "RC_BQIC_YAW_0612070916_F100_I102",
+            "RC_BQIC_YAW_0612154529_F100_I084",
+            "RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706",
+            "RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706",
+            "RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706",
+            "RC_HEAVE060_ROLL090_CMP_06171530",
+            "RC_HEAVE095_CMP_0612135839",
+            "RC_HEAVE095_ROLL090_CMP_0612144710",
+            "RC_HEAVE_AF0_N16M_FULL_0706",
+            "RC_HEAVE_AF0_N175M_0704221224",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_T450_0706",
+            "RC_HEAVE_AF0_N20M_T450_0706",
+            "RC_HEAVE_AF0_N2M_REBASE_FULL_0706",
+            "RC_HEAVE_AF0_N40M_T450_0706",
+            "RC_HEAVE_BL100_0704211242",
+            "RC_HEAVE_BL50_0704212109",
+            "RC_HEAVE_BQ05X_0705241450",
+            "RC_HEAVE_BQ2X_0705235850",
+            "RC_IMP_HEAVE_02259Z0000_P1",
+            "RC_IMP_HEAVE_02259Z0000_S1",
+            "RC_IMP_PITCH_04323Z0000_P1",
+            "RC_IMP_PITCH_04323Z0000_S1",
+            "RC_IMP_SURGE_00128Z0000_P1",
+            "RC_IMP_SURGE_00128Z0000_S1",
+            "RC_IMP_SURGE_00128Z0000_S3",
+            "RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000",
+            "RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000",
+            "RC_LP_9E877C00D37E_YAW_20260707T020651Z0000",
+            "RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "RC_ROLL_BQ8715_07041049",
+            "RC_ROLL_BQ873_07041043",
+            "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+            "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+            "RC_SURGE_AF0_N180K_IC177_CL5500_T600_0706",
+            "RC_SURGE_AF0_N180K_IC177_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ075_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ078_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ0795_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ079_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ080_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ085_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ090_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M1085_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M1125_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_T600_0706",
+            "RC_SURGE_AF0_N190K_IC185_M105B_T600_0706",
+            "RC_SURGE_AF0_N210K_IC180_T600_0706",
+            "RC_SURGE_AF0_N250K_IC185_T600_0706",
+            "RC_SURGE_AF0_N250K_IC2124_FULL_0705",
+            "RC_SURGE_AF0_N50K_CL2800_FULL_0706",
+            "RC_SURGE_AF0_N50K_CL5500_FULL_0706",
+            "RC_SURGE_AF0_N50K_CLN10K_FULL_0706",
+            "RC_SURGE_AF0_N50K_FULL_0705",
+            "RC_SURGE_AF0_N550K_IC215_T450_0706",
+            "RC_SURGE_AF0_N650K_IC195_T450_0706",
+            "RC_SURGE_AF0_N650K_IC205_FULL_0706",
+            "RC_SURGE_AF0_N650K_IC205_T450_0706",
+            "RC_SURGE_AF0_N650K_IC205_T600_0706",
+            "RC_SURGE_AF0_N650K_IC232_T450_0706",
+            "RC_SURGE_AF0_N650K_T450_0706",
+            "RC_SURGE_CL0_0704212954",
+            "RC_SURGE_CL5K_0704213825",
+            "RC_SURGE_EQIC90_0704231943",
+            "RC_SURGE_IC16715_CL8K_0704214734",
+            "RC_SURGE_IC2032_AF0_N50K_FULL_0706",
+            "RC_SURGE_IC2032_FULL_0706",
+            "RC_SURGE_IC72_CL0_07040912",
+            "RC_SURGE_IC72_CL4K_07040924",
+            "RC_SURGE_SG1019_BL420_07040900",
+            "RC_SURGE_SG1019_BL450_07040846",
+            "RC_SWAY_AF0_N15K_FULL_0706",
+            "RC_SWAY_AF0_N450K_T450_0706",
+            "RC_SWAY_AF0_N50K_BQ103X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ110X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ118X_T450_0706",
+            "RC_SWAY_AF0_N50K_BQ125X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ2X_FULL_0706",
+            "RC_SWAY_AF0_N50K_FULL_0706",
+            "RC_SWAY_AF0_N50K_IC1225_T450_0706",
+            "RC_SWAY_AF0_N50K_IC1260_FULL_0706",
+            "RC_SWAY_AF0_N750K_T450_0706",
+            "RC_SWAY_CL0_0704204604",
+            "RC_SWAY_CL0_BL300_0704205458",
+            "RC_SWAY_CLN14K_0705243600",
+            "RC_SWAY_CLN8K_0704210327",
+            "RC_SWAY_IC1230_0704215651",
+            "RC_SWAY_TTDSS_N18_07040812",
+            "RC_SWAY_TTDSS_N22_07040812",
+            "RC_YAW_EQIC83_0704231051",
+            "RC_YAW_EQIC87_0704223546",
+            "RC_YAW_EQIC87_CL105_0704224441",
+            "RC_YAW_EQIC87_CL105_BL100_0704230212",
+            "RC_YAW_EQIC87_CL105_BQ2X_0704225331",
+            "RC_YAW_EQIC_0704222630",
+            "RC_YAW_IC_Y15052_07040949",
+            "RC_YAW_IC_Y15056_07040941",
+            "RC_YAW_IC_Y1505_07040931",
+            "RC_YAW_IC_Y1508_07040931"
+          ]
+        },
+        "coupling_disabled": {
+          "parameter_group": "coupling_disabled",
+          "affected_dofs": [],
+          "improves": [],
+          "damages": [],
+          "response_strength": 0.0,
+          "confidence": 0.0,
+          "evidence_run_ids": []
+        }
+      }
+    },
+    "run_card": {
+      "run_id": "RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000",
+      "parent_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "stage": "global_step",
+      "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+      "parameter_group": "mooring",
+      "parameter_delta": {
+        "hydrodyn_edits": [],
+        "moordyn": {
+          "EA_scale": 1.005
+        },
+        "initial_conditions": {},
+        "tmax": null,
+        "decision_meta": {
+          "signed_ic_bquad_tune": true,
+          "selected_dof_candidates": {
+            "FD_SURGE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "FD_SWAY": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "FD_HEAVE": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "FD_ROLL": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "FD_PITCH": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "FD_YAW": "RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400"
+          },
+          "bquad_multipliers": {
+            "FD_SURGE": 1.0,
+            "FD_SWAY": 1.0,
+            "FD_HEAVE": 1.0,
+            "FD_ROLL": 1.0,
+            "FD_PITCH": 1.0,
+            "FD_YAW": 1.0
+          },
+          "signed_initial_conditions": {
+            "FD_SURGE": -13.61699580275,
+            "FD_SWAY": -12.08792,
+            "FD_HEAVE": -4.9720200000000006,
+            "FD_ROLL": 16.890656064,
+            "FD_PITCH": -9.678683455,
+            "FD_YAW": -14.98010913
+          },
+          "dof_packages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "action_type": "stabilize_rejected_diagonal_with_mooring_ea",
+          "proposal_hypothesis": "Apply EA1005 mooring stabilization to low-score AMP_SH_06121500 diagonal package; accept only if strong leak is removed and full 6DOF score improves over current best."
+        },
+        "changed_parameters": "MoorDyn.EA_scale"
+      },
+      "global_score": 1.2153306555227417,
+      "hard_constraint_violations": [
+        "missing_dof:FD_HEAVE",
+        "missing_dof:FD_PITCH",
+        "missing_dof:FD_ROLL",
+        "missing_dof:FD_YAW",
+        "period_reverse_worse:FD_SWAY:abs 0.259->7.02 signed 0.259->7.02"
+      ],
+      "per_dof": {
+        "FD_SURGE": {
+          "score": 1.1177520706380597,
+          "period_error_pct": 3.0864326,
+          "period_error_abs_pct": 3.0864326,
+          "envelope_error": 0.41735034,
+          "ler_error": 0.55430042,
+          "fp_error": 0.30222384,
+          "zeta_error_ratio": 0.2325093680472634,
+          "closed": false
+        },
+        "FD_SWAY": {
+          "score": 1.3129092404074238,
+          "period_error_pct": 7.0179908,
+          "period_error_abs_pct": 7.0179908,
+          "envelope_error": 0.30527651,
+          "ler_error": 0.59226294,
+          "fp_error": 0.056286531,
+          "zeta_error_ratio": 0.1953520982409064,
+          "closed": false
+        }
+      },
+      "step_decision": {
+        "status": "EVIDENCE_ONLY",
+        "reason": "incomplete suite: 2/6 DOFs have metrics",
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SWAY:abs 0.259->7.02 signed 0.259->7.02"
+        ],
+        "tags": [
+          "incomplete_suite"
+        ]
+      },
+      "loop_verdict": {
+        "status": "DIAGNOSTIC_FORK",
+        "reason": "diagnostic hard constraint requires review",
+        "tags": [
+          "diagnostic",
+          "period_reverse_worse"
+        ]
+      },
+      "predicate_results": [
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_HEAVE",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_PITCH",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_ROLL",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_YAW",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "period_reverse_worse",
+          "passed": false,
+          "severity": "hard",
+          "reason": "period_reverse_worse:FD_SWAY:abs 0.259->7.02 signed 0.259->7.02",
+          "source_role": "derived_metric",
+          "tags": [
+            "period_reverse_worse"
+          ]
+        }
+      ],
+      "review_status": "pending",
+      "observation_metrics": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_GLV3_AMP_SH_EA1005_20260708T002409Z",
+          "metric_status": "PASS",
+          "period": 85.318056,
+          "reference_period": 82.763612,
+          "period_error_pct": 3.0864326,
+          "zeta": 0.015535913,
+          "reference_zeta": 0.020242479,
+          "nrmse": 0.052356058,
+          "j_dof": 0.052356058,
+          "j_shape": 1.0266997,
+          "envelope_error": 0.41735034,
+          "ler_error": 0.55430042,
+          "fp_error": 0.30222384,
+          "start_amplitude_error": 0.33246911,
+          "leak": {
+            "Sway": 0.19840739173862923,
+            "Heave": 0.18761726236181292,
+            "Roll": 0.23914331103634034,
+            "Pitch": 0.0957809184634537,
+            "Yaw": 0.19588274552122512
+          },
+          "reference_leak": {
+            "Sway": 0.15896017090110728,
+            "Heave": 0.01968059507325694,
+            "Roll": 0.03291602612100948,
+            "Pitch": 0.10723769417504003,
+            "Yaw": 0.03816688415976064
+          },
+          "morph": {
+            "J_wave": 0.05235605789958478,
+            "J_shape": 1.0266996568365732,
+            "env_err": 0.4173503445797977,
+            "fp_err": 0.30222384458781393,
+            "LERD": 0.003995852928715648,
+            "LERM": 0.0017809499872174354,
+            "LER_err": 0.5543004162092946,
+            "Tend": 740.9499999999999
+          }
+        },
+        "FD_SWAY": {
+          "run_id": "RUN_0001_FD_SWAY_GLV3_AMP_SH_EA1005_20260708T002409Z",
+          "metric_status": "PASS",
+          "period": 85.004881,
+          "reference_period": 79.430459,
+          "period_error_pct": 7.0179908,
+          "zeta": 0.01865403,
+          "reference_zeta": 0.023182848,
+          "nrmse": 0.044333755,
+          "j_dof": 0.044333755,
+          "j_shape": 0.89041872,
+          "envelope_error": 0.30527651,
+          "ler_error": 0.59226294,
+          "fp_error": 0.056286531,
+          "start_amplitude_error": 0.01594319,
+          "leak": {
+            "Surge": 0.36419673901359706,
+            "Heave": 0.18850290523418337,
+            "Roll": 0.30664569313418655,
+            "Pitch": 0.1505856606401501,
+            "Yaw": 0.41328112541822803
+          },
+          "reference_leak": {
+            "Surge": 0.09911156186697814,
+            "Heave": 0.018040555839837675,
+            "Roll": 0.11940848210435888,
+            "Pitch": 0.0384504331662194,
+            "Yaw": 0.1166189583607766
+          },
+          "morph": {
+            "J_wave": 0.04433375476421641,
+            "J_shape": 0.8904187168361349,
+            "env_err": 0.30527651442724835,
+            "fp_err": 0.05628653141466252,
+            "LERD": 0.008732298675839493,
+            "LERM": 0.00356048176032017,
+            "LER_err": 0.592262943299076,
+            "Tend": 899.8
+          }
+        }
+      },
+      "cross_energy_matrix": {
+        "FD_SURGE": {
+          "Sway": 0.19840739173862923,
+          "Heave": 0.18761726236181292,
+          "Roll": 0.23914331103634034,
+          "Pitch": 0.0957809184634537,
+          "Yaw": 0.19588274552122512
+        },
+        "FD_SWAY": {
+          "Surge": 0.36419673901359706,
+          "Heave": 0.18850290523418337,
+          "Roll": 0.30664569313418655,
+          "Pitch": 0.1505856606401501,
+          "Yaw": 0.41328112541822803
+        }
+      },
+      "equilibrium": {},
+      "created_at": "2026-07-08T00:46:41+00:00"
+    },
+    "related_llm_packets": [
+      {
+        "packet_id": "LLMP_during_run_GLV3_AMP_SH_EA1005_20260708T002409Z_3E19E5670B1A",
+        "job_id": "LLMJ_during_run_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T002434Z0000",
+        "analysis_type": "during_run",
+        "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+        "run_id": "",
+        "input_snapshot_hash": "3e19e5670b1a97a5739401cfa485755b0b751b375c6b1416cc878bb83faf6147",
+        "stale_for_decision": false,
+        "created_at": "2026-07-08T00:24:34+00:00"
+      },
+      {
+        "packet_id": "LLMP_pre_run_GLV3_AMP_SH_EA1005_20260708T002409Z_7E45363B56F4",
+        "job_id": "LLMJ_pre_run_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T002434Z0000",
+        "analysis_type": "pre_run",
+        "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+        "run_id": "",
+        "input_snapshot_hash": "7e45363b56f47b82745effaa83b828ad1d741fb793ded975dbec87cdcf728e16",
+        "stale_for_decision": false,
+        "created_at": "2026-07-08T00:24:34+00:00"
+      }
+    ],
+    "diagnostic_queue": {
+      "created_at": "2026-07-08T00:47:26+00:00",
+      "item_count": 82,
+      "items": [
+        {
+          "item_id": "DQ_212D149C3FDC",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_06121500",
+          "candidate_id": "AMP_SH_06121500",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231",
+            "strong_leak:FD_YAW->Surge:0.5>ref0.167"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_YAW"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 43.0
+        },
+        {
+          "item_id": "DQ_7DAC7172E735",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+          "candidate_id": "AMP_SH_H054_SWTTD_SG1019_07040711",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_CEC84C38F72F",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+          "candidate_id": "AMP_SH_H054_SWTTD_Y15052_07041000",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_83BA6C6B168C",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+          "candidate_id": "AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_4050462639A4",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+          "candidate_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.88>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_B3E8E533CFD6",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_06172058",
+          "candidate_id": "AMP_SH_SY_06172058",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_95A04E9F6B76",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_R965_06171637",
+          "candidate_id": "AMP_SH_SY_R965_06171637",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_7B0AE807F41E",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_R965_H058_07031325",
+          "candidate_id": "AMP_SH_SY_R965_H058_07031325",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_1FCD29907367",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+          "candidate_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_69BCCFC1B254",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+          "candidate_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_1A44AFF573B8",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_SY_ROLL090_06171518",
+          "candidate_id": "AMP_SH_SY_ROLL090_06171518",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_BD0252207F63",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_AMP_SH_S_BASEYAW_06171610",
+          "candidate_id": "AMP_SH_S_BASEYAW_06171610",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_7FA16AB26D14",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0612134333_F400_I100",
+          "candidate_id": "BQIC_HEAVE_0612134333_F400_I100",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Yaw:0.526>ref0.0969"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_YAW"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_5DBB7234117D",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0612143402_F100_I060",
+          "candidate_id": "BQIC_HEAVE_0612143402_F100_I060",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.817>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_64E949DB7E7A",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0703130239_F100_I050",
+          "candidate_id": "BQIC_HEAVE_0703130239_F100_I050",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.878>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_112E660A6593",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0703130239_F100_I055",
+          "candidate_id": "BQIC_HEAVE_0703130239_F100_I055",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.847>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_42C808A0E287",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0703130239_F100_I058",
+          "candidate_id": "BQIC_HEAVE_0703130239_F100_I058",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.829>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_EC39ECB4518F",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0704040637_F100_I054",
+          "candidate_id": "BQIC_HEAVE_0704040637_F100_I054",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.852>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_C9630D2B6B00",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0704040637_F100_I055",
+          "candidate_id": "BQIC_HEAVE_0704040637_F100_I055",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.847>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        },
+        {
+          "item_id": "DQ_91213ABFB006",
+          "created_at": "2026-07-07T13:59:00+00:00",
+          "oracle_id": "oracle_c26754c99eb2607c",
+          "epoch_id": "oracle_c26754c99eb2607c",
+          "run_id": "RC_BQIC_HEAVE_0704040637_F100_I056",
+          "candidate_id": "BQIC_HEAVE_0704040637_F100_I056",
+          "trigger_reasons": [
+            "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+            "strong_leak:FD_HEAVE->Roll:0.84>ref0.231"
+          ],
+          "related_dofs": [
+            "FD_HEAVE",
+            "FD_ROLL"
+          ],
+          "review_type": "leak_diagnostic",
+          "severity": "diagnostic",
+          "status": "pending",
+          "source_role": "diagnostic_evidence",
+          "source_stage": "offline_import",
+          "source_category": "historical_import",
+          "priority": 42.0
+        }
+      ]
+    },
+    "proposal_pool": {
+      "created_at": "2026-07-08T00:12:09+00:00",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "top_k": 6,
+      "proposal_count": 6,
+      "top_proposals": [
+        {
+          "proposal_id": "LP_330171BDD5AE",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_HEAVE",
+          "hypothesis": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 2,
+                  "j": 2,
+                  "value": 6764999.999999999
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_HEAVE",
+                "bquad_base": 6600000.0,
+                "bquad_multiplier": 1.025,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_HEAVE": {
+                    "Heave": -8.286700000000002
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_HEAVE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_HEAVE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[2,2]"
+                  ],
+                  "risk_notes": [
+                    "FD_PITCH",
+                    "FD_SURGE",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.24884798333333333,
+                      "envelope": 1.244520075,
+                      "ler": 0.63509314,
+                      "fp": 4.963615333333333,
+                      "zeta": 0.7609378857680655,
+                      "zeta_signed_ratio": -0.7609378857680655,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 1.0977007628268065,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_HEAVE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_HEAVE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "exact proposal already produced rejected or diagnostic evidence under full 6DOF validation"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "exact proposal already produced rejected or diagnostic evidence under full 6DOF validation",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_PITCH",
+              "FD_SURGE"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 1.0977007628268065,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -0.8522992371731934,
+          "validation_mode": "full_6dof_required",
+          "status": "outcome_refuted_evidence_warning_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_HEAVE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_HEAVE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[2,2]"
+            ],
+            "risk_notes": [
+              "FD_PITCH",
+              "FD_SURGE",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.24884798333333333,
+                "envelope": 1.244520075,
+                "ler": 0.63509314,
+                "fp": 4.963615333333333,
+                "zeta": 0.7609378857680655,
+                "zeta_signed_ratio": -0.7609378857680655,
+                "leak": 0.0
+              },
+              "expected_gain": 1.0977007628268065,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        },
+        {
+          "proposal_id": "LP_1A727791036F",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_SURGE",
+          "hypothesis": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 0,
+                  "j": 0,
+                  "value": 1024999.9999999999
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_SURGE",
+                "bquad_base": 1000000.0,
+                "bquad_multiplier": 1.025,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_SURGE": {
+                    "Surge": -23.215405
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_SURGE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_SURGE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[0,0]"
+                  ],
+                  "risk_notes": [
+                    "FD_PITCH",
+                    "FD_YAW",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.40129856666666663,
+                      "envelope": 1.013732975,
+                      "ler": 0.110106162,
+                      "fp": 2.702503666666667,
+                      "zeta": 0.35643020797996133,
+                      "zeta_signed_ratio": -0.35643020797996133,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 0.7218023619479961,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_SURGE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_SURGE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_PITCH",
+              "FD_YAW"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 0.7218023619479961,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -1.2281976380520037,
+          "validation_mode": "full_6dof_required",
+          "status": "repeated_rejection_evidence_warning_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_SURGE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_SURGE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[0,0]"
+            ],
+            "risk_notes": [
+              "FD_PITCH",
+              "FD_YAW",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.40129856666666663,
+                "envelope": 1.013732975,
+                "ler": 0.110106162,
+                "fp": 2.702503666666667,
+                "zeta": 0.35643020797996133,
+                "zeta_signed_ratio": -0.35643020797996133,
+                "leak": 0.0
+              },
+              "expected_gain": 0.7218023619479961,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        },
+        {
+          "proposal_id": "LP_D460BA0F215D",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_ROLL",
+          "hypothesis": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 3,
+                  "j": 3,
+                  "value": 78975000000.0
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_ROLL",
+                "bquad_base": 81000000000.0,
+                "bquad_multiplier": 0.975,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_ROLL": {
+                    "Roll": 11.95968
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_ROLL diagonal BQuad x 0.975; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_ROLL fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[3,3]"
+                  ],
+                  "risk_notes": [
+                    "FD_PITCH",
+                    "FD_SWAY",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.5928261,
+                      "envelope": 0.46024059999999994,
+                      "ler": 0.24246636,
+                      "fp": 2.0461925833333336,
+                      "zeta": 0.2849290719585156,
+                      "zeta_signed_ratio": 0.2849290719585156,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 0.6041547225291849,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_ROLL diagonal BQuad x 0.975; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_ROLL fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_PITCH",
+              "FD_SWAY"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 0.6041547225291849,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -1.3458452774708152,
+          "validation_mode": "full_6dof_required",
+          "status": "repeated_rejection_evidence_warning_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_ROLL diagonal BQuad x 0.975; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_ROLL fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[3,3]"
+            ],
+            "risk_notes": [
+              "FD_PITCH",
+              "FD_SWAY",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.5928261,
+                "envelope": 0.46024059999999994,
+                "ler": 0.24246636,
+                "fp": 2.0461925833333336,
+                "zeta": 0.2849290719585156,
+                "zeta_signed_ratio": 0.2849290719585156,
+                "leak": 0.0
+              },
+              "expected_gain": 0.6041547225291849,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        },
+        {
+          "proposal_id": "LP_71D22C5024DD",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_SWAY",
+          "hypothesis": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 1,
+                  "j": 1,
+                  "value": 1153125.0
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_SWAY",
+                "bquad_base": 1125000.0,
+                "bquad_multiplier": 1.025,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_SWAY": {
+                    "Sway": -15.1099
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_SWAY diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_SWAY fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[1,1]"
+                  ],
+                  "risk_notes": [
+                    "FD_PITCH",
+                    "FD_ROLL",
+                    "FD_YAW",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.08632086333333333,
+                      "envelope": 0.81259645,
+                      "ler": 0.80681528,
+                      "fp": 1.6360475833333332,
+                      "zeta": 0.016281606125356094,
+                      "zeta_signed_ratio": -0.016281606125356094,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 0.5599573896125355,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_SWAY diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_SWAY fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_ROLL",
+              "FD_YAW",
+              "FD_PITCH"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 0.5599573896125355,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -1.3900426103874646,
+          "validation_mode": "full_6dof_required",
+          "status": "repeated_rejection_evidence_warning_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_SWAY diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_SWAY fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[1,1]"
+            ],
+            "risk_notes": [
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_YAW",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.08632086333333333,
+                "envelope": 0.81259645,
+                "ler": 0.80681528,
+                "fp": 1.6360475833333332,
+                "zeta": 0.016281606125356094,
+                "zeta_signed_ratio": -0.016281606125356094,
+                "leak": 0.0
+              },
+              "expected_gain": 0.5599573896125355,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        },
+        {
+          "proposal_id": "LP_134489D9588E",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_PITCH",
+          "hypothesis": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 4,
+                  "j": 4,
+                  "value": 84050000000.0
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_PITCH",
+                "bquad_base": 82000000000.0,
+                "bquad_multiplier": 1.025,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_PITCH": {
+                    "Pitch": -9.031149999999998
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_PITCH diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_PITCH fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[4,4]"
+                  ],
+                  "risk_notes": [
+                    "FD_HEAVE",
+                    "FD_ROLL",
+                    "FD_SURGE",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.10237823333333333,
+                      "envelope": 0.32733975,
+                      "ler": 0.94082624,
+                      "fp": 1.302134,
+                      "zeta": 0.1438843065866849,
+                      "zeta_signed_ratio": -0.1438843065866849,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 0.4504343978253352,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_PITCH diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_PITCH fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "diagonal_hydro has three recent refuted local probes in this oracle epoch; switch to mechanism search or diagnostic review",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_SURGE",
+              "FD_HEAVE",
+              "FD_ROLL"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 0.4504343978253352,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -1.4995656021746646,
+          "validation_mode": "full_6dof_required",
+          "status": "repeated_rejection_evidence_warning_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_PITCH diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_PITCH fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[4,4]"
+            ],
+            "risk_notes": [
+              "FD_HEAVE",
+              "FD_ROLL",
+              "FD_SURGE",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.10237823333333333,
+                "envelope": 0.32733975,
+                "ler": 0.94082624,
+                "fp": 1.302134,
+                "zeta": 0.1438843065866849,
+                "zeta_signed_ratio": -0.1438843065866849,
+                "leak": 0.0
+              },
+              "expected_gain": 0.4504343978253352,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        },
+        {
+          "proposal_id": "LP_156E5BFB263B",
+          "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+          "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+          "target_dof": "FD_YAW",
+          "hypothesis": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+          "action": {
+            "action_type": "diagnostic_review",
+            "parameter_group": "diagonal_hydro",
+            "vector": {
+              "hydrodyn_edits": [
+                {
+                  "block": "BQuad",
+                  "i": 5,
+                  "j": 5,
+                  "value": 73800000000.0
+                }
+              ],
+              "moordyn": {},
+              "initial_conditions": {},
+              "tmax": null,
+              "decision_meta": {
+                "local_loop_v1": true,
+                "action_type": "fp_bquad_probe",
+                "target_dof": "FD_YAW",
+                "bquad_base": 72000000000.0,
+                "bquad_multiplier": 1.025,
+                "requires_full_sixdof": true,
+                "dof_initial_conditions": {
+                  "FD_YAW": {
+                    "Yaw": -18.0201
+                  }
+                },
+                "candidate_intent": {
+                  "source": "local_loop",
+                  "intent": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+                  "expected_observation": "FD_YAW diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                  "falsification_condition": "FD_YAW fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                  "touched_parameters": [
+                    "HydroDyn.BQuad[5,5]"
+                  ],
+                  "risk_notes": [
+                    "FD_SURGE",
+                    "FD_SWAY",
+                    "fp_probe",
+                    "full_6dof_required",
+                    "limited_probe"
+                  ],
+                  "evidence_context": {
+                    "dominant_error_mode": "fp",
+                    "component_scores": {
+                      "period": 0.7638429666666666,
+                      "envelope": 0.6412983,
+                      "ler": 0.25160896,
+                      "fp": 1.5430972500000002,
+                      "zeta": 0.09284675304716915,
+                      "zeta_signed_ratio": -0.09284675304716915,
+                      "leak": 0.0
+                    },
+                    "expected_gain": 0.6415858056380502,
+                    "information_gain": 0.4,
+                    "memory_support": 0.1,
+                    "protected_risk": 0.45,
+                    "source_role": "candidate_intent_not_truth",
+                    "acceptance_gate": "full_6dof_global_step"
+                  }
+                },
+                "intent": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+                "expected_observation": "FD_YAW diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+                "falsification_condition": "FD_YAW fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+                "candidate_intent_source": "local_loop",
+                "memory_warnings": [
+                  "1 similar proposal(s) already produced rejected or diagnostic evidence under full 6DOF validation"
+                ],
+                "memory_no_veto": true,
+                "harness_stop_auto_materialize": true,
+                "original_action_type": "fp_bquad_probe"
+              }
+            },
+            "registration_ready": false,
+            "reason_not_ready": "1 similar proposal(s) already produced rejected or diagnostic evidence under full 6DOF validation",
+            "expected_primary_effect": "increase information before materializing another local candidate",
+            "expected_side_effects": [
+              "FD_SURGE",
+              "FD_SWAY"
+            ],
+            "risk_tags": [
+              "diagnostic_only",
+              "evidence_only_no_veto",
+              "fp_probe",
+              "full_6dof_required",
+              "harness_stop_auto_materialize",
+              "limited_probe",
+              "memory_warning"
+            ]
+          },
+          "expected_gain": 0.6415858056380502,
+          "protected_risk": 0.45,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "mechanism_clarity": 1.0,
+          "run_cost": 1.0,
+          "priority": -1.5584141943619498,
+          "validation_mode": "full_6dof_required",
+          "status": "similar_outcome_rejected_diagnostic_only",
+          "candidate_intent": {
+            "source": "local_loop",
+            "intent": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+            "expected_observation": "FD_YAW diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+            "falsification_condition": "FD_YAW fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+            "touched_parameters": [
+              "HydroDyn.BQuad[5,5]"
+            ],
+            "risk_notes": [
+              "FD_SURGE",
+              "FD_SWAY",
+              "fp_probe",
+              "full_6dof_required",
+              "limited_probe"
+            ],
+            "evidence_context": {
+              "dominant_error_mode": "fp",
+              "component_scores": {
+                "period": 0.7638429666666666,
+                "envelope": 0.6412983,
+                "ler": 0.25160896,
+                "fp": 1.5430972500000002,
+                "zeta": 0.09284675304716915,
+                "zeta_signed_ratio": -0.09284675304716915,
+                "leak": 0.0
+              },
+              "expected_gain": 0.6415858056380502,
+              "information_gain": 0.4,
+              "memory_support": 0.1,
+              "protected_risk": 0.45,
+              "source_role": "candidate_intent_not_truth",
+              "acceptance_gate": "full_6dof_global_step"
+            }
+          },
+          "created_at": "2026-07-08T00:12:09+00:00"
+        }
+      ],
+      "materializable_proposal_ids": [],
+      "guard_context": {
+        "oracle_id": "oracle_c26754c99eb2607c",
+        "epoch_id": "oracle_c26754c99eb2607c",
+        "current_best_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+        "current_best_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+        "open_dofs": [
+          "FD_SURGE",
+          "FD_SWAY",
+          "FD_HEAVE",
+          "FD_ROLL",
+          "FD_PITCH",
+          "FD_YAW"
+        ],
+        "protected_dofs": [],
+        "fragile_dofs": [
+          "FD_HEAVE",
+          "FD_PITCH",
+          "FD_ROLL",
+          "FD_SURGE",
+          "FD_SWAY",
+          "FD_YAW"
+        ],
+        "dof_states": {
+          "FD_SURGE": {
+            "dof": "FD_SURGE",
+            "score": 0.7218023619479961,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.40129856666666663,
+              "envelope": 1.013732975,
+              "ler": 0.110106162,
+              "fp": 2.702503666666667,
+              "zeta": 0.35643020797996133,
+              "zeta_signed_ratio": -0.35643020797996133,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          },
+          "FD_SWAY": {
+            "dof": "FD_SWAY",
+            "score": 0.5599573896125355,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.08632086333333333,
+              "envelope": 0.81259645,
+              "ler": 0.80681528,
+              "fp": 1.6360475833333332,
+              "zeta": 0.016281606125356094,
+              "zeta_signed_ratio": -0.016281606125356094,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          },
+          "FD_HEAVE": {
+            "dof": "FD_HEAVE",
+            "score": 1.0977007628268065,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.24884798333333333,
+              "envelope": 1.244520075,
+              "ler": 0.63509314,
+              "fp": 4.963615333333333,
+              "zeta": 0.7609378857680655,
+              "zeta_signed_ratio": -0.7609378857680655,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          },
+          "FD_ROLL": {
+            "dof": "FD_ROLL",
+            "score": 0.6041547225291849,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.5928261,
+              "envelope": 0.46024059999999994,
+              "ler": 0.24246636,
+              "fp": 2.0461925833333336,
+              "zeta": 0.2849290719585156,
+              "zeta_signed_ratio": 0.2849290719585156,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          },
+          "FD_PITCH": {
+            "dof": "FD_PITCH",
+            "score": 0.4504343978253352,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.10237823333333333,
+              "envelope": 0.32733975,
+              "ler": 0.94082624,
+              "fp": 1.302134,
+              "zeta": 0.1438843065866849,
+              "zeta_signed_ratio": -0.1438843065866849,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          },
+          "FD_YAW": {
+            "dof": "FD_YAW",
+            "score": 0.6415858056380502,
+            "closed": false,
+            "dominant_error_mode": "fp",
+            "component_scores": {
+              "period": 0.7638429666666666,
+              "envelope": 0.6412983,
+              "ler": 0.25160896,
+              "fp": 1.5430972500000002,
+              "zeta": 0.09284675304716915,
+              "zeta_signed_ratio": -0.09284675304716915,
+              "leak": 0.0
+            },
+            "coupling_risk": 0.35,
+            "allowed_regression": {
+              "score": 0.25,
+              "relative_score": 0.25
+            },
+            "notes": []
+          }
+        },
+        "thresholds": {
+          "targets": {
+            "period_error_limit_pct": 3.0,
+            "start_amplitude_error_limit": 0.2,
+            "start_amplitude_penalty_weight": 0.25,
+            "env_ok": 0.4,
+            "env_improve": 0.75,
+            "ler_ok": 0.5,
+            "fp_ok": 0.12
+          },
+          "physics": {
+            "R_lo": 0.5,
+            "R_hi": 1.5,
+            "leak_abs": 0.5,
+            "leak_factor": 3.0,
+            "mooring_repair_dofs": [
+              "FD_SURGE",
+              "FD_YAW"
+            ],
+            "moor_ea_max": 8.0,
+            "moor_unstrlen_taut": 0.943,
+            "moor_ea_probe_frac": 1.0,
+            "moor_unstrlen_probe": 0.9,
+            "moor_k_min": 0.05,
+            "moor_k_mono": -0.1,
+            "moor_max_secant": 4
+          }
+        },
+        "source_roles": {
+          "target_truth": "oracle",
+          "current_best": "observation",
+          "coupling_memory": "memory_inference",
+          "local_guard_context": "derived_constraint"
+        }
+      }
+    },
+    "analysis_focus": [
+      "Synthesize pre-run, during-run, and post-run evidence.",
+      "Recommend exactly one next-action category: global_search, diagnostic_fork, local_proposal, or human_review.",
+      "Keep the recommendation advisory and reference deterministic verdicts."
+    ]
+  },
+  "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+  "run_id": "RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000",
+  "item_id": "",
+  "proposal_id": "",
+  "stale_for_decision": false,
+  "advisory_only": true,
+  "source_role": "advisory"
+}

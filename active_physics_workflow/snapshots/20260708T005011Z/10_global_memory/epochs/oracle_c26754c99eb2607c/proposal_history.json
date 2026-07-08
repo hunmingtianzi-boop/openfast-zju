@@ -1,0 +1,457 @@
+{
+  "created_at": "2026-07-08T00:47:47+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "entries": {
+    "LP_1091C22C41B7": {
+      "proposal_id": "LP_1091C22C41B7",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_HEAVE",
+      "action_type": "fp_bquad_probe",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [
+        "LP_1091C22C41B7_HEAVE_20260706T135310Z0000"
+      ],
+      "run_ids": [
+        "RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000"
+      ],
+      "step_decisions": [
+        {
+          "status": "EVIDENCE_ONLY",
+          "reason": "scored without parent arbitration",
+          "hard_constraint_violations": [],
+          "tags": []
+        }
+      ],
+      "outcome": "evidence_only",
+      "candidate_intent": {
+        "source": "",
+        "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "",
+        "falsification_condition": ""
+      },
+      "created_at": "2026-07-08T00:47:47+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_134489D9588E": {
+      "proposal_id": "LP_134489D9588E",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_PITCH",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [],
+      "run_ids": [],
+      "step_decisions": [],
+      "outcome": "proposed",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_PITCH dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_PITCH diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_PITCH fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[4,4]"
+        ],
+        "risk_notes": [
+          "FD_HEAVE",
+          "FD_ROLL",
+          "FD_SURGE",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.10237823333333333,
+            "envelope": 0.32733975,
+            "ler": 0.94082624,
+            "fp": 1.302134,
+            "zeta": 0.1438843065866849,
+            "zeta_signed_ratio": -0.1438843065866849,
+            "leak": 0.0
+          },
+          "expected_gain": 0.4504343978253352,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_156E5BFB263B": {
+      "proposal_id": "LP_156E5BFB263B",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_YAW",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [],
+      "run_ids": [],
+      "step_decisions": [],
+      "outcome": "proposed",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_YAW diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_YAW fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[5,5]"
+        ],
+        "risk_notes": [
+          "FD_SURGE",
+          "FD_SWAY",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.7638429666666666,
+            "envelope": 0.6412983,
+            "ler": 0.25160896,
+            "fp": 1.5430972500000002,
+            "zeta": 0.09284675304716915,
+            "zeta_signed_ratio": -0.09284675304716915,
+            "leak": 0.0
+          },
+          "expected_gain": 0.6415858056380502,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_1A727791036F": {
+      "proposal_id": "LP_1A727791036F",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_SURGE",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [],
+      "run_ids": [],
+      "step_decisions": [],
+      "outcome": "proposed",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_SURGE dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_SURGE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_SURGE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[0,0]"
+        ],
+        "risk_notes": [
+          "FD_PITCH",
+          "FD_YAW",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.40129856666666663,
+            "envelope": 1.013732975,
+            "ler": 0.110106162,
+            "fp": 2.702503666666667,
+            "zeta": 0.35643020797996133,
+            "zeta_signed_ratio": -0.35643020797996133,
+            "leak": 0.0
+          },
+          "expected_gain": 0.7218023619479961,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_2BFEA3960C79": {
+      "proposal_id": "LP_2BFEA3960C79",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_SWAY",
+      "action_type": "fp_bquad_probe",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [
+        "LP_2BFEA3960C79_SWAY_20260707T011700Z0000"
+      ],
+      "run_ids": [
+        "RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000"
+      ],
+      "step_decisions": [
+        {
+          "status": "EVIDENCE_ONLY",
+          "reason": "scored without parent arbitration",
+          "hard_constraint_violations": [],
+          "tags": []
+        }
+      ],
+      "outcome": "evidence_only",
+      "candidate_intent": {
+        "source": "",
+        "intent": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "",
+        "falsification_condition": ""
+      },
+      "created_at": "2026-07-08T00:47:47+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_330171BDD5AE": {
+      "proposal_id": "LP_330171BDD5AE",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_HEAVE",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [
+        "LP_330171BDD5AE_HEAVE_20260707T144315Z0000"
+      ],
+      "run_ids": [
+        "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000"
+      ],
+      "step_decisions": [
+        {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 2/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_YAW",
+            "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        }
+      ],
+      "outcome": "evidence_only",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_HEAVE diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_HEAVE fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[2,2]"
+        ],
+        "risk_notes": [
+          "FD_PITCH",
+          "FD_SURGE",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.24884798333333333,
+            "envelope": 1.244520075,
+            "ler": 0.63509314,
+            "fp": 4.963615333333333,
+            "zeta": 0.7609378857680655,
+            "zeta_signed_ratio": -0.7609378857680655,
+            "leak": 0.0
+          },
+          "expected_gain": 1.0977007628268065,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_71D22C5024DD": {
+      "proposal_id": "LP_71D22C5024DD",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_SWAY",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [],
+      "run_ids": [],
+      "step_decisions": [],
+      "outcome": "proposed",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_SWAY dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_SWAY diagonal BQuad x 1.02; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_SWAY fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[1,1]"
+        ],
+        "risk_notes": [
+          "FD_PITCH",
+          "FD_ROLL",
+          "FD_YAW",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.08632086333333333,
+            "envelope": 0.81259645,
+            "ler": 0.80681528,
+            "fp": 1.6360475833333332,
+            "zeta": 0.016281606125356094,
+            "zeta_signed_ratio": -0.016281606125356094,
+            "leak": 0.0
+          },
+          "expected_gain": 0.5599573896125355,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_9E877C00D37E": {
+      "proposal_id": "LP_9E877C00D37E",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_YAW",
+      "action_type": "fp_bquad_probe",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [
+        "LP_9E877C00D37E_YAW_20260707T020651Z0000"
+      ],
+      "run_ids": [
+        "RC_LP_9E877C00D37E_YAW_20260707T020651Z0000"
+      ],
+      "step_decisions": [
+        {
+          "status": "REJECTED",
+          "reason": "hard constraints failed",
+          "hard_constraint_violations": [
+            "strong_leak:FD_SWAY->Yaw:0.505>ref0.117"
+          ],
+          "tags": [
+            "hard_constraint"
+          ]
+        }
+      ],
+      "outcome": "rejected",
+      "candidate_intent": {
+        "source": "",
+        "intent": "FD_YAW dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "",
+        "falsification_condition": ""
+      },
+      "created_at": "2026-07-08T00:47:47+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_B7F42ED0715D": {
+      "proposal_id": "LP_B7F42ED0715D",
+      "parent_run_id": "RC_FINAL_HEAVE095_ROLL090_CMP_0612144710_20260706T072032Z0000",
+      "parent_candidate_id": "HEAVE095_ROLL090_CMP_0612144710",
+      "target_dof": "FD_HEAVE",
+      "action_type": "fp_bquad_probe",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [
+        "LP_B7F42ED0715D_HEAVE_20260706T134334Z0000"
+      ],
+      "run_ids": [
+        "RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000"
+      ],
+      "step_decisions": [
+        {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SWAY",
+            "missing_dof:FD_YAW",
+            "strong_leak:FD_SURGE->Heave:4.46>ref0.0197",
+            "strong_leak:FD_SURGE->Pitch:1.6>ref0.107",
+            "strong_leak:FD_SURGE->Roll:2.78>ref0.0329",
+            "strong_leak:FD_SURGE->Sway:2.04>ref0.159",
+            "strong_leak:FD_SURGE->Yaw:1.84>ref0.0382"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        }
+      ],
+      "outcome": "evidence_only",
+      "candidate_intent": {
+        "source": "",
+        "intent": "FD_HEAVE dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "",
+        "falsification_condition": ""
+      },
+      "created_at": "2026-07-08T00:47:47+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    },
+    "LP_D460BA0F215D": {
+      "proposal_id": "LP_D460BA0F215D",
+      "parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "parent_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "target_dof": "FD_ROLL",
+      "action_type": "diagnostic_review",
+      "parameter_group": "diagonal_hydro",
+      "materialized_candidate_ids": [],
+      "run_ids": [],
+      "step_decisions": [],
+      "outcome": "proposed",
+      "candidate_intent": {
+        "source": "local_loop",
+        "intent": "FD_ROLL dominant fp error may improve via fp_bquad_probe",
+        "expected_observation": "FD_ROLL diagonal BQuad x 0.975; global-step must confirm full 6DOF predicates and score",
+        "falsification_condition": "FD_ROLL fp component does not improve, or any hard predicate/new protected-DOF regression appears in full 6DOF validation",
+        "touched_parameters": [
+          "HydroDyn.BQuad[3,3]"
+        ],
+        "risk_notes": [
+          "FD_PITCH",
+          "FD_SWAY",
+          "fp_probe",
+          "full_6dof_required",
+          "limited_probe"
+        ],
+        "evidence_context": {
+          "dominant_error_mode": "fp",
+          "component_scores": {
+            "period": 0.5928261,
+            "envelope": 0.46024059999999994,
+            "ler": 0.24246636,
+            "fp": 2.0461925833333336,
+            "zeta": 0.2849290719585156,
+            "zeta_signed_ratio": 0.2849290719585156,
+            "leak": 0.0
+          },
+          "expected_gain": 0.6041547225291849,
+          "information_gain": 0.4,
+          "memory_support": 0.1,
+          "protected_risk": 0.45,
+          "source_role": "candidate_intent_not_truth",
+          "acceptance_gate": "full_6dof_global_step"
+        }
+      },
+      "created_at": "2026-07-08T00:47:45+00:00",
+      "updated_at": "2026-07-08T00:47:47+00:00"
+    }
+  }
+}

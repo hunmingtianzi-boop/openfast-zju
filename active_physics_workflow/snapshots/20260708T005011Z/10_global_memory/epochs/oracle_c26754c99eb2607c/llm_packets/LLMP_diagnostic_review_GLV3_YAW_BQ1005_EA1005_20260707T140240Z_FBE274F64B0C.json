@@ -1,0 +1,3184 @@
+{
+  "packet_id": "LLMP_diagnostic_review_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_FBE274F64B0C",
+  "job_id": "LLMJ_diagnostic_review_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260708T002022Z0000",
+  "analysis_type": "diagnostic_review",
+  "created_at": "2026-07-08T00:20:22+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "input_snapshot_hash": "fbe274f64b0ce79f9f0a33544c1002e29074519f7e5d622ae18c39bf2b416c8a",
+  "prompt": "You are an advisory engineering analyst for a six-DOF OpenFAST calibration loop. You may explain, diagnose, summarize, and recommend next probes. You must not modify TargetTruth, override hard predicates, compute official score, promote current_best, or loosen thresholds. Treat all outputs as advisory only.\n\nAnalysis type: diagnostic_review\nReturn a concise Markdown report with: Evidence, Interpretation, Risks, Recommended next action.\nDo not change deterministic verdicts or present advisory suggestions as official acceptance.\n\nContext JSON:\n{\n  \"advisory_only\": true,\n  \"analysis_focus\": [\n    \"Diagnose likely mechanism behind the queue trigger.\",\n    \"List the smallest useful probe or artifact review.\",\n    \"State why this item must not auto-promote current_best.\"\n  ],\n  \"coupling_memory\": {\n    \"created_at\": \"2026-07-07T15:10:11+00:00\",\n    \"entries\": {\n      \"coupling_disabled\": {\n        \"affected_dofs\": [],\n        \"confidence\": 0.0,\n        \"damages\": [],\n        \"evidence_run_ids\": [],\n        \"improves\": [],\n        \"parameter_group\": \"coupling_disabled\",\n        \"response_strength\": 0.0\n      },\n      \"diagonal_hydro\": {\n        \"affected_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"confidence\": 0.5,\n        \"damages\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"evidence_run_ids\": [\n          \"RC_AMP_SH_06121500\",\n          \"RC_AMP_SH_H054_SWTTD_SG1019_07040711\",\n          \"RC_AMP_SH_H054_SWTTD_Y15052_07041000\",\n          \"RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055\",\n          \"RC_AMP_SH_HAF15_Y15052_R8715_07041136\",\n          \"RC_AMP_SH_S_BASEYAW_06171610\",\n          \"RC_AMP_SH_SY_06172058\",\n          \"RC_AMP_SH_SY_R965_06171637\",\n          \"RC_AMP_SH_SY_R965_H058_07031325\",\n          \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n          \"RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815\",\n          \"RC_AMP_SH_SY_ROLL090_06171518\",\n          \"RC_BQIC_HEAVE_0612055426_F100_I080\",\n          \"RC_BQIC_HEAVE_0612055426_F100_I090\",\n          \"RC_BQIC_HEAVE_0612134333_F200_I100\",\n          \"RC_BQIC_HEAVE_0612134333_F400_I100\",\n          \"RC_BQIC_HEAVE_0612134700_F100_I100\",\n          \"RC_BQIC_HEAVE_0612135257_F100_I095\",\n          \"RC_BQIC_HEAVE_0612143402_F100_I060\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I050\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I055\",\n          \"RC_BQIC_HEAVE_0703130239_F100_I058\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I054\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I055\",\n          \"RC_BQIC_HEAVE_0704040637_F100_I056\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I048\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I050\",\n          \"RC_BQIC_HEAVE_0704051950_F100_I052\",\n          \"RC_BQIC_ROLL_0612125455_F080_I100\",\n          \"RC_BQIC_ROLL_0612125455_F090_I100\",\n          \"RC_BQIC_ROLL_0617161013_F095_I100\",\n          \"RC_BQIC_ROLL_0617161538_F098_I100\",\n          \"RC_BQIC_ROLL_0617162123_F096_I100\",\n          \"RC_BQIC_ROLL_0617162123_F097_I100\",\n          \"RC_BQIC_ROLL_0617162123_F098_I100\",\n          \"RC_BQIC_ROLL_0704103753_F090_I100\",\n          \"RC_BQIC_SURGE_0611135333_F100\",\n          \"RC_BQIC_SURGE_0611135333_F150\",\n          \"RC_BQIC_SURGE_0611142500_F100\",\n          \"RC_BQIC_SURGE_0611154707_F100_I110\",\n          \"RC_BQIC_SURGE_0611155919_F100_I102\",\n          \"RC_BQIC_SURGE_0612120539_F100_I100\",\n          \"RC_BQIC_SURGE_0612120539_F150_I100\",\n          \"RC_BQIC_SURGE_0612120539_F200_I100\",\n          \"RC_BQIC_SURGE_0612122849_F075_I090\",\n          \"RC_BQIC_SURGE_0612122849_F100_I090\",\n          \"RC_BQIC_SURGE_0612122849_F125_I090\",\n          \"RC_BQIC_SURGE_0612123519_F100_I098\",\n          \"RC_BQIC_SURGE_0612123519_F100_I102\",\n          \"RC_BQIC_SURGE_0612134700_F100_I100\",\n          \"RC_BQIC_SURGE_0612141252_F100_I080\",\n          \"RC_BQIC_SURGE_0612143905_F100_I065\",\n          \"RC_BQIC_SURGE_0612143905_F100_I070\",\n          \"RC_BQIC_SURGE_0703144129_F110_I100\",\n          \"RC_BQIC_SURGE_0703144129_F120_I100\",\n          \"RC_BQIC_SURGE_0703150041_F080_I100\",\n          \"RC_BQIC_SURGE_0703150041_F090_I100\",\n          \"RC_BQIC_SURGE_0704053144_F100_I072\",\n          \"RC_BQIC_SURGE_0704053144_F100_I074\",\n          \"RC_BQIC_SURGE_0704053144_F100_I076\",\n          \"RC_BQIC_SURGE_0704055611_F105_I074\",\n          \"RC_BQIC_SURGE_0704055611_F110_I074\",\n          \"RC_BQIC_SURGE_0704055611_F120_I074\",\n          \"RC_BQIC_SURGE_0704062039_F101_I074\",\n          \"RC_BQIC_SURGE_0704062039_F102_I074\",\n          \"RC_BQIC_SURGE_0704062039_F103_I074\",\n          \"RC_BQIC_SURGE_0704064505_F102_I074\",\n          \"RC_BQIC_SURGE_0704065321_F102_I074\",\n          \"RC_BQIC_SURGE_0704070142_F102_I074\",\n          \"RC_BQIC_SURGE_0704074649_F102_I073\",\n          \"RC_BQIC_SURGE_0704123214_F098_I072\",\n          \"RC_BQIC_SWAY_0612090051_F100_I102\",\n          \"RC_BQIC_SWAY_0612134700_F100_I100\",\n          \"RC_BQIC_SWAY_0612142322_F100_I080\",\n          \"RC_BQIC_SWAY_0617133851_F100_I070\",\n          \"RC_BQIC_SWAY_0617133851_F100_I075\",\n          \"RC_BQIC_SWAY_0617133851_F100_I078\",\n          \"RC_BQIC_SWAY_0617133851_F100_I082\",\n          \"RC_BQIC_SWAY_0617142124_F100_I076\",\n          \"RC_BQIC_SWAY_0617142124_F100_I078\",\n          \"RC_BQIC_SWAY_0617142124_F100_I080\",\n          \"RC_BQIC_SWAY_0617142124_F100_I082\",\n          \"RC_BQIC_SWAY_0703140207_F110_I100\",\n          \"RC_BQIC_SWAY_0703140207_F120_I100\",\n          \"RC_BQIC_SWAY_0703142147_F103_I100\",\n          \"RC_BQIC_SWAY_0703142147_F105_I100\",\n          \"RC_BQIC_SWAY_0704014701_F095_I076\",\n          \"RC_BQIC_SWAY_0704014701_F100_I076\",\n          \"RC_BQIC_SWAY_0704014701_F105_I076\",\n          \"RC_BQIC_SWAY_0704021626_F098_I076\",\n          \"RC_BQIC_SWAY_0704021626_F099_I076\",\n          \"RC_BQIC_SWAY_0704041752_F095_I100\",\n          \"RC_BQIC_SWAY_0704041752_F105_I100\",\n          \"RC_BQIC_SWAY_0704075513_F100_I082\",\n          \"RC_BQIC_SWAY_0704075513_F100_I084\",\n          \"RC_BQIC_YAW_0612070916_F100_I102\",\n          \"RC_BQIC_YAW_0612154529_F100_I084\",\n          \"RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706\",\n          \"RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706\",\n          \"RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706\",\n          \"RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706\",\n          \"RC_HEAVE060_ROLL090_CMP_06171530\",\n          \"RC_HEAVE095_CMP_0612135839\",\n          \"RC_HEAVE095_ROLL090_CMP_0612144710\",\n          \"RC_HEAVE_AF0_N16M_FULL_0706\",\n          \"RC_HEAVE_AF0_N175M_0704221224\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_FULL_0706\",\n          \"RC_HEAVE_AF0_N20M_IC83_T450_0706\",\n          \"RC_HEAVE_AF0_N20M_T450_0706\",\n          \"RC_HEAVE_AF0_N2M_REBASE_FULL_0706\",\n          \"RC_HEAVE_AF0_N40M_T450_0706\",\n          \"RC_HEAVE_BL100_0704211242\",\n          \"RC_HEAVE_BL50_0704212109\",\n          \"RC_HEAVE_BQ05X_0705241450\",\n          \"RC_HEAVE_BQ2X_0705235850\",\n          \"RC_IMP_HEAVE_02259Z0000_P1\",\n          \"RC_IMP_HEAVE_02259Z0000_S1\",\n          \"RC_IMP_PITCH_04323Z0000_P1\",\n          \"RC_IMP_PITCH_04323Z0000_S1\",\n          \"RC_IMP_SURGE_00128Z0000_P1\",\n          \"RC_IMP_SURGE_00128Z0000_S1\",\n          \"RC_IMP_SURGE_00128Z0000_S3\",\n          \"RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000\",\n          \"RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000\",\n          \"RC_LP_9E877C00D37E_YAW_20260707T020651Z0000\",\n          \"RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125\",\n          \"RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400\",\n          \"RC_ROLL_BQ8715_07041049\",\n          \"RC_ROLL_BQ873_07041043\",\n          \"RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000\",\n          \"RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000\",\n          \"RC_SURGE_AF0_N180K_IC177_CL5500_T600_0706\",\n          \"RC_SURGE_AF0_N180K_IC177_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ075_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ078_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ0795_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ079_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ080_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ085_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_BQ090_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M105B_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M1085_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_M1125_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC178_T600_0706\",\n          \"RC_SURGE_AF0_N190K_IC185_M105B_T600_0706\",\n          \"RC_SURGE_AF0_N210K_IC180_T600_0706\",\n          \"RC_SURGE_AF0_N250K_IC185_T600_0706\",\n          \"RC_SURGE_AF0_N250K_IC2124_FULL_0705\",\n          \"RC_SURGE_AF0_N50K_CL2800_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_CL5500_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_CLN10K_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_FULL_0705\",\n          \"RC_SURGE_AF0_N550K_IC215_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC195_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_FULL_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_T450_0706\",\n          \"RC_SURGE_AF0_N650K_IC205_T600_0706\",\n          \"RC_SURGE_AF0_N650K_IC232_T450_0706\",\n          \"RC_SURGE_AF0_N650K_T450_0706\",\n          \"RC_SURGE_CL0_0704212954\",\n          \"RC_SURGE_CL5K_0704213825\",\n          \"RC_SURGE_EQIC90_0704231943\",\n          \"RC_SURGE_IC16715_CL8K_0704214734\",\n          \"RC_SURGE_IC2032_AF0_N50K_FULL_0706\",\n          \"RC_SURGE_IC2032_FULL_0706\",\n          \"RC_SURGE_IC72_CL0_07040912\",\n          \"RC_SURGE_IC72_CL4K_07040924\",\n          \"RC_SURGE_SG1019_BL420_07040900\",\n          \"RC_SURGE_SG1019_BL450_07040846\",\n          \"RC_SWAY_AF0_N15K_FULL_0706\",\n          \"RC_SWAY_AF0_N450K_T450_0706\",\n          \"RC_SWAY_AF0_N50K_BQ103X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ110X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ118X_T450_0706\",\n          \"RC_SWAY_AF0_N50K_BQ125X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_BQ2X_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_FULL_0706\",\n          \"RC_SWAY_AF0_N50K_IC1225_T450_0706\",\n          \"RC_SWAY_AF0_N50K_IC1260_FULL_0706\",\n          \"RC_SWAY_AF0_N750K_T450_0706\",\n          \"RC_SWAY_CL0_0704204604\",\n          \"RC_SWAY_CL0_BL300_0704205458\",\n          \"RC_SWAY_CLN14K_0705243600\",\n          \"RC_SWAY_CLN8K_0704210327\",\n          \"RC_SWAY_IC1230_0704215651\",\n          \"RC_SWAY_TTDSS_N18_07040812\",\n          \"RC_SWAY_TTDSS_N22_07040812\",\n          \"RC_YAW_EQIC83_0704231051\",\n          \"RC_YAW_EQIC87_0704223546\",\n          \"RC_YAW_EQIC87_CL105_0704224441\",\n          \"RC_YAW_EQIC87_CL105_BL100_0704230212\",\n          \"RC_YAW_EQIC87_CL105_BQ2X_0704225331\",\n          \"RC_YAW_EQIC_0704222630\",\n          \"RC_YAW_IC_Y15052_07040949\",\n          \"RC_YAW_IC_Y15056_07040941\",\n          \"RC_YAW_IC_Y1505_07040931\",\n          \"RC_YAW_IC_Y1508_07040931\"\n        ],\n        \"improves\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"parameter_group\": \"diagonal_hydro\",\n        \"response_strength\": 0.6214683835869572\n      },\n      \"mooring\": {\n        \"affected_dofs\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"confidence\": 0.5,\n        \"damages\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_ROLL\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"evidence_run_ids\": [\n          \"RC_GLV3_HEAVE_AF0_N025M_EA1005_20260707T113721Z\",\n          \"RC_GLV3_MOOR_EA1003_20260707T043810Z\",\n          \"RC_GLV3_MOOR_EA10045R_20260707T090815Z\",\n          \"RC_GLV3_MOOR_EA10055_20260707T060656Z\",\n          \"RC_GLV3_MOOR_EA1005_20260707T033530Z\",\n          \"RC_IMP_SURGE_MEA0787_112112\",\n          \"RC_IMP_SURGE_MEA0834_114855\",\n          \"RC_IMP_SURGE_MEA0865_113536\",\n          \"RC_SURGE_AF0_N180K_IC177_UL1001_T600_0706\",\n          \"RC_SURGE_AF0_N50K_UL10017_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_UL1002_FULL_0706\",\n          \"RC_SURGE_AF0_N50K_UL1005_FULL_0706\",\n          \"RC_SURGE_EA098_FULL_0705211940\",\n          \"RC_SURGE_EA102_FULL_0705220000\",\n          \"RC_SURGE_IC70_EA110\",\n          \"RC_SURGE_IC70_EA118\",\n          \"RC_SURGE_IC70_EA120\",\n          \"RC_SURGE_IC70_EA130\",\n          \"RC_SURGE_IC70_EA15\",\n          \"RC_SURGE_IC70_EA20\",\n          \"RC_SURGE_IC70_EA30\",\n          \"RC_SURGE_IC72_EA0998_07040918\",\n          \"RC_SURGE_SG1019_EA099_07040831\",\n          \"RC_SURGE_UL0995_0705100839\",\n          \"RC_SURGE_UL0995_FULL_0705101534\",\n          \"RC_SURGE_UL1001_FULL_0705222420\",\n          \"RC_SURGE_UL1002_BL600K_0705234300\",\n          \"RC_SURGE_UL1002_CLN10K_0705232100\",\n          \"RC_SURGE_UL1002_FULL_0705230510\",\n          \"RC_SURGE_UL1005_FULL_0705102530\",\n          \"RC_SURGE_UL12_1005_FIX_0705210753\",\n          \"RC_SURGE_UL12_1005_FULL_0705205646\"\n        ],\n        \"improves\": [\n          \"FD_HEAVE\",\n          \"FD_PITCH\",\n          \"FD_SURGE\",\n          \"FD_SWAY\",\n          \"FD_YAW\"\n        ],\n        \"parameter_group\": \"mooring\",\n        \"response_strength\": 0.8350926650627643\n      },\n      \"rna_balance\": {\n        \"affected_dofs\": [],\n        \"confidence\": 0.0,\n        \"damages\": [],\n        \"evidence_run_ids\": [],\n        \"improves\": [],\n        \"parameter_group\": \"rna_balance\",\n        \"response_strength\": 0.0\n      }\n    }\n  },\n  \"diagnostic_item\": {\n    \"candidate_id\": \"GLV3_YAW_BQ1005_EA1005_20260707T140240Z\",\n    \"created_at\": \"2026-07-07T14:13:38+00:00\",\n    \"epoch_id\": \"oracle_c26754c99eb2607c\",\n    \"item_id\": \"DQ_5A39BE5B2B3D\",\n    \"oracle_id\": \"oracle_c26754c99eb2607c\",\n    \"priority\": 72.0,\n    \"related_dofs\": [\n      \"FD_SURGE\"\n    ],\n    \"review_type\": \"period_reverse_diagnostic\",\n    \"run_id\": \"RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000\",\n    \"severity\": \"warning\",\n    \"source_category\": \"active\",\n    \"source_role\": \"diagnostic_evidence\",\n    \"source_stage\": \"global_step\",\n    \"status\": \"pending\",\n    \"trigger_reasons\": [\n      \"loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review\",\n      \"period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53\"\n    ]\n  },\n  \"epoch_id\": \"oracle_c26754c99eb2607c\",\n  \"global_state\": {\n    \"current_best_candidate_id\": \"GLV3_MOOR_EA1005_20260707T033530Z\",\n    \"current_best_run_id\": \"RC_GLV3_MOOR_EA1005_20260707T033530Z\",\n    \"current_best_score\": 0.6792725733966515,\n    \"harness_recommendation\": \"STOP_AUTO_MATERIALIZE\",\n    \"harness_status\": \"INSUFFICIENT_ACTIVE_DATA\",\n    \"last_candidate_id\": \"LP_330171BDD5AE_HEAVE_20260707T144315Z0000\",\n    \"last_score\": 2.0823245154723455,\n    \"last_step_decision\": {\n      \"hard_constraint_violations\": [\n        \"missing_dof:FD_HEAVE\",\n        \"missing_dof:FD_PITCH\",\n        \"missing_dof:FD_ROLL\",\n        \"missing_dof:FD_YAW\",\n        \"period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6\"\n      ],\n      \"reason\": \"incomplete suite: 2/6 DOFs have metrics\",\n      \"status\": \"EVIDENCE_ONLY\",\n      \"tags\": [\n        \"incomplete_suite\"\n      ]\n    },\n    \"loop_verdict\": {\n      \"reason\": \"diagnostic hard constraint requires review\",\n      \"status\": \"DIAGNOSTIC_FORK\",\n      \"tags\": [\n        \"diagnostic\",\n        \"period_reverse_worse\"\n      ]\n    },\n    \"materializable_proposal_ids\": [],\n    \"mode\": \"local_polish\",\n    \"top_proposal_ids\": [\n      \"LP_330171BDD5AE\",\n      \"LP_1A727791036F\",\n      \"LP_D460BA0F215D\",\n      \"LP_71D22C5024DD\",\n      \"LP_134489D9588E\",\n      \"LP_156E5BFB263B\"\n    ],\n    \"updated_at\": \"2026-07-08T00:12:12+00:00\"\n  },\n  \"oracle_id\": \"oracle_c26754c99eb2607c\",\n  \"related_history\": [\n    {\n      \"candidate_id\": \"YAW_EQIC83_0704231051\",\n      \"created_at\": \"2026-07-07T13:59:00+00:00\",\n      \"cross_energy_matrix\": {\n        \"FD_YAW\": {\n          \"Heave\": 0.1860951917283685,\n          \"Pitch\": 0.08789397048526754,\n          \"Roll\": 0.2548005235893933,\n          \"Surge\": 0.4962289226895837,\n          \"Sway\": 0.22895502045895347\n        }\n      },\n      \"equilibrium\": {},\n      \"global_score\": 1.7553430888144628,\n      \"hard_constraint_violations\": [\n        \"missing_dof:FD_HEAVE\",\n        \"missing_dof:FD_PITCH\",\n        \"missing_dof:FD_ROLL\",\n        \"missing_dof:FD_SURGE\",\n        \"missing_dof:FD_SWAY\"\n      ],\n      \"loop_verdict\": {\n        \"reason\": \"suite incomplete\",\n        \"status\": \"RUNNING\",\n        \"tags\": [\n          \"incomplete_suite\"\n        ]\n      },\n      \"observation_metrics\": {\n        \"FD_YAW\": {\n          \"envelope_error\": 0.23121725,\n          \"fp_error\": 0.20519907,\n          \"j_dof\": 0.018854138,\n          \"j_shape\": 0.2617638,\n          \"leak\": {\n            \"Heave\": 0.1860951917283685,\n            \"Pitch\": 0.08789397048526754,\n            \"Roll\": 0.2548005235893933,\n            \"Surge\": 0.4962289226895837,\n            \"Sway\": 0.22895502045895347\n          },\n          \"ler_error\": 3.4338368,\n          \"metric_status\": \"PASS\",\n          \"morph\": {\n            \"J_shape\": 0.26176379614080736,\n            \"J_wave\": 0.01885413808897132,\n            \"LERD\": 0.010254479339074602,\n            \"LERM\": 0.04546668829158748,\n            \"LER_err\": 3.433836842240939,\n            \"Tend\": 628.0,\n            \"env_err\": 0.23121725254195175,\n            \"fp_err\": 0.2051990672703341\n          },\n          \"nrmse\": 0.018854138,\n          \"period\": 50.637709,\n          \"period_error_pct\": 0.09778511,\n          \"reference_leak\": {\n            \"Heave\": 0.00833951391833249,\n            \"Pitch\": 0.06650130575791667,\n            \"Roll\": 0.08748756161027149,\n            \"Surge\": 0.1667131756781034,\n            \"Sway\": 0.06151291011602063\n          },\n          \"reference_period\": 50.687273,\n          \"reference_zeta\": 0.024700713,\n          \"run_id\": \"RUN_0001_FD_YAW_YAW_EQIC83_0704231051\",\n          \"start_amplitude_error\": 0.17318439,\n          \"zeta\": 0.011142467\n        }\n      },\n      \"parameter_delta\": {\n        \"changed_parameters\": \"IC.Yaw;FST.TMax\",\n        \"decision_meta\": {\n          \"bquad_multipliers\": {\n            \"FD_HEAVE\": 1.0,\n            \"FD_PITCH\": 1.0,\n            \"FD_ROLL\": 0.9683333333333334,\n            \"FD_SURGE\": 1.0,\n            \"FD_SWAY\": 1.0,\n            \"FD_YAW\": 1.0\n          },\n          \"dof_packages\": [\n            \"FD_HEAVE\",\n            \"FD_PITCH\",\n            \"FD_ROLL\",\n            \"FD_SURGE\",\n            \"FD_SWAY\",\n            \"FD_YAW\"\n          ],\n          \"selected_dof_candidates\": {\n            \"FD_HEAVE\": \"HEAVE_AF0_N15M_07041128\",\n            \"FD_PITCH\": \"AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n            \"FD_ROLL\": \"ROLL_BQ8715_07041049\",\n            \"FD_SURGE\": \"AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n            \"FD_SWAY\": \"AMP_SH_SY_R965_H058_SWTTD_N2_07040340\",\n            \"FD_YAW\": \"YAW_IC_Y15052_07040949\"\n          },\n          \"signed_ic_bquad_tune\": true,\n          \"signed_initial_conditions\": {\n            \"FD_HEAVE\": -4.474818,\n            \"FD_PITCH\": -9.678683455,\n            \"FD_ROLL\": 16.89065606,\n            \"FD_SURGE\": -16.2507835,\n            \"FD_SWAY\": -12.08792,\n            \"FD_YAW\": -15.052\n          }\n        },\n        \"hydrodyn_edits\": [],\n        \"initial_conditions\": {\n          \"Yaw\": -15.503482999999997\n        },\n        \"moordyn\": {},\n        \"tmax\": 900\n      },\n      \"parameter_group\": \"diagonal_hydro\",\n      \"parent_id\": \"AMP_SH_HAF15_Y15052_R8715_07041136\",\n      \"per_dof\": {\n        \"FD_YAW\": {\n          \"closed\": false,\n          \"envelope_error\": 0.23121725,\n          \"fp_error\": 0.20519907,\n          \"ler_error\": 3.4338368,\n          \"period_error_abs_pct\": 0.09778511,\n          \"period_error_pct\": 0.09778511,\n          \"score\": 1.7553430888144628,\n          \"zeta_error_ratio\": 0.5489009973112922\n        }\n      },\n      \"predicate_results\": [\n        {\n          \"name\": \"missing_dof\",\n          \"passed\": false,\n          \"reason\": \"missing_dof:FD_HEAVE\",\n          \"severity\": \"hard\",\n          \"source_role\": \"derived_metric\",\n          \"tags\": [\n            \"missing_dof\"\n          ]\n        },\n        {\n          \"name\": \"missing_dof\",\n          \"passed\": false,\n          \"reason\": \"missing_dof:FD_PITCH\",\n          \"severity\": \"hard\",\n          \"source_role\": \"derived_metric\",\n          \"tags\": [\n            \"missing_dof\"\n          ]\n        },\n        {\n          \"name\": \"missing_dof\",\n          \"passed\": false,\n          \"reason\": \"missing_dof:FD_ROLL\",\n          \"severity\": \"hard\",\n          \"source_role\": \"derived_metric\",\n          \"tags\": [\n            \"missing_dof\"\n          ]\n        },\n        {\n          \"name\": \"missing_dof\",\n          \"passed\": false,\n          \"reason\": \"missing_dof:FD_SURGE\",\n          \"severity\": \"hard\",\n          \"source_role\": \"derived_metric\",\n          \"tags\": [\n            \"missing_dof\"\n          ]\n        },\n        {\n          \"name\": \"missing_dof\",\n          \"passed\": false,\n          \"reason\": \"missing_dof:FD_SWAY\",\n          \"severity\": \"hard\",\n          \"source_role\": \"derived_metric\",\n          \"tags\": [\n            \"missing_dof\"\n          ]\n        }\n      ],\n      \"review_status\": \"not_required\",\n      \"run_id\": \"RC_YAW_EQIC83_0704231051\",\n      \"stage\": \"offline_import\",\n      \"step_decision\": {\n        \"hard_constraint_violations\": [\n          \"missing_dof:FD_HEAVE\",\n          \"missing_dof:FD_PITCH\",\n          \"missing_dof:FD_ROLL\",\n          \"missing_dof:FD_SURGE\",\n          \"missing_dof:FD_SWAY\"\n        ],\n        \"reason\": \"incomplete suite: 1/6 DOFs have metrics\",\n        \"status\": \"EVIDENCE_ONLY\",\n        \"tags\": [\n          \"incomplete_suite\"\n        ]\n      }\n    },\n    {\n      \"candidate_id\": \"YAW_EQIC87_0704223546\",\n      \"created_at\": \"2026-07-07T13:59:00+00:00\",\n      \"cross_energy_matrix\": {\n        \"FD_YAW\": {\n          \"Heave\": 0.19836391913332208,\n          \"Pitch\": 0.08159434226774714,\n          \"Roll\": 0.25986362141217245,\n          \"Surge\": 0.5978119244042592,\n          \"Sway\": 0.2475704395968081\n        }\n      },\n      \"equilibrium\": {},\n      \"global_score\": 0.6855844292555545,\n      \"hard_constraint_violations\": [\n        \"missing_dof:FD_HEAVE\",\n        \"missing_dof:FD_PITCH\",\n        \"missing_dof:FD_ROLL\",\n        \"missing_dof:FD_SURGE\",\n        \"missing_dof:FD_SWAY\",\n        \"strong_leak:FD_YAW->Surge:0.598>ref0.167\"\n      ],\n      \"loop_verdict\": {\n        \"reason\": \"diagnostic hard constraint requires review\",\n        \"status\": \"DIAGNOSTIC_FORK\",\n        \"tags\": [\n          \"diagnostic\",\n          \"strong_leak\"\n        ]\n      },\n      \"observation_metrics\": {\n        \"FD_YAW\": {\n          \"envelope_error\": 0.23740514,\n          \"fp_error\": 0.13103487,\n          \"j_dof\": 0.032635537,\n          \"j_shape\": 0.92250597,\n          \"leak\": {\n            \"Heave\": 0.19836391913332208,\n            \"Pitch\": 0.08159434226774714,\n            \"Roll\": 0.25986362141217245,\n            \"Surge\": 0.5978119244042592,\n            \"Sway\": 0.2475704395968081\n          },\n          \"ler_error\": 0.12487726,\n          \"metric_status\": \"PASS\",\n          \"morph\": {\n            \"J_shape\": 0.9225059721442134,\n            \"J_wave\": 0.03263553730733539,\n            \"LERD\": 0.010254479339074602,\n            \"LERM\": 0.011535030649792168,\n            \"LER_err\": 0.12487726274292996,\n            \"Tend\": 628.0,\n            \"env_err\": 0.\n...<truncated>",
+  "context": {
+    "oracle_id": "oracle_c26754c99eb2607c",
+    "epoch_id": "oracle_c26754c99eb2607c",
+    "advisory_only": true,
+    "source_roles": {
+      "target_truth": "oracle",
+      "observation": "evidence",
+      "score": "deterministic_metric",
+      "llm_analysis": "advisory"
+    },
+    "global_state": {
+      "updated_at": "2026-07-08T00:12:12+00:00",
+      "mode": "local_polish",
+      "current_best_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "current_best_candidate_id": "GLV3_MOOR_EA1005_20260707T033530Z",
+      "current_best_score": 0.6792725733966515,
+      "last_candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+      "last_step_decision": {
+        "status": "EVIDENCE_ONLY",
+        "reason": "incomplete suite: 2/6 DOFs have metrics",
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+        ],
+        "tags": [
+          "incomplete_suite"
+        ]
+      },
+      "loop_verdict": {
+        "status": "DIAGNOSTIC_FORK",
+        "reason": "diagnostic hard constraint requires review",
+        "tags": [
+          "diagnostic",
+          "period_reverse_worse"
+        ]
+      },
+      "last_score": 2.0823245154723455,
+      "top_proposal_ids": [
+        "LP_330171BDD5AE",
+        "LP_1A727791036F",
+        "LP_D460BA0F215D",
+        "LP_71D22C5024DD",
+        "LP_134489D9588E",
+        "LP_156E5BFB263B"
+      ],
+      "materializable_proposal_ids": [],
+      "harness_status": "INSUFFICIENT_ACTIVE_DATA",
+      "harness_recommendation": "STOP_AUTO_MATERIALIZE"
+    },
+    "coupling_memory": {
+      "created_at": "2026-07-07T15:10:11+00:00",
+      "entries": {
+        "mooring": {
+          "parameter_group": "mooring",
+          "affected_dofs": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "improves": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "damages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "response_strength": 0.8350926650627643,
+          "confidence": 0.5,
+          "evidence_run_ids": [
+            "RC_GLV3_HEAVE_AF0_N025M_EA1005_20260707T113721Z",
+            "RC_GLV3_MOOR_EA1003_20260707T043810Z",
+            "RC_GLV3_MOOR_EA10045R_20260707T090815Z",
+            "RC_GLV3_MOOR_EA10055_20260707T060656Z",
+            "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+            "RC_IMP_SURGE_MEA0787_112112",
+            "RC_IMP_SURGE_MEA0834_114855",
+            "RC_IMP_SURGE_MEA0865_113536",
+            "RC_SURGE_AF0_N180K_IC177_UL1001_T600_0706",
+            "RC_SURGE_AF0_N50K_UL10017_FULL_0706",
+            "RC_SURGE_AF0_N50K_UL1002_FULL_0706",
+            "RC_SURGE_AF0_N50K_UL1005_FULL_0706",
+            "RC_SURGE_EA098_FULL_0705211940",
+            "RC_SURGE_EA102_FULL_0705220000",
+            "RC_SURGE_IC70_EA110",
+            "RC_SURGE_IC70_EA118",
+            "RC_SURGE_IC70_EA120",
+            "RC_SURGE_IC70_EA130",
+            "RC_SURGE_IC70_EA15",
+            "RC_SURGE_IC70_EA20",
+            "RC_SURGE_IC70_EA30",
+            "RC_SURGE_IC72_EA0998_07040918",
+            "RC_SURGE_SG1019_EA099_07040831",
+            "RC_SURGE_UL0995_0705100839",
+            "RC_SURGE_UL0995_FULL_0705101534",
+            "RC_SURGE_UL1001_FULL_0705222420",
+            "RC_SURGE_UL1002_BL600K_0705234300",
+            "RC_SURGE_UL1002_CLN10K_0705232100",
+            "RC_SURGE_UL1002_FULL_0705230510",
+            "RC_SURGE_UL1005_FULL_0705102530",
+            "RC_SURGE_UL12_1005_FIX_0705210753",
+            "RC_SURGE_UL12_1005_FULL_0705205646"
+          ]
+        },
+        "rna_balance": {
+          "parameter_group": "rna_balance",
+          "affected_dofs": [],
+          "improves": [],
+          "damages": [],
+          "response_strength": 0.0,
+          "confidence": 0.0,
+          "evidence_run_ids": []
+        },
+        "diagonal_hydro": {
+          "parameter_group": "diagonal_hydro",
+          "affected_dofs": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "improves": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "damages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "response_strength": 0.6214683835869572,
+          "confidence": 0.5,
+          "evidence_run_ids": [
+            "RC_AMP_SH_06121500",
+            "RC_AMP_SH_H054_SWTTD_SG1019_07040711",
+            "RC_AMP_SH_H054_SWTTD_Y15052_07041000",
+            "RC_AMP_SH_H054_SWTTD_Y15052_R8715_07041055",
+            "RC_AMP_SH_HAF15_Y15052_R8715_07041136",
+            "RC_AMP_SH_S_BASEYAW_06171610",
+            "RC_AMP_SH_SY_06172058",
+            "RC_AMP_SH_SY_R965_06171637",
+            "RC_AMP_SH_SY_R965_H058_07031325",
+            "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+            "RC_AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+            "RC_AMP_SH_SY_ROLL090_06171518",
+            "RC_BQIC_HEAVE_0612055426_F100_I080",
+            "RC_BQIC_HEAVE_0612055426_F100_I090",
+            "RC_BQIC_HEAVE_0612134333_F200_I100",
+            "RC_BQIC_HEAVE_0612134333_F400_I100",
+            "RC_BQIC_HEAVE_0612134700_F100_I100",
+            "RC_BQIC_HEAVE_0612135257_F100_I095",
+            "RC_BQIC_HEAVE_0612143402_F100_I060",
+            "RC_BQIC_HEAVE_0703130239_F100_I050",
+            "RC_BQIC_HEAVE_0703130239_F100_I055",
+            "RC_BQIC_HEAVE_0703130239_F100_I058",
+            "RC_BQIC_HEAVE_0704040637_F100_I054",
+            "RC_BQIC_HEAVE_0704040637_F100_I055",
+            "RC_BQIC_HEAVE_0704040637_F100_I056",
+            "RC_BQIC_HEAVE_0704051950_F100_I048",
+            "RC_BQIC_HEAVE_0704051950_F100_I050",
+            "RC_BQIC_HEAVE_0704051950_F100_I052",
+            "RC_BQIC_ROLL_0612125455_F080_I100",
+            "RC_BQIC_ROLL_0612125455_F090_I100",
+            "RC_BQIC_ROLL_0617161013_F095_I100",
+            "RC_BQIC_ROLL_0617161538_F098_I100",
+            "RC_BQIC_ROLL_0617162123_F096_I100",
+            "RC_BQIC_ROLL_0617162123_F097_I100",
+            "RC_BQIC_ROLL_0617162123_F098_I100",
+            "RC_BQIC_ROLL_0704103753_F090_I100",
+            "RC_BQIC_SURGE_0611135333_F100",
+            "RC_BQIC_SURGE_0611135333_F150",
+            "RC_BQIC_SURGE_0611142500_F100",
+            "RC_BQIC_SURGE_0611154707_F100_I110",
+            "RC_BQIC_SURGE_0611155919_F100_I102",
+            "RC_BQIC_SURGE_0612120539_F100_I100",
+            "RC_BQIC_SURGE_0612120539_F150_I100",
+            "RC_BQIC_SURGE_0612120539_F200_I100",
+            "RC_BQIC_SURGE_0612122849_F075_I090",
+            "RC_BQIC_SURGE_0612122849_F100_I090",
+            "RC_BQIC_SURGE_0612122849_F125_I090",
+            "RC_BQIC_SURGE_0612123519_F100_I098",
+            "RC_BQIC_SURGE_0612123519_F100_I102",
+            "RC_BQIC_SURGE_0612134700_F100_I100",
+            "RC_BQIC_SURGE_0612141252_F100_I080",
+            "RC_BQIC_SURGE_0612143905_F100_I065",
+            "RC_BQIC_SURGE_0612143905_F100_I070",
+            "RC_BQIC_SURGE_0703144129_F110_I100",
+            "RC_BQIC_SURGE_0703144129_F120_I100",
+            "RC_BQIC_SURGE_0703150041_F080_I100",
+            "RC_BQIC_SURGE_0703150041_F090_I100",
+            "RC_BQIC_SURGE_0704053144_F100_I072",
+            "RC_BQIC_SURGE_0704053144_F100_I074",
+            "RC_BQIC_SURGE_0704053144_F100_I076",
+            "RC_BQIC_SURGE_0704055611_F105_I074",
+            "RC_BQIC_SURGE_0704055611_F110_I074",
+            "RC_BQIC_SURGE_0704055611_F120_I074",
+            "RC_BQIC_SURGE_0704062039_F101_I074",
+            "RC_BQIC_SURGE_0704062039_F102_I074",
+            "RC_BQIC_SURGE_0704062039_F103_I074",
+            "RC_BQIC_SURGE_0704064505_F102_I074",
+            "RC_BQIC_SURGE_0704065321_F102_I074",
+            "RC_BQIC_SURGE_0704070142_F102_I074",
+            "RC_BQIC_SURGE_0704074649_F102_I073",
+            "RC_BQIC_SURGE_0704123214_F098_I072",
+            "RC_BQIC_SWAY_0612090051_F100_I102",
+            "RC_BQIC_SWAY_0612134700_F100_I100",
+            "RC_BQIC_SWAY_0612142322_F100_I080",
+            "RC_BQIC_SWAY_0617133851_F100_I070",
+            "RC_BQIC_SWAY_0617133851_F100_I075",
+            "RC_BQIC_SWAY_0617133851_F100_I078",
+            "RC_BQIC_SWAY_0617133851_F100_I082",
+            "RC_BQIC_SWAY_0617142124_F100_I076",
+            "RC_BQIC_SWAY_0617142124_F100_I078",
+            "RC_BQIC_SWAY_0617142124_F100_I080",
+            "RC_BQIC_SWAY_0617142124_F100_I082",
+            "RC_BQIC_SWAY_0703140207_F110_I100",
+            "RC_BQIC_SWAY_0703140207_F120_I100",
+            "RC_BQIC_SWAY_0703142147_F103_I100",
+            "RC_BQIC_SWAY_0703142147_F105_I100",
+            "RC_BQIC_SWAY_0704014701_F095_I076",
+            "RC_BQIC_SWAY_0704014701_F100_I076",
+            "RC_BQIC_SWAY_0704014701_F105_I076",
+            "RC_BQIC_SWAY_0704021626_F098_I076",
+            "RC_BQIC_SWAY_0704021626_F099_I076",
+            "RC_BQIC_SWAY_0704041752_F095_I100",
+            "RC_BQIC_SWAY_0704041752_F105_I100",
+            "RC_BQIC_SWAY_0704075513_F100_I082",
+            "RC_BQIC_SWAY_0704075513_F100_I084",
+            "RC_BQIC_YAW_0612070916_F100_I102",
+            "RC_BQIC_YAW_0612154529_F100_I084",
+            "RC_COMBO_FORMALBASE_SURGE_BQ080_HEAVE_BQ095_NOPTFMMASS_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_NOMASS_DOFIC_T600_0706",
+            "RC_COMBO_SURGE_BQ080_HEAVE_BQ095_T600_0706",
+            "RC_FORMALBASE_HEAVEONLY_BQ095_DOFIC_T600_0706",
+            "RC_FORMALBASE_SURGEONLY_BQ080_DOFIC_T600_0706",
+            "RC_HEAVE060_ROLL090_CMP_06171530",
+            "RC_HEAVE095_CMP_0612135839",
+            "RC_HEAVE095_ROLL090_CMP_0612144710",
+            "RC_HEAVE_AF0_N16M_FULL_0706",
+            "RC_HEAVE_AF0_N175M_0704221224",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ05_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ075_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ090_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ095_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ110_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_BQ125_T600_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_BL100_T450_0706",
+            "RC_HEAVE_AF0_N20M_IC83_FULL_0706",
+            "RC_HEAVE_AF0_N20M_IC83_T450_0706",
+            "RC_HEAVE_AF0_N20M_T450_0706",
+            "RC_HEAVE_AF0_N2M_REBASE_FULL_0706",
+            "RC_HEAVE_AF0_N40M_T450_0706",
+            "RC_HEAVE_BL100_0704211242",
+            "RC_HEAVE_BL50_0704212109",
+            "RC_HEAVE_BQ05X_0705241450",
+            "RC_HEAVE_BQ2X_0705235850",
+            "RC_IMP_HEAVE_02259Z0000_P1",
+            "RC_IMP_HEAVE_02259Z0000_S1",
+            "RC_IMP_PITCH_04323Z0000_P1",
+            "RC_IMP_PITCH_04323Z0000_S1",
+            "RC_IMP_SURGE_00128Z0000_P1",
+            "RC_IMP_SURGE_00128Z0000_S1",
+            "RC_IMP_SURGE_00128Z0000_S3",
+            "RC_LP_1091C22C41B7_HEAVE_20260706T135310Z0000",
+            "RC_LP_2BFEA3960C79_SWAY_20260707T011700Z0000",
+            "RC_LP_9E877C00D37E_YAW_20260707T020651Z0000",
+            "RC_LP_B7F42ED0715D_HEAVE_20260706T134334Z0000",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125",
+            "RC_RBQ90_PBL255_IMPORTED_PACKAGE_PERIOD_TUNED_20225Z0000_BQIC_0611143733_BQIC_0611161228_BQIC_0612060642_BQIC_0612072125_BQIC_0612091400",
+            "RC_ROLL_BQ8715_07041049",
+            "RC_ROLL_BQ873_07041043",
+            "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+            "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+            "RC_SURGE_AF0_N180K_IC177_CL5500_T600_0706",
+            "RC_SURGE_AF0_N180K_IC177_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ075_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ078_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ0795_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ079_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ080_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ085_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_BQ090_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M105B_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M1085_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_M1125_T600_0706",
+            "RC_SURGE_AF0_N190K_IC178_T600_0706",
+            "RC_SURGE_AF0_N190K_IC185_M105B_T600_0706",
+            "RC_SURGE_AF0_N210K_IC180_T600_0706",
+            "RC_SURGE_AF0_N250K_IC185_T600_0706",
+            "RC_SURGE_AF0_N250K_IC2124_FULL_0705",
+            "RC_SURGE_AF0_N50K_CL2800_FULL_0706",
+            "RC_SURGE_AF0_N50K_CL5500_FULL_0706",
+            "RC_SURGE_AF0_N50K_CLN10K_FULL_0706",
+            "RC_SURGE_AF0_N50K_FULL_0705",
+            "RC_SURGE_AF0_N550K_IC215_T450_0706",
+            "RC_SURGE_AF0_N650K_IC195_T450_0706",
+            "RC_SURGE_AF0_N650K_IC205_FULL_0706",
+            "RC_SURGE_AF0_N650K_IC205_T450_0706",
+            "RC_SURGE_AF0_N650K_IC205_T600_0706",
+            "RC_SURGE_AF0_N650K_IC232_T450_0706",
+            "RC_SURGE_AF0_N650K_T450_0706",
+            "RC_SURGE_CL0_0704212954",
+            "RC_SURGE_CL5K_0704213825",
+            "RC_SURGE_EQIC90_0704231943",
+            "RC_SURGE_IC16715_CL8K_0704214734",
+            "RC_SURGE_IC2032_AF0_N50K_FULL_0706",
+            "RC_SURGE_IC2032_FULL_0706",
+            "RC_SURGE_IC72_CL0_07040912",
+            "RC_SURGE_IC72_CL4K_07040924",
+            "RC_SURGE_SG1019_BL420_07040900",
+            "RC_SURGE_SG1019_BL450_07040846",
+            "RC_SWAY_AF0_N15K_FULL_0706",
+            "RC_SWAY_AF0_N450K_T450_0706",
+            "RC_SWAY_AF0_N50K_BQ103X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ110X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ118X_T450_0706",
+            "RC_SWAY_AF0_N50K_BQ125X_FULL_0706",
+            "RC_SWAY_AF0_N50K_BQ2X_FULL_0706",
+            "RC_SWAY_AF0_N50K_FULL_0706",
+            "RC_SWAY_AF0_N50K_IC1225_T450_0706",
+            "RC_SWAY_AF0_N50K_IC1260_FULL_0706",
+            "RC_SWAY_AF0_N750K_T450_0706",
+            "RC_SWAY_CL0_0704204604",
+            "RC_SWAY_CL0_BL300_0704205458",
+            "RC_SWAY_CLN14K_0705243600",
+            "RC_SWAY_CLN8K_0704210327",
+            "RC_SWAY_IC1230_0704215651",
+            "RC_SWAY_TTDSS_N18_07040812",
+            "RC_SWAY_TTDSS_N22_07040812",
+            "RC_YAW_EQIC83_0704231051",
+            "RC_YAW_EQIC87_0704223546",
+            "RC_YAW_EQIC87_CL105_0704224441",
+            "RC_YAW_EQIC87_CL105_BL100_0704230212",
+            "RC_YAW_EQIC87_CL105_BQ2X_0704225331",
+            "RC_YAW_EQIC_0704222630",
+            "RC_YAW_IC_Y15052_07040949",
+            "RC_YAW_IC_Y15056_07040941",
+            "RC_YAW_IC_Y1505_07040931",
+            "RC_YAW_IC_Y1508_07040931"
+          ]
+        },
+        "coupling_disabled": {
+          "parameter_group": "coupling_disabled",
+          "affected_dofs": [],
+          "improves": [],
+          "damages": [],
+          "response_strength": 0.0,
+          "confidence": 0.0,
+          "evidence_run_ids": []
+        }
+      }
+    },
+    "diagnostic_item": {
+      "item_id": "DQ_5A39BE5B2B3D",
+      "created_at": "2026-07-07T14:13:38+00:00",
+      "oracle_id": "oracle_c26754c99eb2607c",
+      "epoch_id": "oracle_c26754c99eb2607c",
+      "run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+      "candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+      "trigger_reasons": [
+        "loop_verdict:DIAGNOSTIC_FORK:diagnostic hard constraint requires review",
+        "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+      ],
+      "related_dofs": [
+        "FD_SURGE"
+      ],
+      "review_type": "period_reverse_diagnostic",
+      "severity": "warning",
+      "status": "pending",
+      "source_role": "diagnostic_evidence",
+      "source_stage": "global_step",
+      "source_category": "active",
+      "priority": 72.0
+    },
+    "run_card": {
+      "run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+      "parent_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+      "stage": "global_step",
+      "candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+      "parameter_group": "diagonal_hydro",
+      "parameter_delta": {
+        "hydrodyn_edits": [
+          {
+            "block": "BQuad",
+            "i": 5,
+            "j": 5,
+            "value": 72360000000.0,
+            "basis": "global_loop_v3_yaw_micro_probe"
+          }
+        ],
+        "moordyn": {
+          "EA_scale": 1.005
+        },
+        "initial_conditions": {},
+        "tmax": null,
+        "decision_meta": {
+          "signed_ic_bquad_tune": null,
+          "selected_dof_candidates": {},
+          "bquad_multipliers": {},
+          "signed_initial_conditions": {},
+          "dof_packages": [
+            "FD_HEAVE",
+            "FD_PITCH",
+            "FD_ROLL",
+            "FD_SURGE",
+            "FD_SWAY",
+            "FD_YAW"
+          ],
+          "global_loop_v2_group": "diagonal_hydro",
+          "action_type": "yaw_bquad_micro_probe",
+          "target_dof": "FD_YAW",
+          "bquad_base": 72000000000.0,
+          "bquad_multiplier": 1.005,
+          "requires_full_sixdof": true,
+          "dof_initial_conditions": {
+            "FD_YAW": {
+              "Yaw": -18.0201
+            }
+          },
+          "proposal_hypothesis": "Yaw diagonal BQuad +0.5% on accepted EA1005 may reduce FD_YAW fp/LER without crossing Surge/Sway/Yaw hard guards; early-stop will stop at first hard diagnostic."
+        },
+        "changed_parameters": "HydroDyn.BQuad[5,5];MoorDyn.EA_scale;IC.FD_YAW.Yaw"
+      },
+      "global_score": 1.1973037933381994,
+      "hard_constraint_violations": [
+        "missing_dof:FD_HEAVE",
+        "missing_dof:FD_PITCH",
+        "missing_dof:FD_ROLL",
+        "missing_dof:FD_SWAY",
+        "missing_dof:FD_YAW",
+        "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+      ],
+      "per_dof": {
+        "FD_SURGE": {
+          "score": 1.1973037933381994,
+          "period_error_pct": 4.5296326,
+          "period_error_abs_pct": 4.5296326,
+          "envelope_error": 0.40378443,
+          "ler_error": 0.34505755,
+          "fp_error": 0.29109852,
+          "zeta_error_ratio": 0.35876267921532734,
+          "closed": false
+        }
+      },
+      "step_decision": {
+        "status": "EVIDENCE_ONLY",
+        "reason": "incomplete suite: 1/6 DOFs have metrics",
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SWAY",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+        ],
+        "tags": [
+          "incomplete_suite"
+        ]
+      },
+      "loop_verdict": {
+        "status": "DIAGNOSTIC_FORK",
+        "reason": "diagnostic hard constraint requires review",
+        "tags": [
+          "diagnostic",
+          "period_reverse_worse"
+        ]
+      },
+      "predicate_results": [
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_HEAVE",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_PITCH",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_ROLL",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_SWAY",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "missing_dof",
+          "passed": false,
+          "severity": "hard",
+          "reason": "missing_dof:FD_YAW",
+          "source_role": "derived_metric",
+          "tags": [
+            "missing_dof"
+          ]
+        },
+        {
+          "name": "period_reverse_worse",
+          "passed": false,
+          "severity": "hard",
+          "reason": "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53",
+          "source_role": "derived_metric",
+          "tags": [
+            "period_reverse_worse"
+          ]
+        }
+      ],
+      "review_status": "pending",
+      "observation_metrics": {
+        "FD_SURGE": {
+          "run_id": "RUN_0001_FD_SURGE_GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+          "metric_status": "PASS",
+          "period": 86.5125,
+          "reference_period": 82.763612,
+          "period_error_pct": 4.5296326,
+          "zeta": 0.012980233,
+          "reference_zeta": 0.020242479,
+          "nrmse": 0.05246195,
+          "j_dof": 0.05246195,
+          "j_shape": 1.0389899,
+          "envelope_error": 0.40378443,
+          "ler_error": 0.34505755,
+          "fp_error": 0.29109852,
+          "start_amplitude_error": 0.33199529,
+          "leak": {
+            "Sway": 0.27110905821551323,
+            "Heave": 0.1859812215001094,
+            "Roll": 0.23895110787937324,
+            "Pitch": 0.08349564664238782,
+            "Yaw": 0.32816247422819
+          },
+          "reference_leak": {
+            "Sway": 0.15896017090110728,
+            "Heave": 0.01968059507325694,
+            "Roll": 0.03291602612100948,
+            "Pitch": 0.10723769417504003,
+            "Yaw": 0.03816688415976064
+          },
+          "morph": {
+            "J_wave": 0.05246195013330561,
+            "J_shape": 1.0389898730889042,
+            "env_err": 0.40378442914361806,
+            "fp_err": 0.2910985198768511,
+            "LERD": 0.003995852928715648,
+            "LERM": 0.0026170536936853638,
+            "LER_err": 0.3450575533252821,
+            "Tend": 740.9499999999999
+          }
+        }
+      },
+      "cross_energy_matrix": {
+        "FD_SURGE": {
+          "Sway": 0.27110905821551323,
+          "Heave": 0.1859812215001094,
+          "Roll": 0.23895110787937324,
+          "Pitch": 0.08349564664238782,
+          "Yaw": 0.32816247422819
+        }
+      },
+      "equilibrium": {},
+      "created_at": "2026-07-07T14:13:38+00:00"
+    },
+    "related_history": [
+      {
+        "run_id": "RC_YAW_EQIC83_0704231051",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC83_0704231051",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -15.503482999999997
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 1.7553430888144628,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 1.7553430888144628,
+            "period_error_pct": 0.09778511,
+            "period_error_abs_pct": 0.09778511,
+            "envelope_error": 0.23121725,
+            "ler_error": 3.4338368,
+            "fp_error": 0.20519907,
+            "zeta_error_ratio": 0.5489009973112922,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "RUNNING",
+          "reason": "suite incomplete",
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          }
+        ],
+        "review_status": "not_required",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC83_0704231051",
+            "metric_status": "PASS",
+            "period": 50.637709,
+            "reference_period": 50.687273,
+            "period_error_pct": 0.09778511,
+            "zeta": 0.011142467,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.018854138,
+            "j_dof": 0.018854138,
+            "j_shape": 0.2617638,
+            "envelope_error": 0.23121725,
+            "ler_error": 3.4338368,
+            "fp_error": 0.20519907,
+            "start_amplitude_error": 0.17318439,
+            "leak": {
+              "Surge": 0.4962289226895837,
+              "Sway": 0.22895502045895347,
+              "Heave": 0.1860951917283685,
+              "Roll": 0.2548005235893933,
+              "Pitch": 0.08789397048526754
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.01885413808897132,
+              "J_shape": 0.26176379614080736,
+              "env_err": 0.23121725254195175,
+              "fp_err": 0.2051990672703341,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.04546668829158748,
+              "LER_err": 3.433836842240939,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.4962289226895837,
+            "Sway": 0.22895502045895347,
+            "Heave": 0.1860951917283685,
+            "Roll": 0.2548005235893933,
+            "Pitch": 0.08789397048526754
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_EQIC87_0704223546",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC87_0704223546",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -16.224287
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 0.6855844292555545,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY",
+          "strong_leak:FD_YAW->Surge:0.598>ref0.167"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 0.6855844292555545,
+            "period_error_pct": 2.7768449,
+            "period_error_abs_pct": 2.7768449,
+            "envelope_error": 0.23740514,
+            "ler_error": 0.12487726,
+            "fp_error": 0.13103487,
+            "zeta_error_ratio": 0.5409434942222113,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY",
+            "strong_leak:FD_YAW->Surge:0.598>ref0.167"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "strong_leak"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "strong_leak",
+            "passed": false,
+            "severity": "hard",
+            "reason": "strong_leak:FD_YAW->Surge:0.598>ref0.167",
+            "source_role": "derived_metric",
+            "tags": [
+              "strong_leak"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC87_0704223546",
+            "metric_status": "PASS",
+            "period": 49.279766,
+            "reference_period": 50.687273,
+            "period_error_pct": 2.7768449,
+            "zeta": 0.011339023,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.032635537,
+            "j_dof": 0.032635537,
+            "j_shape": 0.92250597,
+            "envelope_error": 0.23740514,
+            "ler_error": 0.12487726,
+            "fp_error": 0.13103487,
+            "start_amplitude_error": 0.14406135,
+            "leak": {
+              "Surge": 0.5978119244042592,
+              "Sway": 0.2475704395968081,
+              "Heave": 0.19836391913332208,
+              "Roll": 0.25986362141217245,
+              "Pitch": 0.08159434226774714
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.03263553730733539,
+              "J_shape": 0.9225059721442134,
+              "env_err": 0.23740514058852735,
+              "fp_err": 0.13103486745538456,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.011535030649792168,
+              "LER_err": 0.12487726274292996,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.5978119244042592,
+            "Sway": 0.2475704395968081,
+            "Heave": 0.19836391913332208,
+            "Roll": 0.25986362141217245,
+            "Pitch": 0.08159434226774714
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_EQIC87_CL105_0704224441",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC87_CL105_0704224441",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [
+            {
+              "block": "CLin",
+              "i": 5,
+              "j": 5,
+              "value": -420525000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -16.224287
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "HydroDyn.CLin[5,5];IC.Yaw;FST.TMax"
+        },
+        "global_score": 0.8563132189755945,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY",
+          "strong_leak:FD_YAW->Surge:0.69>ref0.167"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 0.8563132189755945,
+            "period_error_pct": 2.4773351,
+            "period_error_abs_pct": 2.4773351,
+            "envelope_error": 0.24407463,
+            "ler_error": 0.68393183,
+            "fp_error": 0.098339508,
+            "zeta_error_ratio": 0.5922182489226121,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY",
+            "strong_leak:FD_YAW->Surge:0.69>ref0.167"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "strong_leak"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "strong_leak",
+            "passed": false,
+            "severity": "hard",
+            "reason": "strong_leak:FD_YAW->Surge:0.69>ref0.167",
+            "source_role": "derived_metric",
+            "tags": [
+              "strong_leak"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC87_CL105_0704224441",
+            "metric_status": "PASS",
+            "period": 51.942967,
+            "reference_period": 50.687273,
+            "period_error_pct": 2.4773351,
+            "zeta": 0.0100725,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.027838185,
+            "j_dof": 0.027838185,
+            "j_shape": 0.79392188,
+            "envelope_error": 0.24407463,
+            "ler_error": 0.68393183,
+            "fp_error": 0.098339508,
+            "start_amplitude_error": 0.13942764,
+            "leak": {
+              "Surge": 0.6898511173566759,
+              "Sway": 0.39625984016667526,
+              "Heave": 0.19390817904033453,
+              "Roll": 0.2531297316199718,
+              "Pitch": 0.08190962728536626
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.027838184920921945,
+              "J_shape": 0.7939218750140764,
+              "env_err": 0.2440746262374299,
+              "fp_err": 0.09833950789236348,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.017267844123086306,
+              "LER_err": 0.6839318264836071,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.6898511173566759,
+            "Sway": 0.39625984016667526,
+            "Heave": 0.19390817904033453,
+            "Roll": 0.2531297316199718,
+            "Pitch": 0.08190962728536626
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_EQIC87_CL105_BL100_0704230212",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC87_CL105_BL100_0704230212",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [
+            {
+              "block": "CLin",
+              "i": 5,
+              "j": 5,
+              "value": -420525000.0
+            },
+            {
+              "block": "BLin",
+              "i": 5,
+              "j": 5,
+              "value": 100000000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -16.224287
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "HydroDyn.CLin[5,5];HydroDyn.BLin[5,5];IC.Yaw;FST.TMax"
+        },
+        "global_score": 1.9084166505619546,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 1.9084166505619546,
+            "period_error_pct": 1.8643176,
+            "period_error_abs_pct": 1.8643176,
+            "envelope_error": 0.2304299,
+            "ler_error": 3.5052749,
+            "fp_error": 0.11983084,
+            "zeta_error_ratio": 0.44925249728621197,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "RUNNING",
+          "reason": "suite incomplete",
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          }
+        ],
+        "review_status": "not_required",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC87_CL105_BL100_0704230212",
+            "metric_status": "PASS",
+            "period": 49.742302,
+            "reference_period": 50.687273,
+            "period_error_pct": 1.8643176,
+            "zeta": 0.013603856,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.022013951,
+            "j_dof": 0.022013951,
+            "j_shape": 0.47545593,
+            "envelope_error": 0.2304299,
+            "ler_error": 3.5052749,
+            "fp_error": 0.11983084,
+            "start_amplitude_error": 0.13290159,
+            "leak": {
+              "Surge": 0.49277841811264905,
+              "Sway": 0.25067019569709637,
+              "Heave": 0.19751748855666773,
+              "Roll": 0.25322350536071203,
+              "Pitch": 0.13447940304288653
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.022013951392374373,
+              "J_shape": 0.4754559313193684,
+              "env_err": 0.2304299027304106,
+              "fp_err": 0.11983083631237279,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.046199248876932414,
+              "LER_err": 3.5052749485671684,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.49277841811264905,
+            "Sway": 0.25067019569709637,
+            "Heave": 0.19751748855666773,
+            "Roll": 0.25322350536071203,
+            "Pitch": 0.13447940304288653
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_EQIC87_CL105_BQ2X_0704225331",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC87_CL105_BQ2X_0704225331",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [
+            {
+              "block": "CLin",
+              "i": 5,
+              "j": 5,
+              "value": -420525000.0
+            },
+            {
+              "block": "BQuad",
+              "i": 5,
+              "j": 5,
+              "value": 144000000000.0
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -16.224287
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "HydroDyn.CLin[5,5];HydroDyn.BQuad[5,5];IC.Yaw;FST.TMax"
+        },
+        "global_score": 1.3919174192824368,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY",
+          "strong_leak:FD_YAW->Surge:0.757>ref0.167"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 1.3919174192824368,
+            "period_error_pct": 1.3575268,
+            "period_error_abs_pct": 1.3575268,
+            "envelope_error": 0.38191706,
+            "ler_error": 2.1081482,
+            "fp_error": 0.091485922,
+            "zeta_error_ratio": 0.7534358178243681,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY",
+            "strong_leak:FD_YAW->Surge:0.757>ref0.167"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "strong_leak"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "strong_leak",
+            "passed": false,
+            "severity": "hard",
+            "reason": "strong_leak:FD_YAW->Surge:0.757>ref0.167",
+            "source_role": "derived_metric",
+            "tags": [
+              "strong_leak"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC87_CL105_BQ2X_0704225331",
+            "metric_status": "PASS",
+            "period": 49.99918,
+            "reference_period": 50.687273,
+            "period_error_pct": 1.3575268,
+            "zeta": 0.0060903111,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.04395399,
+            "j_dof": 0.04395399,
+            "j_shape": 0.84961855,
+            "envelope_error": 0.38191706,
+            "ler_error": 2.1081482,
+            "fp_error": 0.091485922,
+            "start_amplitude_error": 0.1397273,
+            "leak": {
+              "Surge": 0.7568453246980859,
+              "Sway": 0.24017635655526798,
+              "Heave": 0.2460884246365612,
+              "Roll": 0.32121731368786755,
+              "Pitch": 0.13917150397014685
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.043953989502690194,
+              "J_shape": 0.8496185483396761,
+              "env_err": 0.38191705953173366,
+              "fp_err": 0.0914859217650959,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.03187244104962918,
+              "LER_err": 2.1081481561115956,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.7568453246980859,
+            "Sway": 0.24017635655526798,
+            "Heave": 0.2460884246365612,
+            "Roll": 0.32121731368786755,
+            "Pitch": 0.13917150397014685
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_EQIC_0704222630",
+        "parent_id": "AMP_SH_HAF15_Y15052_R8715_07041136",
+        "stage": "offline_import",
+        "candidate_id": "YAW_EQIC_0704222630",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -18.5669
+          },
+          "tmax": 900,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "HEAVE_AF0_N15M_07041128",
+              "FD_ROLL": "ROLL_BQ8715_07041049",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "YAW_IC_Y15052_07040949"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 0.9683333333333334,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.052
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 1.5486037245037285,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY",
+          "strong_leak:FD_YAW->Surge:0.871>ref0.167"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 1.5486037245037285,
+            "period_error_pct": 6.9900205,
+            "period_error_abs_pct": 6.9900205,
+            "envelope_error": 0.20808078,
+            "ler_error": 1.3239752,
+            "fp_error": 0.016390633,
+            "zeta_error_ratio": 0.5980190450372829,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY",
+            "strong_leak:FD_YAW->Surge:0.871>ref0.167"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "strong_leak"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "strong_leak",
+            "passed": false,
+            "severity": "hard",
+            "reason": "strong_leak:FD_YAW->Surge:0.871>ref0.167",
+            "source_role": "derived_metric",
+            "tags": [
+              "strong_leak"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_EQIC_0704222630",
+            "metric_status": "PASS",
+            "period": 47.144223,
+            "reference_period": 50.687273,
+            "period_error_pct": 6.9900205,
+            "zeta": 0.0099292162,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.060815494,
+            "j_dof": 0.060815494,
+            "j_shape": 1.4831158,
+            "envelope_error": 0.20808078,
+            "ler_error": 1.3239752,
+            "fp_error": 0.016390633,
+            "start_amplitude_error": 0.011398383,
+            "leak": {
+              "Surge": 0.8713208983196934,
+              "Sway": 0.19430674660434036,
+              "Heave": 0.17993462092210386,
+              "Roll": 0.23169869863055045,
+              "Pitch": 0.08244017304113044
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.06081549391135439,
+              "J_shape": 1.4831157645731452,
+              "env_err": 0.2080807812882493,
+              "fp_err": 0.016390633178127587,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.023831155977530313,
+              "LER_err": 1.3239752297049256,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.8713208983196934,
+            "Sway": 0.19430674660434036,
+            "Heave": 0.17993462092210386,
+            "Roll": 0.23169869863055045,
+            "Pitch": 0.08244017304113044
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_IC_Y15052_07040949",
+        "parent_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+        "stage": "offline_import",
+        "candidate_id": "YAW_IC_Y15052_07040949",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -15.052
+          },
+          "tmax": 700,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_ROLL": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 1.0,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.136884
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 0.7706247017542985,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 0.7706247017542985,
+            "period_error_pct": 0.52281173,
+            "period_error_abs_pct": 0.52281173,
+            "envelope_error": 0.26130353,
+            "ler_error": 0.93314977,
+            "fp_error": 0.19275803,
+            "zeta_error_ratio": 0.1242369400429858,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "RUNNING",
+          "reason": "suite incomplete",
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          }
+        ],
+        "review_status": "not_required",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_IC_Y15052_07040949",
+            "metric_status": "PASS",
+            "period": 50.422274,
+            "reference_period": 50.687273,
+            "period_error_pct": 0.52281173,
+            "zeta": 0.021631972,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.02290328,
+            "j_dof": 0.02290328,
+            "j_shape": 0.38771457,
+            "envelope_error": 0.26130353,
+            "ler_error": 0.93314977,
+            "fp_error": 0.19275803,
+            "start_amplitude_error": 0.1951654,
+            "leak": {
+              "Surge": 0.45399477269519517,
+              "Sway": 0.1842852202869055,
+              "Heave": 0.21016862265645067,
+              "Roll": 0.2669884176843142,
+              "Pitch": 0.09151155617756035
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.02290328031279385,
+              "J_shape": 0.3877145705870468,
+              "env_err": 0.26130353166719933,
+              "fp_err": 0.19275802618053617,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.019823444340927872,
+              "LER_err": 0.9331497665991498,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.45399477269519517,
+            "Sway": 0.1842852202869055,
+            "Heave": 0.21016862265645067,
+            "Roll": 0.2669884176843142,
+            "Pitch": 0.09151155617756035
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_IC_Y15056_07040941",
+        "parent_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+        "stage": "offline_import",
+        "candidate_id": "YAW_IC_Y15056_07040941",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -15.056
+          },
+          "tmax": 700,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_ROLL": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 1.0,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.136884
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 0.9652554861592523,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 0.9652554861592523,
+            "period_error_pct": 0.22551835,
+            "period_error_abs_pct": 0.22551835,
+            "envelope_error": 0.26741531,
+            "ler_error": 1.4998691,
+            "fp_error": 0.18446413,
+            "zeta_error_ratio": 0.18142694909252213,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "RUNNING",
+          "reason": "suite incomplete",
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          }
+        ],
+        "review_status": "not_required",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_IC_Y15056_07040941",
+            "metric_status": "PASS",
+            "period": 50.801582,
+            "reference_period": 50.687273,
+            "period_error_pct": 0.22551835,
+            "zeta": 0.020219338,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.021581493,
+            "j_dof": 0.021581493,
+            "j_shape": 0.31647876,
+            "envelope_error": 0.26741531,
+            "ler_error": 1.4998691,
+            "fp_error": 0.18446413,
+            "start_amplitude_error": 0.19624752,
+            "leak": {
+              "Surge": 0.3947651623708107,
+              "Sway": 0.20521413124145296,
+              "Heave": 0.2099247462522882,
+              "Roll": 0.2759454306603259,
+              "Pitch": 0.05971763426523891
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.021581492758971733,
+              "J_shape": 0.3164787623687703,
+              "env_err": 0.2674153149584584,
+              "fp_err": 0.18446412731196096,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.02563485640501069,
+              "LER_err": 1.4998691359520613,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.3947651623708107,
+            "Sway": 0.20521413124145296,
+            "Heave": 0.2099247462522882,
+            "Roll": 0.2759454306603259,
+            "Pitch": 0.05971763426523891
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_IC_Y1505_07040931",
+        "parent_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+        "stage": "offline_import",
+        "candidate_id": "YAW_IC_Y1505_07040931",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -15.05
+          },
+          "tmax": 700,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_ROLL": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 1.0,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.136884
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 0.38904541125169706,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY",
+          "strong_leak:FD_YAW->Surge:0.519>ref0.167"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 0.38904541125169706,
+            "period_error_pct": 0.030142015,
+            "period_error_abs_pct": 0.030142015,
+            "envelope_error": 0.25087666,
+            "ler_error": 0.1203424,
+            "fp_error": 0.19507564,
+            "zeta_error_ratio": 0.18030937001697075,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY",
+            "strong_leak:FD_YAW->Surge:0.519>ref0.167"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "strong_leak"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "strong_leak",
+            "passed": false,
+            "severity": "hard",
+            "reason": "strong_leak:FD_YAW->Surge:0.519>ref0.167",
+            "source_role": "derived_metric",
+            "tags": [
+              "strong_leak"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_IC_Y1505_07040931",
+            "metric_status": "PASS",
+            "period": 50.702552,
+            "reference_period": 50.687273,
+            "period_error_pct": 0.030142015,
+            "zeta": 0.020246943,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.02203382,
+            "j_dof": 0.02203382,
+            "j_shape": 0.40716519,
+            "envelope_error": 0.25087666,
+            "ler_error": 0.1203424,
+            "fp_error": 0.19507564,
+            "start_amplitude_error": 0.20067036,
+            "leak": {
+              "Surge": 0.5194338638356252,
+              "Sway": 0.20733279778847385,
+              "Heave": 0.20678821467977823,
+              "Roll": 0.25480549386589196,
+              "Pitch": 0.06272708224148459
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.022033820424070955,
+              "J_shape": 0.4071651938310256,
+              "env_err": 0.25087665714609375,
+              "fp_err": 0.19507564204304506,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.011488528000355519,
+              "LER_err": 0.12034240066958694,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.5194338638356252,
+            "Sway": 0.20733279778847385,
+            "Heave": 0.20678821467977823,
+            "Roll": 0.25480549386589196,
+            "Pitch": 0.06272708224148459
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_YAW_IC_Y1508_07040931",
+        "parent_id": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340_BQIC_0704043815",
+        "stage": "offline_import",
+        "candidate_id": "YAW_IC_Y1508_07040931",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [],
+          "moordyn": {},
+          "initial_conditions": {
+            "Yaw": -15.08
+          },
+          "tmax": 700,
+          "decision_meta": {
+            "signed_ic_bquad_tune": true,
+            "selected_dof_candidates": {
+              "FD_SURGE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_SWAY": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_HEAVE": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_ROLL": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_PITCH": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340",
+              "FD_YAW": "AMP_SH_SY_R965_H058_SWTTD_N2_07040340"
+            },
+            "bquad_multipliers": {
+              "FD_SURGE": 1.0,
+              "FD_SWAY": 1.0,
+              "FD_HEAVE": 1.0,
+              "FD_ROLL": 1.0,
+              "FD_PITCH": 1.0,
+              "FD_YAW": 1.0
+            },
+            "signed_initial_conditions": {
+              "FD_SURGE": -16.2507835,
+              "FD_SWAY": -12.08792,
+              "FD_HEAVE": -4.474818,
+              "FD_ROLL": 16.89065606,
+              "FD_PITCH": -9.678683455,
+              "FD_YAW": -15.136884
+            },
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ]
+          },
+          "changed_parameters": "IC.Yaw;FST.TMax"
+        },
+        "global_score": 1.6697189401164585,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SURGE",
+          "missing_dof:FD_SWAY"
+        ],
+        "per_dof": {
+          "FD_YAW": {
+            "score": 1.6697189401164585,
+            "period_error_pct": 0.79831578,
+            "period_error_abs_pct": 0.79831578,
+            "envelope_error": 0.24677323,
+            "ler_error": 3.0403485,
+            "fp_error": 0.21569965,
+            "zeta_error_ratio": 0.2645972203312511,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SURGE",
+            "missing_dof:FD_SWAY"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "RUNNING",
+          "reason": "suite incomplete",
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SURGE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          }
+        ],
+        "review_status": "not_required",
+        "observation_metrics": {
+          "FD_YAW": {
+            "run_id": "RUN_0001_FD_YAW_YAW_IC_Y1508_07040931",
+            "metric_status": "PASS",
+            "period": 51.091918,
+            "reference_period": 50.687273,
+            "period_error_pct": 0.79831578,
+            "zeta": 0.018164973,
+            "reference_zeta": 0.024700713,
+            "nrmse": 0.02144322,
+            "j_dof": 0.02144322,
+            "j_shape": 0.32314186,
+            "envelope_error": 0.24677323,
+            "ler_error": 3.0403485,
+            "fp_error": 0.21569965,
+            "start_amplitude_error": 0.19886127,
+            "leak": {
+              "Surge": 0.2741572628656157,
+              "Sway": 0.2526946193681382,
+              "Heave": 0.20197621610861738,
+              "Roll": 0.2658905294796461,
+              "Pitch": 0.0724754926381923
+            },
+            "reference_leak": {
+              "Surge": 0.1667131756781034,
+              "Sway": 0.06151291011602063,
+              "Heave": 0.00833951391833249,
+              "Roll": 0.08748756161027149,
+              "Pitch": 0.06650130575791667
+            },
+            "morph": {
+              "J_wave": 0.021443220359986265,
+              "J_shape": 0.3231418593710644,
+              "env_err": 0.2467732257008929,
+              "fp_err": 0.21569964788346432,
+              "LERD": 0.010254479339074602,
+              "LERM": 0.04143167038116875,
+              "LER_err": 3.040348516115659,
+              "Tend": 628.0
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_YAW": {
+            "Surge": 0.2741572628656157,
+            "Sway": 0.2526946193681382,
+            "Heave": 0.20197621610861738,
+            "Roll": 0.2658905294796461,
+            "Pitch": 0.0724754926381923
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T13:59:00+00:00"
+      },
+      {
+        "run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+        "parent_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+        "stage": "global_step",
+        "candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 5,
+              "j": 5,
+              "value": 72360000000.0,
+              "basis": "global_loop_v3_yaw_micro_probe"
+            }
+          ],
+          "moordyn": {
+            "EA_scale": 1.005
+          },
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "signed_ic_bquad_tune": null,
+            "selected_dof_candidates": {},
+            "bquad_multipliers": {},
+            "signed_initial_conditions": {},
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ],
+            "global_loop_v2_group": "diagonal_hydro",
+            "action_type": "yaw_bquad_micro_probe",
+            "target_dof": "FD_YAW",
+            "bquad_base": 72000000000.0,
+            "bquad_multiplier": 1.005,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_YAW": {
+                "Yaw": -18.0201
+              }
+            },
+            "proposal_hypothesis": "Yaw diagonal BQuad +0.5% on accepted EA1005 may reduce FD_YAW fp/LER without crossing Surge/Sway/Yaw hard guards; early-stop will stop at first hard diagnostic."
+          },
+          "changed_parameters": "HydroDyn.BQuad[5,5];MoorDyn.EA_scale;IC.FD_YAW.Yaw"
+        },
+        "global_score": 1.1973037933381994,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_SWAY",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+        ],
+        "per_dof": {
+          "FD_SURGE": {
+            "score": 1.1973037933381994,
+            "period_error_pct": 4.5296326,
+            "period_error_abs_pct": 4.5296326,
+            "envelope_error": 0.40378443,
+            "ler_error": 0.34505755,
+            "fp_error": 0.29109852,
+            "zeta_error_ratio": 0.35876267921532734,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 1/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_SWAY",
+            "missing_dof:FD_YAW",
+            "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "period_reverse_worse"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_SWAY",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_YAW",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "period_reverse_worse",
+            "passed": false,
+            "severity": "hard",
+            "reason": "period_reverse_worse:FD_SURGE:abs 1.2->4.53 signed 1.2->4.53",
+            "source_role": "derived_metric",
+            "tags": [
+              "period_reverse_worse"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_SURGE": {
+            "run_id": "RUN_0001_FD_SURGE_GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+            "metric_status": "PASS",
+            "period": 86.5125,
+            "reference_period": 82.763612,
+            "period_error_pct": 4.5296326,
+            "zeta": 0.012980233,
+            "reference_zeta": 0.020242479,
+            "nrmse": 0.05246195,
+            "j_dof": 0.05246195,
+            "j_shape": 1.0389899,
+            "envelope_error": 0.40378443,
+            "ler_error": 0.34505755,
+            "fp_error": 0.29109852,
+            "start_amplitude_error": 0.33199529,
+            "leak": {
+              "Sway": 0.27110905821551323,
+              "Heave": 0.1859812215001094,
+              "Roll": 0.23895110787937324,
+              "Pitch": 0.08349564664238782,
+              "Yaw": 0.32816247422819
+            },
+            "reference_leak": {
+              "Sway": 0.15896017090110728,
+              "Heave": 0.01968059507325694,
+              "Roll": 0.03291602612100948,
+              "Pitch": 0.10723769417504003,
+              "Yaw": 0.03816688415976064
+            },
+            "morph": {
+              "J_wave": 0.05246195013330561,
+              "J_shape": 1.0389898730889042,
+              "env_err": 0.40378442914361806,
+              "fp_err": 0.2910985198768511,
+              "LERD": 0.003995852928715648,
+              "LERM": 0.0026170536936853638,
+              "LER_err": 0.3450575533252821,
+              "Tend": 740.9499999999999
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_SURGE": {
+            "Sway": 0.27110905821551323,
+            "Heave": 0.1859812215001094,
+            "Roll": 0.23895110787937324,
+            "Pitch": 0.08349564664238782,
+            "Yaw": 0.32816247422819
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T14:13:38+00:00"
+      },
+      {
+        "run_id": "RC_STEP_LP_330171BDD5AE_HEAVE_20260707T144315Z0000_20260707T151010Z0000",
+        "parent_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+        "stage": "global_step",
+        "candidate_id": "LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+        "parameter_group": "diagonal_hydro",
+        "parameter_delta": {
+          "hydrodyn_edits": [
+            {
+              "block": "BQuad",
+              "i": 2,
+              "j": 2,
+              "value": 6764999.999999999
+            }
+          ],
+          "moordyn": {},
+          "initial_conditions": {},
+          "tmax": null,
+          "decision_meta": {
+            "signed_ic_bquad_tune": null,
+            "selected_dof_candidates": {},
+            "bquad_multipliers": {},
+            "signed_initial_conditions": {},
+            "dof_packages": [
+              "FD_HEAVE",
+              "FD_PITCH",
+              "FD_ROLL",
+              "FD_SURGE",
+              "FD_SWAY",
+              "FD_YAW"
+            ],
+            "local_loop_v1": true,
+            "action_type": "fp_bquad_probe",
+            "target_dof": "FD_HEAVE",
+            "bquad_base": 6600000.0,
+            "bquad_multiplier": 1.025,
+            "requires_full_sixdof": true,
+            "dof_initial_conditions": {
+              "FD_HEAVE": {
+                "Heave": -8.286700000000002
+              }
+            },
+            "proposal_id": "LP_330171BDD5AE",
+            "proposal_parent_run_id": "RC_GLV3_MOOR_EA1005_20260707T033530Z",
+            "proposal_target_dof": "FD_HEAVE",
+            "proposal_action_type": "fp_bquad_probe",
+            "proposal_priority": 1.1477007628268066,
+            "proposal_hypothesis": "FD_HEAVE dominant fp error may improve via fp_bquad_probe"
+          },
+          "changed_parameters": "HydroDyn.BQuad[2,2];IC.FD_HEAVE.Heave"
+        },
+        "global_score": 2.0823245154723455,
+        "hard_constraint_violations": [
+          "missing_dof:FD_HEAVE",
+          "missing_dof:FD_PITCH",
+          "missing_dof:FD_ROLL",
+          "missing_dof:FD_YAW",
+          "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+        ],
+        "per_dof": {
+          "FD_SURGE": {
+            "score": 2.8878236100388794,
+            "period_error_pct": 1.5360715,
+            "period_error_abs_pct": 1.5360715,
+            "envelope_error": 0.39146384,
+            "ler_error": 5.520743,
+            "fp_error": 0.29622883,
+            "zeta_error_ratio": 0.08795810038879127,
+            "closed": false
+          },
+          "FD_SWAY": {
+            "score": 1.2768254209058116,
+            "period_error_pct": 6.6044315,
+            "period_error_abs_pct": 6.6044315,
+            "envelope_error": 0.31983451,
+            "ler_error": 0.28126293,
+            "fp_error": 0.20113766,
+            "zeta_error_ratio": 0.26291955155811747,
+            "closed": false
+          }
+        },
+        "step_decision": {
+          "status": "EVIDENCE_ONLY",
+          "reason": "incomplete suite: 2/6 DOFs have metrics",
+          "hard_constraint_violations": [
+            "missing_dof:FD_HEAVE",
+            "missing_dof:FD_PITCH",
+            "missing_dof:FD_ROLL",
+            "missing_dof:FD_YAW",
+            "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6"
+          ],
+          "tags": [
+            "incomplete_suite"
+          ]
+        },
+        "loop_verdict": {
+          "status": "DIAGNOSTIC_FORK",
+          "reason": "diagnostic hard constraint requires review",
+          "tags": [
+            "diagnostic",
+            "period_reverse_worse"
+          ]
+        },
+        "predicate_results": [
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_HEAVE",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_PITCH",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_ROLL",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "missing_dof",
+            "passed": false,
+            "severity": "hard",
+            "reason": "missing_dof:FD_YAW",
+            "source_role": "derived_metric",
+            "tags": [
+              "missing_dof"
+            ]
+          },
+          {
+            "name": "period_reverse_worse",
+            "passed": false,
+            "severity": "hard",
+            "reason": "period_reverse_worse:FD_SWAY:abs 0.259->6.6 signed 0.259->6.6",
+            "source_role": "derived_metric",
+            "tags": [
+              "period_reverse_worse"
+            ]
+          }
+        ],
+        "review_status": "pending",
+        "observation_metrics": {
+          "FD_SURGE": {
+            "run_id": "RUN_0001_FD_SURGE_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+            "metric_status": "PASS",
+            "period": 84.034921,
+            "reference_period": 82.763612,
+            "period_error_pct": 1.5360715,
+            "zeta": 0.018461989,
+            "reference_zeta": 0.020242479,
+            "nrmse": 0.057835519,
+            "j_dof": 0.057835519,
+            "j_shape": 1.2340072,
+            "envelope_error": 0.39146384,
+            "ler_error": 5.520743,
+            "fp_error": 0.29622883,
+            "start_amplitude_error": 0.3360874,
+            "leak": {
+              "Sway": 0.21999124628057012,
+              "Heave": 0.17919002060486292,
+              "Roll": 0.23266668734613674,
+              "Pitch": 0.06961749614935683,
+              "Yaw": 0.21037903612212153
+            },
+            "reference_leak": {
+              "Sway": 0.15896017090110728,
+              "Heave": 0.01968059507325694,
+              "Roll": 0.03291602612100948,
+              "Pitch": 0.10723769417504003,
+              "Yaw": 0.03816688415976064
+            },
+            "morph": {
+              "J_wave": 0.0578355187316448,
+              "J_shape": 1.2340072231276893,
+              "env_err": 0.39146383890572356,
+              "fp_err": 0.29622883203114725,
+              "LERD": 0.003995852928715648,
+              "LERM": 0.026055929944310476,
+              "LER_err": 5.520742982571535,
+              "Tend": 740.9499999999999
+            }
+          },
+          "FD_SWAY": {
+            "run_id": "RUN_0001_FD_SWAY_LP_330171BDD5AE_HEAVE_20260707T144315Z0000",
+            "metric_status": "PASS",
+            "period": 84.676389,
+            "reference_period": 79.430459,
+            "period_error_pct": 6.6044315,
+            "zeta": 0.029278072,
+            "reference_zeta": 0.023182848,
+            "nrmse": 0.045430035,
+            "j_dof": 0.045430035,
+            "j_shape": 0.9598789,
+            "envelope_error": 0.31983451,
+            "ler_error": 0.28126293,
+            "fp_error": 0.20113766,
+            "start_amplitude_error": 0.23526959,
+            "leak": {
+              "Surge": 0.2770654499810415,
+              "Heave": 0.21706264455073138,
+              "Roll": 0.35141377108902894,
+              "Pitch": 0.16353513705976266,
+              "Yaw": 0.4910066502247873
+            },
+            "reference_leak": {
+              "Surge": 0.09911156186697814,
+              "Heave": 0.018040555839837675,
+              "Roll": 0.11940848210435888,
+              "Pitch": 0.0384504331662194,
+              "Yaw": 0.1166189583607766
+            },
+            "morph": {
+              "J_wave": 0.04543003482731525,
+              "J_shape": 0.9598788956294325,
+              "env_err": 0.3198345057957357,
+              "fp_err": 0.20113766433049562,
+              "LERD": 0.008732298675839493,
+              "LERM": 0.011188370604092678,
+              "LER_err": 0.2812629319526873,
+              "Tend": 899.8
+            }
+          }
+        },
+        "cross_energy_matrix": {
+          "FD_SURGE": {
+            "Sway": 0.21999124628057012,
+            "Heave": 0.17919002060486292,
+            "Roll": 0.23266668734613674,
+            "Pitch": 0.06961749614935683,
+            "Yaw": 0.21037903612212153
+          },
+          "FD_SWAY": {
+            "Surge": 0.2770654499810415,
+            "Heave": 0.21706264455073138,
+            "Roll": 0.35141377108902894,
+            "Pitch": 0.16353513705976266,
+            "Yaw": 0.4910066502247873
+          }
+        },
+        "equilibrium": {},
+        "created_at": "2026-07-07T15:10:10+00:00"
+      }
+    ],
+    "analysis_focus": [
+      "Diagnose likely mechanism behind the queue trigger.",
+      "List the smallest useful probe or artifact review.",
+      "State why this item must not auto-promote current_best."
+    ]
+  },
+  "candidate_id": "GLV3_YAW_BQ1005_EA1005_20260707T140240Z",
+  "run_id": "RC_STEP_GLV3_YAW_BQ1005_EA1005_20260707T140240Z_20260707T141338Z0000",
+  "item_id": "DQ_5A39BE5B2B3D",
+  "proposal_id": "",
+  "stale_for_decision": false,
+  "advisory_only": true,
+  "source_role": "advisory"
+}

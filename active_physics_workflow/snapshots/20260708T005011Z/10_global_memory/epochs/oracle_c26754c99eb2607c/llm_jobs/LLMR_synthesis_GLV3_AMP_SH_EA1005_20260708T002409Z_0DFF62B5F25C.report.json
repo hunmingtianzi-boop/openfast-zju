@@ -1,0 +1,21 @@
+{
+  "report_id": "LLMR_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z_0DFF62B5F25C",
+  "job_id": "LLMJ_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004727Z0000",
+  "analysis_type": "synthesis",
+  "created_at": "2026-07-08T00:47:27+00:00",
+  "oracle_id": "oracle_c26754c99eb2607c",
+  "epoch_id": "oracle_c26754c99eb2607c",
+  "input_snapshot_hash": "0dff62b5f25c03910ead0e4f0d1f2297a8d72f8301a1bfd0dcc9e901be394e5b",
+  "report_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/reports/llm_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z.md",
+  "packet_path": "10_global_memory/epochs/oracle_c26754c99eb2607c/llm_packets/LLMP_synthesis_GLV3_AMP_SH_EA1005_20260708T002409Z_0DFF62B5F25C.json",
+  "candidate_id": "GLV3_AMP_SH_EA1005_20260708T002409Z",
+  "run_id": "RC_STEP_GLV3_AMP_SH_EA1005_20260708T002409Z_20260708T004641Z0000",
+  "item_id": "",
+  "proposal_id": "",
+  "provider": "openai_compatible",
+  "model": "",
+  "provider_called": false,
+  "stale_for_decision": false,
+  "advisory_only": true,
+  "source_role": "advisory"
+}
